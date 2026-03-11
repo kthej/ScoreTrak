@@ -3,6 +3,9 @@
 
     <string id="prompt">Click the menu button</string>
 
-    <string id="menu_label_1">Home - 1</string>
-    <string id="menu_label_2">Guest - 1</string>
+    <string id="menu_label_1">Home -1</string>
+    <string id="menu_label_2">Guest -1</string>
+    <string id="menu_label_3">Reset Scores</string>
+    <string id="menu_label_4">Start Activity</string>
+
 </strings>
