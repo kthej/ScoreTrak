@@ -11,7 +11,9 @@ Each time you make a score change, ScoreTrak will record that change in the acti
 
 Need a simple scorekeeper without all the extra tools? ScoreTrak's got you with its super simple and easy to use layout!
 
-Need a power tool for recording your group's weekly sport or game night? ScoreTrak's got you with its incredibly diverse array of options and scorekeeping modes!
+Need a power tool for recording your group's weekly basketball game, mini golf tournament, or board game night? ScoreTrak's got you with its incredibly diverse array scorekeeping modes!
+
+Track up to 10 different people for golf modes or generic group scoring modes!
 
 ### Features
 - Incredibly simple and clean UI

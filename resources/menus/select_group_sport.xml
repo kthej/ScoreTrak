@@ -1,0 +1,8 @@
+<menu id="GroupSportSelectMenu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <menu-item id="item_0" label="No Sport" />
+    <menu-item id="item_1" label="Generic" />
+    <menu-item id="item_2" label="Golf" />
+    <menu-item id="item_3" label="Mini Golf" />
+    <menu-item id="item_4" label="Disc Golf" />
+
+</menu>

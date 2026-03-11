@@ -1,0 +1,63 @@
+<menu id="TeamSportSelectMenu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <menu-item id="item_0" label="No Sport" />
+    <menu-item id="item_1" label="American Football" />
+    <menu-item id="item_2" label="Baseball" />
+    <menu-item id="item_3" label="Basketball" />
+    <menu-item id="item_4" label="Cricket" />
+    <menu-item id="item_5" label="Field Hockey" />
+    <menu-item id="item_6" label="Gaming" />
+    <menu-item id="item_7" label="Ice Hockey" />
+    <menu-item id="item_8" label="Lacrosse" />
+    <menu-item id="item_9" label="Rugby" />
+    <menu-item id="item_10" label="Soccer" />
+    <menu-item id="item_11" label="Softball" />
+    <menu-item id="item_12" label="Ultimate Disc" />
+    <menu-item id="item_13" label="Volleyball" />
+</menu>
+<!--
+- Generic VS (Home vs. Guest style game)
+- Generic Group (Can record up to 10 people for scoring different types)
+- Custom Activity (set name in settings)
+
+## Racket Sports
+
+- Badminton
+- Padel
+- Pickleball
+- Platform Tennis
+- Racquetball
+- Squash
+- Table Tennis ()
+- Tennis (Switches to tennis scoring when selected)
+
+## Team Sports
+
+- American Football
+- Baseball
+- Basketball
+- Cricket
+- Field Hockey
+- Gaming
+- Ice Hockey
+- Lacrosse
+- Rugby
+- Soccer
+- Softball
+- Ultimate Disc
+- Volleyball
+
+## Other Sports
+
+- Golf
+    - Option to just record score for self
+    - Perhaps add multiple people or multiple slots to keep score, 
+    (so one person keeps track of score for everyone)
+    - Player 1, Player 2, etc, but can customize names of everyone.
+    - Layout is different, scroll to select individual, 
+    - Have confirm option and new hole recorder so the activity records the scores of everyone for every hole
+
+- Disc Golf
+    - Same options as Golf
+
+- Mini Golf
+-->

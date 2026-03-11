@@ -8,7 +8,7 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onMenu() as Boolean {
-        WatchUi.pushView(new Rez.Menus.MainMenu(), new ScoreTrakMenuDelegate(), WatchUi.SLIDE_UP);
+        WatchUi.pushView(new Rez.Menus.VersusMenu(), new ScoreTrakMenuDelegate(), WatchUi.SLIDE_UP);
         return true;
     }
 
