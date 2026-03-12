@@ -1,4 +1,4 @@
-<menu id="TeamSportSelectMenu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+<menu2 id="TeamSportSelectMenu" title="Team Sport">
     <menu-item id="item_0" label="No Sport" />
     <menu-item id="item_1" label="American Football" />
     <menu-item id="item_2" label="Baseball" />
@@ -13,7 +13,7 @@
     <menu-item id="item_11" label="Softball" />
     <menu-item id="item_12" label="Ultimate Disc" />
     <menu-item id="item_13" label="Volleyball" />
-</menu>
+</menu2>
 <!--
 - Generic VS (Home vs. Guest style game)
 - Generic Group (Can record up to 10 people for scoring different types)

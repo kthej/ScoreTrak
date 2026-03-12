@@ -1,4 +1,4 @@
-<menu id="RacketSportSelectMenu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+<menu2 id="RacketSportSelectMenu" title="Racket Sport">
     <menu-item id="item_0" label="No Sport" />
     <menu-item id="item_1" label="Badminton" />
     <menu-item id="item_2" label="Padel" />
@@ -8,4 +8,4 @@
     <menu-item id="item_6" label="Squash" />
     <menu-item id="item_7" label="Table Tennis" />
     <menu-item id="item_8" label="Tennis" />
-</menu>
+</menu2>

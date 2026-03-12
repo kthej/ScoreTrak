@@ -1,8 +1,8 @@
-<menu id="VersusMenu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+<menu2 id="MainMenu"  title="Settings">
     <menu-item id="item_1" label="Home -1" />
     <menu-item id="item_2" label="Guest -1" />
     <menu-item id="item_3" label="Reset Scores" />
     <menu-item id="item_4" label="Start Activity" />
     <menu-item id="item_5" label="Change Sport" />
 
-</menu>
+</menu2>

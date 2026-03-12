@@ -1,6 +1,0 @@
-<menu id="MoreSettingsMenu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
-    <menu-item id="item_1" label="Home Color" />
-    <menu-item id="item_2" label="Guest Color" />
-    <menu-item id="item_3" label="Time of Day" />
-    <menu-item id="item_4" label="Keep score on exit?" />
-</menu>

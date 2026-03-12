@@ -17,8 +17,11 @@ class ScoreTrakApp extends Application.AppBase {
     }
 
     // Return the initial view of your application here
-    function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new ScoreTrakView(), new ScoreTrakDelegate() ];
+    function getInitialView() as [Views] or [Views, InputDelegates]{
+        var view = new ScoreTrakView();
+        var delegate = new ScoreTrakDelegate(view); // Pass the view here
+        
+        return [ view, delegate];
     }
 
 }
