@@ -1,7 +1,9 @@
 <menu2 id="AdvancedMenu" title="Advanced">
-    <menu-item id="item_1" label="Home Name" />
-    <menu-item id="item_2" label="Guest Name" />
-    <menu-item id="item_3" label="Time of Day" />
+    <menu-item id="rename_home" label="Home Name" />
+    <menu-item id="rename_guest" label="Guest Name" />
+    <menu-item id="rename_custom_sport" label="Custom Sport Name" />
     <menu-item id="item_4" label="Keep score on exit?" />
-    <menu-item id="item_5" label="Custom Sport Name" />
+    <menu-item id="item_5" label="Show Time?" />
+    <menu-item id="item_6" label="Flip Score Buttons?" />
+    <menu-item id="reset_names" label="Reset Home and Guest names?"/>
 </menu2>

@@ -1,10 +1,33 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Application;
+/*
+Storage Values
+
+home_score
+home_name
+guest_score
+guest_name
+active_sport
+
+*/
+//Removes space and turns to newline
+function formatSportName(name) {
+    if (name == null) { return ""; }
+    // Look for a space and replace it with a newline character
+    while (name.find(" ") != null) {
+        var index = name.find(" ");
+        name = name.substring(0, index) + "\n" + name.substring(index + 1, name.length());
+    }
+    return name;
+}
 
 class ScoreTrakView extends WatchUi.View {
     public var home_score = 0;
+    public var home_name;
     public var guest_score = 0;
+    public var guest_name;
+    public var active_sport;
     public var JCENTER;
     public var SCREEN_WIDTH;
     public var SCREEN_HEIGHT;
@@ -18,7 +41,25 @@ class ScoreTrakView extends WatchUi.View {
         setLayout(Rez.Layouts.MainLayout(dc));
 
         // Graphics Constant var declaration
+        
+        if (Application.Storage.getValue("active_sport") != null){
+            active_sport = Application.Storage.getValue("active_sport");
+        }
+        if(Application.Storage.getValue("home_name") != null){
+        home_name = Application.Storage.getValue("home_name");
+        }
+        else{
+            home_name = "HOME";
+        }
 
+        if(Application.Storage.getValue("guest_name") != null){
+        guest_name = Application.Storage.getValue("guest_name");
+        }
+
+        else{
+            guest_name = "GUEST";
+        }
+        
         JCENTER = Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER;
         SCREEN_WIDTH = dc.getWidth();
         SCREEN_HEIGHT = dc.getHeight();
@@ -47,14 +88,23 @@ class ScoreTrakView extends WatchUi.View {
 // Update the view
     function onUpdate(dc as Dc) as Void {
         // 1. Find the Score labels by the IDs we set in the XML
-        var home_label = View.findDrawableById("HomeScore") as WatchUi.Text;
-        var guest_label = WatchUi.Text;
-        guest_label = View.findDrawableById("GuestScore") as WatchUi.Text;
+        var home_score_label = View.findDrawableById("HomeScore") as WatchUi.Text;
+        var home_label = View.findDrawableById("HomeLabel") as WatchUi.Text;
+        var guest_score_label = View.findDrawableById("GuestScore") as WatchUi.Text;
+        var guest_label = View.findDrawableById("GuestLabel") as WatchUi.Text;
+        
+        var sport_label = View.findDrawableById("SportLabel") as WatchUi.Text;
+        active_sport = Application.Storage.getValue("active_sport");
+        
 
         // 2. Update the text of those labels with formatted scores
         // Using .format("%02d") ensures 4 becomes "04"
-        home_label.setText(home_score.format("%02d"));
-        guest_label.setText(guest_score.format("%02d"));
+        home_score_label.setText(home_score.format("%02d"));
+        home_label.setText(home_name);
+        guest_score_label.setText(guest_score.format("%02d"));
+        guest_label.setText(guest_name);
+        sport_label.setText(formatSportName(active_sport));
+
 
 
         // 3. Call the parent onUpdate. 
@@ -67,6 +117,9 @@ class ScoreTrakView extends WatchUi.View {
     // memory.
     function onHide() as Void {
     }
+
+    // Input handled functions
+
     function updateHome(value){
         home_score += value;
         Application.Storage.setValue("home_score",home_score);
@@ -84,6 +137,24 @@ class ScoreTrakView extends WatchUi.View {
         Application.Storage.setValue("home_score",0);
         guest_score = 0;
         Application.Storage.setValue("guest_score",0);
+
+    }
+    function setHomeName(text){
+        home_name = text;
+        Application.Storage.setValue("home_name",home_name);
+        
+    }
+    function setGuestName(text){
+        guest_name = text;
+        Application.Storage.setValue("guest_name",guest_name);
+    }
+    function resetNames(){
+        home_name = "HOME";
+        guest_name = "GUEST";
+        Application.Storage.setValue("home_name","HOME");
+        Application.Storage.setValue("guest_name","GUEST");
+    }
+    function setCustomSportName(text){
 
     }
 

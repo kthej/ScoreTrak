@@ -4,5 +4,6 @@
     <menu-item id="item_3" label="Reset Scores" />
     <menu-item id="item_4" label="Start Activity" />
     <menu-item id="item_5" label="Change Sport" />
+    <menu-item id="item_6" label="Advanced Settings" />
 
 </menu2>

@@ -1,0 +1,35 @@
+<menu2 id="SportMenu" title="SelectSport">
+    <menu-item id="sport_none" label="No Sport" subLabel="None" />
+    <menu-item id="sport_custom" label = "Custom Sport" subLabel="Custom"/>
+    
+    <menu-item id="sport_football" label="Football" subLabel="Team Sport" />
+    <menu-item id="sport_baseball" label="Baseball" subLabel="Team Sport" />
+    <menu-item id="sport_basketball" label="Basketball" subLabel="Team Sport" />
+    <menu-item id="sport_cricket" label="Cricket" subLabel="Team Sport" />
+    <menu-item id="sport_field_hockey" label="Field Hockey" subLabel="Team Sport" />
+    <menu-item id="sport_gaming" label="Gaming" subLabel="Team Sport" />
+    <menu-item id="sport_ice_hockey" label="Ice Hockey" subLabel="Team Sport" />
+    <menu-item id="sport_lacrosse" label="Lacrosse" subLabel="Team Sport" />
+    <menu-item id="sport_rugby" label="Rugby" subLabel="Team Sport" />
+    <menu-item id="sport_soccer" label="Soccer" subLabel="Team Sport" />
+    <menu-item id="sport_softball" label="Softball" subLabel="Team Sport" />
+    <menu-item id="sport_ultimate" label="Ultimate Disc" subLabel="Team Sport" />
+    <menu-item id="sport_volleyball" label="Volleyball" subLabel="Team Sport" />
+
+    <menu-item id="sport_badminton" label="Badminton" subLabel="Racket Sport" />
+    <menu-item id="sport_padel" label="Padel" subLabel="Racket Sport" />
+    <menu-item id="sport_pickleball" label="Pickleball" subLabel="Racket Sport" />
+    <menu-item id="sport_platform" label="Platform Tennis" subLabel="Racket Sport" />
+    <menu-item id="sport_racquetball" label="Racquetball" subLabel="Racket Sport" />
+    <menu-item id="sport_squash" label="Squash" subLabel="Racket Sport" />
+    <menu-item id="sport_table_tennis" label="Table Tennis" subLabel="Racket Sport" />
+    <menu-item id="sport_tennis" label="Tennis" subLabel="Racket Sport" />
+
+    
+    <menu-item id="sport_golf" label="Golf" subLabel="Group Sport" />
+    <menu-item id="sport_mini_golf" label="Mini Golf" subLabel="Group Sport" />
+    <menu-item id="sport_disc_golf" label="Disc Golf" subLabel="Group Sport" />
+    <menu-item id="sport_board_game" label="Board Game" subLabel="Group Sport" />
+
+
+</menu2>
