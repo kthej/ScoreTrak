@@ -85,6 +85,17 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
             WatchUi.popView(WatchUi.SLIDE_UP);
             WatchUi.popView(WatchUi.SLIDE_UP);
         }
+        else if(id==:flip_score_buttons){
+            if (Application.Storage.getValue("flip_score_buttons") == false){
+                Application.Storage.setValue("flip_score_buttons",true);
+            }
+            else{
+                Application.Storage.setValue("flip_score_buttons",false);
+            }
+            WatchUi.popView(WatchUi.SLIDE_UP);
+            WatchUi.popView(WatchUi.SLIDE_UP);
+
+        }
     }
     }
 

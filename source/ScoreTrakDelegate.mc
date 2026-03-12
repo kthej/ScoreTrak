@@ -16,12 +16,23 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onPreviousPage(){
-        _view.updateHome(1);
+        if(Application.Storage.getValue("flip_score_buttons") == false){
+            _view.updateHome(1);
+        }
+        else{
+            _view.updateGuest(1);
+        }
+        
         WatchUi.requestUpdate();
         return true;
     }
     function onNextPage(){
-        _view.updateGuest(1);
+        if(Application.Storage.getValue("flip_score_buttons") == false){
+            _view.updateGuest(1);
+        }
+        else{
+            _view.updateHome(1);
+        }
         WatchUi.requestUpdate();
         return true;
     }

@@ -28,6 +28,8 @@ class ScoreTrakView extends WatchUi.View {
     public var guest_score = 0;
     public var guest_name;
     public var active_sport;
+
+    public var flip_score_buttons;
     public var JCENTER;
     public var SCREEN_WIDTH;
     public var SCREEN_HEIGHT;
@@ -40,11 +42,20 @@ class ScoreTrakView extends WatchUi.View {
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.MainLayout(dc));
 
-        // Graphics Constant var declaration
-        
+        //Storage management and checking values
+
+        if(Application.Storage.getValue("flip_score_buttons") == null){
+            Application.Storage.setValue("flip_score_buttons",false);
+        }
+
+        else{
+        flip_score_buttons = Application.Storage.getValue("flip_score_buttons");
+        }
+
         if (Application.Storage.getValue("active_sport") != null){
             active_sport = Application.Storage.getValue("active_sport");
         }
+        
         if(Application.Storage.getValue("home_name") != null){
         home_name = Application.Storage.getValue("home_name");
         }
@@ -103,7 +114,14 @@ class ScoreTrakView extends WatchUi.View {
         home_label.setText(home_name);
         guest_score_label.setText(guest_score.format("%02d"));
         guest_label.setText(guest_name);
-        sport_label.setText(formatSportName(active_sport));
+        //Determine if device is instinct shape, use newline if is
+        if (System.getDeviceSettings().screenShape == System.SCREEN_SHAPE_SEMI_OCTAGON){
+            sport_label.setText(formatSportName(active_sport));
+        }
+        else{
+            sport_label.setText(active_sport);
+        }
+        
 
 
 
