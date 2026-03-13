@@ -23,13 +23,15 @@ function formatSportName(name) {
 }
 
 class ScoreTrakView extends WatchUi.View {
+
     public var home_score = 0;
     public var home_name;
     public var guest_score = 0;
     public var guest_name;
     public var active_sport;
-
+    public var is_24_hour;
     public var flip_score_buttons;
+
     public var JCENTER;
     public var SCREEN_WIDTH;
     public var SCREEN_HEIGHT;
@@ -55,7 +57,7 @@ class ScoreTrakView extends WatchUi.View {
         if (Application.Storage.getValue("active_sport") != null){
             active_sport = Application.Storage.getValue("active_sport");
         }
-        
+
         if(Application.Storage.getValue("home_name") != null){
         home_name = Application.Storage.getValue("home_name");
         }
@@ -70,7 +72,9 @@ class ScoreTrakView extends WatchUi.View {
         else{
             guest_name = "GUEST";
         }
-        
+        if(Application.Storage.getValue("is_24_hour") == null){
+            Application.Storage.setValue("is_24_hour",true);
+        }
         JCENTER = Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER;
         SCREEN_WIDTH = dc.getWidth();
         SCREEN_HEIGHT = dc.getHeight();
@@ -85,6 +89,9 @@ class ScoreTrakView extends WatchUi.View {
             home_score = 0;
             guest_score = 0;
         }
+        if(Application.Storage.getValue("active_sport") == null){
+            Application.Storage.setValue("active_sport","Score Keeper");
+        }
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -98,11 +105,15 @@ class ScoreTrakView extends WatchUi.View {
     // Update the view
 // Update the view
     function onUpdate(dc as Dc) as Void {
+        View.onUpdate(dc);
         // 1. Find the Score labels by the IDs we set in the XML
         var home_score_label = View.findDrawableById("HomeScore") as WatchUi.Text;
         var home_label = View.findDrawableById("HomeLabel") as WatchUi.Text;
         var guest_score_label = View.findDrawableById("GuestScore") as WatchUi.Text;
         var guest_label = View.findDrawableById("GuestLabel") as WatchUi.Text;
+        var time_label = View.findDrawableById("TimeLabel") as WatchUi.Text;
+        var time;
+        var time_string;
         
         var sport_label = View.findDrawableById("SportLabel") as WatchUi.Text;
         active_sport = Application.Storage.getValue("active_sport");
@@ -114,20 +125,44 @@ class ScoreTrakView extends WatchUi.View {
         home_label.setText(home_name);
         guest_score_label.setText(guest_score.format("%02d"));
         guest_label.setText(guest_name);
-        //Determine if device is instinct shape, use newline if is
+        time = System.getClockTime();
+        
+        time_string = Lang.format(
+            "$1$:$2$",
+            [
+                time.hour.format("%02d"),
+                time.min.format("%02d")
+            ]
+        );
+        time_label.setText(time_string);
+        //Instinct shape vs circle shape handling
         if (System.getDeviceSettings().screenShape == System.SCREEN_SHAPE_SEMI_OCTAGON){
+            
             sport_label.setText(formatSportName(active_sport));
+            dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+            dc.setPenWidth(3);
+            dc.drawLine(0,dc.getHeight()*0.58,dc.getWidth(),dc.getHeight()*0.58);
+            dc.drawLine(0,dc.getHeight()*0.84,dc.getWidth(),dc.getHeight()*0.84);
+            dc.drawLine(dc.getWidth()/2, dc.getHeight()*.63, dc.getWidth()/2, dc.getHeight()*.79);
         }
         else{
+            var score_line_offset = dc.getHeight()/6;
             sport_label.setText(active_sport);
+            dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+            dc.setPenWidth(5);
+            dc.drawLine(0,dc.getHeight()/2 - score_line_offset,dc.getWidth(),dc.getHeight()/2 - score_line_offset);
+            dc.drawLine(0,dc.getHeight()/2 + score_line_offset,dc.getWidth(),dc.getHeight()/2 + score_line_offset);
+            dc.drawLine(dc.getWidth()/2, dc.getHeight()/2 - score_line_offset*0.75, dc.getWidth()/2, dc.getHeight()/2 + score_line_offset*0.75);
+            // dc.drawRectangle(0,home_label.locY,dc.getWidth(),1); 
         }
+
         
 
 
 
         // 3. Call the parent onUpdate. 
         // This automatically clears the screen and draws everything in your XML layout.
-        View.onUpdate(dc);
+        
     }
 
     // Called when this View is removed from the screen. Save the
@@ -173,7 +208,7 @@ class ScoreTrakView extends WatchUi.View {
         Application.Storage.setValue("guest_name","GUEST");
     }
     function setCustomSportName(text){
-
+        
     }
 
 }

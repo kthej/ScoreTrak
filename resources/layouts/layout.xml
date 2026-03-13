@@ -1,8 +1,8 @@
 <layout id="MainLayout">
-    <label x="25%" y="10%" text="HOME" font="Graphics.FONT_SMALL" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <label id="HomeScore" x="25%" y="50%" text="00" font="Graphics.FONT_NUMBER_HOT" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" />
-
-    <label x="75%" y="10%" text="GUEST" font="Graphics.FONT_SMALL" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <label id="SportLabel" x="50%" y="10%" text="Sport" font="Graphics.FONT_SMALL" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <label id="GuestScore" x="75%" y="50%" text="00" font="Graphics.FONT_NUMBER_HOT" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" />
+    <label id="HomeLabel" x="27%" y="20%" text="HOME" font="Graphics.FONT_SMALL" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="HomeScore" x="27%" y="50%" text="00" font="Graphics.FONT_NUMBER_MEDIUM" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" />
+    <label id="GuestLabel" x="73%" y="20%" text="GUEST" font="Graphics.FONT_SMALL" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="GuestScore" x="73%" y="50%" text="00" font="Graphics.FONT_NUMBER_MEDIUM" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" />
+    <label id="SportLabel" x="50%" y="12%" text="Sport" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" />
+    <label id="TimeLabel" x="50%" y="90%" text="10:00" font="Graphics.FONT_TINY" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" />
 </layout>

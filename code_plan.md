@@ -1,15 +1,13 @@
 # Development Steps
 
 1. Get basic scorekeeping functionality down for button only watches
-    - Home vs Guest
-    - Up increases score for Home
-    - Down increases score for Guest
-    - Menu options decrease score for Home or Guest (shows score in menu as well)
-    - Instinct special layout, normal for other watches
-    - Menu shows start activity option, but by default will just exit app if activity not started
-    - If activity is started, back button will lap the activity like normal, and to stop activity one must press start/stop button like a normal app
-    - If paused, add option to save game.
-    - Score does not reset even after saving.
+    -~~ Home vs Guest~~
+    - ~~Up increases score for Home~~
+    ~~- Down increases score for Guest~~
+    - ~~Menu options decrease score for Home or Guest (shows score in menu as well)~~
+    ~~- Instinct special layout, normal for other watches~~
+    - ~~Menu shows start activity option, but by default will just exit app if activity not started~~
+    - ~~Score does not reset even after saving.~~
 
 *Release to store!*
 

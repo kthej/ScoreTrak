@@ -2,18 +2,26 @@
 
 ## Marketing Description
 
-ScoreTrak is the ULTIMATE scorekeeping app for the Garmin family.
-You can record and track the scores of ANY type of game, from basketball to tennis to golf,
-with the option to record your game as an activity.
+### BETA NOTICE
+This app is still in its beta. Expect features to be rolled out in the future, as it is still in development.
+Activity recording and tennis mode is still under development, but will be finished in the next few months.
+
+ScoreTrak is the ultimate scorekeeping app for the Garmin family.
+You can track the scores of ANY type of game, from basketball to tennis to golf, even a custom sport!
+There also is an option to record your game as an activity, determined by the sport you select.
 
 What's more, is the app will save your scores to be viewable in Connect IQ!
-Each time you make a score change, ScoreTrak will record that change in the activity file, enabling you to see how your game progressed as you
+Each time you make a score change, ScoreTrak will record that change in the activity file, enabling you to see how the scores progressed as your game progressed.
 
-Need a simple scorekeeper without all the extra tools? ScoreTrak's got you with its super simple and easy to use layout!
+The best part about ScoreTrak is its simplicity-first design. The basics are front and center, with the advanced features tucked away in the settings.
 
-Need a power tool for recording your group's weekly basketball game, mini golf tournament, or board game night? ScoreTrak's got you with its incredibly diverse array scorekeeping modes!
+Need a simple scorekeeper without all the extra tools? ScoreTrak's got you with its super simple and easy to use layout! 
 
-Track up to 10 different people for golf modes or generic group scoring modes!
+Need a power tool for recording your group's weekly basketball game, mini golf tournament, or board game night? Again, ScoreTrak's got you with its incredibly diverse array scorekeeping modes!
+
+Track up to 10 different people for golf modes or generic group scoring modes! (under construction)
+
+Tennis scoring is supported as well!
 
 ### Features
 - Incredibly simple and clean UI

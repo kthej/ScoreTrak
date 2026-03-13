@@ -1,7 +1,8 @@
 <layout id="MainLayout">
-    <label id="HomeLabel" x="25%" y="50%" text="HOME" font="Graphics.FONT_SMALL" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <label id="HomeScore" x="25%" y="75%" text="00" font="Graphics.FONT_NUMBER_THAI_HOT" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" />
-    <label id="GuestLabel" x="75%" y="50%" text="GUEST" font="Graphics.FONT_SMALL" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <label id="GuestScore" x="75%" y="75%" text="00" font="Graphics.FONT_NUMBER_THAI_HOT" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" />
-    <label id="SportLabel" x="50%" y="10%" text="Sport" font="Graphics.FONT_TINY" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT" />
+    <label id="HomeLabel" x="25%" y="42%" text="HOME" font="Graphics.FONT_SMALL" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="HomeScore" x="25%" y="70%" text="00" font="Graphics.FONT_NUMBER_HOT" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" />
+    <label id="GuestLabel" x="75%" y="42%" text="GUEST" font="Graphics.FONT_SMALL" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="GuestScore" x="75%" y="70%" text="00" font="Graphics.FONT_NUMBER_HOT" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" />
+    <label id="SportLabel" x="55%" y="15%" text="Sport" font="Graphics.FONT_TINY" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_RIGHT | Graphics.TEXT_JUSTIFY_VCENTER" />
+    <label id="TimeLabel" x="50%" y="92%" text="10:00" font="Graphics.FONT_XTINY" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER" />
 </layout>

@@ -75,16 +75,24 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
         var delegate = new ScoreTrakTextDelegate(_view.method(:setHomeName));
         WatchUi.pushView(picker, delegate, WatchUi.SLIDE_UP);
         }
+
         else if(id==:rename_guest){
         var picker = new WatchUi.TextPicker("");
         var delegate = new ScoreTrakTextDelegate(_view.method(:setGuestName));
         WatchUi.pushView(picker, delegate, WatchUi.SLIDE_UP);
         }
+        
+        // else if(id==:rename_custom_sport){
+        // var picker = new WatchUi.TextPicker("");
+        // var delegate = new ScoreTrakTextDelegate(_view.method(:setCustomSportName));
+        // WatchUi.pushView(picker, delegate, WatchUi.SLIDE_UP);
+        // }
         else if(id==:reset_names){
             _view.resetNames();
             WatchUi.popView(WatchUi.SLIDE_UP);
             WatchUi.popView(WatchUi.SLIDE_UP);
         }
+
         else if(id==:flip_score_buttons){
             if (Application.Storage.getValue("flip_score_buttons") == false){
                 Application.Storage.setValue("flip_score_buttons",true);
