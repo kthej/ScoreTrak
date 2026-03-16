@@ -1,0 +1,72 @@
+[ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc"; @line = 4; @symbol_classdef = [ScoreTrakTextDelegate,4,6,27]; @symbol_extends<0> = [WatchUi,4,36,43]; @symbol_extends<1> = [TextPickerDelegate,4,44,62]; ]
+class ScoreTrakTextDelegate extends WatchUi.TextPickerDelegate {
+    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc"; @line = 5; @position = 16; @symbol_vardef = [_callback,5,16,25]; @symbol_type<0> = [text,5,36,40]; @symbol_type<1> = [String,5,44,50]; ]
+    private
+    var _callback as (callback(text as String) as Void);
+    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; @symbol_param<0> = [callback,8,24,32]; @symbol_param<0>_type<0> = [text,8,43,47]; @symbol_param<0>_type<1> = [String,8,51,57]; ]
+    function initialize(callback as (callback(text as String) as Void)) as Void {
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakTextDelegate_mc_8_68_11_4_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" 9 8 ]
+        symbol [ TextPickerDelegate %tmp.2 9 8 26 ];
+        %tmp.2 = getv ? :TextPickerDelegate;
+        symbol [ initialize %tmp.3 9 27 37 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" 10 8 ]
+        %tmp.4 = lgetv %callback;
+        symbol [ callback %tmp.4 10 20 28 ];
+        symbol [ _callback ? 10 8 17 ];
+        putv self :_callback %tmp.4;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakTextDelegate_mc_8_68_11_4_stop:
+    }
+    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc"; @line = 13; @symbol_functiondef = [onTextEntered,13,13,26]; @symbol_param<0> = [text,13,27,31]; @symbol_param<1> = [changed,13,33,40]; ]
+    function onTextEntered(text, changed) {
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakTextDelegate_mc_13_42_19_4_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" 14 8 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakTextDelegate_mc_14_8_16_8_if_stmt:
+        %tmp.1 = lgetv %changed;
+        symbol [ changed %tmp.1 14 12 19 ];
+        bf %tmp.1 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakTextDelegate_mc_14_8_16_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakTextDelegate_mc_14_8_16_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakTextDelegate_mc_14_21_16_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" 15 12 ]
+        symbol [ _callback %tmp.3 15 12 21 ];
+        %tmp.3 = getv ? :_callback;
+        symbol [ invoke %tmp.4 15 22 28 ];
+        %tmp.4 = getv function %tmp.3 :invoke;
+        %tmp.5 = lgetv %text;
+        symbol [ text %tmp.5 15 29 33 ];
+        invoke %tmp.3 %tmp.4(%tmp.5);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakTextDelegate_mc_14_21_16_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakTextDelegate_mc_14_8_16_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakTextDelegate_mc_14_8_16_8_if_end:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" 17 8 ]
+        symbol [ WatchUi %tmp.6 17 8 15 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.7 17 16 23 ];
+        %tmp.7 = getv function %tmp.6 :popView;
+        symbol [ WatchUi %tmp.8 17 24 31 ];
+        %tmp.8 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.9 17 32 42 ];
+        %tmp.9 = getv %tmp.8 :SLIDE_DOWN;
+        invoke %tmp.6 %tmp.7(%tmp.9);
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" 18 8 ]
+        %tmp.10 = true;
+        ret %tmp.10;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakTextDelegate_mc_13_42_19_4_stop:
+    }
+}
+[ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc"; @line = 1; ]
+<init> {
+}

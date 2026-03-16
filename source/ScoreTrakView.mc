@@ -28,9 +28,20 @@ class ScoreTrakView extends WatchUi.View {
     public var home_name;
     public var guest_score = 0;
     public var guest_name;
-    public var active_sport;
     public var is_24_hour;
     public var flip_score_buttons;
+
+
+    public var active_sport;
+    public var sport_label;
+    public var home_score_label;
+    public var home_label;
+    public var guest_score_label;
+    public var guest_label;
+    public var time_label;
+    public var time;
+    public var time_string;
+    
 
     public var JCENTER;
     public var SCREEN_WIDTH;
@@ -42,9 +53,20 @@ class ScoreTrakView extends WatchUi.View {
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
+
         setLayout(Rez.Layouts.MainLayout(dc));
 
-        //Storage management and checking values
+        home_score_label = View.findDrawableById("HomeScore") as WatchUi.Text;
+        home_label = View.findDrawableById("HomeLabel") as WatchUi.Text;
+        guest_score_label = View.findDrawableById("GuestScore") as WatchUi.Text;
+        guest_label = View.findDrawableById("GuestLabel") as WatchUi.Text;
+        time_label = View.findDrawableById("TimeLabel") as WatchUi.Text;
+        sport_label = View.findDrawableById("SportLabel") as WatchUi.Text;
+        
+
+        
+
+        
 
         if(Application.Storage.getValue("flip_score_buttons") == null){
             Application.Storage.setValue("flip_score_buttons",false);
@@ -102,21 +124,9 @@ class ScoreTrakView extends WatchUi.View {
 
     }
 
-    // Update the view
-// Update the view
     function onUpdate(dc as Dc) as Void {
-        View.onUpdate(dc);
-        // 1. Find the Score labels by the IDs we set in the XML
-        var home_score_label = View.findDrawableById("HomeScore") as WatchUi.Text;
-        var home_label = View.findDrawableById("HomeLabel") as WatchUi.Text;
-        var guest_score_label = View.findDrawableById("GuestScore") as WatchUi.Text;
-        var guest_label = View.findDrawableById("GuestLabel") as WatchUi.Text;
-        var time_label = View.findDrawableById("TimeLabel") as WatchUi.Text;
-        var time;
-        var time_string;
         
-        var sport_label = View.findDrawableById("SportLabel") as WatchUi.Text;
-        active_sport = Application.Storage.getValue("active_sport");
+    
         
 
         // 2. Update the text of those labels with formatted scores
@@ -136,7 +146,14 @@ class ScoreTrakView extends WatchUi.View {
         );
         time_label.setText(time_string);
         //Instinct shape vs circle shape handling
-        if (System.getDeviceSettings().screenShape == System.SCREEN_SHAPE_SEMI_OCTAGON){
+
+
+    
+
+        // 3. Call the parent onUpdate. 
+        // This automatically clears the screen and draws everything in your XML layout.
+        View.onUpdate(dc);
+                if (System.getDeviceSettings().screenShape == System.SCREEN_SHAPE_SEMI_OCTAGON){
             
             sport_label.setText(formatSportName(active_sport));
             dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
@@ -155,14 +172,6 @@ class ScoreTrakView extends WatchUi.View {
             dc.drawLine(dc.getWidth()/2, dc.getHeight()/2 - score_line_offset*0.75, dc.getWidth()/2, dc.getHeight()/2 + score_line_offset*0.75);
             // dc.drawRectangle(0,home_label.locY,dc.getWidth(),1); 
         }
-
-        
-
-
-
-        // 3. Call the parent onUpdate. 
-        // This automatically clears the screen and draws everything in your XML layout.
-        
     }
 
     // Called when this View is removed from the screen. Save the
@@ -176,13 +185,15 @@ class ScoreTrakView extends WatchUi.View {
     function updateHome(value){
         home_score += value;
         Application.Storage.setValue("home_score",home_score);
+        WatchUi.requestUpdate();
         return true;
         
 
     }
     function updateGuest(value){
         guest_score += value;
-        Application.Storage.setValue("guest_score",home_score);
+        Application.Storage.setValue("guest_score",guest_score);
+        WatchUi.requestUpdate();
         return true;
     }
     function resetScores(){
