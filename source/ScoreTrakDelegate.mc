@@ -10,18 +10,29 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onMenu() as Boolean {
-        // var menu = new Rez.Menus.MainMenu();
+        
         WatchUi.pushView(new Rez.Menus.MainMenu(), new ScoreTrakMenuDelegate(_view, "MainMenu"), WatchUi.SLIDE_UP);
         return true;
     }
 
     function onPreviousPage(){
-        _view.updateHome(1);
+        if(Application.Storage.getValue("flip_score_buttons") == false){
+            _view.updateHome(1);
+        }
+        else{
+            _view.updateGuest(1);
+        }
         
         return true;
     }
     function onNextPage(){
-        _view.updateGuest(1);
+
+        if(Application.Storage.getValue("flip_score_buttons") == false){
+            _view.updateGuest(1);
+        }
+        else{
+            _view.updateHome(1);
+        }
         
         return true;
     }
