@@ -1,6 +1,7 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Application;
+import Toybox.Timer;
 
 //Function that removes space and turns to newline
 
@@ -42,6 +43,7 @@ public var tennis_games;
 public var tennis_matches;
 public var golf_holes;
 public var game_goal;
+public var scoring_mode;
 
 // Constants
 
@@ -57,10 +59,22 @@ public var SUB_SCREEN_R;
 public var instinct = false;
 public var is_24_hour;
 public var flip_score_buttons;
+public var updateTimer;
 
+
+// Drawing Element Variables
+
+public var score_line_offset;
+public var vertical_offset;
+
+// Activity Recording
+
+public var isRecording = false;
 
 function initialize() {
     View.initialize();
+    updateTimer = new Timer.Timer();
+    updateTimer.start(method(:onTimer), 1000, true);
 }
 
 
@@ -69,16 +83,6 @@ function onLayout(dc as Dc) as Void {
  // Get layout from xml
 
     setLayout(Rez.Layouts.MainLayout(dc));
-
-// Set labels from xml
-
-    home_score_label = View.findDrawableById("HomeScore") as WatchUi.Text;
-    home_label = View.findDrawableById("HomeLabel") as WatchUi.Text;
-    guest_score_label = View.findDrawableById("GuestScore") as WatchUi.Text;
-    guest_label = View.findDrawableById("GuestLabel") as WatchUi.Text;
-    time_label = View.findDrawableById("TimeLabel") as WatchUi.Text;
-    sport_label = View.findDrawableById("SportLabel") as WatchUi.Text;
-    active_sport = Application.Storage.getValue("active_sport");
 
 // First time startup, check if storage values are null, if null, set values.
 
@@ -153,69 +157,175 @@ function onLayout(dc as Dc) as Void {
 
     }
 
+// Set labels from xml
+
+    home_score_label = View.findDrawableById("HomeScore") as WatchUi.Text;
+    home_label = View.findDrawableById("HomeLabel") as WatchUi.Text;
+    guest_score_label = View.findDrawableById("GuestScore") as WatchUi.Text;
+    guest_label = View.findDrawableById("GuestLabel") as WatchUi.Text;
+    time_label = View.findDrawableById("TimeLabel") as WatchUi.Text;
+    sport_label = View.findDrawableById("SportLabel") as WatchUi.Text;
+    active_sport = Application.Storage.getValue("active_sport");
+
+// Get scoring mode
+
+    if(Application.Storage.getValue("scoring_mode") == null){
+
+        scoring_mode = "default";
+        Application.Storage.setValue("scoring_mode","default");
+    }
 }
 
 function onUpdate(dc as Dc) as Void {
+    time = System.getClockTime();
 
 // Update the labels
 
-    home_score_label.setText(home_score.format("%02d"));
-    home_label.setText(home_name);
-    guest_score_label.setText(guest_score.format("%02d"));
-    guest_label.setText(guest_name);
-    time = System.getClockTime();
-    
+    if(scoring_mode == "tennis"){
 
-if (Application.Storage.getValue("is24Hour") == true) {
-    time_string = Lang.format("$1$:$2$", [
-        time.hour.format("%02d"),
-        time.min.format("%02d")
-    ]);
+        home_score_label.setText(home_score.format("%02d"));
+        home_label.setText(home_name);
+        guest_score_label.setText(guest_score.format("%02d"));
+        guest_label.setText(guest_name);
+        
+    }else if(scoring_mode == "group"){
+        
 
-} else {
-
-    var hour = time.hour % 12;
-    if (hour == 0) {
-        hour = 12;
+    }else{
+        home_score_label.setText(home_score.format("%02d"));
+        home_label.setText(home_name);
+        guest_score_label.setText(guest_score.format("%02d"));
+        guest_label.setText(guest_name);
+        
     }
-    time_string = Lang.format("$1$:$2$", [
-        hour.format("%d"),
-        time.min.format("%02d")
-    ]);
-}
-time_label.setText(time_string);
+        
+
+    if (Application.Storage.getValue("is24Hour") == true) {
+        time_string = Lang.format("$1$:$2$", [
+            time.hour.format("%02d"),
+            time.min.format("%02d")
+        ]);
+
+    } else {
+
+        var hour = time.hour % 12;
+        if (hour == 0) {
+            hour = 12;
+        }
+        time_string = Lang.format("$1$:$2$", [
+            hour.format("%d"),
+            time.min.format("%02d")
+        ]);
+    }
+    time_label.setText(time_string);
 
 //Instinct shape vs circle handling. Only instinct watch shape gets special treatment due to asymmetrical screen design
 
     View.onUpdate(dc); // dc elements are drawn after labels from xml
+    if(scoring_mode == "default"){
 
-    if (instinct){
+        score_line_offset = dc.getHeight()/6;
+        vertical_offset = 0;
 
-        sport_label.setText(formatSportName(active_sport));
+        if (instinct){
 
-        dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(3);
-        dc.drawLine(0,dc.getHeight()*0.58,dc.getWidth(),dc.getHeight()*0.58);
-        dc.drawLine(0,dc.getHeight()*0.84,dc.getWidth(),dc.getHeight()*0.84);
-        dc.drawLine(dc.getWidth()/2, dc.getHeight()*.63, dc.getWidth()/2, dc.getHeight()*.79);
-        dc.fillCircle(SUB_SCREEN_X,SUB_SCREEN_Y,SUB_SCREEN_R);
-        dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
-        dc.drawText(SUB_SCREEN_X,SUB_SCREEN_Y,Graphics.FONT_TINY,time_string,JCENTER);
-        
-    }
-    else{
-        var score_line_offset = dc.getHeight()/6;
-        sport_label.setText(active_sport);
-        dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(5);
-        dc.drawLine(0,dc.getHeight()/2 - score_line_offset,dc.getWidth(),dc.getHeight()/2 - score_line_offset);
-        dc.drawLine(0,dc.getHeight()/2 + score_line_offset,dc.getWidth(),dc.getHeight()/2 + score_line_offset);
-        dc.drawLine(dc.getWidth()/2, dc.getHeight()/2 - score_line_offset*0.75, dc.getWidth()/2, dc.getHeight()/2 + score_line_offset*0.75);
-        // dc.drawRectangle(0,home_label.locY,dc.getWidth(),1); 
+            sport_label.setText(formatSportName(active_sport));
+            dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+            dc.setPenWidth(3);
+            dc.drawLine(0,dc.getHeight()*0.58,dc.getWidth(),dc.getHeight()*0.58);
+            dc.drawLine(0,dc.getHeight()*0.84,dc.getWidth(),dc.getHeight()*0.84);
+            dc.drawLine(dc.getWidth()/2, dc.getHeight()*.63, dc.getWidth()/2, dc.getHeight()*.79);
+            dc.fillCircle(SUB_SCREEN_X,SUB_SCREEN_Y,SUB_SCREEN_R);
+            dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
+            dc.drawText(SUB_SCREEN_X,SUB_SCREEN_Y,Graphics.FONT_MEDIUM,time_string,JCENTER);
+            
+        } else {
+
+
+            sport_label.setText(active_sport);
+
+            dc.setColor(Graphics.COLOR_WHITE,
+            Graphics.COLOR_TRANSPARENT);
+
+            dc.setPenWidth(5);
+
+            dc.drawLine(
+                0,
+                dc.getHeight()/2 - score_line_offset + vertical_offset,
+                dc.getWidth(),
+                dc.getHeight()/2 - score_line_offset + vertical_offset
+            );
+
+            dc.drawLine(
+                0,
+                dc.getHeight()/2 + score_line_offset + vertical_offset,
+                dc.getWidth(),
+                dc.getHeight()/2 + score_line_offset + vertical_offset
+            );
+            
+            dc.drawLine(
+                dc.getWidth()/2,
+                dc.getHeight()/2 - score_line_offset*0.75  + vertical_offset,
+                dc.getWidth()/2,
+                dc.getHeight()/2 + score_line_offset*0.75 + vertical_offset
+            );
+            
+        }
+    } else if (scoring_mode == "group") {
+
+        score_line_offset = dc.getHeight()/6;
+        vertical_offset = 0;
+
+        if (instinct){
+
+            sport_label.setText(formatSportName(active_sport));
+            dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+            dc.setPenWidth(3);
+            dc.drawLine(0,dc.getHeight()*0.58 + vertical_offset,dc.getWidth(),dc.getHeight()*0.58 + vertical_offset);
+            dc.drawLine(0,dc.getHeight()*0.84 + vertical_offset,dc.getWidth(),dc.getHeight()*0.84 + vertical_offset);
+            dc.drawLine(dc.getWidth()/2, dc.getHeight()*.63 + vertical_offset, dc.getWidth()/2, dc.getHeight()*.79 + vertical_offset);
+            dc.fillCircle(SUB_SCREEN_X,SUB_SCREEN_Y,SUB_SCREEN_R);
+            dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
+            dc.drawText(SUB_SCREEN_X,SUB_SCREEN_Y,Graphics.FONT_MEDIUM,time_string,JCENTER);
+            
+        } else {
+
+            sport_label.setText(active_sport);
+
+            dc.setColor(Graphics.COLOR_WHITE,
+            Graphics.COLOR_TRANSPARENT);
+
+            dc.setPenWidth(5);
+
+            dc.drawLine(
+                0,
+                dc.getHeight()/2 - score_line_offset + vertical_offset,
+                dc.getWidth(),
+                dc.getHeight()/2 - score_line_offset + vertical_offset
+            );
+
+            dc.drawLine(
+                0,
+                dc.getHeight()/2 + score_line_offset + vertical_offset,
+                dc.getWidth(),
+                dc.getHeight()/2 + score_line_offset + vertical_offset
+            );
+            
+            dc.drawLine(
+                dc.getWidth()/2,
+                dc.getHeight()/2 - score_line_offset*0.75  + vertical_offset,
+                dc.getWidth()/2,
+                dc.getHeight()/2 + score_line_offset*0.75 + vertical_offset
+            );
+            
+        }
+
     }
 }
 
-
+function onTimer() as Void{
+    WatchUi.requestUpdate();
+}
 
 // Input handled functions, called from Delegate
 

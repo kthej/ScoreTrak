@@ -1,0 +1,10 @@
+<menu2 id="GolfMenu"  title="Golf Settings" >
+    <menu-item id="player_minus" label="Player Decrease" />
+    <menu-item id="new_hole" label="New Hole" />
+    <menu-item id="start_activity" label="Start Activity" />
+    <menu-item id="change_sport" label="Change Sport" />
+    <menu-item id="edit_players" label="Edit Players" />
+    <menu-item id="advanced_settings" label="Advanced Settings" />
+    <menu-item id="reset_game" label="Reset Game" />
+
+</menu2>

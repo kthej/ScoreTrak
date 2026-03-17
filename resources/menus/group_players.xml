@@ -1,0 +1,15 @@
+<menu2 id="GroupMenu"  title="Group Settings" >
+    <menu-item id="player_count" label="# Of Players" />
+    <menu-item id="player_1_name" label="Player 1 Name" />
+    <menu-item id="player_2_name" label="Player 2 Name" />
+    <menu-item id="player_3_name" label="Player 3 Name" />
+    <menu-item id="player_4_name" label="Player 4 Name" />
+    <menu-item id="player_5_name" label="Player 5 Name" />
+    <menu-item id="player_6_name" label="Player 6 Name" />
+    <menu-item id="player_7_name" label="Player 7 Name" />
+    <menu-item id="player_8_name" label="Player 8 Name" />
+    <menu-item id="player_9_name" label="Player 9 Name" />
+    <menu-item id="player_10_name" label="Player 10 Name" />
+    <menu-item id="reset_players" label="Reset Player Names" />
+
+</menu2>
