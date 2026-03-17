@@ -37,10 +37,22 @@ public var time_label;
 public var time;
 public var time_string;
 
+public var tennis_games;
+public var tennis_matches;
+
+public var golf_holes;
+
+public var game_goal;
 
 public var JCENTER;
 public var SCREEN_WIDTH;
 public var SCREEN_HEIGHT;
+public var SUB_SCREEN_X;
+public var SUB_SCREEN_Y;
+public var SUB_SCREEN_R;
+
+public var instinct = false;
+
 
 
 // Initialize. Self explanatory.
@@ -99,11 +111,25 @@ function onLayout(dc as Dc) as Void {
         Application.Storage.setValue("is_24_hour",true);
     }
 
+    if (Application.Storage.getValue("is24Hour") == null){
+        Application.Storage.setValue("is24Hour","24");
+    }
+
+    
 // Constant values
 
     JCENTER = Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER;
     SCREEN_WIDTH = dc.getWidth();
     SCREEN_HEIGHT = dc.getHeight();
+
+    if(System.getDeviceSettings().screenShape == System.SCREEN_SHAPE_SEMI_OCTAGON){
+
+        instinct = true;
+        SUB_SCREEN_X = WatchUi.getSubscreen().x + WatchUi.getSubscreen().width/2;
+        SUB_SCREEN_Y = WatchUi.getSubscreen().y + WatchUi.getSubscreen().height/2;
+        SUB_SCREEN_R = WatchUi.getSubscreen().width/2;
+
+    }
 
 // Check if scores are not null, then load into memory
 
@@ -136,26 +162,43 @@ function onUpdate(dc as Dc) as Void {
     guest_label.setText(guest_name);
     time = System.getClockTime();
     
-    time_string = Lang.format(
-        "$1$:$2$",
-        [
-            time.hour.format("%02d"),
-            time.min.format("%02d")
-        ]
-    );
+
+if (Application.Storage.getValue("is24Hour") == true) {
+    time_string = Lang.format("$1$:$2$", [
+        time.hour.format("%02d"),
+        time.min.format("%02d")
+    ]);
+
+}
+else if(Application.Storage.getValue("is24Hour") == false) {
+    var hour = time.hour % 12;
+    if (hour == 0) {
+        hour = 12;
+    }
+    time_string = Lang.format("$1$:$2$", [
+        hour.format("%d"),
+        time.min.format("%02d")
+    ]);
+}
     time_label.setText(time_string);
 
 //Instinct shape vs circle handling. Only instinct watch shape gets special treatment due to asymmetrical screen design
 
     View.onUpdate(dc); // dc elements are drawn after labels from xml
 
-    if (System.getDeviceSettings().screenShape == System.SCREEN_SHAPE_SEMI_OCTAGON){
+    if (instinct){
+
         sport_label.setText(formatSportName(active_sport));
+
         dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(3);
         dc.drawLine(0,dc.getHeight()*0.58,dc.getWidth(),dc.getHeight()*0.58);
         dc.drawLine(0,dc.getHeight()*0.84,dc.getWidth(),dc.getHeight()*0.84);
         dc.drawLine(dc.getWidth()/2, dc.getHeight()*.63, dc.getWidth()/2, dc.getHeight()*.79);
+        dc.fillCircle(SUB_SCREEN_X,SUB_SCREEN_Y,SUB_SCREEN_R);
+        dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
+        dc.drawText(SUB_SCREEN_X,SUB_SCREEN_Y,Graphics.FONT_TINY,time_string,JCENTER);
+        
     }
     else{
         var score_line_offset = dc.getHeight()/6;
