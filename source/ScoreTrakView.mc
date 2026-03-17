@@ -17,32 +17,33 @@ function formatSportName(name) {
 class ScoreTrakView extends WatchUi.View {
 // Begin Class ////////////////////////////////////////////////////////////////////////////////////
 
-// Allocate variables to memory
+// Main App Variables
 
 public var home_score = 0;
 public var home_name;
 public var guest_score = 0;
 public var guest_name;
-public var is_24_hour;
-public var flip_score_buttons;
-
-
 public var active_sport;
+
+// Labels
+
 public var sport_label;
 public var home_score_label;
 public var home_label;
 public var guest_score_label;
 public var guest_label;
 public var time_label;
-public var time;
 public var time_string;
+public var time;
+
+// Special Mode Variables
 
 public var tennis_games;
 public var tennis_matches;
-
 public var golf_holes;
-
 public var game_goal;
+
+// Constants
 
 public var JCENTER;
 public var SCREEN_WIDTH;
@@ -51,11 +52,12 @@ public var SUB_SCREEN_X;
 public var SUB_SCREEN_Y;
 public var SUB_SCREEN_R;
 
+
+// Watch Setup
 public var instinct = false;
+public var is_24_hour;
+public var flip_score_buttons;
 
-
-
-// Initialize. Self explanatory.
 
 function initialize() {
     View.initialize();
@@ -68,7 +70,7 @@ function onLayout(dc as Dc) as Void {
 
     setLayout(Rez.Layouts.MainLayout(dc));
 
-// Set necessary variables
+// Set labels from xml
 
     home_score_label = View.findDrawableById("HomeScore") as WatchUi.Text;
     home_label = View.findDrawableById("HomeLabel") as WatchUi.Text;
@@ -80,43 +82,63 @@ function onLayout(dc as Dc) as Void {
 
 // First time startup, check if storage values are null, if null, set values.
 
+// Flip Score 
+
     if(Application.Storage.getValue("flip_score_buttons") == null){
         Application.Storage.setValue("flip_score_buttons",false);
-    }
-    
-    else{
+    } else {
     flip_score_buttons = Application.Storage.getValue("flip_score_buttons");
     }
 
+// Active Sport
+
     if (Application.Storage.getValue("active_sport") != null){
+
         active_sport = Application.Storage.getValue("active_sport");
+
+    } else {
+
+        Application.Storage.setValue("active_sport","Score Keeper");
+        active_sport = Application.Storage.getValue("active_sport");
+        
     }
+
+// Home and Guest Names
 
     if(Application.Storage.getValue("home_name") != null){
     home_name = Application.Storage.getValue("home_name");
-    }
-
-    else{
+    } else {
         home_name = "HOME";
     }
 
     if(Application.Storage.getValue("guest_name") != null){
     guest_name = Application.Storage.getValue("guest_name");
-    }
-
-    else{
+    } else {
         guest_name = "GUEST";
     }
-    if(Application.Storage.getValue("is_24_hour") == null){
-        Application.Storage.setValue("is_24_hour",true);
-    }
+
+// 12/24 Hour
 
     if (Application.Storage.getValue("is24Hour") == null){
-        Application.Storage.setValue("is24Hour","24");
+        Application.Storage.setValue("is24Hour",false);
     }
 
-    
-// Constant values
+// Home and Guest Scores
+
+    if(Application.Storage.getValue("home_score") != null and Application.Storage.getValue("guest_score") != null){
+
+    home_score = Application.Storage.getValue("home_score");
+    guest_score = Application.Storage.getValue("guest_score");
+
+    } else {
+
+        home_score = 0;
+        guest_score = 0;
+
+    }
+
+
+// Constants
 
     JCENTER = Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER;
     SCREEN_WIDTH = dc.getWidth();
@@ -131,25 +153,6 @@ function onLayout(dc as Dc) as Void {
 
     }
 
-// Check if scores are not null, then load into memory
-
-    if(Application.Storage.getValue("home_score") != null and Application.Storage.getValue("guest_score") != null){
-
-    home_score = Application.Storage.getValue("home_score");
-    guest_score = Application.Storage.getValue("guest_score");
-
-    }
-    else{
-
-        home_score = 0;
-        guest_score = 0;
-
-    }
-    if(Application.Storage.getValue("active_sport") == null){
-
-        Application.Storage.setValue("active_sport","Score Keeper");
-        
-    }
 }
 
 function onUpdate(dc as Dc) as Void {
@@ -169,8 +172,8 @@ if (Application.Storage.getValue("is24Hour") == true) {
         time.min.format("%02d")
     ]);
 
-}
-else if(Application.Storage.getValue("is24Hour") == false) {
+} else {
+
     var hour = time.hour % 12;
     if (hour == 0) {
         hour = 12;
@@ -180,7 +183,7 @@ else if(Application.Storage.getValue("is24Hour") == false) {
         time.min.format("%02d")
     ]);
 }
-    time_label.setText(time_string);
+time_label.setText(time_string);
 
 //Instinct shape vs circle handling. Only instinct watch shape gets special treatment due to asymmetrical screen design
 
@@ -218,43 +221,44 @@ else if(Application.Storage.getValue("is24Hour") == false) {
 
 function updateHome(value){
     home_score += value;
-    Application.Storage.setValue("home_score",home_score);
     WatchUi.requestUpdate();
     return true;
-    
-
 }
+
 function updateGuest(value){
     guest_score += value;
-    Application.Storage.setValue("guest_score",guest_score);
     WatchUi.requestUpdate();
     return true;
 }
+
 function resetScores(){
     home_score = 0;
-    Application.Storage.setValue("home_score",0);
     guest_score = 0;
-    Application.Storage.setValue("guest_score",0);
-
 }
+
 function setHomeName(text){
     home_name = text;
     Application.Storage.setValue("home_name",home_name);
     
 }
+
 function setGuestName(text){
     guest_name = text;
     Application.Storage.setValue("guest_name",guest_name);
 }
 function resetNames(){
+
     home_name = "HOME";
     guest_name = "GUEST";
     Application.Storage.setValue("home_name","HOME");
     Application.Storage.setValue("guest_name","GUEST");
 }
+
+/*
 function setCustomSportName(text){
     
 }
+*/
 
 // End class //////////////////////////////////////////////////////////////////////////////////////
 }

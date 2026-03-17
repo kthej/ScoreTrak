@@ -1,4 +1,4 @@
-<menu2 id="TennisMenu"  title="Settings" >
+<menu2 id="TennisMenu"  title="Tennis Settings" >
     <menu-item id="home_minus" label="Home Decrease" />
     <menu-item id="guest_minus" label="Guest Decrease" />
     <menu-item id="reset_scores" label="Reset Scores" />

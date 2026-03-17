@@ -23,6 +23,7 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
             WatchUi.popView(WatchUi.SLIDE_DOWN);
             WatchUi.requestUpdate();
             System.println("Home -1");
+            
         } else if (id == :guest_minus) {
             _view.updateGuest(-1);
             WatchUi.popView(WatchUi.SLIDE_DOWN);
@@ -62,6 +63,7 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
 
     else if(_menu_id.equals("SportMenu")){
         var sportName = item.getLabel();
+        _view.active_sport = sportName;
         Application.Storage.setValue("active_sport",sportName);
 
         WatchUi.popView(WatchUi.SLIDE_DOWN);
