@@ -1,0 +1,9 @@
+<menu2 id="RecordingMenu"  title="Settings" >
+    <menu-item id="home_minus" label="Home -1" />
+    <menu-item id="guest_minus" label="Guest -1" />
+    <menu-item id="reset_scores" label="Reset Scores" />
+    <menu-item id="start_activity" label="Stop Activity" />
+    <!-- <menu-item id="change_sport" label="Change Sport" /> -->
+    <menu-item id="advanced_settings" label="Advanced Settings" />
+
+</menu2>

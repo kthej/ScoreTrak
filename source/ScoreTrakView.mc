@@ -2,6 +2,9 @@ import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Application;
 import Toybox.Timer;
+import Toybox.Activity;
+import Toybox.ActivityRecording;
+import Toybox.Attention;
 
 //Function that removes space and turns to newline
 
@@ -109,6 +112,7 @@ public var vertical_offset;
 // Activity Recording
 
 public var isRecording = false;
+public var activitySession;
 
 function initialize() {
     View.initialize();
@@ -256,7 +260,7 @@ function onUpdate(dc as Dc) as Void {
         }
     } else {
         // Standard Scoring
-        var strings = ["0", "15", "30", "40"];
+        var strings = ["0", "15", "30", "40","AD","GAME"];
         home_score_label.setText(strings[home_score]);
         guest_score_label.setText(strings[guest_score]);
     }
@@ -358,7 +362,7 @@ function onUpdate(dc as Dc) as Void {
             dc.setPenWidth(3);
             dc.drawLine(0,dc.getHeight()*0.58 + vertical_offset,dc.getWidth(),dc.getHeight()*0.58 + vertical_offset);
             dc.drawLine(0,dc.getHeight()*0.84 + vertical_offset,dc.getWidth(),dc.getHeight()*0.84 + vertical_offset);
-            dc.drawLine(dc.getWidth()/2, dc.getHeight()*.63 + vertical_offset, dc.getWidth()/2, dc.getHeight()*.79 + vertical_offset);
+            // dc.drawLine(dc.getWidth()/2, dc.getHeight()*.63 + vertical_offset, dc.getWidth()/2, dc.getHeight()*.79 + vertical_offset);
             dc.fillCircle(SUB_SCREEN_X,SUB_SCREEN_Y,SUB_SCREEN_R);
             dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
             dc.drawText(SUB_SCREEN_X,SUB_SCREEN_Y,Graphics.FONT_MEDIUM,time_string,JCENTER);
@@ -373,7 +377,7 @@ function onUpdate(dc as Dc) as Void {
             dc.setPenWidth(5);
             dc.drawLine(0, dc.getHeight()/2 - score_line_offset + vertical_offset, dc.getWidth(), dc.getHeight()/2 - score_line_offset + vertical_offset);
             dc.drawLine(0, dc.getHeight()/2 + score_line_offset + vertical_offset, dc.getWidth(), dc.getHeight()/2 + score_line_offset + vertical_offset);
-            dc.drawLine(dc.getWidth()/2, dc.getHeight()/2 - score_line_offset*0.75 + vertical_offset, dc.getWidth()/2, dc.getHeight()/2 + score_line_offset*0.75 + vertical_offset);
+            // dc.drawLine(dc.getWidth()/2, dc.getHeight()/2 - score_line_offset*0.75 + vertical_offset, dc.getWidth()/2, dc.getHeight()/2 + score_line_offset*0.75 + vertical_offset);
             
         }
 
@@ -436,6 +440,101 @@ function setCustomSportName(text){
     
 }
 */
+function startSound() {
+    if (Attention has :vibrate) {
+        // Single strong pulse: 100% intensity for 100ms
+        var vibeProfile = [new Attention.VibeProfile(100, 1000)];
+        Attention.vibrate(vibeProfile);
+    }
+    if (Attention has :playTone) {
+        // Standard system start tone
+        Attention.playTone(Attention.TONE_START);
+    }
+}
+
+
+function stopSound() {
+    if (Attention has :vibrate) {
+        // Double pulse: 100ms on, 50ms off, 100ms on
+        var vibeProfile = [
+            new Attention.VibeProfile(100, 1000)
+        ];
+        Attention.vibrate(vibeProfile);
+    }
+    if (Attention has :playTone) {
+        // Standard system stop tone
+        Attention.playTone(Attention.TONE_STOP);
+    }
+}
+
+function startRecording() {
+    if (Toybox has :ActivityRecording) {
+        startSound();
+        if (activitySession == null) {
+            activitySession = ActivityRecording.createSession({
+                :name => "ScoreTrak",
+                :sport => Activity.SPORT_BASKETBALL,      // Non-deprecated constant
+                :subSport => Activity.SUB_SPORT_MATCH     // Non-deprecated constant
+            });
+            
+            activitySession.start();
+            isRecording = true;
+            
+            // Add your feedback here
+            
+            
+        }
+    }
+}
+
+function stopRecording() {
+    if (activitySession != null) {
+        stopSound();
+        activitySession.stop();
+
+        
+        // var dialog = new WatchUi.Confirmation("Save Activity?");
+        saveChoice(true);
+        
+
+    }
+}
+
+function saveChoice(shouldSave) {
+    WatchUi.pushView(new SavingView(), null, WatchUi.SLIDE_IMMEDIATE);
+
+    if (shouldSave) {
+        activitySession.save();
+    } else {
+        activitySession.discard();
+    }
+
+    activitySession = null;
+    isRecording = false;
+    // WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
+}
 
 // End class //////////////////////////////////////////////////////////////////////////////////////
+}
+
+class SavingView extends WatchUi.View {
+    function initialize() {
+        View.initialize();
+    }
+
+    function onUpdate(dc as Dc) as Void {
+        // Black background
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        dc.clear();
+
+        // White "Saving..." text in center
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(
+            dc.getWidth() / 2,
+            dc.getHeight() / 2,
+            Graphics.FONT_MEDIUM,
+            "Saving...",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+        );
+    }
 }

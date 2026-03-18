@@ -22,7 +22,7 @@ function onSelect(item as WatchUi.MenuItem) as Void {
 
 // Default
 
-    if (_menu_id.equals("MainMenu") or _menu_id.equals("TennisMenu")){
+    if (_menu_id.equals("MainMenu") or _menu_id.equals("TennisMenu") or _menu_id.equals("RecordingMenu")){
 
         if (id == :home_minus) {
             _view.updateHome(-1);
@@ -45,6 +45,15 @@ function onSelect(item as WatchUi.MenuItem) as Void {
             System.println("Reset Scores");
 
         } else if(id ==:start_activity) {
+
+            if(!_view.isRecording){
+                _view.isRecording = true;
+                _view.startRecording();
+            }
+            else{
+                _view.isRecording = false;
+                _view.stopRecording();
+            }
 
             WatchUi.popView(WatchUi.SLIDE_DOWN);
             WatchUi.requestUpdate();

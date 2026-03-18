@@ -55,6 +55,17 @@ module Rez {
             }
         }
 
+        class RecordingMenu extends WatchUi.Menu2 {
+            function initialize() {
+                Menu2.initialize({:title=>"Settings"});
+                addItem(new WatchUi.MenuItem("Home -1", null, :home_minus, null));
+                addItem(new WatchUi.MenuItem("Guest -1", null, :guest_minus, null));
+                addItem(new WatchUi.MenuItem("Reset Scores", null, :reset_scores, null));
+                addItem(new WatchUi.MenuItem("Stop Activity", null, :start_activity, null));
+                addItem(new WatchUi.MenuItem("Advanced Settings", null, :advanced_settings, null));
+            }
+        }
+
         class TimedMenu extends WatchUi.Menu2 {
             function initialize() {
                 Menu2.initialize({:title=>"Settings"});
@@ -84,8 +95,9 @@ module Rez {
                 addItem(new WatchUi.MenuItem("Home Decrease", null, :home_minus, null));
                 addItem(new WatchUi.MenuItem("Guest Decrease", null, :guest_minus, null));
                 addItem(new WatchUi.MenuItem("Reset Scores", null, :reset_scores, null));
-                addItem(new WatchUi.MenuItem("Singles/Doubles", null, :singles_doubles, null));
+                addItem(new WatchUi.MenuItem("Start Activity", null, :start_activity, null));
                 addItem(new WatchUi.MenuItem("Change Sport", null, :change_sport, null));
+                addItem(new WatchUi.MenuItem("Tennis Settings", null, :tennis_settings, null));
                 addItem(new WatchUi.MenuItem("Advanced Settings", null, :advanced_settings, null));
             }
         }

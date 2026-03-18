@@ -10,11 +10,16 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onMenu() as Boolean {
+        if(_view.isRecording == false){
         if(Application.Storage.getValue("scoring_mode") != 1){
         WatchUi.pushView(new Rez.Menus.MainMenu(), new ScoreTrakMenuDelegate(_view, "MainMenu"), WatchUi.SLIDE_UP);
         
         } else {
             WatchUi.pushView(new Rez.Menus.TennisMenu(), new ScoreTrakMenuDelegate(_view, "TennisMenu"), WatchUi.SLIDE_UP);
+        }
+        }
+        else{
+            WatchUi.pushView(new Rez.Menus.RecordingMenu(), new ScoreTrakMenuDelegate(_view, "RecordingMenu"), WatchUi.SLIDE_UP);
         }
         return true;
     }
@@ -47,6 +52,16 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
 
         }
         return true;
+    }
+    function onBack(){
+        if(_view.isRecording){
+            return true;
+            
+            
+            
+        }
+        
+        return false;
     }
 
 }

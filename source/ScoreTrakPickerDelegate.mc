@@ -19,3 +19,4 @@ class ScoreTrakTextDelegate extends WatchUi.TextPickerDelegate {
         return true;
     }
 }
+
