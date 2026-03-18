@@ -23,33 +23,70 @@ module Rez {
 
             var rez_cmp_local_text_GuestScore = new WatchUi.Text({:identifier=>"GuestScore", :color=>Graphics.COLOR_WHITE, :locX=>(rez_cmp_local_var_dc_getWidth * (75 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (70 / 100.0)), :text=>"00", :justification=>Graphics.TEXT_JUSTIFY_CENTER|Graphics.TEXT_JUSTIFY_VCENTER, :font=>Graphics.FONT_NUMBER_HOT});
 
-            var rez_cmp_local_text_SportLabel = new WatchUi.Text({:identifier=>"SportLabel", :color=>Graphics.COLOR_WHITE, :locX=>(rez_cmp_local_var_dc_getWidth * (55 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (15 / 100.0)), :text=>"Sport", :justification=>Graphics.TEXT_JUSTIFY_RIGHT|Graphics.TEXT_JUSTIFY_VCENTER, :font=>Graphics.FONT_TINY});
+            var rez_cmp_local_text_SportLabel = new WatchUi.Text({:identifier=>"SportLabel", :color=>Graphics.COLOR_WHITE, :locX=>(rez_cmp_local_var_dc_getWidth * (55 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (15 / 100.0)), :text=>"Sport", :justification=>Graphics.TEXT_JUSTIFY_RIGHT|Graphics.TEXT_JUSTIFY_VCENTER, :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_text_TimeLabel = new WatchUi.Text({:identifier=>"TimeLabel", :color=>Graphics.COLOR_WHITE, :locX=>(rez_cmp_local_var_dc_getWidth * (50 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (92 / 100.0)), :text=>"10:00", :justification=>Graphics.TEXT_JUSTIFY_CENTER|Graphics.TEXT_JUSTIFY_VCENTER, :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_TimeLabel = new WatchUi.Text({:identifier=>"TimeLabel", :color=>Graphics.COLOR_BLACK, :locX=>(rez_cmp_local_var_dc_getWidth * (82 / 100.0)), :locY=>(rez_cmp_local_var_dc_getHeight * (18 / 100.0)), :text=>"10:00", :justification=>Graphics.TEXT_JUSTIFY_CENTER|Graphics.TEXT_JUSTIFY_VCENTER, :font=>Graphics.FONT_XTINY});
 
             return [rez_cmp_local_text_HomeLabel, rez_cmp_local_text_HomeScore, rez_cmp_local_text_GuestLabel, rez_cmp_local_text_GuestScore, rez_cmp_local_text_SportLabel, rez_cmp_local_text_TimeLabel] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
     module Menus {
-        class AdvancedMenu extends WatchUi.Menu2 {
+        class MainMenu extends WatchUi.Menu2 {
             function initialize() {
-                Menu2.initialize({:title=>"Advanced"});
+                Menu2.initialize({:title=>"Settings"});
+                addItem(new WatchUi.MenuItem("Home -1", null, :home_minus, null));
+                addItem(new WatchUi.MenuItem("Guest -1", null, :guest_minus, null));
+                addItem(new WatchUi.MenuItem("Reset Scores", null, :reset_scores, null));
+                addItem(new WatchUi.MenuItem("Start Activity", null, :start_activity, null));
+                addItem(new WatchUi.MenuItem("Change Sport", null, :change_sport, null));
+                addItem(new WatchUi.MenuItem("Advanced Settings", null, :advanced_settings, null));
+            }
+        }
+
+        class TimerMenu extends WatchUi.Menu2 {
+            function initialize() {
+                Menu2.initialize({:title=>"Timer"});
                 addItem(new WatchUi.MenuItem("Home Name", null, :rename_home, null));
                 addItem(new WatchUi.MenuItem("Guest Name", null, :rename_guest, null));
+                addItem(new WatchUi.MenuItem("12/24 hour toggle", null, :time_format, null));
                 addItem(new WatchUi.MenuItem("Flip Score Buttons", null, :flip_score_buttons, null));
                 addItem(new WatchUi.MenuItem("Reset Home and Guest names", null, :reset_names, null));
             }
         }
 
-        class MainMenu extends WatchUi.Menu2 {
+        class TimedMenu extends WatchUi.Menu2 {
             function initialize() {
                 Menu2.initialize({:title=>"Settings"});
-                addItem(new WatchUi.MenuItem("Home -1", null, :item_1, null));
-                addItem(new WatchUi.MenuItem("Guest -1", null, :item_2, null));
-                addItem(new WatchUi.MenuItem("Reset Scores", null, :item_3, null));
-                addItem(new WatchUi.MenuItem("Change Sport", null, :item_5, null));
-                addItem(new WatchUi.MenuItem("Advanced Settings", null, :item_6, null));
+                addItem(new WatchUi.MenuItem("Home Decrease", null, :home_minus, null));
+                addItem(new WatchUi.MenuItem("Guest Decrease", null, :guest_minus, null));
+                addItem(new WatchUi.MenuItem("Reset Scores", null, :reset_scores, null));
+                addItem(new WatchUi.MenuItem("Timer", null, :timer_settings, null));
+                addItem(new WatchUi.MenuItem("Change Sport", null, :change_sport, null));
+                addItem(new WatchUi.MenuItem("Advanced Settings", null, :advanced_settings, null));
+            }
+        }
+
+        class AdvancedMenu extends WatchUi.Menu2 {
+            function initialize() {
+                Menu2.initialize({:title=>"Advanced"});
+                addItem(new WatchUi.MenuItem("Home Name", null, :rename_home, null));
+                addItem(new WatchUi.MenuItem("Guest Name", null, :rename_guest, null));
+                addItem(new WatchUi.MenuItem("12/24 hour toggle", null, :time_format, null));
+                addItem(new WatchUi.MenuItem("Flip Score Buttons", null, :flip_score_buttons, null));
+                addItem(new WatchUi.MenuItem("Reset Home and Guest names", null, :reset_names, null));
+            }
+        }
+
+        class TennisMenu extends WatchUi.Menu2 {
+            function initialize() {
+                Menu2.initialize({:title=>"Tennis Settings"});
+                addItem(new WatchUi.MenuItem("Home Decrease", null, :home_minus, null));
+                addItem(new WatchUi.MenuItem("Guest Decrease", null, :guest_minus, null));
+                addItem(new WatchUi.MenuItem("Reset Scores", null, :reset_scores, null));
+                addItem(new WatchUi.MenuItem("Singles/Doubles", null, :singles_doubles, null));
+                addItem(new WatchUi.MenuItem("Change Sport", null, :change_sport, null));
+                addItem(new WatchUi.MenuItem("Advanced Settings", null, :advanced_settings, null));
             }
         }
 
@@ -83,6 +120,50 @@ module Rez {
                 addItem(new WatchUi.MenuItem("Mini Golf", "Group Sport", :sport_mini_golf, null));
                 addItem(new WatchUi.MenuItem("Disc Golf", "Group Sport", :sport_disc_golf, null));
                 addItem(new WatchUi.MenuItem("Board Game", "Group Sport", :sport_board_game, null));
+            }
+        }
+
+        class GolfMenu extends WatchUi.Menu2 {
+            function initialize() {
+                Menu2.initialize({:title=>"Golf Settings"});
+                addItem(new WatchUi.MenuItem("Player Decrease", null, :player_minus, null));
+                addItem(new WatchUi.MenuItem("New Hole", null, :new_hole, null));
+                addItem(new WatchUi.MenuItem("Start Activity", null, :start_activity, null));
+                addItem(new WatchUi.MenuItem("Change Sport", null, :change_sport, null));
+                addItem(new WatchUi.MenuItem("Edit Players", null, :edit_players, null));
+                addItem(new WatchUi.MenuItem("Advanced Settings", null, :advanced_settings, null));
+                addItem(new WatchUi.MenuItem("Reset Game", null, :reset_game, null));
+            }
+        }
+
+        class TargetMenu extends WatchUi.Menu2 {
+            function initialize() {
+                Menu2.initialize({:title=>"Settings"});
+                addItem(new WatchUi.MenuItem("Home -1", null, :home_minus, null));
+                addItem(new WatchUi.MenuItem("Guest -1", null, :guest_minus, null));
+                addItem(new WatchUi.MenuItem("Reset Scores", null, :reset_scores, null));
+                addItem(new WatchUi.MenuItem("Set Target Points", null, :set_goal, null));
+                addItem(new WatchUi.MenuItem("Start Activity", null, :start_activity, null));
+                addItem(new WatchUi.MenuItem("Change Sport", null, :change_sport, null));
+                addItem(new WatchUi.MenuItem("Advanced Settings", null, :advanced_settings, null));
+            }
+        }
+
+        class GroupMenu extends WatchUi.Menu2 {
+            function initialize() {
+                Menu2.initialize({:title=>"Group Settings"});
+                addItem(new WatchUi.MenuItem("# Of Players", null, :player_count, null));
+                addItem(new WatchUi.MenuItem("Player 1 Name", null, :player_1_name, null));
+                addItem(new WatchUi.MenuItem("Player 2 Name", null, :player_2_name, null));
+                addItem(new WatchUi.MenuItem("Player 3 Name", null, :player_3_name, null));
+                addItem(new WatchUi.MenuItem("Player 4 Name", null, :player_4_name, null));
+                addItem(new WatchUi.MenuItem("Player 5 Name", null, :player_5_name, null));
+                addItem(new WatchUi.MenuItem("Player 6 Name", null, :player_6_name, null));
+                addItem(new WatchUi.MenuItem("Player 7 Name", null, :player_7_name, null));
+                addItem(new WatchUi.MenuItem("Player 8 Name", null, :player_8_name, null));
+                addItem(new WatchUi.MenuItem("Player 9 Name", null, :player_9_name, null));
+                addItem(new WatchUi.MenuItem("Player 10 Name", null, :player_10_name, null));
+                addItem(new WatchUi.MenuItem("Reset Player Names", null, :reset_players, null));
             }
         }
     } // Menus

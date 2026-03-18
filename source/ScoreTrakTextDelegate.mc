@@ -15,6 +15,7 @@ class ScoreTrakTextDelegate extends WatchUi.TextPickerDelegate {
             _callback.invoke(text); // This "returns" the text to your chosen function
         }
         WatchUi.popView(WatchUi.SLIDE_DOWN);
+        System.println("Text input successfully");
         return true;
     }
 }

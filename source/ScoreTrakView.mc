@@ -43,7 +43,38 @@ public var tennis_games;
 public var tennis_matches;
 public var golf_holes;
 public var game_goal;
-public var scoring_mode;
+
+// Group Mode Variables
+public var current_player; // as index
+public var prev_player; // as index
+public var next_player; // as index
+
+public var player_1_score;
+public var player_2_score;
+public var player_3_score;
+public var player_4_score;
+public var player_5_score;
+public var player_6_score;
+public var player_7_score;
+public var player_8_score;
+public var player_9_score;
+public var player_10_score;
+
+public var player_1_name;
+public var player_2_name;
+public var player_3_name;
+public var player_4_name;
+public var player_5_name;
+public var player_6_name;
+public var player_7_name;
+public var player_8_name;
+public var player_9_name;
+public var player_10_name;
+
+
+
+// public var group_scores = Array[10];
+// public var group_names = Array[10];
 
 // Constants
 
@@ -57,7 +88,15 @@ public var SUB_SCREEN_R;
 
 // Watch Setup
 public var instinct = false;
-public var is_24_hour;
+public var scoring_mode;
+/*
+0 is default
+1 is tennis
+2 is group
+3 is target
+*/
+
+public var is24hour;
 public var flip_score_buttons;
 public var updateTimer;
 
@@ -106,6 +145,12 @@ function onLayout(dc as Dc) as Void {
         active_sport = Application.Storage.getValue("active_sport");
         
     }
+// Layout Mode
+
+    if(Application.Storage.getValue("scoring_mode") == null){
+        Application.Storage.setValue("scoring_mode",0);
+    }
+    scoring_mode = Application.Storage.getValue("scoring_mode");
 
 // Home and Guest Names
 
@@ -113,12 +158,14 @@ function onLayout(dc as Dc) as Void {
     home_name = Application.Storage.getValue("home_name");
     } else {
         home_name = "HOME";
+        Application.Storage.setValue("home_name","HOME");
     }
 
     if(Application.Storage.getValue("guest_name") != null){
     guest_name = Application.Storage.getValue("guest_name");
     } else {
         guest_name = "GUEST";
+        Application.Storage.setValue("guest_name","GUEST");
     }
 
 // 12/24 Hour
@@ -167,13 +214,7 @@ function onLayout(dc as Dc) as Void {
     sport_label = View.findDrawableById("SportLabel") as WatchUi.Text;
     active_sport = Application.Storage.getValue("active_sport");
 
-// Get scoring mode
 
-    if(Application.Storage.getValue("scoring_mode") == null){
-
-        scoring_mode = "default";
-        Application.Storage.setValue("scoring_mode","default");
-    }
 }
 
 function onUpdate(dc as Dc) as Void {
@@ -181,15 +222,13 @@ function onUpdate(dc as Dc) as Void {
 
 // Update the labels
 
-    if(scoring_mode == "tennis"){
 
-        home_score_label.setText(home_score.format("%02d"));
-        home_label.setText(home_name);
-        guest_score_label.setText(guest_score.format("%02d"));
-        guest_label.setText(guest_name);
         
-    }else if(scoring_mode == "group"){
-        
+    if(scoring_mode == 2) {
+        home_score_label.setText("");
+        home_label.setText("");
+        guest_score_label.setText("");
+        guest_label.setText("");
 
     }else{
         home_score_label.setText(home_score.format("%02d"));
@@ -219,10 +258,10 @@ function onUpdate(dc as Dc) as Void {
     }
     time_label.setText(time_string);
 
-//Instinct shape vs circle handling. Only instinct watch shape gets special treatment due to asymmetrical screen design
+//Dc Element Drawing
 
     View.onUpdate(dc); // dc elements are drawn after labels from xml
-    if(scoring_mode == "default"){
+    if(scoring_mode != 2){// Default layout, not group mode
 
         score_line_offset = dc.getHeight()/6;
         vertical_offset = 0;
@@ -271,13 +310,13 @@ function onUpdate(dc as Dc) as Void {
             );
             
         }
-    } else if (scoring_mode == "group") {
 
-        score_line_offset = dc.getHeight()/6;
-        vertical_offset = 0;
+// GROUP MODE //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    } else {
 
         if (instinct){
-
+            vertical_offset = -SCREEN_HEIGHT/10;
             sport_label.setText(formatSportName(active_sport));
             dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
             dc.setPenWidth(3);
@@ -296,27 +335,9 @@ function onUpdate(dc as Dc) as Void {
             Graphics.COLOR_TRANSPARENT);
 
             dc.setPenWidth(5);
-
-            dc.drawLine(
-                0,
-                dc.getHeight()/2 - score_line_offset + vertical_offset,
-                dc.getWidth(),
-                dc.getHeight()/2 - score_line_offset + vertical_offset
-            );
-
-            dc.drawLine(
-                0,
-                dc.getHeight()/2 + score_line_offset + vertical_offset,
-                dc.getWidth(),
-                dc.getHeight()/2 + score_line_offset + vertical_offset
-            );
-            
-            dc.drawLine(
-                dc.getWidth()/2,
-                dc.getHeight()/2 - score_line_offset*0.75  + vertical_offset,
-                dc.getWidth()/2,
-                dc.getHeight()/2 + score_line_offset*0.75 + vertical_offset
-            );
+            dc.drawLine(0, dc.getHeight()/2 - score_line_offset + vertical_offset, dc.getWidth(), dc.getHeight()/2 - score_line_offset + vertical_offset);
+            dc.drawLine(0, dc.getHeight()/2 + score_line_offset + vertical_offset, dc.getWidth(), dc.getHeight()/2 + score_line_offset + vertical_offset);
+            dc.drawLine(dc.getWidth()/2, dc.getHeight()/2 - score_line_offset*0.75 + vertical_offset, dc.getWidth()/2, dc.getHeight()/2 + score_line_offset*0.75 + vertical_offset);
             
         }
 
@@ -340,21 +361,29 @@ function updateGuest(value){
     WatchUi.requestUpdate();
     return true;
 }
+function updatePlayer(value){
 
+    return true;
+}
 function resetScores(){
     home_score = 0;
     guest_score = 0;
+    
 }
 
 function setHomeName(text){
     home_name = text;
-    Application.Storage.setValue("home_name",home_name);
+    Application.Storage.setValue("home_name",text);
+    WatchUi.requestUpdate();
+    System.println(home_name);
     
 }
 
 function setGuestName(text){
     guest_name = text;
-    Application.Storage.setValue("guest_name",guest_name);
+    Application.Storage.setValue("guest_name",text);
+    WatchUi.requestUpdate();
+    System.println(guest_name);
 }
 function resetNames(){
 
@@ -362,6 +391,8 @@ function resetNames(){
     guest_name = "GUEST";
     Application.Storage.setValue("home_name","HOME");
     Application.Storage.setValue("guest_name","GUEST");
+    WatchUi.popView(WatchUi.SLIDE_DOWN);
+    WatchUi.popView(WatchUi.SLIDE_DOWN);
 }
 
 /*

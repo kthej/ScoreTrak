@@ -2,391 +2,616 @@
 <debugInfo>
     <manifest filename="/home/kaden/Code/Garmin Projects/ScoreTrak/manifest.xml"/>
     <pcToLineNum>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="1" lineNum="4" parent="globals/ScoreTrakTextDelegate" pc="268435457" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="15" parent="globals" pc="268435469" symbol="formatSportName"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="16" parent="globals" pc="268435480" symbol="formatSportName"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="16" parent="globals" pc="268435486" symbol="formatSportName"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="18" parent="globals" pc="268435492" symbol="formatSportName"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="19" parent="globals" pc="268435510" symbol="formatSportName"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="20" parent="globals" pc="268435526" symbol="formatSportName"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="22" parent="globals" pc="268435571" symbol="formatSportName"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="3" lineNum="29" parent="globals" pc="268435574" symbol="getApp"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="3" lineNum="30" parent="globals" pc="268435584" symbol="getApp"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435595" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="5" lineNum="25" parent="globals/ScoreTrakView" pc="268435615" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="6" lineNum="5" parent="globals/ScoreTrakApp" pc="268435627" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="7" lineNum="6" parent="globals/ScoreTrakMenuDelegate" pc="268435639" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="8" lineNum="4" parent="globals/ScoreTrakDelegate" pc="268435651" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="9" lineNum="13" parent="globals/ScoreTrakTextDelegate" pc="268435663" symbol="onTextEntered"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="9" lineNum="14" parent="globals/ScoreTrakTextDelegate" pc="268435665" symbol="onTextEntered"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="9" lineNum="15" parent="globals/ScoreTrakTextDelegate" pc="268435670" symbol="onTextEntered"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="9" lineNum="17" parent="globals/ScoreTrakTextDelegate" pc="268435686" symbol="onTextEntered"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="9" lineNum="18" parent="globals/ScoreTrakTextDelegate" pc="268435701" symbol="onTextEntered"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="10" lineNum="8" parent="globals/ScoreTrakTextDelegate" pc="268435703" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="10" lineNum="9" parent="globals/ScoreTrakTextDelegate" pc="268435705" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="10" lineNum="10" parent="globals/ScoreTrakTextDelegate" pc="268435717" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="11" lineNum="205" parent="globals/ScoreTrakView" pc="268435727" symbol="resetNames"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="11" lineNum="206" parent="globals/ScoreTrakView" pc="268435729" symbol="resetNames"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="11" lineNum="207" parent="globals/ScoreTrakView" pc="268435741" symbol="resetNames"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="11" lineNum="208" parent="globals/ScoreTrakView" pc="268435753" symbol="resetNames"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="11" lineNum="209" parent="globals/ScoreTrakView" pc="268435776" symbol="resetNames"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="44" parent="globals/ScoreTrakView" pc="268435800" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="45" parent="globals/ScoreTrakView" pc="268435802" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="49" parent="globals/ScoreTrakView" pc="268435835" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="50" parent="globals/ScoreTrakView" pc="268435856" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="54" parent="globals/ScoreTrakView" pc="268435878" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="57" parent="globals/ScoreTrakView" pc="268435902" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="58" parent="globals/ScoreTrakView" pc="268435923" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="61" parent="globals/ScoreTrakView" pc="268435947" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="62" parent="globals/ScoreTrakView" pc="268435968" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="65" parent="globals/ScoreTrakView" pc="268435995" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="68" parent="globals/ScoreTrakView" pc="268436007" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="69" parent="globals/ScoreTrakView" pc="268436028" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="73" parent="globals/ScoreTrakView" pc="268436055" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="75" parent="globals/ScoreTrakView" pc="268436067" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="76" parent="globals/ScoreTrakView" pc="268436088" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="78" parent="globals/ScoreTrakView" pc="268436107" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="79" parent="globals/ScoreTrakView" pc="268436116" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="80" parent="globals/ScoreTrakView" pc="268436130" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="84" parent="globals/ScoreTrakView" pc="268436144" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="85" parent="globals/ScoreTrakView" pc="268436186" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="86" parent="globals/ScoreTrakView" pc="268436210" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="89" parent="globals/ScoreTrakView" pc="268436237" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="90" parent="globals/ScoreTrakView" pc="268436245" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="92" parent="globals/ScoreTrakView" pc="268436253" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="93" parent="globals/ScoreTrakView" pc="268436274" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="14" lineNum="201" parent="globals/ScoreTrakView" pc="268436298" symbol="setGuestName"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="14" lineNum="202" parent="globals/ScoreTrakView" pc="268436300" symbol="setGuestName"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="14" lineNum="203" parent="globals/ScoreTrakView" pc="268436309" symbol="setGuestName"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="15" lineNum="183" parent="globals/ScoreTrakView" pc="268436333" symbol="updateGuest"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="15" lineNum="184" parent="globals/ScoreTrakView" pc="268436335" symbol="updateGuest"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="15" lineNum="185" parent="globals/ScoreTrakView" pc="268436350" symbol="updateGuest"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="15" lineNum="186" parent="globals/ScoreTrakView" pc="268436373" symbol="updateGuest"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="15" lineNum="187" parent="globals/ScoreTrakView" pc="268436384" symbol="updateGuest"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="189" parent="globals/ScoreTrakView" pc="268436386" symbol="resetScores"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="190" parent="globals/ScoreTrakView" pc="268436388" symbol="resetScores"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="191" parent="globals/ScoreTrakView" pc="268436396" symbol="resetScores"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="192" parent="globals/ScoreTrakView" pc="268436415" symbol="resetScores"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="193" parent="globals/ScoreTrakView" pc="268436423" symbol="resetScores"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="17" lineNum="196" parent="globals/ScoreTrakView" pc="268436443" symbol="setHomeName"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="17" lineNum="197" parent="globals/ScoreTrakView" pc="268436445" symbol="setHomeName"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="17" lineNum="198" parent="globals/ScoreTrakView" pc="268436454" symbol="setHomeName"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="18" lineNum="39" parent="globals/ScoreTrakView" pc="268436478" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="18" lineNum="40" parent="globals/ScoreTrakView" pc="268436480" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="107" parent="globals/ScoreTrakView" pc="268436493" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="110" parent="globals/ScoreTrakView" pc="268436496" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="111" parent="globals/ScoreTrakView" pc="268436516" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="112" parent="globals/ScoreTrakView" pc="268436536" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="113" parent="globals/ScoreTrakView" pc="268436556" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="114" parent="globals/ScoreTrakView" pc="268436576" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="118" parent="globals/ScoreTrakView" pc="268436596" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="119" parent="globals/ScoreTrakView" pc="268436616" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="124" parent="globals/ScoreTrakView" pc="268436640" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="125" parent="globals/ScoreTrakView" pc="268436668" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="126" parent="globals/ScoreTrakView" pc="268436683" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="127" parent="globals/ScoreTrakView" pc="268436711" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="128" parent="globals/ScoreTrakView" pc="268436726" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="130" parent="globals/ScoreTrakView" pc="268436738" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="137" parent="globals/ScoreTrakView" pc="268436805" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="145" parent="globals/ScoreTrakView" pc="268436817" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="146" parent="globals/ScoreTrakView" pc="268436833" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="148" parent="globals/ScoreTrakView" pc="268436854" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="149" parent="globals/ScoreTrakView" pc="268436877" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="150" parent="globals/ScoreTrakView" pc="268436894" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="151" parent="globals/ScoreTrakView" pc="268436906" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="152" parent="globals/ScoreTrakView" pc="268436950" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="153" parent="globals/ScoreTrakView" pc="268436994" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="156" parent="globals/ScoreTrakView" pc="268437051" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="157" parent="globals/ScoreTrakView" pc="268437063" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="158" parent="globals/ScoreTrakView" pc="268437078" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="159" parent="globals/ScoreTrakView" pc="268437095" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="160" parent="globals/ScoreTrakView" pc="268437107" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="161" parent="globals/ScoreTrakView" pc="268437151" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="162" parent="globals/ScoreTrakView" pc="268437195" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="22" lineNum="175" parent="globals/ScoreTrakView" pc="268437264" symbol="updateHome"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="22" lineNum="176" parent="globals/ScoreTrakView" pc="268437266" symbol="updateHome"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="22" lineNum="177" parent="globals/ScoreTrakView" pc="268437281" symbol="updateHome"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="22" lineNum="178" parent="globals/ScoreTrakView" pc="268437304" symbol="updateHome"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="22" lineNum="179" parent="globals/ScoreTrakView" pc="268437315" symbol="updateHome"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="24" lineNum="20" parent="globals/ScoreTrakApp" pc="268437317" symbol="getInitialView"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="24" lineNum="21" parent="globals/ScoreTrakApp" pc="268437320" symbol="getInitialView"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="24" lineNum="22" parent="globals/ScoreTrakApp" pc="268437340" symbol="getInitialView"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="24" lineNum="24" parent="globals/ScoreTrakApp" pc="268437362" symbol="getInitialView"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="25" lineNum="7" parent="globals/ScoreTrakApp" pc="268437377" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="25" lineNum="8" parent="globals/ScoreTrakApp" pc="268437379" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="10" parent="globals/ScoreTrakMenuDelegate" pc="268437392" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="11" parent="globals/ScoreTrakMenuDelegate" pc="268437394" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="12" parent="globals/ScoreTrakMenuDelegate" pc="268437406" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="13" parent="globals/ScoreTrakMenuDelegate" pc="268437415" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="17" parent="globals/ScoreTrakMenuDelegate" pc="268437425" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="18" parent="globals/ScoreTrakMenuDelegate" pc="268437428" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="20" parent="globals/ScoreTrakMenuDelegate" pc="268437437" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="21" parent="globals/ScoreTrakMenuDelegate" pc="268437458" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="22" parent="globals/ScoreTrakMenuDelegate" pc="268437469" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="23" parent="globals/ScoreTrakMenuDelegate" pc="268437485" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="24" parent="globals/ScoreTrakMenuDelegate" pc="268437500" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="25" parent="globals/ScoreTrakMenuDelegate" pc="268437511" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="26" parent="globals/ScoreTrakMenuDelegate" pc="268437530" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="27" parent="globals/ScoreTrakMenuDelegate" pc="268437541" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="28" parent="globals/ScoreTrakMenuDelegate" pc="268437557" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="29" parent="globals/ScoreTrakMenuDelegate" pc="268437572" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="30" parent="globals/ScoreTrakMenuDelegate" pc="268437583" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="32" parent="globals/ScoreTrakMenuDelegate" pc="268437602" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="33" parent="globals/ScoreTrakMenuDelegate" pc="268437613" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="35" parent="globals/ScoreTrakMenuDelegate" pc="268437625" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="36" parent="globals/ScoreTrakMenuDelegate" pc="268437640" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="37" parent="globals/ScoreTrakMenuDelegate" pc="268437651" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="39" parent="globals/ScoreTrakMenuDelegate" pc="268437670" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="40" parent="globals/ScoreTrakMenuDelegate" pc="268437681" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="41" parent="globals/ScoreTrakMenuDelegate" pc="268437696" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="42" parent="globals/ScoreTrakMenuDelegate" pc="268437707" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="44" parent="globals/ScoreTrakMenuDelegate" pc="268437726" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="45" parent="globals/ScoreTrakMenuDelegate" pc="268437737" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="46" parent="globals/ScoreTrakMenuDelegate" pc="268437771" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="51" parent="globals/ScoreTrakMenuDelegate" pc="268437816" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="53" parent="globals/ScoreTrakMenuDelegate" pc="268437835" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="54" parent="globals/ScoreTrakMenuDelegate" pc="268437846" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="55" parent="globals/ScoreTrakMenuDelegate" pc="268437880" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="62" parent="globals/ScoreTrakMenuDelegate" pc="268437926" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="63" parent="globals/ScoreTrakMenuDelegate" pc="268437947" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="64" parent="globals/ScoreTrakMenuDelegate" pc="268437956" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="66" parent="globals/ScoreTrakMenuDelegate" pc="268437976" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="67" parent="globals/ScoreTrakMenuDelegate" pc="268437991" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="68" parent="globals/ScoreTrakMenuDelegate" pc="268438006" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="69" parent="globals/ScoreTrakMenuDelegate" pc="268438017" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="72" parent="globals/ScoreTrakMenuDelegate" pc="268438036" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="73" parent="globals/ScoreTrakMenuDelegate" pc="268438057" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="74" parent="globals/ScoreTrakMenuDelegate" pc="268438068" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="75" parent="globals/ScoreTrakMenuDelegate" pc="268438097" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="76" parent="globals/ScoreTrakMenuDelegate" pc="268438135" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="79" parent="globals/ScoreTrakMenuDelegate" pc="268438155" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="80" parent="globals/ScoreTrakMenuDelegate" pc="268438166" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="81" parent="globals/ScoreTrakMenuDelegate" pc="268438195" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="82" parent="globals/ScoreTrakMenuDelegate" pc="268438233" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="90" parent="globals/ScoreTrakMenuDelegate" pc="268438253" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="91" parent="globals/ScoreTrakMenuDelegate" pc="268438264" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="92" parent="globals/ScoreTrakMenuDelegate" pc="268438276" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="93" parent="globals/ScoreTrakMenuDelegate" pc="268438291" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="96" parent="globals/ScoreTrakMenuDelegate" pc="268438307" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="97" parent="globals/ScoreTrakMenuDelegate" pc="268438318" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="98" parent="globals/ScoreTrakMenuDelegate" pc="268438340" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="101" parent="globals/ScoreTrakMenuDelegate" pc="268438362" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="103" parent="globals/ScoreTrakMenuDelegate" pc="268438381" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="28" lineNum="104" parent="globals/ScoreTrakMenuDelegate" pc="268438396" symbol="onSelect"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="29" lineNum="12" parent="globals/ScoreTrakDelegate" pc="268438412" symbol="onMenu"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="29" lineNum="14" parent="globals/ScoreTrakDelegate" pc="268438414" symbol="onMenu"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="29" lineNum="15" parent="globals/ScoreTrakDelegate" pc="268438489" symbol="onMenu"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="30" lineNum="18" parent="globals/ScoreTrakDelegate" pc="268438491" symbol="onPreviousPage"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="30" lineNum="19" parent="globals/ScoreTrakDelegate" pc="268438493" symbol="onPreviousPage"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="30" lineNum="21" parent="globals/ScoreTrakDelegate" pc="268438509" symbol="onPreviousPage"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="31" lineNum="6" parent="globals/ScoreTrakDelegate" pc="268438511" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="31" lineNum="7" parent="globals/ScoreTrakDelegate" pc="268438513" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="31" lineNum="8" parent="globals/ScoreTrakDelegate" pc="268438525" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="32" lineNum="23" parent="globals/ScoreTrakDelegate" pc="268438535" symbol="onNextPage"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="32" lineNum="24" parent="globals/ScoreTrakDelegate" pc="268438537" symbol="onNextPage"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="32" lineNum="26" parent="globals/ScoreTrakDelegate" pc="268438553" symbol="onNextPage"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="13" parent="globals/Rez/Layouts" pc="268438555" symbol="MainLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="14" parent="globals/Rez/Layouts" pc="268438566" symbol="MainLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="16" parent="globals/Rez/Layouts" pc="268438575" symbol="MainLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="18" parent="globals/Rez/Layouts" pc="268438584" symbol="MainLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="20" parent="globals/Rez/Layouts" pc="268438690" symbol="MainLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="22" parent="globals/Rez/Layouts" pc="268438796" symbol="MainLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="24" parent="globals/Rez/Layouts" pc="268438902" symbol="MainLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="26" parent="globals/Rez/Layouts" pc="268439008" symbol="MainLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="28" parent="globals/Rez/Layouts" pc="268439114" symbol="MainLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="30" parent="globals/Rez/Layouts" pc="268439219" symbol="MainLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="34" lineNum="35" parent="globals/Rez/Menus/AdvancedMenu" pc="268439254" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="35" lineNum="56" parent="globals/Rez/Menus/SportMenu" pc="268439266" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="36" lineNum="45" parent="globals/Rez/Menus/MainMenu" pc="268439278" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="37" lineNum="36" parent="globals/Rez/Menus/AdvancedMenu" pc="268439290" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="37" lineNum="37" parent="globals/Rez/Menus/AdvancedMenu" pc="268439292" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="37" lineNum="38" parent="globals/Rez/Menus/AdvancedMenu" pc="268439322" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="37" lineNum="39" parent="globals/Rez/Menus/AdvancedMenu" pc="268439365" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="37" lineNum="40" parent="globals/Rez/Menus/AdvancedMenu" pc="268439408" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="37" lineNum="41" parent="globals/Rez/Menus/AdvancedMenu" pc="268439451" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="57" parent="globals/Rez/Menus/SportMenu" pc="268439495" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="58" parent="globals/Rez/Menus/SportMenu" pc="268439497" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="59" parent="globals/Rez/Menus/SportMenu" pc="268439527" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="60" parent="globals/Rez/Menus/SportMenu" pc="268439574" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="61" parent="globals/Rez/Menus/SportMenu" pc="268439621" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="62" parent="globals/Rez/Menus/SportMenu" pc="268439668" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="63" parent="globals/Rez/Menus/SportMenu" pc="268439715" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="64" parent="globals/Rez/Menus/SportMenu" pc="268439762" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="65" parent="globals/Rez/Menus/SportMenu" pc="268439809" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="66" parent="globals/Rez/Menus/SportMenu" pc="268439856" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="67" parent="globals/Rez/Menus/SportMenu" pc="268439903" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="68" parent="globals/Rez/Menus/SportMenu" pc="268439950" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="69" parent="globals/Rez/Menus/SportMenu" pc="268439997" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="70" parent="globals/Rez/Menus/SportMenu" pc="268440044" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="71" parent="globals/Rez/Menus/SportMenu" pc="268440091" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="72" parent="globals/Rez/Menus/SportMenu" pc="268440138" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="73" parent="globals/Rez/Menus/SportMenu" pc="268440185" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="74" parent="globals/Rez/Menus/SportMenu" pc="268440232" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="75" parent="globals/Rez/Menus/SportMenu" pc="268440279" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="76" parent="globals/Rez/Menus/SportMenu" pc="268440326" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="77" parent="globals/Rez/Menus/SportMenu" pc="268440373" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="78" parent="globals/Rez/Menus/SportMenu" pc="268440420" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="79" parent="globals/Rez/Menus/SportMenu" pc="268440467" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="80" parent="globals/Rez/Menus/SportMenu" pc="268440514" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="81" parent="globals/Rez/Menus/SportMenu" pc="268440561" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="82" parent="globals/Rez/Menus/SportMenu" pc="268440608" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="83" parent="globals/Rez/Menus/SportMenu" pc="268440655" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="84" parent="globals/Rez/Menus/SportMenu" pc="268440702" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="85" parent="globals/Rez/Menus/SportMenu" pc="268440749" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="39" lineNum="46" parent="globals/Rez/Menus/MainMenu" pc="268440797" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="39" lineNum="47" parent="globals/Rez/Menus/MainMenu" pc="268440799" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="39" lineNum="48" parent="globals/Rez/Menus/MainMenu" pc="268440829" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="39" lineNum="49" parent="globals/Rez/Menus/MainMenu" pc="268440872" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="39" lineNum="50" parent="globals/Rez/Menus/MainMenu" pc="268440915" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="39" lineNum="51" parent="globals/Rez/Menus/MainMenu" pc="268440958" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="39" lineNum="52" parent="globals/Rez/Menus/MainMenu" pc="268441001" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="1" lineNum="4" parent="globals/ScoreTrakTextDelegate" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="8" parent="globals" pc="268435472" symbol="formatSportName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="9" parent="globals" pc="268435483" symbol="formatSportName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="9" parent="globals" pc="268435489" symbol="formatSportName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="11" parent="globals" pc="268435498" symbol="formatSportName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="12" parent="globals" pc="268435516" symbol="formatSportName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="13" parent="globals" pc="268435532" symbol="formatSportName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="2" lineNum="15" parent="globals" pc="268435577" symbol="formatSportName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="3" lineNum="31" parent="globals" pc="268435580" symbol="getApp"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="3" lineNum="32" parent="globals" pc="268435590" symbol="getApp"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435601" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="5" lineNum="18" parent="globals/ScoreTrakView" pc="268435621" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="6" lineNum="5" parent="globals/ScoreTrakApp" pc="268435633" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="7" lineNum="6" parent="globals/ScoreTrakMenuDelegate" pc="268435645" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="8" lineNum="4" parent="globals/ScoreTrakDelegate" pc="268435657" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="9" lineNum="13" parent="globals/ScoreTrakTextDelegate" pc="268435669" symbol="onTextEntered"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="9" lineNum="14" parent="globals/ScoreTrakTextDelegate" pc="268435671" symbol="onTextEntered"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="9" lineNum="15" parent="globals/ScoreTrakTextDelegate" pc="268435676" symbol="onTextEntered"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="9" lineNum="17" parent="globals/ScoreTrakTextDelegate" pc="268435695" symbol="onTextEntered"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="9" lineNum="18" parent="globals/ScoreTrakTextDelegate" pc="268435710" symbol="onTextEntered"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="9" lineNum="19" parent="globals/ScoreTrakTextDelegate" pc="268435728" symbol="onTextEntered"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="10" lineNum="8" parent="globals/ScoreTrakTextDelegate" pc="268435730" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="10" lineNum="9" parent="globals/ScoreTrakTextDelegate" pc="268435732" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakTextDelegate.mc" id="10" lineNum="10" parent="globals/ScoreTrakTextDelegate" pc="268435744" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="11" lineNum="382" parent="globals/ScoreTrakView" pc="268435754" symbol="setGuestName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="11" lineNum="383" parent="globals/ScoreTrakView" pc="268435756" symbol="setGuestName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="11" lineNum="384" parent="globals/ScoreTrakView" pc="268435765" symbol="setGuestName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="11" lineNum="385" parent="globals/ScoreTrakView" pc="268435785" symbol="setGuestName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="11" lineNum="386" parent="globals/ScoreTrakView" pc="268435796" symbol="setGuestName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="12" lineNum="359" parent="globals/ScoreTrakView" pc="268435815" symbol="updateGuest"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="12" lineNum="360" parent="globals/ScoreTrakView" pc="268435817" symbol="updateGuest"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="12" lineNum="361" parent="globals/ScoreTrakView" pc="268435832" symbol="updateGuest"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="12" lineNum="362" parent="globals/ScoreTrakView" pc="268435843" symbol="updateGuest"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="374" parent="globals/ScoreTrakView" pc="268435845" symbol="setHomeName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="375" parent="globals/ScoreTrakView" pc="268435847" symbol="setHomeName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="376" parent="globals/ScoreTrakView" pc="268435856" symbol="setHomeName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="377" parent="globals/ScoreTrakView" pc="268435876" symbol="setHomeName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="13" lineNum="378" parent="globals/ScoreTrakView" pc="268435887" symbol="setHomeName"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="14" lineNum="353" parent="globals/ScoreTrakView" pc="268435906" symbol="updateHome"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="14" lineNum="354" parent="globals/ScoreTrakView" pc="268435908" symbol="updateHome"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="14" lineNum="355" parent="globals/ScoreTrakView" pc="268435923" symbol="updateHome"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="14" lineNum="356" parent="globals/ScoreTrakView" pc="268435934" symbol="updateHome"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="15" lineNum="388" parent="globals/ScoreTrakView" pc="268435936" symbol="resetNames"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="15" lineNum="390" parent="globals/ScoreTrakView" pc="268435938" symbol="resetNames"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="15" lineNum="391" parent="globals/ScoreTrakView" pc="268435950" symbol="resetNames"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="15" lineNum="392" parent="globals/ScoreTrakView" pc="268435962" symbol="resetNames"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="15" lineNum="393" parent="globals/ScoreTrakView" pc="268435985" symbol="resetNames"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="15" lineNum="394" parent="globals/ScoreTrakView" pc="268436008" symbol="resetNames"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="15" lineNum="395" parent="globals/ScoreTrakView" pc="268436023" symbol="resetNames"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="120" parent="globals/ScoreTrakView" pc="268436039" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="124" parent="globals/ScoreTrakView" pc="268436041" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="130" parent="globals/ScoreTrakView" pc="268436074" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="131" parent="globals/ScoreTrakView" pc="268436095" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="133" parent="globals/ScoreTrakView" pc="268436117" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="138" parent="globals/ScoreTrakView" pc="268436141" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="140" parent="globals/ScoreTrakView" pc="268436162" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="144" parent="globals/ScoreTrakView" pc="268436189" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="145" parent="globals/ScoreTrakView" pc="268436212" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="150" parent="globals/ScoreTrakView" pc="268436236" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="151" parent="globals/ScoreTrakView" pc="268436257" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="153" parent="globals/ScoreTrakView" pc="268436279" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="157" parent="globals/ScoreTrakView" pc="268436303" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="158" parent="globals/ScoreTrakView" pc="268436324" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="160" parent="globals/ScoreTrakView" pc="268436351" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="161" parent="globals/ScoreTrakView" pc="268436363" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="164" parent="globals/ScoreTrakView" pc="268436386" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="165" parent="globals/ScoreTrakView" pc="268436407" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="167" parent="globals/ScoreTrakView" pc="268436434" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="168" parent="globals/ScoreTrakView" pc="268436446" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="173" parent="globals/ScoreTrakView" pc="268436469" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="174" parent="globals/ScoreTrakView" pc="268436490" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="179" parent="globals/ScoreTrakView" pc="268436512" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="181" parent="globals/ScoreTrakView" pc="268436554" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="182" parent="globals/ScoreTrakView" pc="268436578" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="186" parent="globals/ScoreTrakView" pc="268436605" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="187" parent="globals/ScoreTrakView" pc="268436613" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="194" parent="globals/ScoreTrakView" pc="268436621" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="195" parent="globals/ScoreTrakView" pc="268436630" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="196" parent="globals/ScoreTrakView" pc="268436644" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="198" parent="globals/ScoreTrakView" pc="268436658" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="200" parent="globals/ScoreTrakView" pc="268436679" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="201" parent="globals/ScoreTrakView" pc="268436687" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="202" parent="globals/ScoreTrakView" pc="268436728" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="203" parent="globals/ScoreTrakView" pc="268436769" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="209" parent="globals/ScoreTrakView" pc="268436797" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="210" parent="globals/ScoreTrakView" pc="268436822" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="211" parent="globals/ScoreTrakView" pc="268436847" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="212" parent="globals/ScoreTrakView" pc="268436872" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="213" parent="globals/ScoreTrakView" pc="268436897" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="214" parent="globals/ScoreTrakView" pc="268436922" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="16" lineNum="215" parent="globals/ScoreTrakView" pc="268436947" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="17" lineNum="368" parent="globals/ScoreTrakView" pc="268436972" symbol="resetScores"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="17" lineNum="369" parent="globals/ScoreTrakView" pc="268436974" symbol="resetScores"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="17" lineNum="370" parent="globals/ScoreTrakView" pc="268436982" symbol="resetScores"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="18" lineNum="364" parent="globals/ScoreTrakView" pc="268436991" symbol="updatePlayer"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="18" lineNum="366" parent="globals/ScoreTrakView" pc="268436993" symbol="updatePlayer"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="19" lineNum="113" parent="globals/ScoreTrakView" pc="268436995" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="19" lineNum="114" parent="globals/ScoreTrakView" pc="268436997" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="19" lineNum="115" parent="globals/ScoreTrakView" pc="268437009" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="19" lineNum="116" parent="globals/ScoreTrakView" pc="268437038" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="220" parent="globals/ScoreTrakView" pc="268437070" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="221" parent="globals/ScoreTrakView" pc="268437073" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="227" parent="globals/ScoreTrakView" pc="268437090" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="228" parent="globals/ScoreTrakView" pc="268437101" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="229" parent="globals/ScoreTrakView" pc="268437120" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="230" parent="globals/ScoreTrakView" pc="268437139" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="231" parent="globals/ScoreTrakView" pc="268437158" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="234" parent="globals/ScoreTrakView" pc="268437180" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="235" parent="globals/ScoreTrakView" pc="268437212" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="236" parent="globals/ScoreTrakView" pc="268437231" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="237" parent="globals/ScoreTrakView" pc="268437263" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="242" parent="globals/ScoreTrakView" pc="268437282" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="243" parent="globals/ScoreTrakView" pc="268437304" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="250" parent="globals/ScoreTrakView" pc="268437387" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="251" parent="globals/ScoreTrakView" pc="268437402" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="252" parent="globals/ScoreTrakView" pc="268437409" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="254" parent="globals/ScoreTrakView" pc="268437416" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="259" parent="globals/ScoreTrakView" pc="268437487" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="263" parent="globals/ScoreTrakView" pc="268437506" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="264" parent="globals/ScoreTrakView" pc="268437522" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="266" parent="globals/ScoreTrakView" pc="268437533" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="267" parent="globals/ScoreTrakView" pc="268437550" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="269" parent="globals/ScoreTrakView" pc="268437558" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="271" parent="globals/ScoreTrakView" pc="268437566" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="272" parent="globals/ScoreTrakView" pc="268437593" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="273" parent="globals/ScoreTrakView" pc="268437610" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="274" parent="globals/ScoreTrakView" pc="268437622" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="275" parent="globals/ScoreTrakView" pc="268437666" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="276" parent="globals/ScoreTrakView" pc="268437710" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="277" parent="globals/ScoreTrakView" pc="268437766" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="278" parent="globals/ScoreTrakView" pc="268437791" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="279" parent="globals/ScoreTrakView" pc="268437804" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="284" parent="globals/ScoreTrakView" pc="268437839" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="286" parent="globals/ScoreTrakView" pc="268437858" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="289" parent="globals/ScoreTrakView" pc="268437875" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="291" parent="globals/ScoreTrakView" pc="268437887" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="298" parent="globals/ScoreTrakView" pc="268437949" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="305" parent="globals/ScoreTrakView" pc="268438011" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="318" parent="globals/ScoreTrakView" pc="268438100" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="319" parent="globals/ScoreTrakView" pc="268438108" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="320" parent="globals/ScoreTrakView" pc="268438125" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="321" parent="globals/ScoreTrakView" pc="268438152" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="322" parent="globals/ScoreTrakView" pc="268438169" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="323" parent="globals/ScoreTrakView" pc="268438181" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="324" parent="globals/ScoreTrakView" pc="268438237" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="325" parent="globals/ScoreTrakView" pc="268438293" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="326" parent="globals/ScoreTrakView" pc="268438361" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="327" parent="globals/ScoreTrakView" pc="268438386" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="328" parent="globals/ScoreTrakView" pc="268438399" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="332" parent="globals/ScoreTrakView" pc="268438434" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="334" parent="globals/ScoreTrakView" pc="268438453" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="337" parent="globals/ScoreTrakView" pc="268438470" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="338" parent="globals/ScoreTrakView" pc="268438482" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="339" parent="globals/ScoreTrakView" pc="268438544" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="20" lineNum="340" parent="globals/ScoreTrakView" pc="268438606" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="347" parent="globals/ScoreTrakView" pc="268438693" symbol="onTimer"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" id="21" lineNum="348" parent="globals/ScoreTrakView" pc="268438695" symbol="onTimer"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="22" lineNum="12" parent="globals/ScoreTrakApp" pc="268438707" symbol="onStart"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="23" lineNum="22" parent="globals/ScoreTrakApp" pc="268438710" symbol="getInitialView"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="23" lineNum="23" parent="globals/ScoreTrakApp" pc="268438713" symbol="getInitialView"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="23" lineNum="24" parent="globals/ScoreTrakApp" pc="268438738" symbol="getInitialView"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="23" lineNum="26" parent="globals/ScoreTrakApp" pc="268438763" symbol="getInitialView"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="24" lineNum="7" parent="globals/ScoreTrakApp" pc="268438781" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="24" lineNum="8" parent="globals/ScoreTrakApp" pc="268438783" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="25" lineNum="16" parent="globals/ScoreTrakApp" pc="268438796" symbol="onStop"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="25" lineNum="17" parent="globals/ScoreTrakApp" pc="268438798" symbol="onStop"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakApp.mc" id="25" lineNum="18" parent="globals/ScoreTrakApp" pc="268438826" symbol="onStop"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="26" lineNum="10" parent="globals/ScoreTrakMenuDelegate" pc="268438855" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="26" lineNum="11" parent="globals/ScoreTrakMenuDelegate" pc="268438857" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="26" lineNum="12" parent="globals/ScoreTrakMenuDelegate" pc="268438869" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="26" lineNum="13" parent="globals/ScoreTrakMenuDelegate" pc="268438878" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="18" parent="globals/ScoreTrakMenuDelegate" pc="268438888" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="19" parent="globals/ScoreTrakMenuDelegate" pc="268438891" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="25" parent="globals/ScoreTrakMenuDelegate" pc="268438900" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="27" parent="globals/ScoreTrakMenuDelegate" pc="268438921" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="28" parent="globals/ScoreTrakMenuDelegate" pc="268438932" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="29" parent="globals/ScoreTrakMenuDelegate" pc="268438948" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="30" parent="globals/ScoreTrakMenuDelegate" pc="268438963" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="31" parent="globals/ScoreTrakMenuDelegate" pc="268438974" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="33" parent="globals/ScoreTrakMenuDelegate" pc="268438995" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="35" parent="globals/ScoreTrakMenuDelegate" pc="268439006" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="36" parent="globals/ScoreTrakMenuDelegate" pc="268439022" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="37" parent="globals/ScoreTrakMenuDelegate" pc="268439037" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="38" parent="globals/ScoreTrakMenuDelegate" pc="268439048" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="40" parent="globals/ScoreTrakMenuDelegate" pc="268439069" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="42" parent="globals/ScoreTrakMenuDelegate" pc="268439080" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="43" parent="globals/ScoreTrakMenuDelegate" pc="268439092" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="44" parent="globals/ScoreTrakMenuDelegate" pc="268439107" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="45" parent="globals/ScoreTrakMenuDelegate" pc="268439118" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="47" parent="globals/ScoreTrakMenuDelegate" pc="268439139" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="49" parent="globals/ScoreTrakMenuDelegate" pc="268439150" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="50" parent="globals/ScoreTrakMenuDelegate" pc="268439165" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="51" parent="globals/ScoreTrakMenuDelegate" pc="268439176" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="53" parent="globals/ScoreTrakMenuDelegate" pc="268439197" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="55" parent="globals/ScoreTrakMenuDelegate" pc="268439208" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="56" parent="globals/ScoreTrakMenuDelegate" pc="268439242" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="61" parent="globals/ScoreTrakMenuDelegate" pc="268439287" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="63" parent="globals/ScoreTrakMenuDelegate" pc="268439308" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="65" parent="globals/ScoreTrakMenuDelegate" pc="268439319" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="68" parent="globals/ScoreTrakMenuDelegate" pc="268439353" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="69" parent="globals/ScoreTrakMenuDelegate" pc="268439389" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="70" parent="globals/ScoreTrakMenuDelegate" pc="268439426" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="71" parent="globals/ScoreTrakMenuDelegate" pc="268439448" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="74" parent="globals/ScoreTrakMenuDelegate" pc="268439476" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="77" parent="globals/ScoreTrakMenuDelegate" pc="268439501" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="78" parent="globals/ScoreTrakMenuDelegate" pc="268439523" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="81" parent="globals/ScoreTrakMenuDelegate" pc="268439551" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="88" parent="globals/ScoreTrakMenuDelegate" pc="268439576" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="147" parent="globals/ScoreTrakMenuDelegate" pc="268439627" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="149" parent="globals/ScoreTrakMenuDelegate" pc="268439648" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="150" parent="globals/ScoreTrakMenuDelegate" pc="268439657" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="151" parent="globals/ScoreTrakMenuDelegate" pc="268439670" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="153" parent="globals/ScoreTrakMenuDelegate" pc="268439690" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="158" parent="globals/ScoreTrakMenuDelegate" pc="268439712" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="159" parent="globals/ScoreTrakMenuDelegate" pc="268439725" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="161" parent="globals/ScoreTrakMenuDelegate" pc="268439748" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="168" parent="globals/ScoreTrakMenuDelegate" pc="268439792" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="169" parent="globals/ScoreTrakMenuDelegate" pc="268439805" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="172" parent="globals/ScoreTrakMenuDelegate" pc="268439828" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="173" parent="globals/ScoreTrakMenuDelegate" pc="268439840" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="175" parent="globals/ScoreTrakMenuDelegate" pc="268439859" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="176" parent="globals/ScoreTrakMenuDelegate" pc="268439874" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="177" parent="globals/ScoreTrakMenuDelegate" pc="268439889" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="178" parent="globals/ScoreTrakMenuDelegate" pc="268439901" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="179" parent="globals/ScoreTrakMenuDelegate" pc="268439912" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="183" parent="globals/ScoreTrakMenuDelegate" pc="268439933" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="186" parent="globals/ScoreTrakMenuDelegate" pc="268439954" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="187" parent="globals/ScoreTrakMenuDelegate" pc="268439965" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="188" parent="globals/ScoreTrakMenuDelegate" pc="268439994" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="189" parent="globals/ScoreTrakMenuDelegate" pc="268440032" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="191" parent="globals/ScoreTrakMenuDelegate" pc="268440051" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="195" parent="globals/ScoreTrakMenuDelegate" pc="268440081" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="198" parent="globals/ScoreTrakMenuDelegate" pc="268440092" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="199" parent="globals/ScoreTrakMenuDelegate" pc="268440121" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="200" parent="globals/ScoreTrakMenuDelegate" pc="268440159" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="202" parent="globals/ScoreTrakMenuDelegate" pc="268440178" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="207" parent="globals/ScoreTrakMenuDelegate" pc="268440208" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="209" parent="globals/ScoreTrakMenuDelegate" pc="268440219" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="210" parent="globals/ScoreTrakMenuDelegate" pc="268440248" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="211" parent="globals/ScoreTrakMenuDelegate" pc="268440286" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="214" parent="globals/ScoreTrakMenuDelegate" pc="268440308" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="216" parent="globals/ScoreTrakMenuDelegate" pc="268440319" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="219" parent="globals/ScoreTrakMenuDelegate" pc="268440334" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="221" parent="globals/ScoreTrakMenuDelegate" pc="268440345" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="222" parent="globals/ScoreTrakMenuDelegate" pc="268440367" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="223" parent="globals/ScoreTrakMenuDelegate" pc="268440386" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="226" parent="globals/ScoreTrakMenuDelegate" pc="268440404" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="227" parent="globals/ScoreTrakMenuDelegate" pc="268440423" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="230" parent="globals/ScoreTrakMenuDelegate" pc="268440438" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="234" parent="globals/ScoreTrakMenuDelegate" pc="268440452" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="236" parent="globals/ScoreTrakMenuDelegate" pc="268440463" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="237" parent="globals/ScoreTrakMenuDelegate" pc="268440485" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="238" parent="globals/ScoreTrakMenuDelegate" pc="268440504" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="241" parent="globals/ScoreTrakMenuDelegate" pc="268440522" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="242" parent="globals/ScoreTrakMenuDelegate" pc="268440541" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" id="27" lineNum="245" parent="globals/ScoreTrakMenuDelegate" pc="268440556" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="28" lineNum="12" parent="globals/ScoreTrakDelegate" pc="268440574" symbol="onMenu"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="28" lineNum="14" parent="globals/ScoreTrakDelegate" pc="268440576" symbol="onMenu"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="28" lineNum="15" parent="globals/ScoreTrakDelegate" pc="268440651" symbol="onMenu"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="29" lineNum="18" parent="globals/ScoreTrakDelegate" pc="268440653" symbol="onPreviousPage"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="29" lineNum="19" parent="globals/ScoreTrakDelegate" pc="268440655" symbol="onPreviousPage"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="29" lineNum="20" parent="globals/ScoreTrakDelegate" pc="268440678" symbol="onPreviousPage"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="29" lineNum="21" parent="globals/ScoreTrakDelegate" pc="268440700" symbol="onPreviousPage"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="29" lineNum="24" parent="globals/ScoreTrakDelegate" pc="268440719" symbol="onPreviousPage"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="29" lineNum="28" parent="globals/ScoreTrakDelegate" pc="268440738" symbol="onPreviousPage"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="30" lineNum="6" parent="globals/ScoreTrakDelegate" pc="268440740" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="30" lineNum="7" parent="globals/ScoreTrakDelegate" pc="268440742" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="30" lineNum="8" parent="globals/ScoreTrakDelegate" pc="268440754" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="31" lineNum="30" parent="globals/ScoreTrakDelegate" pc="268440764" symbol="onNextPage"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="31" lineNum="31" parent="globals/ScoreTrakDelegate" pc="268440766" symbol="onNextPage"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="31" lineNum="32" parent="globals/ScoreTrakDelegate" pc="268440789" symbol="onNextPage"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="31" lineNum="33" parent="globals/ScoreTrakDelegate" pc="268440811" symbol="onNextPage"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="31" lineNum="36" parent="globals/ScoreTrakDelegate" pc="268440830" symbol="onNextPage"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="31" lineNum="39" parent="globals/ScoreTrakDelegate" pc="268440849" symbol="onNextPage"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="32" lineNum="41" parent="globals/ScoreTrakDelegate" pc="268440851" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="32" lineNum="42" parent="globals/ScoreTrakDelegate" pc="268440853" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" id="32" lineNum="45" parent="globals/ScoreTrakDelegate" pc="268440879" symbol="onSelect"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="13" parent="globals/Rez/Layouts" pc="268440881" symbol="MainLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="14" parent="globals/Rez/Layouts" pc="268440892" symbol="MainLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="16" parent="globals/Rez/Layouts" pc="268440901" symbol="MainLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="18" parent="globals/Rez/Layouts" pc="268440910" symbol="MainLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="20" parent="globals/Rez/Layouts" pc="268441016" symbol="MainLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="22" parent="globals/Rez/Layouts" pc="268441122" symbol="MainLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="24" parent="globals/Rez/Layouts" pc="268441228" symbol="MainLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="26" parent="globals/Rez/Layouts" pc="268441334" symbol="MainLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="28" parent="globals/Rez/Layouts" pc="268441439" symbol="MainLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="33" lineNum="30" parent="globals/Rez/Layouts" pc="268441540" symbol="MainLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="34" lineNum="58" parent="globals/Rez/Menus/TimedMenu" pc="268441575" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="35" lineNum="70" parent="globals/Rez/Menus/AdvancedMenu" pc="268441587" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="36" lineNum="152" parent="globals/Rez/Menus/GroupMenu" pc="268441599" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="37" lineNum="93" parent="globals/Rez/Menus/SportMenu" pc="268441611" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="38" lineNum="126" parent="globals/Rez/Menus/GolfMenu" pc="268441623" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="39" lineNum="81" parent="globals/Rez/Menus/TennisMenu" pc="268441635" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="40" lineNum="35" parent="globals/Rez/Menus/MainMenu" pc="268441647" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="41" lineNum="47" parent="globals/Rez/Menus/TimerMenu" pc="268441659" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="42" lineNum="139" parent="globals/Rez/Menus/TargetMenu" pc="268441671" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="43" lineNum="59" parent="globals/Rez/Menus/TimedMenu" pc="268441683" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="43" lineNum="60" parent="globals/Rez/Menus/TimedMenu" pc="268441685" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="43" lineNum="61" parent="globals/Rez/Menus/TimedMenu" pc="268441715" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="43" lineNum="62" parent="globals/Rez/Menus/TimedMenu" pc="268441758" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="43" lineNum="63" parent="globals/Rez/Menus/TimedMenu" pc="268441801" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="43" lineNum="64" parent="globals/Rez/Menus/TimedMenu" pc="268441844" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="43" lineNum="65" parent="globals/Rez/Menus/TimedMenu" pc="268441887" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="43" lineNum="66" parent="globals/Rez/Menus/TimedMenu" pc="268441930" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="44" lineNum="71" parent="globals/Rez/Menus/AdvancedMenu" pc="268441974" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="44" lineNum="72" parent="globals/Rez/Menus/AdvancedMenu" pc="268441976" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="44" lineNum="73" parent="globals/Rez/Menus/AdvancedMenu" pc="268442006" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="44" lineNum="74" parent="globals/Rez/Menus/AdvancedMenu" pc="268442049" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="44" lineNum="75" parent="globals/Rez/Menus/AdvancedMenu" pc="268442092" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="44" lineNum="76" parent="globals/Rez/Menus/AdvancedMenu" pc="268442135" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="44" lineNum="77" parent="globals/Rez/Menus/AdvancedMenu" pc="268442178" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="153" parent="globals/Rez/Menus/GroupMenu" pc="268442222" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="154" parent="globals/Rez/Menus/GroupMenu" pc="268442224" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="155" parent="globals/Rez/Menus/GroupMenu" pc="268442254" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="156" parent="globals/Rez/Menus/GroupMenu" pc="268442297" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="157" parent="globals/Rez/Menus/GroupMenu" pc="268442340" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="158" parent="globals/Rez/Menus/GroupMenu" pc="268442383" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="159" parent="globals/Rez/Menus/GroupMenu" pc="268442426" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="160" parent="globals/Rez/Menus/GroupMenu" pc="268442469" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="161" parent="globals/Rez/Menus/GroupMenu" pc="268442512" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="162" parent="globals/Rez/Menus/GroupMenu" pc="268442555" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="163" parent="globals/Rez/Menus/GroupMenu" pc="268442598" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="164" parent="globals/Rez/Menus/GroupMenu" pc="268442641" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="165" parent="globals/Rez/Menus/GroupMenu" pc="268442684" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="45" lineNum="166" parent="globals/Rez/Menus/GroupMenu" pc="268442727" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="94" parent="globals/Rez/Menus/SportMenu" pc="268442771" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="95" parent="globals/Rez/Menus/SportMenu" pc="268442773" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="96" parent="globals/Rez/Menus/SportMenu" pc="268442803" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="97" parent="globals/Rez/Menus/SportMenu" pc="268442850" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="98" parent="globals/Rez/Menus/SportMenu" pc="268442897" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="99" parent="globals/Rez/Menus/SportMenu" pc="268442944" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="100" parent="globals/Rez/Menus/SportMenu" pc="268442991" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="101" parent="globals/Rez/Menus/SportMenu" pc="268443038" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="102" parent="globals/Rez/Menus/SportMenu" pc="268443085" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="103" parent="globals/Rez/Menus/SportMenu" pc="268443132" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="104" parent="globals/Rez/Menus/SportMenu" pc="268443179" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="105" parent="globals/Rez/Menus/SportMenu" pc="268443226" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="106" parent="globals/Rez/Menus/SportMenu" pc="268443273" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="107" parent="globals/Rez/Menus/SportMenu" pc="268443320" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="108" parent="globals/Rez/Menus/SportMenu" pc="268443367" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="109" parent="globals/Rez/Menus/SportMenu" pc="268443414" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="110" parent="globals/Rez/Menus/SportMenu" pc="268443461" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="111" parent="globals/Rez/Menus/SportMenu" pc="268443508" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="112" parent="globals/Rez/Menus/SportMenu" pc="268443555" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="113" parent="globals/Rez/Menus/SportMenu" pc="268443602" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="114" parent="globals/Rez/Menus/SportMenu" pc="268443649" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="115" parent="globals/Rez/Menus/SportMenu" pc="268443696" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="116" parent="globals/Rez/Menus/SportMenu" pc="268443743" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="117" parent="globals/Rez/Menus/SportMenu" pc="268443790" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="118" parent="globals/Rez/Menus/SportMenu" pc="268443837" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="119" parent="globals/Rez/Menus/SportMenu" pc="268443884" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="120" parent="globals/Rez/Menus/SportMenu" pc="268443931" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="121" parent="globals/Rez/Menus/SportMenu" pc="268443978" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="46" lineNum="122" parent="globals/Rez/Menus/SportMenu" pc="268444025" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="47" lineNum="127" parent="globals/Rez/Menus/GolfMenu" pc="268444073" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="47" lineNum="128" parent="globals/Rez/Menus/GolfMenu" pc="268444075" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="47" lineNum="129" parent="globals/Rez/Menus/GolfMenu" pc="268444105" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="47" lineNum="130" parent="globals/Rez/Menus/GolfMenu" pc="268444148" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="47" lineNum="131" parent="globals/Rez/Menus/GolfMenu" pc="268444191" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="47" lineNum="132" parent="globals/Rez/Menus/GolfMenu" pc="268444234" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="47" lineNum="133" parent="globals/Rez/Menus/GolfMenu" pc="268444277" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="47" lineNum="134" parent="globals/Rez/Menus/GolfMenu" pc="268444320" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="47" lineNum="135" parent="globals/Rez/Menus/GolfMenu" pc="268444363" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="48" lineNum="82" parent="globals/Rez/Menus/TennisMenu" pc="268444407" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="48" lineNum="83" parent="globals/Rez/Menus/TennisMenu" pc="268444409" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="48" lineNum="84" parent="globals/Rez/Menus/TennisMenu" pc="268444439" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="48" lineNum="85" parent="globals/Rez/Menus/TennisMenu" pc="268444482" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="48" lineNum="86" parent="globals/Rez/Menus/TennisMenu" pc="268444525" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="48" lineNum="87" parent="globals/Rez/Menus/TennisMenu" pc="268444568" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="48" lineNum="88" parent="globals/Rez/Menus/TennisMenu" pc="268444611" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="48" lineNum="89" parent="globals/Rez/Menus/TennisMenu" pc="268444654" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="49" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268444698" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="49" lineNum="37" parent="globals/Rez/Menus/MainMenu" pc="268444700" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="49" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268444730" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="49" lineNum="39" parent="globals/Rez/Menus/MainMenu" pc="268444773" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="49" lineNum="40" parent="globals/Rez/Menus/MainMenu" pc="268444816" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="49" lineNum="41" parent="globals/Rez/Menus/MainMenu" pc="268444859" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="49" lineNum="42" parent="globals/Rez/Menus/MainMenu" pc="268444902" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="49" lineNum="43" parent="globals/Rez/Menus/MainMenu" pc="268444945" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="50" lineNum="48" parent="globals/Rez/Menus/TimerMenu" pc="268444989" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="50" lineNum="49" parent="globals/Rez/Menus/TimerMenu" pc="268444991" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="50" lineNum="50" parent="globals/Rez/Menus/TimerMenu" pc="268445021" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="50" lineNum="51" parent="globals/Rez/Menus/TimerMenu" pc="268445064" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="50" lineNum="52" parent="globals/Rez/Menus/TimerMenu" pc="268445107" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="50" lineNum="53" parent="globals/Rez/Menus/TimerMenu" pc="268445150" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="50" lineNum="54" parent="globals/Rez/Menus/TimerMenu" pc="268445193" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="51" lineNum="140" parent="globals/Rez/Menus/TargetMenu" pc="268445237" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="51" lineNum="141" parent="globals/Rez/Menus/TargetMenu" pc="268445239" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="51" lineNum="142" parent="globals/Rez/Menus/TargetMenu" pc="268445269" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="51" lineNum="143" parent="globals/Rez/Menus/TargetMenu" pc="268445312" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="51" lineNum="144" parent="globals/Rez/Menus/TargetMenu" pc="268445355" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="51" lineNum="145" parent="globals/Rez/Menus/TargetMenu" pc="268445398" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="51" lineNum="146" parent="globals/Rez/Menus/TargetMenu" pc="268445441" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="51" lineNum="147" parent="globals/Rez/Menus/TargetMenu" pc="268445484" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/ScoreTrak/Exports/gen/006-B4585-00/source/Rez.mcgen" id="51" lineNum="148" parent="globals/Rez/Menus/TargetMenu" pc="268445527" symbol="initialize"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8" object="true" symbol="ScoreTrakDelegate"/>
-        <entry id="71" symbol="sport_squash"/>
+        <entry id="133" symbol="sport_squash"/>
         <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="53" symbol="player_7_name"/>
         <entry field="true" id="8389346" symbol="text"/>
-        <entry id="49" symbol="rename_guest"/>
-        <entry id="77" symbol="sport_board_game"/>
-        <entry field="true" id="24" symbol="home_score"/>
-        <entry field="true" id="33" symbol="&lt;globals/ScoreTrakMenuDelegate/&lt;&gt;_menu_id&gt;"/>
+        <entry field="true" id="48" symbol="player_4_score"/>
+        <entry id="95" symbol="reset_scores"/>
+        <entry id="106" symbol="rename_guest"/>
+        <entry id="104" symbol="sport_board_game"/>
+        <entry field="true" id="33" symbol="home_score"/>
+        <entry field="true" id="50" symbol="player_5_score"/>
+        <entry field="true" id="78" symbol="&lt;globals/ScoreTrakMenuDelegate/&lt;&gt;_menu_id&gt;"/>
+        <entry field="true" id="52" symbol="player_6_score"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry id="27" method="true" symbol="resetScores"/>
+        <entry field="true" id="66" symbol="sport_label"/>
+        <entry id="61" method="true" symbol="resetScores"/>
         <entry id="5" module="true" symbol="globals/Rez/Menus"/>
-        <entry field="true" id="35" symbol="&lt;globals/ScoreTrakDelegate/&lt;&gt;_view&gt;"/>
-        <entry id="37" method="true" symbol="MainLayout"/>
-        <entry id="31" method="true" symbol="updateGuest"/>
-        <entry id="60" symbol="sport_lacrosse"/>
+        <entry field="true" id="80" symbol="&lt;globals/ScoreTrakDelegate/&lt;&gt;_view&gt;"/>
+        <entry id="82" method="true" symbol="MainLayout"/>
+        <entry field="true" id="21" symbol="SUB_SCREEN_Y"/>
+        <entry field="true" id="20" symbol="SUB_SCREEN_X"/>
+        <entry field="true" id="19" symbol="SUB_SCREEN_R"/>
+        <entry id="93" symbol="home_minus"/>
+        <entry id="72" method="true" symbol="updateGuest"/>
+        <entry id="123" symbol="sport_lacrosse"/>
+        <entry field="true" id="57" symbol="player_9_name"/>
         <entry field="true" id="18" symbol="SCREEN_WIDTH"/>
         <entry field="true" id="16" symbol="JCENTER"/>
-        <entry id="58" symbol="sport_gaming"/>
+        <entry id="98" symbol="advanced_settings"/>
+        <entry field="true" id="76" symbol="vertical_offset"/>
+        <entry id="121" symbol="sport_gaming"/>
         <entry id="10" object="true" symbol="ScoreTrakTextDelegate"/>
-        <entry id="57" symbol="sport_field_hockey"/>
+        <entry field="true" id="68" symbol="tennis_matches"/>
+        <entry id="120" symbol="sport_field_hockey"/>
         <entry id="7" object="true" symbol="ScoreTrakApp"/>
-        <entry id="72" symbol="sport_table_tennis"/>
+        <entry id="134" symbol="sport_table_tennis"/>
+        <entry field="true" id="31" symbol="home_label"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry id="38" object="true" symbol="AdvancedMenu"/>
-        <entry id="70" symbol="sport_racquetball"/>
-        <entry id="76" symbol="sport_disc_golf"/>
-        <entry field="true" id="41" symbol="AppName"/>
-        <entry field="true" id="25" symbol="is_24_hour"/>
-        <entry id="61" symbol="sport_rugby"/>
+        <entry id="96" symbol="start_activity"/>
+        <entry id="83" object="true" symbol="AdvancedMenu"/>
+        <entry id="91" object="true" symbol="TimerMenu"/>
+        <entry id="110" symbol="time_format"/>
+        <entry id="132" symbol="sport_racquetball"/>
+        <entry id="103" symbol="sport_disc_golf"/>
+        <entry field="true" id="71" symbol="time_string"/>
+        <entry field="true" id="92" symbol="AppName"/>
+        <entry field="true" id="43" symbol="player_2_name"/>
+        <entry id="124" symbol="sport_rugby"/>
         <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="97" symbol="change_sport"/>
         <entry id="8389080" method="true" symbol="onMenu"/>
-        <entry id="48" symbol="rename_home"/>
+        <entry id="105" symbol="rename_home"/>
+        <entry field="true" id="77" symbol="&lt;globals/ScoreTrakApp/&lt;&gt;view&gt;"/>
+        <entry field="true" id="54" symbol="player_7_score"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
-        <entry id="59" symbol="sport_ice_hockey"/>
-        <entry field="true" id="20" symbol="flip_score_buttons"/>
+        <entry id="122" symbol="sport_ice_hockey"/>
+        <entry field="true" id="24" symbol="flip_score_buttons"/>
+        <entry id="139" symbol="singles_doubles"/>
+        <entry field="true" id="56" symbol="player_8_score"/>
+        <entry field="true" id="39" symbol="player_10_name"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry id="55" symbol="sport_basketball"/>
+        <entry field="true" id="23" symbol="current_player"/>
+        <entry id="118" symbol="sport_basketball"/>
         <entry field="true" id="17" symbol="SCREEN_HEIGHT"/>
+        <entry field="true" id="25" symbol="game_goal"/>
+        <entry id="135" symbol="player_minus"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
-        <entry id="52" symbol="sport_custom"/>
-        <entry id="67" symbol="sport_padel"/>
+        <entry field="true" id="47" symbol="player_4_name"/>
+        <entry id="115" symbol="sport_custom"/>
+        <entry id="130" symbol="sport_padel"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="47" symbol="item_6"/>
-        <entry id="46" symbol="item_5"/>
-        <entry id="45" symbol="item_4"/>
-        <entry id="44" symbol="item_3"/>
-        <entry id="43" symbol="item_2"/>
-        <entry id="42" symbol="item_1"/>
+        <entry field="true" id="37" symbol="next_player"/>
+        <entry id="84" object="true" symbol="GolfMenu"/>
         <entry id="8389079" method="true" symbol="onPreviousPage"/>
         <entry id="15" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
         <entry id="9" object="true" symbol="ScoreTrakMenuDelegate"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry id="54" symbol="sport_baseball"/>
+        <entry field="true" id="36" symbol="is24hour"/>
+        <entry id="117" symbol="sport_baseball"/>
         <entry field="true" id="8389063" symbol="identifier"/>
+        <entry field="true" id="69" symbol="time"/>
+        <entry field="true" id="70" symbol="time_label"/>
         <entry id="8389349" symbol="justification"/>
-        <entry field="true" id="22" symbol="guest_score"/>
-        <entry id="28" method="true" symbol="setCustomSportName"/>
-        <entry id="75" symbol="sport_mini_golf"/>
-        <entry id="64" symbol="sport_ultimate"/>
+        <entry field="true" id="29" symbol="guest_score"/>
+        <entry id="140" symbol="set_goal"/>
+        <entry field="true" id="51" symbol="player_6_name"/>
+        <entry field="true" id="40" symbol="player_10_score"/>
+        <entry id="111" symbol="timer_settings"/>
+        <entry field="true" id="42" symbol="player_1_score"/>
+        <entry id="108" symbol="setCustomSportName"/>
+        <entry id="101" symbol="sport_mini_golf"/>
+        <entry id="94" symbol="guest_minus"/>
+        <entry id="127" symbol="sport_ultimate"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry id="73" symbol="sport_tennis"/>
-        <entry id="39" object="true" symbol="MainMenu"/>
-        <entry id="50" symbol="reset_names"/>
+        <entry id="99" symbol="sport_tennis"/>
+        <entry id="86" object="true" symbol="MainMenu"/>
+        <entry field="true" id="55" symbol="player_8_name"/>
+        <entry field="true" id="58" symbol="player_9_score"/>
+        <entry id="112" symbol="player_count"/>
+        <entry id="88" object="true" symbol="TargetMenu"/>
+        <entry id="109" symbol="reset_names"/>
         <entry id="8388644" module="true" symbol="System"/>
+        <entry field="true" id="27" symbol="guest_label"/>
+        <entry field="true" id="35" symbol="instinct"/>
         <entry id="8389619" method="true" symbol="onSelect"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry id="53" symbol="sport_football"/>
+        <entry id="116" symbol="sport_football"/>
         <entry id="8389540" method="true" symbol="onTextEntered"/>
-        <entry id="66" symbol="sport_badminton"/>
-        <entry id="40" object="true" symbol="SportMenu"/>
+        <entry id="129" symbol="sport_badminton"/>
+        <entry id="87" object="true" symbol="SportMenu"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry field="true" id="36" symbol="LauncherIcon"/>
+        <entry field="true" id="8388881" method="true" symbol="isRecording"/>
+        <entry field="true" id="81" symbol="LauncherIcon"/>
         <entry id="11" object="true" symbol="ScoreTrakView"/>
         <entry id="8388610" symbol="statics"/>
-        <entry id="8389123" method="true" symbol="onShow"/>
-        <entry field="true" id="21" symbol="guest_name"/>
-        <entry id="62" symbol="sport_soccer"/>
-        <entry id="32" method="true" symbol="updateHome"/>
-        <entry id="30" method="true" symbol="setHomeName"/>
+        <entry field="true" id="28" symbol="guest_name"/>
+        <entry field="true" id="41" symbol="player_1_name"/>
+        <entry id="125" symbol="sport_soccer"/>
+        <entry id="73" method="true" symbol="updateHome"/>
+        <entry id="65" method="true" symbol="setHomeName"/>
+        <entry field="true" id="75" symbol="updateTimer"/>
         <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="34" symbol="home_score_label"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="44" symbol="player_2_score"/>
         <entry id="12" method="true" symbol="formatSportName"/>
-        <entry id="63" symbol="sport_softball"/>
+        <entry id="126" symbol="sport_softball"/>
         <entry id="8388702" method="true" symbol="initialize"/>
+        <entry field="true" id="46" symbol="player_3_score"/>
         <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="30" symbol="guest_score_label"/>
         <entry field="true" id="13" symbol="&lt;globals/ScoreTrakTextDelegate/&lt;&gt;_callback&gt;"/>
-        <entry id="68" symbol="sport_pickleball"/>
-        <entry id="69" symbol="sport_platform"/>
-        <entry field="true" id="23" symbol="home_name"/>
-        <entry id="26" method="true" symbol="resetNames"/>
-        <entry id="65" symbol="sport_volleyball"/>
+        <entry id="107" symbol="rename_custom_sport"/>
+        <entry id="131" symbol="sport_pickleball"/>
+        <entry id="100" symbol="sport_platform"/>
+        <entry field="true" id="32" symbol="home_name"/>
+        <entry id="60" method="true" symbol="resetNames"/>
+        <entry id="128" symbol="sport_volleyball"/>
+        <entry field="true" id="45" symbol="player_3_name"/>
+        <entry id="138" symbol="reset_game"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry field="true" id="8389347" symbol="color"/>
+        <entry field="true" id="59" symbol="prev_player"/>
+        <entry id="136" symbol="new_hole"/>
+        <entry id="85" object="true" symbol="GroupMenu"/>
+        <entry id="89" object="true" symbol="TennisMenu"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
         <entry id="14" module="true" symbol="Layouts"/>
-        <entry id="74" symbol="sport_golf"/>
-        <entry id="56" symbol="sport_cricket"/>
-        <entry field="true" id="34" symbol="&lt;globals/ScoreTrakMenuDelegate/&lt;&gt;_view&gt;"/>
-        <entry field="true" id="19" symbol="active_sport"/>
-        <entry id="51" symbol="sport_none"/>
-        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="102" symbol="sport_golf"/>
+        <entry id="113" symbol="reset_players"/>
+        <entry field="true" id="49" symbol="player_5_name"/>
+        <entry id="119" symbol="sport_cricket"/>
+        <entry field="true" id="79" symbol="&lt;globals/ScoreTrakMenuDelegate/&lt;&gt;_view&gt;"/>
+        <entry id="137" symbol="edit_players"/>
+        <entry field="true" id="22" symbol="active_sport"/>
+        <entry id="74" method="true" symbol="updatePlayer"/>
+        <entry id="114" symbol="sport_none"/>
+        <entry field="true" id="62" symbol="score_line_offset"/>
+        <entry id="90" object="true" symbol="TimedMenu"/>
         <entry id="8389078" method="true" symbol="onNextPage"/>
         <entry id="8388635" module="true" symbol="Application"/>
         <entry field="true" id="8389642" symbol="title"/>
-        <entry id="29" method="true" symbol="setGuestName"/>
+        <entry id="38" method="true" symbol="onTimer"/>
+        <entry field="true" id="67" symbol="tennis_games"/>
+        <entry id="64" method="true" symbol="setGuestName"/>
+        <entry field="true" id="26" symbol="golf_holes"/>
+        <entry field="true" id="63" symbol="scoring_mode"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435573" name="name" stackId="1" startPc="268435469"/>
-        <entry endPc="268435567" name="index" stackId="2" startPc="268435510"/>
-        <entry arg="true" endPc="268435702" name="text" stackId="1" startPc="268435663"/>
-        <entry arg="true" endPc="268435702" name="changed" stackId="2" startPc="268435663"/>
-        <entry arg="true" endPc="268435726" name="callback" stackId="1" startPc="268435703"/>
-        <entry arg="true" endPc="268436297" name="dc" stackId="1" startPc="268435800"/>
-        <entry arg="true" endPc="268436332" name="text" stackId="1" startPc="268436298"/>
-        <entry arg="true" endPc="268436385" name="value" stackId="1" startPc="268436333"/>
-        <entry arg="true" endPc="268436477" name="text" stackId="1" startPc="268436443"/>
-        <entry arg="true" endPc="268437263" name="dc" stackId="1" startPc="268436493"/>
-        <entry endPc="268437262" name="home_score_label" stackId="2" startPc="268436496"/>
-        <entry endPc="268437262" name="home_label" stackId="3" startPc="268436496"/>
-        <entry endPc="268437262" name="guest_score_label" stackId="4" startPc="268436496"/>
-        <entry endPc="268437262" name="guest_label" stackId="5" startPc="268436496"/>
-        <entry endPc="268437262" name="time_label" stackId="6" startPc="268436496"/>
-        <entry endPc="268437262" name="time" stackId="7" startPc="268436496"/>
-        <entry endPc="268437262" name="time_string" stackId="8" startPc="268436496"/>
-        <entry endPc="268437262" name="sport_label" stackId="9" startPc="268436496"/>
-        <entry endPc="268437262" name="score_line_offset" stackId="10" startPc="268437051"/>
-        <entry arg="true" endPc="268437316" name="value" stackId="1" startPc="268437264"/>
-        <entry arg="true" endPc="268437424" name="view" stackId="1" startPc="268437392"/>
-        <entry arg="true" endPc="268437424" name="menuId" stackId="2" startPc="268437392"/>
-        <entry arg="true" endPc="268438411" name="item" stackId="1" startPc="268437425"/>
-        <entry endPc="268438410" name="id" stackId="2" startPc="268437428"/>
-        <entry endPc="268437833" name="SportMenu" stackId="3" startPc="268437737"/>
-        <entry endPc="268437924" name="AdvancedMenu" stackId="4" startPc="268437846"/>
-        <entry endPc="268438034" name="sportName" stackId="5" startPc="268437947"/>
-        <entry endPc="268438153" name="picker" stackId="6" startPc="268438068"/>
-        <entry endPc="268438153" name="delegate" stackId="7" startPc="268438068"/>
-        <entry endPc="268438251" name="picker" stackId="8" startPc="268438166"/>
-        <entry endPc="268438251" name="delegate" stackId="9" startPc="268438166"/>
-        <entry arg="true" endPc="268438534" name="view" stackId="1" startPc="268438511"/>
-        <entry arg="true" endPc="268439253" name="dc" stackId="1" startPc="268438555"/>
+        <entry arg="true" endPc="268435579" name="name" stackId="1" startPc="268435472"/>
+        <entry endPc="268435573" name="index" stackId="2" startPc="268435516"/>
+        <entry arg="true" endPc="268435729" name="text" stackId="1" startPc="268435669"/>
+        <entry arg="true" endPc="268435729" name="changed" stackId="2" startPc="268435669"/>
+        <entry arg="true" endPc="268435753" name="callback" stackId="1" startPc="268435730"/>
+        <entry arg="true" endPc="268435814" name="text" stackId="1" startPc="268435754"/>
+        <entry arg="true" endPc="268435844" name="value" stackId="1" startPc="268435815"/>
+        <entry arg="true" endPc="268435905" name="text" stackId="1" startPc="268435845"/>
+        <entry arg="true" endPc="268435935" name="value" stackId="1" startPc="268435906"/>
+        <entry arg="true" endPc="268436971" name="dc" stackId="1" startPc="268436039"/>
+        <entry arg="true" endPc="268436994" name="value" stackId="1" startPc="268436991"/>
+        <entry arg="true" endPc="268438692" name="dc" stackId="1" startPc="268437070"/>
+        <entry endPc="268437486" name="hour" stackId="2" startPc="268437387"/>
+        <entry endPc="268438780" name="delegate" stackId="1" startPc="268438713"/>
+        <entry arg="true" endPc="268438854" name="state" stackId="1" startPc="268438796"/>
+        <entry arg="true" endPc="268438887" name="view" stackId="1" startPc="268438855"/>
+        <entry arg="true" endPc="268438887" name="menuId" stackId="2" startPc="268438855"/>
+        <entry arg="true" endPc="268440573" name="item" stackId="1" startPc="268438888"/>
+        <entry endPc="268440572" name="id" stackId="2" startPc="268438891"/>
+        <entry endPc="268439304" name="SportMenu" stackId="3" startPc="268439208"/>
+        <entry endPc="268439620" name="AdvancedMenu" stackId="4" startPc="268439319"/>
+        <entry endPc="268439929" name="sportName" stackId="5" startPc="268439648"/>
+        <entry endPc="268440077" name="picker" stackId="6" startPc="268439965"/>
+        <entry endPc="268440077" name="delegate" stackId="7" startPc="268439965"/>
+        <entry endPc="268440204" name="picker" stackId="8" startPc="268440092"/>
+        <entry endPc="268440204" name="delegate" stackId="9" startPc="268440092"/>
+        <entry endPc="268440304" name="picker" stackId="10" startPc="268440219"/>
+        <entry endPc="268440304" name="delegate" stackId="11" startPc="268440219"/>
+        <entry arg="true" endPc="268440763" name="view" stackId="1" startPc="268440740"/>
+        <entry arg="true" endPc="268441574" name="dc" stackId="1" startPc="268440881"/>
+        <entry endPc="268441574" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268440892"/>
+        <entry endPc="268441574" name="rez_cmp_local_var_dc_getWidth" stackId="3" startPc="268440892"/>
+        <entry endPc="268441574" name="rez_cmp_local_text_HomeLabel" stackId="4" startPc="268440892"/>
+        <entry endPc="268441574" name="rez_cmp_local_text_HomeScore" stackId="5" startPc="268440892"/>
+        <entry endPc="268441574" name="rez_cmp_local_text_GuestLabel" stackId="6" startPc="268440892"/>
+        <entry endPc="268441574" name="rez_cmp_local_text_GuestScore" stackId="7" startPc="268440892"/>
+        <entry endPc="268441574" name="rez_cmp_local_text_SportLabel" stackId="8" startPc="268440892"/>
+        <entry endPc="268441574" name="rez_cmp_local_text_TimeLabel" stackId="9" startPc="268440892"/>
     </localVars>
     <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B4585-00"/>
     <annotations>
@@ -398,49 +623,55 @@
         <dataEntry label="globals/ScoreTrakTextDelegate" offset="170" parentId="globals" symbolId="ScoreTrakTextDelegate" type="class"/>
         <dataEntry label="globals/Rez" offset="232" parentId="globals" symbolId="Rez" type="module"/>
         <dataEntry label="globals/ScoreTrakView" offset="294" parentId="globals" symbolId="ScoreTrakView" type="class"/>
-        <dataEntry label="globals/ScoreTrakApp" offset="527" parentId="globals" symbolId="ScoreTrakApp" type="class"/>
-        <dataEntry label="globals/ScoreTrakMenuDelegate" offset="598" parentId="globals" symbolId="ScoreTrakMenuDelegate" type="class"/>
-        <dataEntry label="globals/ScoreTrakDelegate" offset="669" parentId="globals" symbolId="ScoreTrakDelegate" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="749" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="784" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="819" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="872" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/Rez/Menus/AdvancedMenu" offset="907" parentId="Menus" symbolId="AdvancedMenu" type="class"/>
-        <dataEntry label="globals/Rez/Menus/SportMenu" offset="951" parentId="Menus" symbolId="SportMenu" type="class"/>
-        <dataEntry label="globals/Rez/Menus/MainMenu" offset="995" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/ScoreTrakApp" offset="914" parentId="globals" symbolId="ScoreTrakApp" type="class"/>
+        <dataEntry label="globals/ScoreTrakMenuDelegate" offset="994" parentId="globals" symbolId="ScoreTrakMenuDelegate" type="class"/>
+        <dataEntry label="globals/ScoreTrakDelegate" offset="1065" parentId="globals" symbolId="ScoreTrakDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1154" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1189" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1224" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1331" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/TimedMenu" offset="1366" parentId="Menus" symbolId="TimedMenu" type="class"/>
+        <dataEntry label="globals/Rez/Menus/AdvancedMenu" offset="1410" parentId="Menus" symbolId="AdvancedMenu" type="class"/>
+        <dataEntry label="globals/Rez/Menus/GroupMenu" offset="1454" parentId="Menus" symbolId="GroupMenu" type="class"/>
+        <dataEntry label="globals/Rez/Menus/SportMenu" offset="1498" parentId="Menus" symbolId="SportMenu" type="class"/>
+        <dataEntry label="globals/Rez/Menus/GolfMenu" offset="1542" parentId="Menus" symbolId="GolfMenu" type="class"/>
+        <dataEntry label="globals/Rez/Menus/TennisMenu" offset="1586" parentId="Menus" symbolId="TennisMenu" type="class"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1630" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/Rez/Menus/TimerMenu" offset="1674" parentId="Menus" symbolId="TimerMenu" type="class"/>
+        <dataEntry label="globals/Rez/Menus/TargetMenu" offset="1718" parentId="Menus" symbolId="TargetMenu" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268435468" name="&lt;init&gt;" parent="ScoreTrakTextDelegate" startPc="268435457">
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="ScoreTrakTextDelegate" startPc="268435460">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435573" name="formatSportName" startPc="268435469">
+        <functionEntry accessMode="public" endPc="268435579" name="formatSportName" startPc="268435472">
             <param id="name"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435594" name="getApp" startPc="268435574">
+        <functionEntry accessMode="public" endPc="268435600" name="getApp" startPc="268435580">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435614" name="&lt;init&gt;" parent="Rez" startPc="268435595">
+        <functionEntry accessMode="public" endPc="268435620" name="&lt;init&gt;" parent="Rez" startPc="268435601">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435626" name="&lt;init&gt;" parent="ScoreTrakView" startPc="268435615">
+        <functionEntry accessMode="public" endPc="268435632" name="&lt;init&gt;" parent="ScoreTrakView" startPc="268435621">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435638" name="&lt;init&gt;" parent="ScoreTrakApp" startPc="268435627">
+        <functionEntry accessMode="public" endPc="268435644" name="&lt;init&gt;" parent="ScoreTrakApp" startPc="268435633">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435650" name="&lt;init&gt;" parent="ScoreTrakMenuDelegate" startPc="268435639">
+        <functionEntry accessMode="public" endPc="268435656" name="&lt;init&gt;" parent="ScoreTrakMenuDelegate" startPc="268435645">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435662" name="&lt;init&gt;" parent="ScoreTrakDelegate" startPc="268435651">
+        <functionEntry accessMode="public" endPc="268435668" name="&lt;init&gt;" parent="ScoreTrakDelegate" startPc="268435657">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435702" name="onTextEntered" parent="ScoreTrakTextDelegate" startPc="268435663">
+        <functionEntry accessMode="public" endPc="268435729" name="onTextEntered" parent="ScoreTrakTextDelegate" startPc="268435669">
             <param id="text"/>
             <param id="changed"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435726" name="initialize" parent="ScoreTrakTextDelegate" startPc="268435703">
+        <functionEntry accessMode="public" endPc="268435753" name="initialize" parent="ScoreTrakTextDelegate" startPc="268435730">
             <param id="callback"/>
             <documentation/>
         </functionEntry>
@@ -456,105 +687,141 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435799" name="resetNames" parent="ScoreTrakView" startPc="268435727">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onShow" parent="ScoreTrakView">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436297" name="onLayout" parent="ScoreTrakView" startPc="268435800">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436332" name="setGuestName" parent="ScoreTrakView" startPc="268436298">
+        <functionEntry accessMode="public" endPc="268435814" name="setGuestName" parent="ScoreTrakView" startPc="268435754">
             <param id="text"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436385" name="updateGuest" parent="ScoreTrakView" startPc="268436333">
+        <functionEntry accessMode="public" endPc="268435844" name="updateGuest" parent="ScoreTrakView" startPc="268435815">
             <param id="value"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436442" name="resetScores" parent="ScoreTrakView" startPc="268436386">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436477" name="setHomeName" parent="ScoreTrakView" startPc="268436443">
+        <functionEntry accessMode="public" endPc="268435905" name="setHomeName" parent="ScoreTrakView" startPc="268435845">
             <param id="text"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436492" name="initialize" parent="ScoreTrakView" startPc="268436478">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onHide" parent="ScoreTrakView">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="setCustomSportName" parent="ScoreTrakView">
-            <param id="text"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437263" name="onUpdate" parent="ScoreTrakView" startPc="268436493">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437316" name="updateHome" parent="ScoreTrakView" startPc="268437264">
+        <functionEntry accessMode="public" endPc="268435935" name="updateHome" parent="ScoreTrakView" startPc="268435906">
             <param id="value"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="onStart" parent="ScoreTrakApp">
+        <functionEntry accessMode="public" endPc="268436038" name="resetNames" parent="ScoreTrakView" startPc="268435936">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436971" name="onLayout" parent="ScoreTrakView" startPc="268436039">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436990" name="resetScores" parent="ScoreTrakView" startPc="268436972">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436994" name="updatePlayer" parent="ScoreTrakView" startPc="268436991">
+            <param id="value"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437069" name="initialize" parent="ScoreTrakView" startPc="268436995">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438692" name="onUpdate" parent="ScoreTrakView" startPc="268437070">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438706" name="onTimer" parent="ScoreTrakView" startPc="268438693">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438709" name="onStart" parent="ScoreTrakApp" startPc="268438707">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437376" name="getInitialView" parent="ScoreTrakApp" startPc="268437317">
+        <functionEntry accessMode="public" endPc="268438780" name="getInitialView" parent="ScoreTrakApp" startPc="268438710">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437391" name="initialize" parent="ScoreTrakApp" startPc="268437377">
+        <functionEntry accessMode="public" endPc="268438795" name="initialize" parent="ScoreTrakApp" startPc="268438781">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="onStop" parent="ScoreTrakApp">
+        <functionEntry accessMode="public" endPc="268438854" name="onStop" parent="ScoreTrakApp" startPc="268438796">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437424" name="initialize" parent="ScoreTrakMenuDelegate" startPc="268437392">
+        <functionEntry accessMode="public" endPc="268438887" name="initialize" parent="ScoreTrakMenuDelegate" startPc="268438855">
             <param id="view"/>
             <param id="menuId"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438411" name="onSelect" parent="ScoreTrakMenuDelegate" startPc="268437425">
+        <functionEntry accessMode="public" endPc="268440573" name="onSelect" parent="ScoreTrakMenuDelegate" startPc="268438888">
             <param id="item"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438490" name="onMenu" parent="ScoreTrakDelegate" startPc="268438412">
+        <functionEntry accessMode="public" endPc="268440652" name="onMenu" parent="ScoreTrakDelegate" startPc="268440574">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438510" name="onPreviousPage" parent="ScoreTrakDelegate" startPc="268438491">
+        <functionEntry accessMode="public" endPc="268440739" name="onPreviousPage" parent="ScoreTrakDelegate" startPc="268440653">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438534" name="initialize" parent="ScoreTrakDelegate" startPc="268438511">
+        <functionEntry accessMode="public" endPc="268440763" name="initialize" parent="ScoreTrakDelegate" startPc="268440740">
             <param id="view"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438554" name="onNextPage" parent="ScoreTrakDelegate" startPc="268438535">
+        <functionEntry accessMode="public" endPc="268440850" name="onNextPage" parent="ScoreTrakDelegate" startPc="268440764">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439253" name="MainLayout" parent="Layouts" startPc="268438555">
+        <functionEntry accessMode="public" endPc="268440880" name="onSelect" parent="ScoreTrakDelegate" startPc="268440851">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441574" name="MainLayout" parent="Layouts" startPc="268440881">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439265" name="&lt;init&gt;" parent="AdvancedMenu" startPc="268439254">
+        <functionEntry accessMode="public" endPc="268441586" name="&lt;init&gt;" parent="TimedMenu" startPc="268441575">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439277" name="&lt;init&gt;" parent="SportMenu" startPc="268439266">
+        <functionEntry accessMode="public" endPc="268441598" name="&lt;init&gt;" parent="AdvancedMenu" startPc="268441587">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439289" name="&lt;init&gt;" parent="MainMenu" startPc="268439278">
+        <functionEntry accessMode="public" endPc="268441610" name="&lt;init&gt;" parent="GroupMenu" startPc="268441599">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268439494" name="initialize" parent="AdvancedMenu" startPc="268439290">
+        <functionEntry accessMode="public" endPc="268441622" name="&lt;init&gt;" parent="SportMenu" startPc="268441611">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440796" name="initialize" parent="SportMenu" startPc="268439495">
+        <functionEntry accessMode="public" endPc="268441634" name="&lt;init&gt;" parent="GolfMenu" startPc="268441623">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441044" name="initialize" parent="MainMenu" startPc="268440797">
+        <functionEntry accessMode="public" endPc="268441646" name="&lt;init&gt;" parent="TennisMenu" startPc="268441635">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441658" name="&lt;init&gt;" parent="MainMenu" startPc="268441647">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441670" name="&lt;init&gt;" parent="TimerMenu" startPc="268441659">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441682" name="&lt;init&gt;" parent="TargetMenu" startPc="268441671">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441973" name="initialize" parent="TimedMenu" startPc="268441683">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442221" name="initialize" parent="AdvancedMenu" startPc="268441974">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442770" name="initialize" parent="GroupMenu" startPc="268442222">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444072" name="initialize" parent="SportMenu" startPc="268442771">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444406" name="initialize" parent="GolfMenu" startPc="268444073">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444697" name="initialize" parent="TennisMenu" startPc="268444407">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268444988" name="initialize" parent="MainMenu" startPc="268444698">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445236" name="initialize" parent="TimerMenu" startPc="268444989">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445570" name="initialize" parent="TargetMenu" startPc="268445237">
             <documentation/>
         </functionEntry>
     </functions>

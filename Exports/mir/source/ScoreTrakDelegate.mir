@@ -63,33 +63,149 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_12_33_16_
     }
     [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc"; @line = 18; @symbol_functiondef = [onPreviousPage,18,13,27]; ]
     function onPreviousPage() {
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_18_29_22_4_start:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_18_29_29_4_start:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 19 8 ]
-        symbol [ _view %tmp.2 19 8 13 ];
-        %tmp.2 = getv ? :_view;
-        symbol [ updateHome %tmp.3 19 14 24 ];
-        %tmp.3 = getv function %tmp.2 :updateHome;
-        %tmp.4 = 1;
-        invoke %tmp.2 %tmp.3(%tmp.4);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 21 8 ]
-        %tmp.5 = true;
-        ret %tmp.5;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_18_29_22_4_stop:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_19_8_27_8_if_stmt:
+        symbol [ Application %tmp.2 19 11 22 ];
+        %tmp.2 = getv ? :Application;
+        symbol [ Storage %tmp.3 19 23 30 ];
+        %tmp.3 = getv %tmp.2 :Storage;
+        symbol [ getValue %tmp.4 19 31 39 ];
+        %tmp.4 = getv function %tmp.3 :getValue;
+        %tmp.5 = "scoring_mode";
+        %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
+        %tmp.7 = 2;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        bf %tmp.8 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_19_8_27_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_19_8_27_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_19_61_27_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 20 8 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_20_8_25_8_if_stmt:
+        symbol [ Application %tmp.10 20 11 22 ];
+        %tmp.10 = getv ? :Application;
+        symbol [ Storage %tmp.11 20 23 30 ];
+        %tmp.11 = getv %tmp.10 :Storage;
+        symbol [ getValue %tmp.12 20 31 39 ];
+        %tmp.12 = getv function %tmp.11 :getValue;
+        %tmp.13 = "flip_score_buttons";
+        %tmp.14 = invoke %tmp.11 %tmp.12(%tmp.13);
+        %tmp.15 = false;
+        %tmp.16 = eq %tmp.14 %tmp.15;
+        bf %tmp.16 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_20_8_25_8_if_else_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_20_8_25_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_20_71_22_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 21 12 ]
+        symbol [ _view %tmp.18 21 12 17 ];
+        %tmp.18 = getv ? :_view;
+        symbol [ updateHome %tmp.19 21 18 28 ];
+        %tmp.19 = getv function %tmp.18 :updateHome;
+        %tmp.20 = 1;
+        invoke %tmp.18 %tmp.19(%tmp.20);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_20_71_22_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_20_8_25_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_20_8_25_8_if_else_false:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_23_12_25_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 24 12 ]
+        symbol [ _view %tmp.22 24 12 17 ];
+        %tmp.22 = getv ? :_view;
+        symbol [ updateGuest %tmp.23 24 18 29 ];
+        %tmp.23 = getv function %tmp.22 :updateGuest;
+        %tmp.24 = 1;
+        invoke %tmp.22 %tmp.23(%tmp.24);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_23_12_25_8_stop:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_20_8_25_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_19_61_27_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_19_8_27_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_19_8_27_8_if_end:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 28 8 ]
+        %tmp.25 = true;
+        ret %tmp.25;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_18_29_29_4_stop:
     }
-    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc"; @line = 23; @symbol_functiondef = [onNextPage,23,13,23]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc"; @line = 30; @symbol_functiondef = [onNextPage,30,13,23]; ]
     function onNextPage() {
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_23_25_27_4_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 24 8 ]
-        symbol [ _view %tmp.2 24 8 13 ];
-        %tmp.2 = getv ? :_view;
-        symbol [ updateGuest %tmp.3 24 14 25 ];
-        %tmp.3 = getv function %tmp.2 :updateGuest;
-        %tmp.4 = 1;
-        invoke %tmp.2 %tmp.3(%tmp.4);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 26 8 ]
-        %tmp.5 = true;
-        ret %tmp.5;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_23_25_27_4_stop:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_30_25_40_4_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 31 8 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_31_8_38_8_if_stmt:
+        symbol [ Application %tmp.2 31 11 22 ];
+        %tmp.2 = getv ? :Application;
+        symbol [ Storage %tmp.3 31 23 30 ];
+        %tmp.3 = getv %tmp.2 :Storage;
+        symbol [ getValue %tmp.4 31 31 39 ];
+        %tmp.4 = getv function %tmp.3 :getValue;
+        %tmp.5 = "scoring_mode";
+        %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
+        %tmp.7 = 2;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        bf %tmp.8 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_31_8_38_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_31_8_38_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_31_61_38_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 32 8 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_32_8_37_8_if_stmt:
+        symbol [ Application %tmp.10 32 11 22 ];
+        %tmp.10 = getv ? :Application;
+        symbol [ Storage %tmp.11 32 23 30 ];
+        %tmp.11 = getv %tmp.10 :Storage;
+        symbol [ getValue %tmp.12 32 31 39 ];
+        %tmp.12 = getv function %tmp.11 :getValue;
+        %tmp.13 = "flip_score_buttons";
+        %tmp.14 = invoke %tmp.11 %tmp.12(%tmp.13);
+        %tmp.15 = false;
+        %tmp.16 = eq %tmp.14 %tmp.15;
+        bf %tmp.16 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_32_8_37_8_if_else_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_32_8_37_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_32_71_34_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 33 12 ]
+        symbol [ _view %tmp.18 33 12 17 ];
+        %tmp.18 = getv ? :_view;
+        symbol [ updateGuest %tmp.19 33 18 29 ];
+        %tmp.19 = getv function %tmp.18 :updateGuest;
+        %tmp.20 = 1;
+        invoke %tmp.18 %tmp.19(%tmp.20);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_32_71_34_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_32_8_37_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_32_8_37_8_if_else_false:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_35_12_37_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 36 12 ]
+        symbol [ _view %tmp.22 36 12 17 ];
+        %tmp.22 = getv ? :_view;
+        symbol [ updateHome %tmp.23 36 18 28 ];
+        %tmp.23 = getv function %tmp.22 :updateHome;
+        %tmp.24 = 1;
+        invoke %tmp.22 %tmp.23(%tmp.24);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_35_12_37_8_stop:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_32_8_37_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_31_61_38_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_31_8_38_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_31_8_38_8_if_end:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 39 8 ]
+        %tmp.25 = true;
+        ret %tmp.25;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_30_25_40_4_stop:
+    }
+    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc"; @line = 41; @symbol_functiondef = [onSelect,41,13,21]; ]
+    function onSelect() {
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_41_23_46_4_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 42 8 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_42_8_44_8_if_stmt:
+        symbol [ Application %tmp.2 42 11 22 ];
+        %tmp.2 = getv ? :Application;
+        symbol [ Storage %tmp.3 42 23 30 ];
+        %tmp.3 = getv %tmp.2 :Storage;
+        symbol [ getValue %tmp.4 42 31 39 ];
+        %tmp.4 = getv function %tmp.3 :getValue;
+        %tmp.5 = "scoring_mode";
+        %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
+        %tmp.7 = 2;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        bf %tmp.8 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_42_8_44_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_42_8_44_8_if_true:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_42_8_44_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_42_8_44_8_if_end:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc" 45 8 ]
+        %tmp.9 = true;
+        ret %tmp.9;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakDelegate_mc_41_23_46_4_stop:
     }
 }
 [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakDelegate.mc"; @line = 1; ]
