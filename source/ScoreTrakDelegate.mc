@@ -10,11 +10,11 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onMenu() as Boolean {
-        if(_view.scoring_mode != 1){
+        if(Application.Storage.getValue("scoring_mode") != 1){
         WatchUi.pushView(new Rez.Menus.MainMenu(), new ScoreTrakMenuDelegate(_view, "MainMenu"), WatchUi.SLIDE_UP);
         
         } else {
-            WatchUi.pushView(new Rez.Menus.MainMenu(), new ScoreTrakMenuDelegate(_view, "TennisMenu"), WatchUi.SLIDE_UP);
+            WatchUi.pushView(new Rez.Menus.TennisMenu(), new ScoreTrakMenuDelegate(_view, "TennisMenu"), WatchUi.SLIDE_UP);
         }
         return true;
     }
