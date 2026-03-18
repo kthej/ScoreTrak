@@ -55,14 +55,12 @@ module Rez {
             }
         }
 
-        class RecordingMenu extends WatchUi.Menu2 {
+        class SaveMenu extends WatchUi.Menu2 {
             function initialize() {
-                Menu2.initialize({:title=>"Settings"});
-                addItem(new WatchUi.MenuItem("Home -1", null, :home_minus, null));
-                addItem(new WatchUi.MenuItem("Guest -1", null, :guest_minus, null));
-                addItem(new WatchUi.MenuItem("Reset Scores", null, :reset_scores, null));
-                addItem(new WatchUi.MenuItem("Stop Activity", null, :start_activity, null));
-                addItem(new WatchUi.MenuItem("Advanced Settings", null, :advanced_settings, null));
+                Menu2.initialize({:title=>"Activity"});
+                addItem(new WatchUi.MenuItem("Pause", null, :pause_resume, null));
+                addItem(new WatchUi.MenuItem("Save", null, :save, null));
+                addItem(new WatchUi.MenuItem("Discard", null, :discard, null));
             }
         }
 

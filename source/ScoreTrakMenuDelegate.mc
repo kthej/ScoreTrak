@@ -22,7 +22,7 @@ function onSelect(item as WatchUi.MenuItem) as Void {
 
 // Default
 
-    if (_menu_id.equals("MainMenu") or _menu_id.equals("TennisMenu") or _menu_id.equals("RecordingMenu")){
+    if (_menu_id.equals("MainMenu") or _menu_id.equals("TennisMenu")){
 
         if (id == :home_minus) {
             _view.updateHome(-1);
@@ -45,26 +45,31 @@ function onSelect(item as WatchUi.MenuItem) as Void {
             System.println("Reset Scores");
 
         } else if(id ==:start_activity) {
-
-            if(!_view.isRecording){
+            if(!_view.isRecording and _view.recordingState == 0){
                 _view.isRecording = true;
+                _view.recordingState = 2;
                 _view.startRecording();
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
-            }
-            else{
-                _view.isRecording = false;
-                _view.stopRecording();
-                var savePickerDialogue = new Confirmation("Save Activity?");
-                var savePicker = new ConfirmationDelegate(_view);
-                WatchUi.pushView(savePickerDialogue,savePicker,WatchUi.SLIDE_IMMEDIATE);
-                
-                
 
+
+                
+            } else {
+
+            
+            var SaveMenu = new Rez.Menus.SaveMenu();
+            if(_view.recordingState == 1){SaveMenu.getItem(0).setLabel("Resume");}
+            if(_view.recordingState == 2){SaveMenu.getItem(0).setLabel("Pause");}
+            
+            WatchUi.pushView(
+                SaveMenu, 
+                new ScoreTrakMenuDelegate(_view, "SaveMenu"), 
+                WatchUi.SLIDE_UP
+                );
             }
 
             // WatchUi.popView(WatchUi.SLIDE_DOWN);
             WatchUi.requestUpdate();
-            System.println("Start Activity");
+            System.println("Save Menu");
 
         } else if(id ==:change_sport) {
 
@@ -262,10 +267,27 @@ function onSelect(item as WatchUi.MenuItem) as Void {
             
 
         }
-    }
+// Save Menu ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    } else if(_menu_id.equals("SaveMenu")) {
+        if(id==:save){
+            _view.saveChoice(true);
+        } else if(id==:discard){
+            _view.saveChoice(false);
+        } else if(id==:pause_resume){
+
+            if(_view.recordingState == 1){
+                _view.resumeActivity();
+            }
+            else if(_view.recordingState == 2){
+                _view.pauseActivity();
+            }
+            
+        }
+        WatchUi.popView(WatchUi.SLIDE_DOWN);
 }
 
 // End Class ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+}
 }

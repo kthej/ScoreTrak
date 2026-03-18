@@ -112,7 +112,16 @@ public var vertical_offset;
 // Activity Recording
 
 public var isRecording = false;
+public var recordingState = 0;
+/*
+0 is null
+1 is paused
+2 is recording
+*/
 public var activitySession;
+public var activity_profile;
+public var sub_activity_profile;
+
 
 function initialize() {
     View.initialize();
@@ -468,17 +477,126 @@ function stopSound() {
 }
 
 function startRecording() {
+
+activity_profile = Activity.SPORT_GENERIC;
+sub_activity_profile = Activity.SUB_SPORT_GENERIC;
+
+switch(active_sport) {
+    // Team Sports
+    case "American Football":
+        activity_profile = Activity.SPORT_AMERICAN_FOOTBALL;
+        break;
+    case "Baseball":
+        activity_profile = Activity.SPORT_BASEBALL;
+        break;
+    case "Basketball":
+        activity_profile = Activity.SPORT_BASKETBALL;
+        break;
+    case "Cricket":
+        activity_profile = Activity.SPORT_CRICKET;
+        break;
+    case "Field Hockey":
+        activity_profile = Activity.SPORT_HOCKEY;
+        break;
+    case "Gaming":
+        activity_profile = Activity.SPORT_VIDEO_GAMING;
+        
+        break;
+    case "Ice Hockey":
+        activity_profile = Activity.SPORT_HOCKEY;
+        break;
+    case "Lacrosse":
+        activity_profile = Activity.SPORT_LACROSSE;
+        break;
+    case "Rugby":
+        activity_profile = Activity.SPORT_RUGBY;
+        break;
+    case "Soccer":
+        activity_profile = Activity.SPORT_SOCCER;
+        break;
+    case "Softball":
+        activity_profile = Activity.SPORT_SOFTBALL_FAST_PITCH;
+        break;
+    case "Ultimate Disc":
+
+        activity_profile = Activity.SPORT_TEAM_SPORT;
+        sub_activity_profile = Activity.SUB_SPORT_ULTIMATE;
+        break;
+
+    case "Volleyball":
+        activity_profile = Activity.SPORT_VOLLEYBALL;
+        break;
+
+    // Racket Sports
+    case "Badminton":
+        activity_profile = Activity.SPORT_RACKET;
+        sub_activity_profile = Activity.SUB_SPORT_BADMINTON;
+        break;
+    case "Padel":
+        activity_profile = Activity.SPORT_RACKET;
+        sub_activity_profile = Activity.SUB_SPORT_PADEL;
+        break;
+    case "Pickleball":
+        activity_profile = Activity.SPORT_RACKET;
+        sub_activity_profile = Activity.SUB_SPORT_PICKLEBALL;
+        break;
+    case "Platform Tennis":
+        activity_profile = Activity.SPORT_RACKET;
+        sub_activity_profile = Activity.SUB_SPORT_PLATFORM;
+        break;
+    case "Racquetball":
+        activity_profile = Activity.SPORT_RACKET;
+        sub_activity_profile = Activity.SUB_SPORT_RACQUETBALL;
+        break;
+    case "Squash":
+        activity_profile = Activity.SPORT_RACKET;
+        sub_activity_profile = Activity.SUB_SPORT_SQUASH;
+        break;
+    case "Table Tennis":
+        activity_profile = Activity.SPORT_RACKET;
+        sub_activity_profile = Activity.SUB_SPORT_TABLE_TENNIS;
+        break;
+    case "Tennis":
+        activity_profile = Activity.SPORT_TENNIS;
+        break;
+
+    // Group / Other Sports
+    case "Golf":
+        activity_profile = Activity.SPORT_GOLF;
+        break;
+    case "Mini Golf":
+        activity_profile = Activity.SPORT_GOLF;
+        break;
+    case "Disc Golf":
+        activity_profile = Activity.SPORT_DISC_GOLF;
+        break;
+
+    case "Board Game":
+    case "Custom Sport":
+    case "Score Keeper":
+    default:
+        activity_profile = Activity.SPORT_GENERIC;
+        sub_activity_profile = Activity.SUB_SPORT_GENERIC;
+        break;
+}
+
+
+
+        
+
+    
     if (Toybox has :ActivityRecording) {
         startSound();
         if (activitySession == null) {
             activitySession = ActivityRecording.createSession({
                 :name => "ScoreTrak",
-                :sport => Activity.SPORT_BASKETBALL,      // Non-deprecated constant
-                :subSport => Activity.SUB_SPORT_MATCH     // Non-deprecated constant
+                :sport => activity_profile,      // Non-deprecated constant
+                :subSport => sub_activity_profile    // Non-deprecated constant
             });
             
             activitySession.start();
             isRecording = true;
+            recordingState = 2;
             
             // Add your feedback here
             
@@ -487,30 +605,46 @@ function startRecording() {
     }
 }
 
-function stopRecording() {
-    WatchUi.popView(WatchUi.SLIDE_DOWN);
 
-    if (activitySession != null) {
-        stopSound();
-        activitySession.stop();
-
-    }
-
+function pauseActivity(){
+    stopSound();
+    activitySession.stop();
+    isRecording = true;
+    recordingState = 1;
+}
+function resumeActivity(){
+    startSound();
+    activitySession.start();
+    isRecording = true;
+    recordingState = 2;
 }
 
 function saveChoice(shouldSave) {
 
     if (shouldSave) {
+    if (activitySession != null) {
+        stopSound();
+        activitySession.stop();
+
+    }
         activitySession.save();
     } else {
+    if (activitySession != null) {
+        stopSound();
+        activitySession.stop();
+
+    }
         activitySession.discard();
     }
 
     activitySession = null;
     isRecording = false;
+    recordingState = 0;
+    WatchUi.popView(WatchUi.SLIDE_DOWN);
     return true;
     // WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
 }
+
 
 // End class //////////////////////////////////////////////////////////////////////////////////////
 }

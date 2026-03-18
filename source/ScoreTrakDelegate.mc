@@ -10,17 +10,24 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
     }
 
     function onMenu() as Boolean {
-        if(_view.isRecording == false){
+        var CurrentMenu;
         if(Application.Storage.getValue("scoring_mode") != 1){
-        WatchUi.pushView(new Rez.Menus.MainMenu(), new ScoreTrakMenuDelegate(_view, "MainMenu"), WatchUi.SLIDE_UP);
+            CurrentMenu = new Rez.Menus.MainMenu();
+            if(_view.isRecording == true){CurrentMenu.getItem(3).setLabel("Activity Options");}
+            else{CurrentMenu.getItem(3).setLabel("Start Activity");}
+            
+
+        WatchUi.pushView(CurrentMenu, new ScoreTrakMenuDelegate(_view, "MainMenu"), WatchUi.SLIDE_UP);
         
         } else {
+            CurrentMenu = new Rez.Menus.TennisMenu();
+            
+            if(_view.isRecording == true){CurrentMenu.getItem(3).setLabel("Activity Options");}
+            else{CurrentMenu.getItem(3).setLabel("Start Activity");}
             WatchUi.pushView(new Rez.Menus.TennisMenu(), new ScoreTrakMenuDelegate(_view, "TennisMenu"), WatchUi.SLIDE_UP);
         }
-        }
-        else{
-            WatchUi.pushView(new Rez.Menus.RecordingMenu(), new ScoreTrakMenuDelegate(_view, "RecordingMenu"), WatchUi.SLIDE_UP);
-        }
+
+
         return true;
     }
 
@@ -47,6 +54,7 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
         }
         return true;
     }
+    
     function onSelect(){
         if(Application.Storage.getValue("scoring_mode") != 2){
 

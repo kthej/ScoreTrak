@@ -1,0 +1,7 @@
+<menu2 id="SaveMenu"  title="Activity" >
+    <menu-item id="pause_resume" label="Pause" />
+    
+    <menu-item id="save" label="Save"/>
+    <menu-item id="discard" label="Discard"/>
+
+</menu2>
