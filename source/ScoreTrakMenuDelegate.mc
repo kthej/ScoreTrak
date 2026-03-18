@@ -49,13 +49,20 @@ function onSelect(item as WatchUi.MenuItem) as Void {
             if(!_view.isRecording){
                 _view.isRecording = true;
                 _view.startRecording();
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
             }
             else{
                 _view.isRecording = false;
                 _view.stopRecording();
+                var savePickerDialogue = new Confirmation("Save Activity?");
+                var savePicker = new ConfirmationDelegate(_view);
+                WatchUi.pushView(savePickerDialogue,savePicker,WatchUi.SLIDE_IMMEDIATE);
+                
+                
+
             }
 
-            WatchUi.popView(WatchUi.SLIDE_DOWN);
+            // WatchUi.popView(WatchUi.SLIDE_DOWN);
             WatchUi.requestUpdate();
             System.println("Start Activity");
 

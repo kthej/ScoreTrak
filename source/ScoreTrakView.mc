@@ -488,20 +488,17 @@ function startRecording() {
 }
 
 function stopRecording() {
+    WatchUi.popView(WatchUi.SLIDE_DOWN);
+
     if (activitySession != null) {
         stopSound();
         activitySession.stop();
 
-        
-        // var dialog = new WatchUi.Confirmation("Save Activity?");
-        saveChoice(true);
-        
-
     }
+
 }
 
 function saveChoice(shouldSave) {
-    WatchUi.pushView(new SavingView(), null, WatchUi.SLIDE_IMMEDIATE);
 
     if (shouldSave) {
         activitySession.save();
@@ -511,30 +508,9 @@ function saveChoice(shouldSave) {
 
     activitySession = null;
     isRecording = false;
+    return true;
     // WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
 }
 
 // End class //////////////////////////////////////////////////////////////////////////////////////
-}
-
-class SavingView extends WatchUi.View {
-    function initialize() {
-        View.initialize();
-    }
-
-    function onUpdate(dc as Dc) as Void {
-        // Black background
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
-        dc.clear();
-
-        // White "Saving..." text in center
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(
-            dc.getWidth() / 2,
-            dc.getHeight() / 2,
-            Graphics.FONT_MEDIUM,
-            "Saving...",
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
-        );
-    }
 }

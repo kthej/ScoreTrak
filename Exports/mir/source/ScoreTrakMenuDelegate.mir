@@ -44,9 +44,9 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_10_34
     }
     [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc"; @line = 18; @symbol_functiondef = [onSelect,18,9,17]; @symbol_param<0> = [item,18,18,22]; @symbol_param<0>_type<0> = [WatchUi,18,26,33]; @symbol_param<0>_type<1> = [MenuItem,18,34,42]; ]
     function onSelect(item as WatchUi.MenuItem) as Void {
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_18_52_260_0_start:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_18_52_267_0_start:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 19 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_18_52_260_0_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_18_52_260_0_stop" ]
+        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_18_52_267_0_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_18_52_267_0_stop" ]
         %id.1 = local;
         symbol [ id %id.1 19 8 10 ];
         %tmp.1 = lgetv %item;
@@ -57,7 +57,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_18_52
         lputv %id.1 %tmp.3;
         symbol [ id %id.1 19 8 10 ];
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 25 4 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_258_4_if_stmt:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_265_4_if_stmt:
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_8_25_103_begin:
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_8_25_67_begin:
         symbol [ _menu_id %tmp.5 25 8 16 ];
@@ -66,7 +66,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_8_
         %tmp.6 = getv function %tmp.5 :equals;
         %tmp.7 = "MainMenu";
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
-        bt %tmp.8 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_258_4_if_true;
+        bt %tmp.8 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_265_4_if_true;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_39_25_67_false:
         symbol [ _menu_id %tmp.10 25 39 47 ];
         %tmp.10 = getv ? :_menu_id;
@@ -77,7 +77,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_39
         push %tmp.13;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_39_25_67_end:
         %tmp.14 = phi [%tmp.8 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_8_25_67_begin] [%tmp.13 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_39_25_67_false] [%tmp.14 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_39_25_67_end];
-        bt %tmp.14 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_258_4_if_true;
+        bt %tmp.14 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_265_4_if_true;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_72_25_103_false:
         symbol [ _menu_id %tmp.16 25 72 80 ];
         %tmp.16 = getv ? :_menu_id;
@@ -88,18 +88,18 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_72
         push %tmp.19;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_72_25_103_end:
         %tmp.20 = phi [%tmp.14 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_8_25_103_begin] [%tmp.19 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_72_25_103_false] [%tmp.20 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_72_25_103_end];
-        bf %tmp.20 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_258_4_if_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_258_4_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_105_156_4_start:
+        bf %tmp.20 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_265_4_if_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_265_4_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_105_163_4_start:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 27 8 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_8_103_8_if_stmt:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_8_110_8_if_stmt:
         %tmp.21 = lgetv %id.1;
         symbol [ id %tmp.21 27 12 14 ];
         %tmp.23 = const :home_minus;
         symbol [ home_minus %tmp.23 27 19 29 const ];
         %tmp.24 = eq %tmp.21 %tmp.23;
-        bf %tmp.24 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_8_103_8_if_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_8_103_8_if_true:
+        bf %tmp.24 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_8_110_8_if_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_8_110_8_if_true:
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_31_33_8_start:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 28 12 ]
         symbol [ _view %tmp.26 28 12 17 ];
@@ -132,17 +132,17 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_31
         %tmp.37 = "Home -1";
         invoke %tmp.35 %tmp.36(%tmp.37);
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_31_33_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_8_103_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_8_103_8_if_false:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_8_110_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_8_110_8_if_false:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 33 15 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_15_103_8_if_stmt:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_15_110_8_if_stmt:
         %tmp.38 = lgetv %id.1;
         symbol [ id %tmp.38 33 19 21 ];
         %tmp.40 = const :guest_minus;
         symbol [ guest_minus %tmp.40 33 26 37 const ];
         %tmp.41 = eq %tmp.38 %tmp.40;
-        bf %tmp.41 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_15_103_8_if_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_15_103_8_if_true:
+        bf %tmp.41 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_15_110_8_if_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_15_110_8_if_true:
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_39_40_8_start:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 35 12 ]
         symbol [ _view %tmp.43 35 12 17 ];
@@ -175,17 +175,17 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_39
         %tmp.54 = "Guest -1";
         invoke %tmp.52 %tmp.53(%tmp.54);
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_39_40_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_15_103_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_15_103_8_if_false:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_15_110_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_15_110_8_if_false:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 40 15 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_15_103_8_if_stmt:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_15_110_8_if_stmt:
         %tmp.55 = lgetv %id.1;
         symbol [ id %tmp.55 40 18 20 ];
         %tmp.57 = const :reset_scores;
         symbol [ reset_scores %tmp.57 40 25 37 const ];
         %tmp.58 = eq %tmp.55 %tmp.57;
-        bf %tmp.58 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_15_103_8_if_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_15_103_8_if_true:
+        bf %tmp.58 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_15_110_8_if_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_15_110_8_if_true:
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_38_47_8_start:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 42 12 ]
         symbol [ _view %tmp.60 42 12 17 ];
@@ -217,28 +217,28 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_38
         %tmp.70 = "Reset Scores";
         invoke %tmp.68 %tmp.69(%tmp.70);
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_38_47_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_15_103_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_15_103_8_if_false:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_15_110_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_15_110_8_if_false:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 47 15 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_15_103_8_if_stmt:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_15_110_8_if_stmt:
         %tmp.71 = lgetv %id.1;
         symbol [ id %tmp.71 47 18 20 ];
         %tmp.73 = const :start_activity;
         symbol [ start_activity %tmp.73 47 24 38 const ];
         %tmp.74 = eq %tmp.71 %tmp.73;
-        bf %tmp.74 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_15_103_8_if_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_15_103_8_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_40_62_8_start:
+        bf %tmp.74 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_15_110_8_if_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_15_110_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_40_69_8_start:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 49 12 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_12_56_12_if_stmt:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_12_63_12_if_stmt:
         symbol [ _view %tmp.76 49 16 21 ];
         %tmp.76 = getv ? :_view;
         symbol [ isRecording %tmp.77 49 22 33 ];
         %tmp.77 = getv %tmp.76 :isRecording;
         %tmp.78 = not %tmp.77;
-        bf %tmp.78 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_12_56_12_if_else_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_12_56_12_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_34_52_12_start:
+        bf %tmp.78 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_12_63_12_if_else_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_12_63_12_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_34_53_12_start:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 50 16 ]
         symbol [ _view %tmp.79 50 16 21 ];
         %tmp.79 = getv self :_view;
@@ -251,861 +251,896 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_34
         symbol [ startRecording %tmp.83 51 22 36 ];
         %tmp.83 = getv function %tmp.82 :startRecording;
         invoke %tmp.82 %tmp.83();
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_34_52_12_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_12_56_12_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_12_56_12_if_else_false:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_53_16_56_12_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 54 16 ]
-        symbol [ _view %tmp.84 54 16 21 ];
-        %tmp.84 = getv self :_view;
-        %tmp.85 = false;
-        symbol [ isRecording ? 54 22 33 ];
-        putv %tmp.84 :isRecording %tmp.85;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 52 16 ]
+        symbol [ WatchUi %tmp.84 52 16 23 ];
+        %tmp.84 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.85 52 24 31 ];
+        %tmp.85 = getv function %tmp.84 :popView;
+        symbol [ WatchUi %tmp.86 52 32 39 ];
+        %tmp.86 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.87 52 40 50 ];
+        %tmp.87 = getv %tmp.86 :SLIDE_DOWN;
+        invoke %tmp.84 %tmp.85(%tmp.87);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_34_53_12_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_12_63_12_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_12_63_12_if_else_false:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_54_16_63_12_start:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 55 16 ]
-        symbol [ _view %tmp.87 55 16 21 ];
-        %tmp.87 = getv ? :_view;
-        symbol [ stopRecording %tmp.88 55 22 35 ];
-        %tmp.88 = getv function %tmp.87 :stopRecording;
-        invoke %tmp.87 %tmp.88();
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_53_16_56_12_stop:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_12_56_12_if_end:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 58 12 ]
-        symbol [ WatchUi %tmp.89 58 12 19 ];
-        %tmp.89 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.90 58 20 27 ];
-        %tmp.90 = getv function %tmp.89 :popView;
-        symbol [ WatchUi %tmp.91 58 28 35 ];
-        %tmp.91 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_DOWN %tmp.92 58 36 46 ];
-        %tmp.92 = getv %tmp.91 :SLIDE_DOWN;
-        invoke %tmp.89 %tmp.90(%tmp.92);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 59 12 ]
-        symbol [ WatchUi %tmp.93 59 12 19 ];
-        %tmp.93 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.94 59 20 33 ];
-        %tmp.94 = getv function %tmp.93 :requestUpdate;
-        invoke %tmp.93 %tmp.94();
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 60 12 ]
-        symbol [ System %tmp.95 60 12 18 ];
-        %tmp.95 = getm $.Toybox.System;
-        symbol [ println %tmp.96 60 19 26 ];
-        %tmp.96 = getv function %tmp.95 :println;
-        %tmp.97 = "Start Activity";
-        invoke %tmp.95 %tmp.96(%tmp.97);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_40_62_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_15_103_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_15_103_8_if_false:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 62 15 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_62_15_103_8_if_stmt:
-        %tmp.98 = lgetv %id.1;
-        symbol [ id %tmp.98 62 18 20 ];
-        %tmp.100 = const :change_sport;
-        symbol [ change_sport %tmp.100 62 24 36 const ];
-        %tmp.101 = eq %tmp.98 %tmp.100;
-        bf %tmp.101 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_62_15_103_8_if_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_62_15_103_8_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_62_38_72_8_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 64 12 ]
-        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_62_38_72_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_62_38_72_8_stop" ]
-        %SportMenu.2 = local;
-        symbol [ SportMenu %SportMenu.2 64 16 25 ];
-        symbol [ Rez %tmp.105 64 32 35 ];
-        %tmp.105 = getv ? :Rez;
-        symbol [ Menus %tmp.106 64 36 41 ];
-        %tmp.106 = getv %tmp.105 :Menus;
-        symbol [ SportMenu %tmp.107 64 42 51 ];
-        %tmp.107 = getv function ? %tmp.106 :SportMenu;
-        %tmp.102 = newc %tmp.107 ();
-        lputv %SportMenu.2 %tmp.102;
-        symbol [ SportMenu %SportMenu.2 64 16 25 ];
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 65 12 ]
-        symbol [ WatchUi %tmp.108 65 12 19 ];
+        symbol [ _view %tmp.88 55 16 21 ];
+        %tmp.88 = getv self :_view;
+        %tmp.89 = false;
+        symbol [ isRecording ? 55 22 33 ];
+        putv %tmp.88 :isRecording %tmp.89;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 56 16 ]
+        symbol [ _view %tmp.91 56 16 21 ];
+        %tmp.91 = getv ? :_view;
+        symbol [ stopRecording %tmp.92 56 22 35 ];
+        %tmp.92 = getv function %tmp.91 :stopRecording;
+        invoke %tmp.91 %tmp.92();
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 57 16 ]
+        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_54_16_63_12_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_54_16_63_12_stop" ]
+        %savePickerDialogue.2 = local;
+        symbol [ savePickerDialogue %savePickerDialogue.2 57 20 38 ];
+        symbol [ Confirmation %tmp.96 57 45 57 ];
+        %tmp.96 = getv ? :Confirmation;
+        %tmp.97 = "Save Activity?";
+        %tmp.93 = newc %tmp.96 (%tmp.97);
+        lputv %savePickerDialogue.2 %tmp.93;
+        symbol [ savePickerDialogue %savePickerDialogue.2 57 20 38 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 58 16 ]
+        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_54_16_63_12_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_54_16_63_12_stop" ]
+        %savePicker.3 = local;
+        symbol [ savePicker %savePicker.3 58 20 30 ];
+        symbol [ ConfirmationDelegate %tmp.101 58 37 57 ];
+        %tmp.101 = getv ? :ConfirmationDelegate;
+        symbol [ _view %tmp.103 58 58 63 ];
+        %tmp.103 = getv ? :_view;
+        %tmp.98 = newc %tmp.101 (%tmp.103);
+        lputv %savePicker.3 %tmp.98;
+        symbol [ savePicker %savePicker.3 58 20 30 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 59 16 ]
+        symbol [ WatchUi %tmp.104 59 16 23 ];
+        %tmp.104 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.105 59 24 32 ];
+        %tmp.105 = getv function %tmp.104 :pushView;
+        %tmp.106 = lgetv %savePickerDialogue.2;
+        symbol [ savePickerDialogue %tmp.106 59 33 51 ];
+        %tmp.107 = lgetv %savePicker.3;
+        symbol [ savePicker %tmp.107 59 52 62 ];
+        symbol [ WatchUi %tmp.108 59 63 70 ];
         %tmp.108 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.109 65 20 28 ];
-        %tmp.109 = getv function %tmp.108 :pushView;
-        %tmp.110 = lgetv %SportMenu.2;
-        symbol [ SportMenu %tmp.110 66 16 25 ];
-        symbol [ ScoreTrakMenuDelegate %tmp.114 67 20 41 ];
-        %tmp.114 = getv ? :ScoreTrakMenuDelegate;
-        symbol [ _view %tmp.116 67 42 47 ];
-        %tmp.116 = getv ? :_view;
-        %tmp.117 = "SportMenu";
-        %tmp.111 = newc %tmp.114 (%tmp.116, %tmp.117);
-        symbol [ WatchUi %tmp.118 68 16 23 ];
-        %tmp.118 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_UP %tmp.119 68 24 32 ];
-        %tmp.119 = getv %tmp.118 :SLIDE_UP;
-        invoke %tmp.108 %tmp.109(%tmp.110, %tmp.111, %tmp.119);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 70 12 ]
-        symbol [ System %tmp.120 70 12 18 ];
-        %tmp.120 = getm $.Toybox.System;
-        symbol [ println %tmp.121 70 19 26 ];
-        %tmp.121 = getv function %tmp.120 :println;
-        %tmp.122 = "Change Sport";
-        invoke %tmp.120 %tmp.121(%tmp.122);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_62_38_72_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_62_15_103_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_62_15_103_8_if_false:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 72 15 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_72_15_103_8_if_stmt:
-        %tmp.123 = lgetv %id.1;
-        symbol [ id %tmp.123 72 18 20 ];
-        %tmp.125 = const :advanced_settings;
-        symbol [ advanced_settings %tmp.125 72 24 41 const ];
-        %tmp.126 = eq %tmp.123 %tmp.125;
-        bf %tmp.126 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_72_15_103_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_72_15_103_8_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_72_43_103_8_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 74 12 ]
-        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_72_43_103_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_72_43_103_8_stop" ]
-        %AdvancedMenu.3 = local;
-        symbol [ AdvancedMenu %AdvancedMenu.3 74 16 28 ];
-        symbol [ Rez %tmp.130 74 35 38 ];
-        %tmp.130 = getv ? :Rez;
-        symbol [ Menus %tmp.131 74 39 44 ];
-        %tmp.131 = getv %tmp.130 :Menus;
-        symbol [ AdvancedMenu %tmp.132 74 45 57 ];
-        %tmp.132 = getv function ? %tmp.131 :AdvancedMenu;
-        %tmp.127 = newc %tmp.132 ();
-        lputv %AdvancedMenu.3 %tmp.127;
-        symbol [ AdvancedMenu %AdvancedMenu.3 74 16 28 ];
+        symbol [ SLIDE_IMMEDIATE %tmp.109 59 71 86 ];
+        %tmp.109 = getv %tmp.108 :SLIDE_IMMEDIATE;
+        invoke %tmp.104 %tmp.105(%tmp.106, %tmp.107, %tmp.109);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_54_16_63_12_stop:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_49_12_63_12_if_end:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 66 12 ]
+        symbol [ WatchUi %tmp.110 66 12 19 ];
+        %tmp.110 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.111 66 20 33 ];
+        %tmp.111 = getv function %tmp.110 :requestUpdate;
+        invoke %tmp.110 %tmp.111();
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 67 12 ]
+        symbol [ System %tmp.112 67 12 18 ];
+        %tmp.112 = getm $.Toybox.System;
+        symbol [ println %tmp.113 67 19 26 ];
+        %tmp.113 = getv function %tmp.112 :println;
+        %tmp.114 = "Start Activity";
+        invoke %tmp.112 %tmp.113(%tmp.114);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_40_69_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_15_110_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_15_110_8_if_false:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 69 15 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_69_15_110_8_if_stmt:
+        %tmp.115 = lgetv %id.1;
+        symbol [ id %tmp.115 69 18 20 ];
+        %tmp.117 = const :change_sport;
+        symbol [ change_sport %tmp.117 69 24 36 const ];
+        %tmp.118 = eq %tmp.115 %tmp.117;
+        bf %tmp.118 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_69_15_110_8_if_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_69_15_110_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_69_38_79_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 71 12 ]
+        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_69_38_79_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_69_38_79_8_stop" ]
+        %SportMenu.4 = local;
+        symbol [ SportMenu %SportMenu.4 71 16 25 ];
+        symbol [ Rez %tmp.122 71 32 35 ];
+        %tmp.122 = getv ? :Rez;
+        symbol [ Menus %tmp.123 71 36 41 ];
+        %tmp.123 = getv %tmp.122 :Menus;
+        symbol [ SportMenu %tmp.124 71 42 51 ];
+        %tmp.124 = getv function ? %tmp.123 :SportMenu;
+        %tmp.119 = newc %tmp.124 ();
+        lputv %SportMenu.4 %tmp.119;
+        symbol [ SportMenu %SportMenu.4 71 16 25 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 72 12 ]
+        symbol [ WatchUi %tmp.125 72 12 19 ];
+        %tmp.125 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.126 72 20 28 ];
+        %tmp.126 = getv function %tmp.125 :pushView;
+        %tmp.127 = lgetv %SportMenu.4;
+        symbol [ SportMenu %tmp.127 73 16 25 ];
+        symbol [ ScoreTrakMenuDelegate %tmp.131 74 20 41 ];
+        %tmp.131 = getv ? :ScoreTrakMenuDelegate;
+        symbol [ _view %tmp.133 74 42 47 ];
+        %tmp.133 = getv ? :_view;
+        %tmp.134 = "SportMenu";
+        %tmp.128 = newc %tmp.131 (%tmp.133, %tmp.134);
+        symbol [ WatchUi %tmp.135 75 16 23 ];
+        %tmp.135 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.136 75 24 32 ];
+        %tmp.136 = getv %tmp.135 :SLIDE_UP;
+        invoke %tmp.125 %tmp.126(%tmp.127, %tmp.128, %tmp.136);
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 77 12 ]
-        %tmp.133 = lgetv %AdvancedMenu.3;
-        symbol [ AdvancedMenu %tmp.133 77 12 24 ];
-        symbol [ getItem %tmp.134 77 25 32 ];
-        %tmp.134 = getv function %tmp.133 :getItem;
-        %tmp.135 = 0;
-        %tmp.136 = invoke %tmp.133 %tmp.134(%tmp.135);
-        symbol [ setSubLabel %tmp.137 77 36 47 ];
-        %tmp.137 = getv function %tmp.136 :setSubLabel;
-        symbol [ Application %tmp.138 77 48 59 ];
-        %tmp.138 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.139 77 60 67 ];
-        %tmp.139 = getv %tmp.138 :Storage;
-        symbol [ getValue %tmp.140 77 68 76 ];
-        %tmp.140 = getv function %tmp.139 :getValue;
-        %tmp.141 = "home_name";
-        %tmp.142 = invoke %tmp.139 %tmp.140(%tmp.141);
-        invoke %tmp.136 %tmp.137(%tmp.142);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 78 12 ]
-        %tmp.143 = lgetv %AdvancedMenu.3;
-        symbol [ AdvancedMenu %tmp.143 78 12 24 ];
-        symbol [ getItem %tmp.144 78 25 32 ];
-        %tmp.144 = getv function %tmp.143 :getItem;
-        %tmp.145 = 1;
-        %tmp.146 = invoke %tmp.143 %tmp.144(%tmp.145);
-        symbol [ setSubLabel %tmp.147 78 36 47 ];
-        %tmp.147 = getv function %tmp.146 :setSubLabel;
-        symbol [ Application %tmp.148 78 48 59 ];
-        %tmp.148 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.149 78 60 67 ];
-        %tmp.149 = getv %tmp.148 :Storage;
-        symbol [ getValue %tmp.150 78 68 76 ];
-        %tmp.150 = getv function %tmp.149 :getValue;
-        %tmp.151 = "guest_name";
-        %tmp.152 = invoke %tmp.149 %tmp.150(%tmp.151);
-        invoke %tmp.146 %tmp.147(%tmp.152);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 79 12 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_12_84_12_if_stmt:
-        symbol [ Application %tmp.153 79 15 26 ];
-        %tmp.153 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.154 79 27 34 ];
-        %tmp.154 = getv %tmp.153 :Storage;
-        symbol [ getValue %tmp.155 79 35 43 ];
-        %tmp.155 = getv function %tmp.154 :getValue;
-        %tmp.156 = "is24Hour";
-        %tmp.157 = invoke %tmp.154 %tmp.155(%tmp.156);
-        %tmp.158 = true;
-        %tmp.159 = eq %tmp.157 %tmp.158;
-        bf %tmp.159 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_12_84_12_if_else_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_12_84_12_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_64_81_12_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 80 12 ]
-        %tmp.160 = lgetv %AdvancedMenu.3;
-        symbol [ AdvancedMenu %tmp.160 80 12 24 ];
-        symbol [ getItem %tmp.161 80 25 32 ];
+        symbol [ System %tmp.137 77 12 18 ];
+        %tmp.137 = getm $.Toybox.System;
+        symbol [ println %tmp.138 77 19 26 ];
+        %tmp.138 = getv function %tmp.137 :println;
+        %tmp.139 = "Change Sport";
+        invoke %tmp.137 %tmp.138(%tmp.139);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_69_38_79_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_69_15_110_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_69_15_110_8_if_false:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 79 15 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_15_110_8_if_stmt:
+        %tmp.140 = lgetv %id.1;
+        symbol [ id %tmp.140 79 18 20 ];
+        %tmp.142 = const :advanced_settings;
+        symbol [ advanced_settings %tmp.142 79 24 41 const ];
+        %tmp.143 = eq %tmp.140 %tmp.142;
+        bf %tmp.143 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_15_110_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_15_110_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_43_110_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 81 12 ]
+        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_43_110_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_43_110_8_stop" ]
+        %AdvancedMenu.5 = local;
+        symbol [ AdvancedMenu %AdvancedMenu.5 81 16 28 ];
+        symbol [ Rez %tmp.147 81 35 38 ];
+        %tmp.147 = getv ? :Rez;
+        symbol [ Menus %tmp.148 81 39 44 ];
+        %tmp.148 = getv %tmp.147 :Menus;
+        symbol [ AdvancedMenu %tmp.149 81 45 57 ];
+        %tmp.149 = getv function ? %tmp.148 :AdvancedMenu;
+        %tmp.144 = newc %tmp.149 ();
+        lputv %AdvancedMenu.5 %tmp.144;
+        symbol [ AdvancedMenu %AdvancedMenu.5 81 16 28 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 84 12 ]
+        %tmp.150 = lgetv %AdvancedMenu.5;
+        symbol [ AdvancedMenu %tmp.150 84 12 24 ];
+        symbol [ getItem %tmp.151 84 25 32 ];
+        %tmp.151 = getv function %tmp.150 :getItem;
+        %tmp.152 = 0;
+        %tmp.153 = invoke %tmp.150 %tmp.151(%tmp.152);
+        symbol [ setSubLabel %tmp.154 84 36 47 ];
+        %tmp.154 = getv function %tmp.153 :setSubLabel;
+        symbol [ Application %tmp.155 84 48 59 ];
+        %tmp.155 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.156 84 60 67 ];
+        %tmp.156 = getv %tmp.155 :Storage;
+        symbol [ getValue %tmp.157 84 68 76 ];
+        %tmp.157 = getv function %tmp.156 :getValue;
+        %tmp.158 = "home_name";
+        %tmp.159 = invoke %tmp.156 %tmp.157(%tmp.158);
+        invoke %tmp.153 %tmp.154(%tmp.159);
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 85 12 ]
+        %tmp.160 = lgetv %AdvancedMenu.5;
+        symbol [ AdvancedMenu %tmp.160 85 12 24 ];
+        symbol [ getItem %tmp.161 85 25 32 ];
         %tmp.161 = getv function %tmp.160 :getItem;
-        %tmp.162 = 2;
+        %tmp.162 = 1;
         %tmp.163 = invoke %tmp.160 %tmp.161(%tmp.162);
-        symbol [ setSubLabel %tmp.164 80 36 47 ];
+        symbol [ setSubLabel %tmp.164 85 36 47 ];
         %tmp.164 = getv function %tmp.163 :setSubLabel;
-        %tmp.165 = "24-Hour";
-        invoke %tmp.163 %tmp.164(%tmp.165);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_64_81_12_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_12_84_12_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_12_84_12_if_else_false:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_82_16_84_12_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 83 16 ]
-        %tmp.166 = lgetv %AdvancedMenu.3;
-        symbol [ AdvancedMenu %tmp.166 83 16 28 ];
-        symbol [ getItem %tmp.167 83 29 36 ];
-        %tmp.167 = getv function %tmp.166 :getItem;
-        %tmp.168 = 2;
+        symbol [ Application %tmp.165 85 48 59 ];
+        %tmp.165 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.166 85 60 67 ];
+        %tmp.166 = getv %tmp.165 :Storage;
+        symbol [ getValue %tmp.167 85 68 76 ];
+        %tmp.167 = getv function %tmp.166 :getValue;
+        %tmp.168 = "guest_name";
         %tmp.169 = invoke %tmp.166 %tmp.167(%tmp.168);
-        symbol [ setSubLabel %tmp.170 83 40 51 ];
-        %tmp.170 = getv function %tmp.169 :setSubLabel;
-        %tmp.171 = "12-Hour";
-        invoke %tmp.169 %tmp.170(%tmp.171);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_82_16_84_12_stop:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_12_84_12_if_end:
+        invoke %tmp.163 %tmp.164(%tmp.169);
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 86 12 ]
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_86_12_91_12_if_stmt:
-        symbol [ Application %tmp.172 86 15 26 ];
-        %tmp.172 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.173 86 27 34 ];
-        %tmp.173 = getv %tmp.172 :Storage;
-        symbol [ getValue %tmp.174 86 35 43 ];
-        %tmp.174 = getv function %tmp.173 :getValue;
-        %tmp.175 = "flip_score_buttons";
-        %tmp.176 = invoke %tmp.173 %tmp.174(%tmp.175);
-        %tmp.177 = true;
-        %tmp.178 = eq %tmp.176 %tmp.177;
-        bf %tmp.178 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_86_12_91_12_if_else_false;
+        symbol [ Application %tmp.170 86 15 26 ];
+        %tmp.170 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.171 86 27 34 ];
+        %tmp.171 = getv %tmp.170 :Storage;
+        symbol [ getValue %tmp.172 86 35 43 ];
+        %tmp.172 = getv function %tmp.171 :getValue;
+        %tmp.173 = "is24Hour";
+        %tmp.174 = invoke %tmp.171 %tmp.172(%tmp.173);
+        %tmp.175 = true;
+        %tmp.176 = eq %tmp.174 %tmp.175;
+        bf %tmp.176 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_86_12_91_12_if_else_false;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_86_12_91_12_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_86_74_88_12_start:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_86_64_88_12_start:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 87 12 ]
-        %tmp.179 = lgetv %AdvancedMenu.3;
-        symbol [ AdvancedMenu %tmp.179 87 12 24 ];
-        symbol [ getItem %tmp.180 87 25 32 ];
-        %tmp.180 = getv function %tmp.179 :getItem;
-        %tmp.181 = 3;
-        %tmp.182 = invoke %tmp.179 %tmp.180(%tmp.181);
-        symbol [ setSubLabel %tmp.183 87 36 47 ];
-        %tmp.183 = getv function %tmp.182 :setSubLabel;
-        %tmp.184 = "True";
-        invoke %tmp.182 %tmp.183(%tmp.184);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_86_74_88_12_stop:
+        %tmp.177 = lgetv %AdvancedMenu.5;
+        symbol [ AdvancedMenu %tmp.177 87 12 24 ];
+        symbol [ getItem %tmp.178 87 25 32 ];
+        %tmp.178 = getv function %tmp.177 :getItem;
+        %tmp.179 = 2;
+        %tmp.180 = invoke %tmp.177 %tmp.178(%tmp.179);
+        symbol [ setSubLabel %tmp.181 87 36 47 ];
+        %tmp.181 = getv function %tmp.180 :setSubLabel;
+        %tmp.182 = "24-Hour";
+        invoke %tmp.180 %tmp.181(%tmp.182);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_86_64_88_12_stop:
         goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_86_12_91_12_if_end;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_86_12_91_12_if_else_false:
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_89_16_91_12_start:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 90 16 ]
-        %tmp.185 = lgetv %AdvancedMenu.3;
-        symbol [ AdvancedMenu %tmp.185 90 16 28 ];
-        symbol [ getItem %tmp.186 90 29 36 ];
-        %tmp.186 = getv function %tmp.185 :getItem;
-        %tmp.187 = 3;
-        %tmp.188 = invoke %tmp.185 %tmp.186(%tmp.187);
-        symbol [ setSubLabel %tmp.189 90 40 51 ];
-        %tmp.189 = getv function %tmp.188 :setSubLabel;
-        %tmp.190 = "False";
-        invoke %tmp.188 %tmp.189(%tmp.190);
+        %tmp.183 = lgetv %AdvancedMenu.5;
+        symbol [ AdvancedMenu %tmp.183 90 16 28 ];
+        symbol [ getItem %tmp.184 90 29 36 ];
+        %tmp.184 = getv function %tmp.183 :getItem;
+        %tmp.185 = 2;
+        %tmp.186 = invoke %tmp.183 %tmp.184(%tmp.185);
+        symbol [ setSubLabel %tmp.187 90 40 51 ];
+        %tmp.187 = getv function %tmp.186 :setSubLabel;
+        %tmp.188 = "12-Hour";
+        invoke %tmp.186 %tmp.187(%tmp.188);
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_89_16_91_12_stop:
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_86_12_91_12_if_end:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 97 12 ]
-        symbol [ WatchUi %tmp.191 97 12 19 ];
-        %tmp.191 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.192 97 20 28 ];
-        %tmp.192 = getv function %tmp.191 :pushView;
-        %tmp.193 = lgetv %AdvancedMenu.3;
-        symbol [ AdvancedMenu %tmp.193 98 16 28 ];
-        symbol [ ScoreTrakMenuDelegate %tmp.197 99 20 41 ];
-        %tmp.197 = getv ? :ScoreTrakMenuDelegate;
-        symbol [ _view %tmp.199 99 42 47 ];
-        %tmp.199 = getv ? :_view;
-        %tmp.200 = "AdvancedMenu";
-        %tmp.194 = newc %tmp.197 (%tmp.199, %tmp.200);
-        symbol [ WatchUi %tmp.201 100 16 23 ];
-        %tmp.201 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_UP %tmp.202 100 24 32 ];
-        %tmp.202 = getv %tmp.201 :SLIDE_UP;
-        invoke %tmp.191 %tmp.192(%tmp.193, %tmp.194, %tmp.202);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_72_43_103_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_72_15_103_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_72_15_103_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_62_15_103_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_15_103_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_15_103_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_15_103_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_8_103_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_105_156_4_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_258_4_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_258_4_if_false:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 156 11 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_156_11_258_4_if_stmt:
-        symbol [ _menu_id %tmp.204 156 15 23 ];
-        %tmp.204 = getv ? :_menu_id;
-        symbol [ equals %tmp.205 156 24 30 ];
-        %tmp.205 = getv function %tmp.204 :equals;
-        %tmp.206 = "SportMenu";
-        %tmp.207 = invoke %tmp.204 %tmp.205(%tmp.206);
-        bf %tmp.207 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_156_11_258_4_if_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_156_11_258_4_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_156_45_192_4_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 158 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_156_45_192_4_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_156_45_192_4_stop" ]
-        %sportName.4 = local;
-        symbol [ sportName %sportName.4 158 12 21 ];
-        %tmp.208 = lgetv %item;
-        symbol [ item %tmp.208 158 24 28 ];
-        symbol [ getLabel %tmp.209 158 29 37 ];
-        %tmp.209 = getv function %tmp.208 :getLabel;
-        %tmp.210 = invoke %tmp.208 %tmp.209();
-        lputv %sportName.4 %tmp.210;
-        symbol [ sportName %sportName.4 158 12 21 ];
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 159 8 ]
-        symbol [ _view %tmp.211 159 8 13 ];
-        %tmp.211 = getv self :_view;
-        %tmp.212 = lgetv %sportName.4;
-        symbol [ sportName %tmp.212 159 29 38 ];
-        symbol [ active_sport ? 159 14 26 ];
-        putv %tmp.211 :active_sport %tmp.212;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 160 8 ]
-        symbol [ Application %tmp.213 160 8 19 ];
-        %tmp.213 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.214 160 20 27 ];
-        %tmp.214 = getv %tmp.213 :Storage;
-        symbol [ setValue %tmp.215 160 28 36 ];
-        %tmp.215 = getv function %tmp.214 :setValue;
-        %tmp.216 = "active_sport";
-        %tmp.217 = lgetv %sportName.4;
-        symbol [ sportName %tmp.217 160 52 61 ];
-        invoke %tmp.214 %tmp.215(%tmp.216, %tmp.217);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 162 8 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_162_8_183_8_if_stmt:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_163_12_164_18_begin:
-        %tmp.218 = lgetv %id.1;
-        symbol [ id %tmp.218 163 12 14 ];
-        %tmp.220 = const :sport_tennis;
-        symbol [ sport_tennis %tmp.220 163 18 30 const ];
-        %tmp.221 = eq %tmp.218 %tmp.220;
-        bt %tmp.221 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_162_8_183_8_if_true;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_164_12_164_18_false:
-        %tmp.222 = lgetv %id.1;
-        symbol [ id %tmp.222 164 12 14 ];
-        %tmp.224 = const :sport_platform;
-        symbol [ sport_platform %tmp.224 164 18 32 const ];
-        %tmp.225 = eq %tmp.222 %tmp.224;
-        push %tmp.225;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_164_12_164_18_end:
-        %tmp.226 = phi [%tmp.221 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_163_12_164_18_begin] [%tmp.225 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_164_12_164_18_false] [%tmp.226 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_164_12_164_18_end];
-        bf %tmp.226 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_162_8_183_8_if_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_162_8_183_8_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_166_13_170_8_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 167 12 ]
-        symbol [ _view %tmp.227 167 12 17 ];
-        %tmp.227 = getv self :_view;
-        %tmp.228 = 1;
-        symbol [ scoring_mode ? 167 18 30 ];
-        putv %tmp.227 :scoring_mode %tmp.228;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 168 12 ]
-        symbol [ Application %tmp.229 168 12 23 ];
-        %tmp.229 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.230 168 24 31 ];
-        %tmp.230 = getv %tmp.229 :Storage;
-        symbol [ setValue %tmp.231 168 32 40 ];
-        %tmp.231 = getv function %tmp.230 :setValue;
-        %tmp.232 = "scoring_mode";
-        %tmp.233 = 1;
-        invoke %tmp.230 %tmp.231(%tmp.232, %tmp.233);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_166_13_170_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_162_8_183_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_162_8_183_8_if_false:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 170 14 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_170_14_183_8_if_stmt:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_171_12_174_17_begin:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_171_12_173_17_begin:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_171_12_172_17_begin:
-        %tmp.234 = lgetv %id.1;
-        symbol [ id %tmp.234 171 12 14 ];
-        %tmp.236 = const :sport_mini_golf;
-        symbol [ sport_mini_golf %tmp.236 171 17 32 const ];
-        %tmp.237 = eq %tmp.234 %tmp.236;
-        bt %tmp.237 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_170_14_183_8_if_true;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_172_12_172_17_false:
-        %tmp.238 = lgetv %id.1;
-        symbol [ id %tmp.238 172 12 14 ];
-        %tmp.240 = const :sport_golf;
-        symbol [ sport_golf %tmp.240 172 17 27 const ];
-        %tmp.241 = eq %tmp.238 %tmp.240;
-        push %tmp.241;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_172_12_172_17_end:
-        %tmp.242 = phi [%tmp.237 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_171_12_172_17_begin] [%tmp.241 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_172_12_172_17_false] [%tmp.242 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_172_12_172_17_end];
-        bt %tmp.242 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_170_14_183_8_if_true;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_173_12_173_17_false:
-        %tmp.243 = lgetv %id.1;
-        symbol [ id %tmp.243 173 12 14 ];
-        %tmp.245 = const :sport_disc_golf;
-        symbol [ sport_disc_golf %tmp.245 173 17 32 const ];
-        %tmp.246 = eq %tmp.243 %tmp.245;
-        push %tmp.246;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_173_12_173_17_end:
-        %tmp.247 = phi [%tmp.242 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_171_12_173_17_begin] [%tmp.246 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_173_12_173_17_false] [%tmp.247 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_173_12_173_17_end];
-        bt %tmp.247 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_170_14_183_8_if_true;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_174_12_174_17_false:
-        %tmp.248 = lgetv %id.1;
-        symbol [ id %tmp.248 174 12 14 ];
-        %tmp.250 = const :sport_board_game;
-        symbol [ sport_board_game %tmp.250 174 17 33 const ];
-        %tmp.251 = eq %tmp.248 %tmp.250;
-        push %tmp.251;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_174_12_174_17_end:
-        %tmp.252 = phi [%tmp.247 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_171_12_174_17_begin] [%tmp.251 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_174_12_174_17_false] [%tmp.252 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_174_12_174_17_end];
-        bf %tmp.252 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_170_14_183_8_if_else_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_170_14_183_8_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_176_13_180_8_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 177 12 ]
-        symbol [ _view %tmp.253 177 12 17 ];
-        %tmp.253 = getv self :_view;
-        %tmp.254 = 2;
-        symbol [ scoring_mode ? 177 18 30 ];
-        putv %tmp.253 :scoring_mode %tmp.254;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 178 12 ]
-        symbol [ Application %tmp.255 178 12 23 ];
-        %tmp.255 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.256 178 24 31 ];
-        %tmp.256 = getv %tmp.255 :Storage;
-        symbol [ setValue %tmp.257 178 32 40 ];
-        %tmp.257 = getv function %tmp.256 :setValue;
-        %tmp.258 = "scoring_mode";
-        %tmp.259 = 2;
-        invoke %tmp.256 %tmp.257(%tmp.258, %tmp.259);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_176_13_180_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_170_14_183_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_170_14_183_8_if_else_false:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_180_13_183_8_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 181 12 ]
-        symbol [ _view %tmp.260 181 12 17 ];
-        %tmp.260 = getv self :_view;
-        %tmp.261 = 0;
-        symbol [ scoring_mode ? 181 18 30 ];
-        putv %tmp.260 :scoring_mode %tmp.261;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 182 12 ]
-        symbol [ Application %tmp.262 182 12 23 ];
-        %tmp.262 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.263 182 24 31 ];
-        %tmp.263 = getv %tmp.262 :Storage;
-        symbol [ setValue %tmp.264 182 32 40 ];
-        %tmp.264 = getv function %tmp.263 :setValue;
-        %tmp.265 = "scoring_mode";
-        %tmp.266 = 0;
-        invoke %tmp.263 %tmp.264(%tmp.265, %tmp.266);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_180_13_183_8_stop:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_170_14_183_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_162_8_183_8_if_end:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 184 8 ]
-        symbol [ WatchUi %tmp.267 184 8 15 ];
-        %tmp.267 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.268 184 16 23 ];
-        %tmp.268 = getv function %tmp.267 :popView;
-        symbol [ WatchUi %tmp.269 184 24 31 ];
-        %tmp.269 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_DOWN %tmp.270 184 32 42 ];
-        %tmp.270 = getv %tmp.269 :SLIDE_DOWN;
-        invoke %tmp.267 %tmp.268(%tmp.270);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 185 8 ]
-        symbol [ WatchUi %tmp.271 185 8 15 ];
-        %tmp.271 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.272 185 16 23 ];
-        %tmp.272 = getv function %tmp.271 :popView;
-        symbol [ WatchUi %tmp.273 185 24 31 ];
-        %tmp.273 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_DOWN %tmp.274 185 32 42 ];
-        %tmp.274 = getv %tmp.273 :SLIDE_DOWN;
-        invoke %tmp.271 %tmp.272(%tmp.274);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 186 8 ]
-        symbol [ _view %tmp.276 186 8 13 ];
-        %tmp.276 = getv ? :_view;
-        symbol [ resetScores %tmp.277 186 14 25 ];
-        %tmp.277 = getv function %tmp.276 :resetScores;
-        invoke %tmp.276 %tmp.277();
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 187 8 ]
-        symbol [ WatchUi %tmp.278 187 8 15 ];
-        %tmp.278 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.279 187 16 29 ];
-        %tmp.279 = getv function %tmp.278 :requestUpdate;
-        invoke %tmp.278 %tmp.279();
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 188 8 ]
-        symbol [ System %tmp.280 188 8 14 ];
-        %tmp.280 = getm $.Toybox.System;
-        symbol [ println %tmp.281 188 15 22 ];
-        %tmp.281 = getv function %tmp.280 :println;
-        %tmp.282 = "Changed Sport";
-        invoke %tmp.280 %tmp.281(%tmp.282);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_156_45_192_4_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_156_11_258_4_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_156_11_258_4_if_false:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 192 11 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_192_11_258_4_if_stmt:
-        symbol [ _menu_id %tmp.284 192 14 22 ];
-        %tmp.284 = getv ? :_menu_id;
-        symbol [ equals %tmp.285 192 23 29 ];
-        %tmp.285 = getv function %tmp.284 :equals;
-        %tmp.286 = "AdvancedMenu";
-        %tmp.287 = invoke %tmp.284 %tmp.285(%tmp.286);
-        bf %tmp.287 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_192_11_258_4_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_192_11_258_4_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_192_47_258_4_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 93 12 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_93_12_98_12_if_stmt:
+        symbol [ Application %tmp.189 93 15 26 ];
+        %tmp.189 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.190 93 27 34 ];
+        %tmp.190 = getv %tmp.189 :Storage;
+        symbol [ getValue %tmp.191 93 35 43 ];
+        %tmp.191 = getv function %tmp.190 :getValue;
+        %tmp.192 = "flip_score_buttons";
+        %tmp.193 = invoke %tmp.190 %tmp.191(%tmp.192);
+        %tmp.194 = true;
+        %tmp.195 = eq %tmp.193 %tmp.194;
+        bf %tmp.195 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_93_12_98_12_if_else_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_93_12_98_12_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_93_74_95_12_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 94 12 ]
+        %tmp.196 = lgetv %AdvancedMenu.5;
+        symbol [ AdvancedMenu %tmp.196 94 12 24 ];
+        symbol [ getItem %tmp.197 94 25 32 ];
+        %tmp.197 = getv function %tmp.196 :getItem;
+        %tmp.198 = 3;
+        %tmp.199 = invoke %tmp.196 %tmp.197(%tmp.198);
+        symbol [ setSubLabel %tmp.200 94 36 47 ];
+        %tmp.200 = getv function %tmp.199 :setSubLabel;
+        %tmp.201 = "True";
+        invoke %tmp.199 %tmp.200(%tmp.201);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_93_74_95_12_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_93_12_98_12_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_93_12_98_12_if_else_false:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_96_16_98_12_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 97 16 ]
+        %tmp.202 = lgetv %AdvancedMenu.5;
+        symbol [ AdvancedMenu %tmp.202 97 16 28 ];
+        symbol [ getItem %tmp.203 97 29 36 ];
+        %tmp.203 = getv function %tmp.202 :getItem;
+        %tmp.204 = 3;
+        %tmp.205 = invoke %tmp.202 %tmp.203(%tmp.204);
+        symbol [ setSubLabel %tmp.206 97 40 51 ];
+        %tmp.206 = getv function %tmp.205 :setSubLabel;
+        %tmp.207 = "False";
+        invoke %tmp.205 %tmp.206(%tmp.207);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_96_16_98_12_stop:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_93_12_98_12_if_end:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 104 12 ]
+        symbol [ WatchUi %tmp.208 104 12 19 ];
+        %tmp.208 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.209 104 20 28 ];
+        %tmp.209 = getv function %tmp.208 :pushView;
+        %tmp.210 = lgetv %AdvancedMenu.5;
+        symbol [ AdvancedMenu %tmp.210 105 16 28 ];
+        symbol [ ScoreTrakMenuDelegate %tmp.214 106 20 41 ];
+        %tmp.214 = getv ? :ScoreTrakMenuDelegate;
+        symbol [ _view %tmp.216 106 42 47 ];
+        %tmp.216 = getv ? :_view;
+        %tmp.217 = "AdvancedMenu";
+        %tmp.211 = newc %tmp.214 (%tmp.216, %tmp.217);
+        symbol [ WatchUi %tmp.218 107 16 23 ];
+        %tmp.218 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.219 107 24 32 ];
+        %tmp.219 = getv %tmp.218 :SLIDE_UP;
+        invoke %tmp.208 %tmp.209(%tmp.210, %tmp.211, %tmp.219);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_43_110_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_15_110_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_79_15_110_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_69_15_110_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_47_15_110_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_40_15_110_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_33_15_110_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_27_8_110_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_105_163_4_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_265_4_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_265_4_if_false:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 163 11 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_163_11_265_4_if_stmt:
+        symbol [ _menu_id %tmp.221 163 15 23 ];
+        %tmp.221 = getv ? :_menu_id;
+        symbol [ equals %tmp.222 163 24 30 ];
+        %tmp.222 = getv function %tmp.221 :equals;
+        %tmp.223 = "SportMenu";
+        %tmp.224 = invoke %tmp.221 %tmp.222(%tmp.223);
+        bf %tmp.224 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_163_11_265_4_if_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_163_11_265_4_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_163_45_199_4_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 165 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_163_45_199_4_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_163_45_199_4_stop" ]
+        %sportName.6 = local;
+        symbol [ sportName %sportName.6 165 12 21 ];
+        %tmp.225 = lgetv %item;
+        symbol [ item %tmp.225 165 24 28 ];
+        symbol [ getLabel %tmp.226 165 29 37 ];
+        %tmp.226 = getv function %tmp.225 :getLabel;
+        %tmp.227 = invoke %tmp.225 %tmp.226();
+        lputv %sportName.6 %tmp.227;
+        symbol [ sportName %sportName.6 165 12 21 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 166 8 ]
+        symbol [ _view %tmp.228 166 8 13 ];
+        %tmp.228 = getv self :_view;
+        %tmp.229 = lgetv %sportName.6;
+        symbol [ sportName %tmp.229 166 29 38 ];
+        symbol [ active_sport ? 166 14 26 ];
+        putv %tmp.228 :active_sport %tmp.229;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 167 8 ]
+        symbol [ Application %tmp.230 167 8 19 ];
+        %tmp.230 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.231 167 20 27 ];
+        %tmp.231 = getv %tmp.230 :Storage;
+        symbol [ setValue %tmp.232 167 28 36 ];
+        %tmp.232 = getv function %tmp.231 :setValue;
+        %tmp.233 = "active_sport";
+        %tmp.234 = lgetv %sportName.6;
+        symbol [ sportName %tmp.234 167 52 61 ];
+        invoke %tmp.231 %tmp.232(%tmp.233, %tmp.234);
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 169 8 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_169_8_190_8_if_stmt:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_170_12_171_18_begin:
+        %tmp.235 = lgetv %id.1;
+        symbol [ id %tmp.235 170 12 14 ];
+        %tmp.237 = const :sport_tennis;
+        symbol [ sport_tennis %tmp.237 170 18 30 const ];
+        %tmp.238 = eq %tmp.235 %tmp.237;
+        bt %tmp.238 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_169_8_190_8_if_true;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_171_12_171_18_false:
+        %tmp.239 = lgetv %id.1;
+        symbol [ id %tmp.239 171 12 14 ];
+        %tmp.241 = const :sport_platform;
+        symbol [ sport_platform %tmp.241 171 18 32 const ];
+        %tmp.242 = eq %tmp.239 %tmp.241;
+        push %tmp.242;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_171_12_171_18_end:
+        %tmp.243 = phi [%tmp.238 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_170_12_171_18_begin] [%tmp.242 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_171_12_171_18_false] [%tmp.243 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_171_12_171_18_end];
+        bf %tmp.243 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_169_8_190_8_if_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_169_8_190_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_173_13_177_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 174 12 ]
+        symbol [ _view %tmp.244 174 12 17 ];
+        %tmp.244 = getv self :_view;
+        %tmp.245 = 1;
+        symbol [ scoring_mode ? 174 18 30 ];
+        putv %tmp.244 :scoring_mode %tmp.245;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 175 12 ]
+        symbol [ Application %tmp.246 175 12 23 ];
+        %tmp.246 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.247 175 24 31 ];
+        %tmp.247 = getv %tmp.246 :Storage;
+        symbol [ setValue %tmp.248 175 32 40 ];
+        %tmp.248 = getv function %tmp.247 :setValue;
+        %tmp.249 = "scoring_mode";
+        %tmp.250 = 1;
+        invoke %tmp.247 %tmp.248(%tmp.249, %tmp.250);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_173_13_177_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_169_8_190_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_169_8_190_8_if_false:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 177 14 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_177_14_190_8_if_stmt:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_178_12_181_17_begin:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_178_12_180_17_begin:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_178_12_179_17_begin:
+        %tmp.251 = lgetv %id.1;
+        symbol [ id %tmp.251 178 12 14 ];
+        %tmp.253 = const :sport_mini_golf;
+        symbol [ sport_mini_golf %tmp.253 178 17 32 const ];
+        %tmp.254 = eq %tmp.251 %tmp.253;
+        bt %tmp.254 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_177_14_190_8_if_true;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_179_12_179_17_false:
+        %tmp.255 = lgetv %id.1;
+        symbol [ id %tmp.255 179 12 14 ];
+        %tmp.257 = const :sport_golf;
+        symbol [ sport_golf %tmp.257 179 17 27 const ];
+        %tmp.258 = eq %tmp.255 %tmp.257;
+        push %tmp.258;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_179_12_179_17_end:
+        %tmp.259 = phi [%tmp.254 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_178_12_179_17_begin] [%tmp.258 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_179_12_179_17_false] [%tmp.259 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_179_12_179_17_end];
+        bt %tmp.259 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_177_14_190_8_if_true;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_180_12_180_17_false:
+        %tmp.260 = lgetv %id.1;
+        symbol [ id %tmp.260 180 12 14 ];
+        %tmp.262 = const :sport_disc_golf;
+        symbol [ sport_disc_golf %tmp.262 180 17 32 const ];
+        %tmp.263 = eq %tmp.260 %tmp.262;
+        push %tmp.263;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_180_12_180_17_end:
+        %tmp.264 = phi [%tmp.259 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_178_12_180_17_begin] [%tmp.263 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_180_12_180_17_false] [%tmp.264 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_180_12_180_17_end];
+        bt %tmp.264 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_177_14_190_8_if_true;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_181_12_181_17_false:
+        %tmp.265 = lgetv %id.1;
+        symbol [ id %tmp.265 181 12 14 ];
+        %tmp.267 = const :sport_board_game;
+        symbol [ sport_board_game %tmp.267 181 17 33 const ];
+        %tmp.268 = eq %tmp.265 %tmp.267;
+        push %tmp.268;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_181_12_181_17_end:
+        %tmp.269 = phi [%tmp.264 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_178_12_181_17_begin] [%tmp.268 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_181_12_181_17_false] [%tmp.269 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_181_12_181_17_end];
+        bf %tmp.269 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_177_14_190_8_if_else_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_177_14_190_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_183_13_187_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 184 12 ]
+        symbol [ _view %tmp.270 184 12 17 ];
+        %tmp.270 = getv self :_view;
+        %tmp.271 = 2;
+        symbol [ scoring_mode ? 184 18 30 ];
+        putv %tmp.270 :scoring_mode %tmp.271;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 185 12 ]
+        symbol [ Application %tmp.272 185 12 23 ];
+        %tmp.272 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.273 185 24 31 ];
+        %tmp.273 = getv %tmp.272 :Storage;
+        symbol [ setValue %tmp.274 185 32 40 ];
+        %tmp.274 = getv function %tmp.273 :setValue;
+        %tmp.275 = "scoring_mode";
+        %tmp.276 = 2;
+        invoke %tmp.273 %tmp.274(%tmp.275, %tmp.276);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_183_13_187_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_177_14_190_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_177_14_190_8_if_else_false:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_187_13_190_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 188 12 ]
+        symbol [ _view %tmp.277 188 12 17 ];
+        %tmp.277 = getv self :_view;
+        %tmp.278 = 0;
+        symbol [ scoring_mode ? 188 18 30 ];
+        putv %tmp.277 :scoring_mode %tmp.278;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 189 12 ]
+        symbol [ Application %tmp.279 189 12 23 ];
+        %tmp.279 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.280 189 24 31 ];
+        %tmp.280 = getv %tmp.279 :Storage;
+        symbol [ setValue %tmp.281 189 32 40 ];
+        %tmp.281 = getv function %tmp.280 :setValue;
+        %tmp.282 = "scoring_mode";
+        %tmp.283 = 0;
+        invoke %tmp.280 %tmp.281(%tmp.282, %tmp.283);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_187_13_190_8_stop:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_177_14_190_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_169_8_190_8_if_end:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 191 8 ]
+        symbol [ WatchUi %tmp.284 191 8 15 ];
+        %tmp.284 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.285 191 16 23 ];
+        %tmp.285 = getv function %tmp.284 :popView;
+        symbol [ WatchUi %tmp.286 191 24 31 ];
+        %tmp.286 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.287 191 32 42 ];
+        %tmp.287 = getv %tmp.286 :SLIDE_DOWN;
+        invoke %tmp.284 %tmp.285(%tmp.287);
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 192 8 ]
+        symbol [ WatchUi %tmp.288 192 8 15 ];
+        %tmp.288 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.289 192 16 23 ];
+        %tmp.289 = getv function %tmp.288 :popView;
+        symbol [ WatchUi %tmp.290 192 24 31 ];
+        %tmp.290 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.291 192 32 42 ];
+        %tmp.291 = getv %tmp.290 :SLIDE_DOWN;
+        invoke %tmp.288 %tmp.289(%tmp.291);
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 193 8 ]
+        symbol [ _view %tmp.293 193 8 13 ];
+        %tmp.293 = getv ? :_view;
+        symbol [ resetScores %tmp.294 193 14 25 ];
+        %tmp.294 = getv function %tmp.293 :resetScores;
+        invoke %tmp.293 %tmp.294();
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 194 8 ]
+        symbol [ WatchUi %tmp.295 194 8 15 ];
+        %tmp.295 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.296 194 16 29 ];
+        %tmp.296 = getv function %tmp.295 :requestUpdate;
+        invoke %tmp.295 %tmp.296();
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 195 8 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_195_8_257_8_if_stmt:
-        %tmp.288 = lgetv %id.1;
-        symbol [ id %tmp.288 195 11 13 ];
-        %tmp.290 = const :rename_home;
-        symbol [ rename_home %tmp.290 195 17 28 const ];
-        %tmp.291 = eq %tmp.288 %tmp.290;
-        bf %tmp.291 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_195_8_257_8_if_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_195_8_257_8_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_195_29_204_8_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 196 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_195_29_204_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_195_29_204_8_stop" ]
-        %picker.5 = local;
-        symbol [ picker %picker.5 196 12 18 ];
-        symbol [ WatchUi %tmp.294 196 25 32 ];
-        %tmp.294 = getm $.Toybox.WatchUi;
-        symbol [ TextPicker %tmp.295 196 33 43 ];
-        %tmp.295 = getv function ? %tmp.294 :TextPicker;
-        %tmp.296 = "";
-        %tmp.292 = newc %tmp.295 (%tmp.296);
-        lputv %picker.5 %tmp.292;
-        symbol [ picker %picker.5 196 12 18 ];
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 197 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_195_29_204_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_195_29_204_8_stop" ]
-        %delegate.6 = local;
-        symbol [ delegate %delegate.6 197 12 20 ];
-        symbol [ ScoreTrakTextDelegate %tmp.300 197 27 48 ];
-        %tmp.300 = getv ? :ScoreTrakTextDelegate;
-        symbol [ _view %tmp.302 197 49 54 ];
-        %tmp.302 = getv ? :_view;
-        symbol [ method %tmp.303 197 55 61 ];
-        %tmp.303 = getv function %tmp.302 :method;
-        %tmp.305 = const :setHomeName;
-        symbol [ setHomeName %tmp.305 197 63 74 const ];
-        %tmp.306 = invoke %tmp.302 %tmp.303(%tmp.305);
-        %tmp.297 = newc %tmp.300 (%tmp.306);
-        lputv %delegate.6 %tmp.297;
-        symbol [ delegate %delegate.6 197 12 20 ];
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 198 8 ]
-        symbol [ WatchUi %tmp.307 198 8 15 ];
-        %tmp.307 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.308 198 16 24 ];
-        %tmp.308 = getv function %tmp.307 :pushView;
-        %tmp.309 = lgetv %picker.5;
-        symbol [ picker %tmp.309 198 25 31 ];
-        %tmp.310 = lgetv %delegate.6;
-        symbol [ delegate %tmp.310 198 33 41 ];
-        symbol [ WatchUi %tmp.311 198 43 50 ];
-        %tmp.311 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_UP %tmp.312 198 51 59 ];
-        %tmp.312 = getv %tmp.311 :SLIDE_UP;
-        invoke %tmp.307 %tmp.308(%tmp.309, %tmp.310, %tmp.312);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 200 8 ]
-        %tmp.313 = lgetv %item;
-        symbol [ item %tmp.313 200 8 12 ];
-        symbol [ setSubLabel %tmp.314 200 13 24 ];
-        %tmp.314 = getv function %tmp.313 :setSubLabel;
-        symbol [ Application %tmp.315 200 25 36 ];
-        %tmp.315 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.316 200 37 44 ];
-        %tmp.316 = getv %tmp.315 :Storage;
-        symbol [ getValue %tmp.317 200 45 53 ];
-        %tmp.317 = getv function %tmp.316 :getValue;
-        %tmp.318 = "home_name";
-        %tmp.319 = invoke %tmp.316 %tmp.317(%tmp.318);
-        invoke %tmp.313 %tmp.314(%tmp.319);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_195_29_204_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_195_8_257_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_195_8_257_8_if_false:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 204 15 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_204_15_257_8_if_stmt:
-        %tmp.320 = lgetv %id.1;
-        symbol [ id %tmp.320 204 18 20 ];
-        %tmp.322 = const :rename_guest;
-        symbol [ rename_guest %tmp.322 204 25 37 const ];
-        %tmp.323 = eq %tmp.320 %tmp.322;
-        bf %tmp.323 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_204_15_257_8_if_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_204_15_257_8_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_204_39_216_8_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 207 16 ]
-        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_204_39_216_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_204_39_216_8_stop" ]
+        symbol [ System %tmp.297 195 8 14 ];
+        %tmp.297 = getm $.Toybox.System;
+        symbol [ println %tmp.298 195 15 22 ];
+        %tmp.298 = getv function %tmp.297 :println;
+        %tmp.299 = "Changed Sport";
+        invoke %tmp.297 %tmp.298(%tmp.299);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_163_45_199_4_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_163_11_265_4_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_163_11_265_4_if_false:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 199 11 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_199_11_265_4_if_stmt:
+        symbol [ _menu_id %tmp.301 199 14 22 ];
+        %tmp.301 = getv ? :_menu_id;
+        symbol [ equals %tmp.302 199 23 29 ];
+        %tmp.302 = getv function %tmp.301 :equals;
+        %tmp.303 = "AdvancedMenu";
+        %tmp.304 = invoke %tmp.301 %tmp.302(%tmp.303);
+        bf %tmp.304 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_199_11_265_4_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_199_11_265_4_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_199_47_265_4_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 202 8 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_202_8_264_8_if_stmt:
+        %tmp.305 = lgetv %id.1;
+        symbol [ id %tmp.305 202 11 13 ];
+        %tmp.307 = const :rename_home;
+        symbol [ rename_home %tmp.307 202 17 28 const ];
+        %tmp.308 = eq %tmp.305 %tmp.307;
+        bf %tmp.308 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_202_8_264_8_if_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_202_8_264_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_202_29_211_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 203 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_202_29_211_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_202_29_211_8_stop" ]
         %picker.7 = local;
-        symbol [ picker %picker.7 207 20 26 ];
-        symbol [ WatchUi %tmp.326 207 33 40 ];
-        %tmp.326 = getm $.Toybox.WatchUi;
-        symbol [ TextPicker %tmp.327 207 41 51 ];
-        %tmp.327 = getv function ? %tmp.326 :TextPicker;
-        %tmp.328 = "";
-        %tmp.324 = newc %tmp.327 (%tmp.328);
-        lputv %picker.7 %tmp.324;
-        symbol [ picker %picker.7 207 20 26 ];
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 208 16 ]
-        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_204_39_216_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_204_39_216_8_stop" ]
+        symbol [ picker %picker.7 203 12 18 ];
+        symbol [ WatchUi %tmp.311 203 25 32 ];
+        %tmp.311 = getm $.Toybox.WatchUi;
+        symbol [ TextPicker %tmp.312 203 33 43 ];
+        %tmp.312 = getv function ? %tmp.311 :TextPicker;
+        %tmp.313 = "";
+        %tmp.309 = newc %tmp.312 (%tmp.313);
+        lputv %picker.7 %tmp.309;
+        symbol [ picker %picker.7 203 12 18 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 204 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_202_29_211_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_202_29_211_8_stop" ]
         %delegate.8 = local;
-        symbol [ delegate %delegate.8 208 20 28 ];
-        symbol [ ScoreTrakTextDelegate %tmp.332 208 35 56 ];
-        %tmp.332 = getv ? :ScoreTrakTextDelegate;
-        symbol [ _view %tmp.334 208 57 62 ];
-        %tmp.334 = getv ? :_view;
-        symbol [ method %tmp.335 208 63 69 ];
-        %tmp.335 = getv function %tmp.334 :method;
-        %tmp.337 = const :setGuestName;
-        symbol [ setGuestName %tmp.337 208 71 83 const ];
-        %tmp.338 = invoke %tmp.334 %tmp.335(%tmp.337);
-        %tmp.329 = newc %tmp.332 (%tmp.338);
-        lputv %delegate.8 %tmp.329;
-        symbol [ delegate %delegate.8 208 20 28 ];
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 209 16 ]
-        symbol [ WatchUi %tmp.339 209 16 23 ];
-        %tmp.339 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.340 209 24 32 ];
-        %tmp.340 = getv function %tmp.339 :pushView;
-        %tmp.341 = lgetv %picker.7;
-        symbol [ picker %tmp.341 209 33 39 ];
-        %tmp.342 = lgetv %delegate.8;
-        symbol [ delegate %tmp.342 209 41 49 ];
-        symbol [ WatchUi %tmp.343 209 51 58 ];
-        %tmp.343 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_UP %tmp.344 209 59 67 ];
-        %tmp.344 = getv %tmp.343 :SLIDE_UP;
-        invoke %tmp.339 %tmp.340(%tmp.341, %tmp.342, %tmp.344);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 211 16 ]
-        %tmp.345 = lgetv %item;
-        symbol [ item %tmp.345 211 16 20 ];
-        symbol [ setSubLabel %tmp.346 211 21 32 ];
-        %tmp.346 = getv function %tmp.345 :setSubLabel;
-        symbol [ Application %tmp.347 211 33 44 ];
-        %tmp.347 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.348 211 45 52 ];
-        %tmp.348 = getv %tmp.347 :Storage;
-        symbol [ getValue %tmp.349 211 53 61 ];
-        %tmp.349 = getv function %tmp.348 :getValue;
-        %tmp.350 = "guest_name";
-        %tmp.351 = invoke %tmp.348 %tmp.349(%tmp.350);
-        invoke %tmp.345 %tmp.346(%tmp.351);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_204_39_216_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_204_15_257_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_204_15_257_8_if_false:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 216 15 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_216_15_257_8_if_stmt:
-        %tmp.352 = lgetv %id.1;
-        symbol [ id %tmp.352 216 18 20 ];
-        %tmp.354 = const :rename_custom_sport;
-        symbol [ rename_custom_sport %tmp.354 216 23 42 const ];
-        %tmp.355 = eq %tmp.352 %tmp.354;
-        bf %tmp.355 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_216_15_257_8_if_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_216_15_257_8_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_216_44_223_8_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 218 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_216_44_223_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_216_44_223_8_stop" ]
+        symbol [ delegate %delegate.8 204 12 20 ];
+        symbol [ ScoreTrakTextDelegate %tmp.317 204 27 48 ];
+        %tmp.317 = getv ? :ScoreTrakTextDelegate;
+        symbol [ _view %tmp.319 204 49 54 ];
+        %tmp.319 = getv ? :_view;
+        symbol [ method %tmp.320 204 55 61 ];
+        %tmp.320 = getv function %tmp.319 :method;
+        %tmp.322 = const :setHomeName;
+        symbol [ setHomeName %tmp.322 204 63 74 const ];
+        %tmp.323 = invoke %tmp.319 %tmp.320(%tmp.322);
+        %tmp.314 = newc %tmp.317 (%tmp.323);
+        lputv %delegate.8 %tmp.314;
+        symbol [ delegate %delegate.8 204 12 20 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 205 8 ]
+        symbol [ WatchUi %tmp.324 205 8 15 ];
+        %tmp.324 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.325 205 16 24 ];
+        %tmp.325 = getv function %tmp.324 :pushView;
+        %tmp.326 = lgetv %picker.7;
+        symbol [ picker %tmp.326 205 25 31 ];
+        %tmp.327 = lgetv %delegate.8;
+        symbol [ delegate %tmp.327 205 33 41 ];
+        symbol [ WatchUi %tmp.328 205 43 50 ];
+        %tmp.328 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.329 205 51 59 ];
+        %tmp.329 = getv %tmp.328 :SLIDE_UP;
+        invoke %tmp.324 %tmp.325(%tmp.326, %tmp.327, %tmp.329);
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 207 8 ]
+        %tmp.330 = lgetv %item;
+        symbol [ item %tmp.330 207 8 12 ];
+        symbol [ setSubLabel %tmp.331 207 13 24 ];
+        %tmp.331 = getv function %tmp.330 :setSubLabel;
+        symbol [ Application %tmp.332 207 25 36 ];
+        %tmp.332 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.333 207 37 44 ];
+        %tmp.333 = getv %tmp.332 :Storage;
+        symbol [ getValue %tmp.334 207 45 53 ];
+        %tmp.334 = getv function %tmp.333 :getValue;
+        %tmp.335 = "home_name";
+        %tmp.336 = invoke %tmp.333 %tmp.334(%tmp.335);
+        invoke %tmp.330 %tmp.331(%tmp.336);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_202_29_211_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_202_8_264_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_202_8_264_8_if_false:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 211 15 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_211_15_264_8_if_stmt:
+        %tmp.337 = lgetv %id.1;
+        symbol [ id %tmp.337 211 18 20 ];
+        %tmp.339 = const :rename_guest;
+        symbol [ rename_guest %tmp.339 211 25 37 const ];
+        %tmp.340 = eq %tmp.337 %tmp.339;
+        bf %tmp.340 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_211_15_264_8_if_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_211_15_264_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_211_39_223_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 214 16 ]
+        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_211_39_223_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_211_39_223_8_stop" ]
         %picker.9 = local;
-        symbol [ picker %picker.9 218 12 18 ];
-        symbol [ WatchUi %tmp.358 218 25 32 ];
-        %tmp.358 = getm $.Toybox.WatchUi;
-        symbol [ TextPicker %tmp.359 218 33 43 ];
-        %tmp.359 = getv function ? %tmp.358 :TextPicker;
-        %tmp.360 = "";
-        %tmp.356 = newc %tmp.359 (%tmp.360);
-        lputv %picker.9 %tmp.356;
-        symbol [ picker %picker.9 218 12 18 ];
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 219 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_216_44_223_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_216_44_223_8_stop" ]
+        symbol [ picker %picker.9 214 20 26 ];
+        symbol [ WatchUi %tmp.343 214 33 40 ];
+        %tmp.343 = getm $.Toybox.WatchUi;
+        symbol [ TextPicker %tmp.344 214 41 51 ];
+        %tmp.344 = getv function ? %tmp.343 :TextPicker;
+        %tmp.345 = "";
+        %tmp.341 = newc %tmp.344 (%tmp.345);
+        lputv %picker.9 %tmp.341;
+        symbol [ picker %picker.9 214 20 26 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 215 16 ]
+        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_211_39_223_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_211_39_223_8_stop" ]
         %delegate.10 = local;
-        symbol [ delegate %delegate.10 219 12 20 ];
-        symbol [ ScoreTrakTextDelegate %tmp.364 219 27 48 ];
-        %tmp.364 = getv ? :ScoreTrakTextDelegate;
-        symbol [ _view %tmp.366 219 49 54 ];
-        %tmp.366 = getv ? :_view;
-        symbol [ method %tmp.367 219 55 61 ];
-        %tmp.367 = getv function %tmp.366 :method;
-        %tmp.369 = const :setCustomSportName;
-        symbol [ setCustomSportName %tmp.369 219 63 81 const ];
-        %tmp.370 = invoke %tmp.366 %tmp.367(%tmp.369);
-        %tmp.361 = newc %tmp.364 (%tmp.370);
-        lputv %delegate.10 %tmp.361;
-        symbol [ delegate %delegate.10 219 12 20 ];
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 220 8 ]
-        symbol [ WatchUi %tmp.371 220 8 15 ];
-        %tmp.371 = getm $.Toybox.WatchUi;
-        symbol [ pushView %tmp.372 220 16 24 ];
-        %tmp.372 = getv function %tmp.371 :pushView;
-        %tmp.373 = lgetv %picker.9;
-        symbol [ picker %tmp.373 220 25 31 ];
-        %tmp.374 = lgetv %delegate.10;
-        symbol [ delegate %tmp.374 220 33 41 ];
-        symbol [ WatchUi %tmp.375 220 43 50 ];
-        %tmp.375 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_UP %tmp.376 220 51 59 ];
-        %tmp.376 = getv %tmp.375 :SLIDE_UP;
-        invoke %tmp.371 %tmp.372(%tmp.373, %tmp.374, %tmp.376);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_216_44_223_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_216_15_257_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_216_15_257_8_if_false:
+        symbol [ delegate %delegate.10 215 20 28 ];
+        symbol [ ScoreTrakTextDelegate %tmp.349 215 35 56 ];
+        %tmp.349 = getv ? :ScoreTrakTextDelegate;
+        symbol [ _view %tmp.351 215 57 62 ];
+        %tmp.351 = getv ? :_view;
+        symbol [ method %tmp.352 215 63 69 ];
+        %tmp.352 = getv function %tmp.351 :method;
+        %tmp.354 = const :setGuestName;
+        symbol [ setGuestName %tmp.354 215 71 83 const ];
+        %tmp.355 = invoke %tmp.351 %tmp.352(%tmp.354);
+        %tmp.346 = newc %tmp.349 (%tmp.355);
+        lputv %delegate.10 %tmp.346;
+        symbol [ delegate %delegate.10 215 20 28 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 216 16 ]
+        symbol [ WatchUi %tmp.356 216 16 23 ];
+        %tmp.356 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.357 216 24 32 ];
+        %tmp.357 = getv function %tmp.356 :pushView;
+        %tmp.358 = lgetv %picker.9;
+        symbol [ picker %tmp.358 216 33 39 ];
+        %tmp.359 = lgetv %delegate.10;
+        symbol [ delegate %tmp.359 216 41 49 ];
+        symbol [ WatchUi %tmp.360 216 51 58 ];
+        %tmp.360 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.361 216 59 67 ];
+        %tmp.361 = getv %tmp.360 :SLIDE_UP;
+        invoke %tmp.356 %tmp.357(%tmp.358, %tmp.359, %tmp.361);
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 218 16 ]
+        %tmp.362 = lgetv %item;
+        symbol [ item %tmp.362 218 16 20 ];
+        symbol [ setSubLabel %tmp.363 218 21 32 ];
+        %tmp.363 = getv function %tmp.362 :setSubLabel;
+        symbol [ Application %tmp.364 218 33 44 ];
+        %tmp.364 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.365 218 45 52 ];
+        %tmp.365 = getv %tmp.364 :Storage;
+        symbol [ getValue %tmp.366 218 53 61 ];
+        %tmp.366 = getv function %tmp.365 :getValue;
+        %tmp.367 = "guest_name";
+        %tmp.368 = invoke %tmp.365 %tmp.366(%tmp.367);
+        invoke %tmp.362 %tmp.363(%tmp.368);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_211_39_223_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_211_15_264_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_211_15_264_8_if_false:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 223 15 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_15_257_8_if_stmt:
-        %tmp.377 = lgetv %id.1;
-        symbol [ id %tmp.377 223 18 20 ];
-        %tmp.379 = const :reset_names;
-        symbol [ reset_names %tmp.379 223 23 34 const ];
-        %tmp.380 = eq %tmp.377 %tmp.379;
-        bf %tmp.380 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_15_257_8_if_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_15_257_8_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_36_228_8_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 225 12 ]
-        symbol [ _view %tmp.382 225 12 17 ];
-        %tmp.382 = getv ? :_view;
-        symbol [ resetNames %tmp.383 225 18 28 ];
-        %tmp.383 = getv function %tmp.382 :resetNames;
-        invoke %tmp.382 %tmp.383();
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_36_228_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_15_257_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_15_257_8_if_false:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 228 15 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_228_15_257_8_if_stmt:
-        %tmp.384 = lgetv %id.1;
-        symbol [ id %tmp.384 228 18 20 ];
-        %tmp.386 = const :time_format;
-        symbol [ time_format %tmp.386 228 23 34 const ];
-        %tmp.387 = eq %tmp.384 %tmp.386;
-        bf %tmp.387 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_228_15_257_8_if_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_228_15_257_8_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_228_36_243_8_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 230 12 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_12_238_12_if_stmt:
-        symbol [ Application %tmp.388 230 16 27 ];
-        %tmp.388 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.389 230 28 35 ];
-        %tmp.389 = getv %tmp.388 :Storage;
-        symbol [ getValue %tmp.390 230 36 44 ];
-        %tmp.390 = getv function %tmp.389 :getValue;
-        %tmp.391 = "is24Hour";
-        %tmp.392 = invoke %tmp.389 %tmp.390(%tmp.391);
-        %tmp.393 = true;
-        %tmp.394 = eq %tmp.392 %tmp.393;
-        bf %tmp.394 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_12_238_12_if_else_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_12_238_12_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_66_234_12_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 231 16 ]
-        symbol [ Application %tmp.395 231 16 27 ];
-        %tmp.395 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.396 231 28 35 ];
-        %tmp.396 = getv %tmp.395 :Storage;
-        symbol [ setValue %tmp.397 231 36 44 ];
-        %tmp.397 = getv function %tmp.396 :setValue;
-        %tmp.398 = "is24Hour";
-        %tmp.399 = false;
-        invoke %tmp.396 %tmp.397(%tmp.398, %tmp.399);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 232 16 ]
-        %tmp.400 = lgetv %item;
-        symbol [ item %tmp.400 232 16 20 ];
-        symbol [ setSubLabel %tmp.401 232 21 32 ];
-        %tmp.401 = getv function %tmp.400 :setSubLabel;
-        %tmp.402 = "12-Hour";
-        invoke %tmp.400 %tmp.401(%tmp.402);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_66_234_12_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_12_238_12_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_12_238_12_if_else_false:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_234_19_238_12_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 235 16 ]
-        symbol [ Application %tmp.403 235 16 27 ];
-        %tmp.403 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.404 235 28 35 ];
-        %tmp.404 = getv %tmp.403 :Storage;
-        symbol [ setValue %tmp.405 235 36 44 ];
-        %tmp.405 = getv function %tmp.404 :setValue;
-        %tmp.406 = "is24Hour";
-        %tmp.407 = true;
-        invoke %tmp.404 %tmp.405(%tmp.406, %tmp.407);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 236 15 ]
-        %tmp.408 = lgetv %item;
-        symbol [ item %tmp.408 236 15 19 ];
-        symbol [ setSubLabel %tmp.409 236 20 31 ];
-        %tmp.409 = getv function %tmp.408 :setSubLabel;
-        %tmp.410 = "24-Hour";
-        invoke %tmp.408 %tmp.409(%tmp.410);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_234_19_238_12_stop:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_12_238_12_if_end:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 239 12 ]
-        symbol [ WatchUi %tmp.411 239 12 19 ];
-        %tmp.411 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.412 239 20 33 ];
-        %tmp.412 = getv function %tmp.411 :requestUpdate;
-        invoke %tmp.411 %tmp.412();
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_228_36_243_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_228_15_257_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_228_15_257_8_if_false:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_15_264_8_if_stmt:
+        %tmp.369 = lgetv %id.1;
+        symbol [ id %tmp.369 223 18 20 ];
+        %tmp.371 = const :rename_custom_sport;
+        symbol [ rename_custom_sport %tmp.371 223 23 42 const ];
+        %tmp.372 = eq %tmp.369 %tmp.371;
+        bf %tmp.372 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_15_264_8_if_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_15_264_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_44_230_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 225 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_44_230_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_44_230_8_stop" ]
+        %picker.11 = local;
+        symbol [ picker %picker.11 225 12 18 ];
+        symbol [ WatchUi %tmp.375 225 25 32 ];
+        %tmp.375 = getm $.Toybox.WatchUi;
+        symbol [ TextPicker %tmp.376 225 33 43 ];
+        %tmp.376 = getv function ? %tmp.375 :TextPicker;
+        %tmp.377 = "";
+        %tmp.373 = newc %tmp.376 (%tmp.377);
+        lputv %picker.11 %tmp.373;
+        symbol [ picker %picker.11 225 12 18 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 226 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_44_230_8_start" "_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_44_230_8_stop" ]
+        %delegate.12 = local;
+        symbol [ delegate %delegate.12 226 12 20 ];
+        symbol [ ScoreTrakTextDelegate %tmp.381 226 27 48 ];
+        %tmp.381 = getv ? :ScoreTrakTextDelegate;
+        symbol [ _view %tmp.383 226 49 54 ];
+        %tmp.383 = getv ? :_view;
+        symbol [ method %tmp.384 226 55 61 ];
+        %tmp.384 = getv function %tmp.383 :method;
+        %tmp.386 = const :setCustomSportName;
+        symbol [ setCustomSportName %tmp.386 226 63 81 const ];
+        %tmp.387 = invoke %tmp.383 %tmp.384(%tmp.386);
+        %tmp.378 = newc %tmp.381 (%tmp.387);
+        lputv %delegate.12 %tmp.378;
+        symbol [ delegate %delegate.12 226 12 20 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 227 8 ]
+        symbol [ WatchUi %tmp.388 227 8 15 ];
+        %tmp.388 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.389 227 16 24 ];
+        %tmp.389 = getv function %tmp.388 :pushView;
+        %tmp.390 = lgetv %picker.11;
+        symbol [ picker %tmp.390 227 25 31 ];
+        %tmp.391 = lgetv %delegate.12;
+        symbol [ delegate %tmp.391 227 33 41 ];
+        symbol [ WatchUi %tmp.392 227 43 50 ];
+        %tmp.392 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.393 227 51 59 ];
+        %tmp.393 = getv %tmp.392 :SLIDE_UP;
+        invoke %tmp.388 %tmp.389(%tmp.390, %tmp.391, %tmp.393);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_44_230_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_15_264_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_15_264_8_if_false:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 230 15 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_15_264_8_if_stmt:
+        %tmp.394 = lgetv %id.1;
+        symbol [ id %tmp.394 230 18 20 ];
+        %tmp.396 = const :reset_names;
+        symbol [ reset_names %tmp.396 230 23 34 const ];
+        %tmp.397 = eq %tmp.394 %tmp.396;
+        bf %tmp.397 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_15_264_8_if_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_15_264_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_36_235_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 232 12 ]
+        symbol [ _view %tmp.399 232 12 17 ];
+        %tmp.399 = getv ? :_view;
+        symbol [ resetNames %tmp.400 232 18 28 ];
+        %tmp.400 = getv function %tmp.399 :resetNames;
+        invoke %tmp.399 %tmp.400();
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_36_235_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_15_264_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_15_264_8_if_false:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 235 15 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_235_15_264_8_if_stmt:
+        %tmp.401 = lgetv %id.1;
+        symbol [ id %tmp.401 235 18 20 ];
+        %tmp.403 = const :time_format;
+        symbol [ time_format %tmp.403 235 23 34 const ];
+        %tmp.404 = eq %tmp.401 %tmp.403;
+        bf %tmp.404 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_235_15_264_8_if_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_235_15_264_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_235_36_250_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 237 12 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_237_12_245_12_if_stmt:
+        symbol [ Application %tmp.405 237 16 27 ];
+        %tmp.405 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.406 237 28 35 ];
+        %tmp.406 = getv %tmp.405 :Storage;
+        symbol [ getValue %tmp.407 237 36 44 ];
+        %tmp.407 = getv function %tmp.406 :getValue;
+        %tmp.408 = "is24Hour";
+        %tmp.409 = invoke %tmp.406 %tmp.407(%tmp.408);
+        %tmp.410 = true;
+        %tmp.411 = eq %tmp.409 %tmp.410;
+        bf %tmp.411 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_237_12_245_12_if_else_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_237_12_245_12_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_237_66_241_12_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 238 16 ]
+        symbol [ Application %tmp.412 238 16 27 ];
+        %tmp.412 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.413 238 28 35 ];
+        %tmp.413 = getv %tmp.412 :Storage;
+        symbol [ setValue %tmp.414 238 36 44 ];
+        %tmp.414 = getv function %tmp.413 :setValue;
+        %tmp.415 = "is24Hour";
+        %tmp.416 = false;
+        invoke %tmp.413 %tmp.414(%tmp.415, %tmp.416);
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 239 16 ]
+        %tmp.417 = lgetv %item;
+        symbol [ item %tmp.417 239 16 20 ];
+        symbol [ setSubLabel %tmp.418 239 21 32 ];
+        %tmp.418 = getv function %tmp.417 :setSubLabel;
+        %tmp.419 = "12-Hour";
+        invoke %tmp.417 %tmp.418(%tmp.419);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_237_66_241_12_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_237_12_245_12_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_237_12_245_12_if_else_false:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_241_19_245_12_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 242 16 ]
+        symbol [ Application %tmp.420 242 16 27 ];
+        %tmp.420 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.421 242 28 35 ];
+        %tmp.421 = getv %tmp.420 :Storage;
+        symbol [ setValue %tmp.422 242 36 44 ];
+        %tmp.422 = getv function %tmp.421 :setValue;
+        %tmp.423 = "is24Hour";
+        %tmp.424 = true;
+        invoke %tmp.421 %tmp.422(%tmp.423, %tmp.424);
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 243 15 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_243_15_257_8_if_stmt:
-        %tmp.413 = lgetv %id.1;
-        symbol [ id %tmp.413 243 18 20 ];
-        %tmp.415 = const :flip_score_buttons;
-        symbol [ flip_score_buttons %tmp.415 243 23 41 const ];
-        %tmp.416 = eq %tmp.413 %tmp.415;
-        bf %tmp.416 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_243_15_257_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_243_15_257_8_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_243_43_257_8_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 245 12 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_245_12_252_12_if_stmt:
-        symbol [ Application %tmp.417 245 16 27 ];
-        %tmp.417 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.418 245 28 35 ];
-        %tmp.418 = getv %tmp.417 :Storage;
-        symbol [ getValue %tmp.419 245 36 44 ];
-        %tmp.419 = getv function %tmp.418 :getValue;
-        %tmp.420 = "flip_score_buttons";
-        %tmp.421 = invoke %tmp.418 %tmp.419(%tmp.420);
-        %tmp.422 = false;
-        %tmp.423 = eq %tmp.421 %tmp.422;
-        bf %tmp.423 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_245_12_252_12_if_else_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_245_12_252_12_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_245_76_248_12_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 246 16 ]
-        symbol [ Application %tmp.424 246 16 27 ];
-        %tmp.424 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.425 246 28 35 ];
-        %tmp.425 = getv %tmp.424 :Storage;
-        symbol [ setValue %tmp.426 246 36 44 ];
-        %tmp.426 = getv function %tmp.425 :setValue;
-        %tmp.427 = "flip_score_buttons";
-        %tmp.428 = true;
-        invoke %tmp.425 %tmp.426(%tmp.427, %tmp.428);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 247 16 ]
-        %tmp.429 = lgetv %item;
-        symbol [ item %tmp.429 247 16 20 ];
-        symbol [ setSubLabel %tmp.430 247 21 32 ];
-        %tmp.430 = getv function %tmp.429 :setSubLabel;
-        %tmp.431 = "True";
-        invoke %tmp.429 %tmp.430(%tmp.431);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_245_76_248_12_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_245_12_252_12_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_245_12_252_12_if_else_false:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_249_16_252_12_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 250 16 ]
-        symbol [ Application %tmp.432 250 16 27 ];
-        %tmp.432 = getm $.Toybox.Application;
-        symbol [ Storage %tmp.433 250 28 35 ];
-        %tmp.433 = getv %tmp.432 :Storage;
-        symbol [ setValue %tmp.434 250 36 44 ];
-        %tmp.434 = getv function %tmp.433 :setValue;
-        %tmp.435 = "flip_score_buttons";
-        %tmp.436 = false;
-        invoke %tmp.433 %tmp.434(%tmp.435, %tmp.436);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 251 16 ]
-        %tmp.437 = lgetv %item;
-        symbol [ item %tmp.437 251 16 20 ];
-        symbol [ setSubLabel %tmp.438 251 21 32 ];
-        %tmp.438 = getv function %tmp.437 :setSubLabel;
-        %tmp.439 = "False";
-        invoke %tmp.437 %tmp.438(%tmp.439);
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_249_16_252_12_stop:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_245_12_252_12_if_end:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 254 12 ]
-        symbol [ WatchUi %tmp.440 254 12 19 ];
-        %tmp.440 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.441 254 20 33 ];
-        %tmp.441 = getv function %tmp.440 :requestUpdate;
-        invoke %tmp.440 %tmp.441();
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_243_43_257_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_243_15_257_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_243_15_257_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_228_15_257_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_15_257_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_216_15_257_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_204_15_257_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_195_8_257_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_192_47_258_4_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_192_11_258_4_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_192_11_258_4_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_156_11_258_4_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_258_4_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_18_52_260_0_stop:
+        %tmp.425 = lgetv %item;
+        symbol [ item %tmp.425 243 15 19 ];
+        symbol [ setSubLabel %tmp.426 243 20 31 ];
+        %tmp.426 = getv function %tmp.425 :setSubLabel;
+        %tmp.427 = "24-Hour";
+        invoke %tmp.425 %tmp.426(%tmp.427);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_241_19_245_12_stop:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_237_12_245_12_if_end:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 246 12 ]
+        symbol [ WatchUi %tmp.428 246 12 19 ];
+        %tmp.428 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.429 246 20 33 ];
+        %tmp.429 = getv function %tmp.428 :requestUpdate;
+        invoke %tmp.428 %tmp.429();
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_235_36_250_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_235_15_264_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_235_15_264_8_if_false:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 250 15 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_250_15_264_8_if_stmt:
+        %tmp.430 = lgetv %id.1;
+        symbol [ id %tmp.430 250 18 20 ];
+        %tmp.432 = const :flip_score_buttons;
+        symbol [ flip_score_buttons %tmp.432 250 23 41 const ];
+        %tmp.433 = eq %tmp.430 %tmp.432;
+        bf %tmp.433 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_250_15_264_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_250_15_264_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_250_43_264_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 252 12 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_252_12_259_12_if_stmt:
+        symbol [ Application %tmp.434 252 16 27 ];
+        %tmp.434 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.435 252 28 35 ];
+        %tmp.435 = getv %tmp.434 :Storage;
+        symbol [ getValue %tmp.436 252 36 44 ];
+        %tmp.436 = getv function %tmp.435 :getValue;
+        %tmp.437 = "flip_score_buttons";
+        %tmp.438 = invoke %tmp.435 %tmp.436(%tmp.437);
+        %tmp.439 = false;
+        %tmp.440 = eq %tmp.438 %tmp.439;
+        bf %tmp.440 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_252_12_259_12_if_else_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_252_12_259_12_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_252_76_255_12_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 253 16 ]
+        symbol [ Application %tmp.441 253 16 27 ];
+        %tmp.441 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.442 253 28 35 ];
+        %tmp.442 = getv %tmp.441 :Storage;
+        symbol [ setValue %tmp.443 253 36 44 ];
+        %tmp.443 = getv function %tmp.442 :setValue;
+        %tmp.444 = "flip_score_buttons";
+        %tmp.445 = true;
+        invoke %tmp.442 %tmp.443(%tmp.444, %tmp.445);
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 254 16 ]
+        %tmp.446 = lgetv %item;
+        symbol [ item %tmp.446 254 16 20 ];
+        symbol [ setSubLabel %tmp.447 254 21 32 ];
+        %tmp.447 = getv function %tmp.446 :setSubLabel;
+        %tmp.448 = "True";
+        invoke %tmp.446 %tmp.447(%tmp.448);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_252_76_255_12_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_252_12_259_12_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_252_12_259_12_if_else_false:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_256_16_259_12_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 257 16 ]
+        symbol [ Application %tmp.449 257 16 27 ];
+        %tmp.449 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.450 257 28 35 ];
+        %tmp.450 = getv %tmp.449 :Storage;
+        symbol [ setValue %tmp.451 257 36 44 ];
+        %tmp.451 = getv function %tmp.450 :setValue;
+        %tmp.452 = "flip_score_buttons";
+        %tmp.453 = false;
+        invoke %tmp.450 %tmp.451(%tmp.452, %tmp.453);
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 258 16 ]
+        %tmp.454 = lgetv %item;
+        symbol [ item %tmp.454 258 16 20 ];
+        symbol [ setSubLabel %tmp.455 258 21 32 ];
+        %tmp.455 = getv function %tmp.454 :setSubLabel;
+        %tmp.456 = "False";
+        invoke %tmp.454 %tmp.455(%tmp.456);
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_256_16_259_12_stop:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_252_12_259_12_if_end:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc" 261 12 ]
+        symbol [ WatchUi %tmp.457 261 12 19 ];
+        %tmp.457 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.458 261 20 33 ];
+        %tmp.458 = getv function %tmp.457 :requestUpdate;
+        invoke %tmp.457 %tmp.458();
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_250_43_264_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_250_15_264_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_250_15_264_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_235_15_264_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_230_15_264_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_223_15_264_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_211_15_264_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_202_8_264_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_199_47_265_4_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_199_11_265_4_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_199_11_265_4_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_163_11_265_4_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_25_4_265_4_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakMenuDelegate_mc_18_52_267_0_stop:
     }
 }
 [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakMenuDelegate.mc"; @line = 1; ]

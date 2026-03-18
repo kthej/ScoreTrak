@@ -19,4 +19,20 @@ class ScoreTrakTextDelegate extends WatchUi.TextPickerDelegate {
         return true;
     }
 }
+class ConfirmationDelegate extends WatchUi.ConfirmationDelegate {
+    private var _view;
+    function initialize(view) {
+        ConfirmationDelegate.initialize();
+        _view = view;
+    }
 
+    function onResponse(response) {
+        if (response == WatchUi.CONFIRM_NO) {
+            _view.saveChoice(false);
+            return true;
+        } else {
+            _view.saveChoice(true);
+            return true;
+        }
+    }
+}
