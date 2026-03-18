@@ -22,7 +22,7 @@ function onSelect(item as WatchUi.MenuItem) as Void {
 
 // Default
 
-    if (_menu_id.equals("MainMenu")){
+    if (_menu_id.equals("MainMenu") or _menu_id.equals("TennisMenu")){
 
         if (id == :home_minus) {
             _view.updateHome(-1);

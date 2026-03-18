@@ -230,12 +230,45 @@ function onUpdate(dc as Dc) as Void {
         guest_score_label.setText("");
         guest_label.setText("");
 
-    }else{
+} else if (scoring_mode == 1) {
+    // 1. Clamp values for logic stability
+    if (home_score < 0) { home_score = 0; }
+    if (guest_score < 0) { guest_score = 0; }
+    
+    // Cap at 4 (Advantage state). Anything higher should have triggered a Game Win.
+    if (home_score > 4) { home_score = 4; }
+    if (guest_score > 4) { guest_score = 4; }
+
+    // 2. Deuce and Advantage Logic
+    if (home_score >= 3 && guest_score >= 3) {
+        if (home_score == guest_score) {
+            // Both at 3 or both at 4 (after back-to-back AD)
+            home_score = 3; 
+            guest_score = 3;
+            home_score_label.setText("40");
+            guest_score_label.setText("40");
+        } else if (home_score > guest_score) {
+            home_score_label.setText("AD");
+            guest_score_label.setText("40");
+        } else {
+            home_score_label.setText("40");
+            guest_score_label.setText("AD");
+        }
+    } else {
+        // Standard Scoring
+        var strings = ["0", "15", "30", "40"];
+        home_score_label.setText(strings[home_score]);
+        guest_score_label.setText(strings[guest_score]);
+    }
+
+    home_label.setText(home_name);
+    guest_label.setText(guest_name);
+    
+    } else {
         home_score_label.setText(home_score.format("%02d"));
         home_label.setText(home_name);
         guest_score_label.setText(guest_score.format("%02d"));
         guest_label.setText(guest_name);
-        
     }
         
 
@@ -310,11 +343,14 @@ function onUpdate(dc as Dc) as Void {
             );
             
         }
-
+// Tennis Mode Games
+    if(scoring_mode == 1 and !instinct){
+        
+    }
 // GROUP MODE //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     } else {
-
+        score_line_offset = dc.getHeight()/6;
         if (instinct){
             vertical_offset = -SCREEN_HEIGHT/10;
             sport_label.setText(formatSportName(active_sport));
@@ -328,7 +364,7 @@ function onUpdate(dc as Dc) as Void {
             dc.drawText(SUB_SCREEN_X,SUB_SCREEN_Y,Graphics.FONT_MEDIUM,time_string,JCENTER);
             
         } else {
-
+            vertical_offset = 0;
             sport_label.setText(active_sport);
 
             dc.setColor(Graphics.COLOR_WHITE,

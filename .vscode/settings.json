@@ -1,0 +1,6 @@
+"files.associations": {
+    "*.mc": "java"
+},
+"[java]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
