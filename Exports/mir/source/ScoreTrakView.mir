@@ -2291,7 +2291,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_465_21_477_0_
     }
     [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc"; @line = 479; @symbol_functiondef = [startRecording,479,9,23]; ]
     function startRecording() {
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_479_26_606_0_start:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_479_26_607_0_start:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 481 0 ]
         symbol [ Activity %tmp.1 481 19 27 ];
         %tmp.1 = getm $.Toybox.Activity;
@@ -2310,8 +2310,8 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_479_26_606_0_
         symbol [ active_sport %tmp.6 484 7 19 ];
         %tmp.6 = getv ? :active_sport;
         push %tmp.6;
-        switch %tmp.6 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtBegin:
+        switch %tmp.6 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtBegin:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 486 4 ]
         %tmp.7 = dup %tmp.6;
         %tmp.8 = "American Football";
@@ -2383,100 +2383,100 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_s
         %tmp.52 = "Ultimate Disc";
         %tmp.53 = getv function %tmp.51 :equals;
         %tmp.54 = invoke %tmp.51 %tmp.53 (%tmp.52);
-        bt %tmp.54 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_520_4_524_13_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 526 4 ]
+        bt %tmp.54 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_520_4_528_13_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 530 4 ]
         %tmp.55 = dup %tmp.6;
         %tmp.56 = "Volleyball";
         %tmp.57 = getv function %tmp.55 :equals;
         %tmp.58 = invoke %tmp.55 %tmp.57 (%tmp.56);
-        bt %tmp.58 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_526_4_528_13_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 531 4 ]
+        bt %tmp.58 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_530_4_532_13_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 535 4 ]
         %tmp.59 = dup %tmp.6;
         %tmp.60 = "Badminton";
         %tmp.61 = getv function %tmp.59 :equals;
         %tmp.62 = invoke %tmp.59 %tmp.61 (%tmp.60);
-        bt %tmp.62 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_531_4_534_13_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 535 4 ]
+        bt %tmp.62 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_535_4_538_13_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 539 4 ]
         %tmp.63 = dup %tmp.6;
         %tmp.64 = "Padel";
         %tmp.65 = getv function %tmp.63 :equals;
         %tmp.66 = invoke %tmp.63 %tmp.65 (%tmp.64);
-        bt %tmp.66 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_535_4_538_13_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 539 4 ]
+        bt %tmp.66 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_539_4_542_13_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 543 4 ]
         %tmp.67 = dup %tmp.6;
         %tmp.68 = "Pickleball";
         %tmp.69 = getv function %tmp.67 :equals;
         %tmp.70 = invoke %tmp.67 %tmp.69 (%tmp.68);
-        bt %tmp.70 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_539_4_542_13_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 543 4 ]
+        bt %tmp.70 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_543_4_546_13_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 547 4 ]
         %tmp.71 = dup %tmp.6;
         %tmp.72 = "Platform Tennis";
         %tmp.73 = getv function %tmp.71 :equals;
         %tmp.74 = invoke %tmp.71 %tmp.73 (%tmp.72);
-        bt %tmp.74 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_543_4_546_13_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 547 4 ]
+        bt %tmp.74 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_547_4_550_13_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 551 4 ]
         %tmp.75 = dup %tmp.6;
         %tmp.76 = "Racquetball";
         %tmp.77 = getv function %tmp.75 :equals;
         %tmp.78 = invoke %tmp.75 %tmp.77 (%tmp.76);
-        bt %tmp.78 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_547_4_550_13_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 551 4 ]
+        bt %tmp.78 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_551_4_554_13_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 555 4 ]
         %tmp.79 = dup %tmp.6;
         %tmp.80 = "Squash";
         %tmp.81 = getv function %tmp.79 :equals;
         %tmp.82 = invoke %tmp.79 %tmp.81 (%tmp.80);
-        bt %tmp.82 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_551_4_554_13_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 555 4 ]
+        bt %tmp.82 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_555_4_558_13_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 559 4 ]
         %tmp.83 = dup %tmp.6;
         %tmp.84 = "Table Tennis";
         %tmp.85 = getv function %tmp.83 :equals;
         %tmp.86 = invoke %tmp.83 %tmp.85 (%tmp.84);
-        bt %tmp.86 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_555_4_558_13_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 559 4 ]
+        bt %tmp.86 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_559_4_562_13_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 563 4 ]
         %tmp.87 = dup %tmp.6;
         %tmp.88 = "Tennis";
         %tmp.89 = getv function %tmp.87 :equals;
         %tmp.90 = invoke %tmp.87 %tmp.89 (%tmp.88);
-        bt %tmp.90 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_559_4_561_13_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 564 4 ]
+        bt %tmp.90 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_563_4_565_13_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 568 4 ]
         %tmp.91 = dup %tmp.6;
         %tmp.92 = "Golf";
         %tmp.93 = getv function %tmp.91 :equals;
         %tmp.94 = invoke %tmp.91 %tmp.93 (%tmp.92);
-        bt %tmp.94 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_564_4_566_13_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 567 4 ]
+        bt %tmp.94 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_568_4_570_13_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 571 4 ]
         %tmp.95 = dup %tmp.6;
         %tmp.96 = "Mini Golf";
         %tmp.97 = getv function %tmp.95 :equals;
         %tmp.98 = invoke %tmp.95 %tmp.97 (%tmp.96);
-        bt %tmp.98 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_567_4_569_13_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 570 4 ]
+        bt %tmp.98 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_571_4_573_13_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 574 4 ]
         %tmp.99 = dup %tmp.6;
         %tmp.100 = "Disc Golf";
         %tmp.101 = getv function %tmp.99 :equals;
         %tmp.102 = invoke %tmp.99 %tmp.101 (%tmp.100);
-        bt %tmp.102 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_570_4_572_13_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 574 4 ]
+        bt %tmp.102 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_574_4_576_13_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 578 4 ]
         %tmp.103 = dup %tmp.6;
         %tmp.104 = "Board Game";
         %tmp.105 = getv function %tmp.103 :equals;
         %tmp.106 = invoke %tmp.103 %tmp.105 (%tmp.104);
-        bt %tmp.106 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_574_4_574_21_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 575 4 ]
+        bt %tmp.106 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_578_4_578_21_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 579 4 ]
         %tmp.107 = dup %tmp.6;
         %tmp.108 = "Custom Sport";
         %tmp.109 = getv function %tmp.107 :equals;
         %tmp.110 = invoke %tmp.107 %tmp.109 (%tmp.108);
-        bt %tmp.110 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_575_4_575_23_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 576 4 ]
+        bt %tmp.110 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_579_4_579_23_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 580 4 ]
         %tmp.111 = dup %tmp.6;
         %tmp.112 = "Score Keeper";
         %tmp.113 = getv function %tmp.111 :equals;
         %tmp.114 = invoke %tmp.111 %tmp.113 (%tmp.112);
-        bt %tmp.114 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_576_4_576_23_switchCase;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 577 4 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtDefault:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_defaultCodeBegin;
+        bt %tmp.114 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_580_4_580_23_switchCase;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 581 4 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtDefault:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_defaultCodeBegin;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_486_4_488_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 487 8 ]
         symbol [ Activity %tmp.115 487 27 35 ];
@@ -2486,7 +2486,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_486_4_488_13_
         symbol [ activity_profile ? 487 8 24 ];
         putv self :activity_profile %tmp.116;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 488 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_489_4_491_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 490 8 ]
         symbol [ Activity %tmp.117 490 27 35 ];
@@ -2496,7 +2496,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_489_4_491_13_
         symbol [ activity_profile ? 490 8 24 ];
         putv self :activity_profile %tmp.118;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 491 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_492_4_494_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 493 8 ]
         symbol [ Activity %tmp.119 493 27 35 ];
@@ -2506,7 +2506,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_492_4_494_13_
         symbol [ activity_profile ? 493 8 24 ];
         putv self :activity_profile %tmp.120;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 494 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_495_4_497_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 496 8 ]
         symbol [ Activity %tmp.121 496 27 35 ];
@@ -2516,7 +2516,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_495_4_497_13_
         symbol [ activity_profile ? 496 8 24 ];
         putv self :activity_profile %tmp.122;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 497 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_498_4_500_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 499 8 ]
         symbol [ Activity %tmp.123 499 27 35 ];
@@ -2526,7 +2526,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_498_4_500_13_
         symbol [ activity_profile ? 499 8 24 ];
         putv self :activity_profile %tmp.124;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 500 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_501_4_504_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 502 8 ]
         symbol [ Activity %tmp.125 502 27 35 ];
@@ -2536,7 +2536,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_501_4_504_13_
         symbol [ activity_profile ? 502 8 24 ];
         putv self :activity_profile %tmp.126;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 504 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_505_4_507_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 506 8 ]
         symbol [ Activity %tmp.127 506 27 35 ];
@@ -2546,7 +2546,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_505_4_507_13_
         symbol [ activity_profile ? 506 8 24 ];
         putv self :activity_profile %tmp.128;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 507 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_508_4_510_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 509 8 ]
         symbol [ Activity %tmp.129 509 27 35 ];
@@ -2556,7 +2556,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_508_4_510_13_
         symbol [ activity_profile ? 509 8 24 ];
         putv self :activity_profile %tmp.130;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 510 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_511_4_513_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 512 8 ]
         symbol [ Activity %tmp.131 512 27 35 ];
@@ -2566,7 +2566,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_511_4_513_13_
         symbol [ activity_profile ? 512 8 24 ];
         putv self :activity_profile %tmp.132;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 513 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_514_4_516_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 515 8 ]
         symbol [ Activity %tmp.133 515 27 35 ];
@@ -2576,7 +2576,7 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_514_4_516_13_
         symbol [ activity_profile ? 515 8 24 ];
         putv self :activity_profile %tmp.134;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 516 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_517_4_519_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 518 8 ]
         symbol [ Activity %tmp.135 518 27 35 ];
@@ -2586,436 +2586,451 @@ _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_517_4_519_13_
         symbol [ activity_profile ? 518 8 24 ];
         putv self :activity_profile %tmp.136;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 519 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_520_4_524_13_switchCase:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 522 8 ]
-        symbol [ Activity %tmp.137 522 27 35 ];
-        %tmp.137 = getm $.Toybox.Activity;
-        symbol [ SPORT_TEAM_SPORT %tmp.138 522 36 52 ];
-        %tmp.138 = getv %tmp.137 :SPORT_TEAM_SPORT;
-        symbol [ activity_profile ? 522 8 24 ];
-        putv self :activity_profile %tmp.138;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 523 8 ]
-        symbol [ Activity %tmp.139 523 31 39 ];
-        %tmp.139 = getm $.Toybox.Activity;
-        symbol [ SUB_SPORT_ULTIMATE %tmp.140 523 40 58 ];
-        %tmp.140 = getv %tmp.139 :SUB_SPORT_ULTIMATE;
-        symbol [ sub_activity_profile ? 523 8 28 ];
-        putv self :sub_activity_profile %tmp.140;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 524 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_526_4_528_13_switchCase:
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_520_4_528_13_switchCase:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 526 8 ]
+        %tmp.137 = 69;
+        symbol [ activity_profile ? 526 8 24 ];
+        putv self :activity_profile %tmp.137;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 527 8 ]
-        symbol [ Activity %tmp.141 527 27 35 ];
-        %tmp.141 = getm $.Toybox.Activity;
-        symbol [ SPORT_VOLLEYBALL %tmp.142 527 36 52 ];
-        %tmp.142 = getv %tmp.141 :SPORT_VOLLEYBALL;
-        symbol [ activity_profile ? 527 8 24 ];
-        putv self :activity_profile %tmp.142;
+        %tmp.138 = 92;
+        symbol [ sub_activity_profile ? 527 8 28 ];
+        putv self :sub_activity_profile %tmp.138;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 528 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_531_4_534_13_switchCase:
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_530_4_532_13_switchCase:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 531 8 ]
+        symbol [ Activity %tmp.139 531 27 35 ];
+        %tmp.139 = getm $.Toybox.Activity;
+        symbol [ SPORT_VOLLEYBALL %tmp.140 531 36 52 ];
+        %tmp.140 = getv %tmp.139 :SPORT_VOLLEYBALL;
+        symbol [ activity_profile ? 531 8 24 ];
+        putv self :activity_profile %tmp.140;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 532 8 ]
-        symbol [ Activity %tmp.143 532 27 35 ];
-        %tmp.143 = getm $.Toybox.Activity;
-        symbol [ SPORT_RACKET %tmp.144 532 36 48 ];
-        %tmp.144 = getv %tmp.143 :SPORT_RACKET;
-        symbol [ activity_profile ? 532 8 24 ];
-        putv self :activity_profile %tmp.144;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 533 8 ]
-        symbol [ Activity %tmp.145 533 31 39 ];
-        %tmp.145 = getm $.Toybox.Activity;
-        symbol [ SUB_SPORT_BADMINTON %tmp.146 533 40 59 ];
-        %tmp.146 = getv %tmp.145 :SUB_SPORT_BADMINTON;
-        symbol [ sub_activity_profile ? 533 8 28 ];
-        putv self :sub_activity_profile %tmp.146;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 534 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_535_4_538_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 536 8 ]
-        symbol [ Activity %tmp.147 536 27 35 ];
-        %tmp.147 = getm $.Toybox.Activity;
-        symbol [ SPORT_RACKET %tmp.148 536 36 48 ];
-        %tmp.148 = getv %tmp.147 :SPORT_RACKET;
+        symbol [ Activity %tmp.141 536 27 35 ];
+        %tmp.141 = getm $.Toybox.Activity;
+        symbol [ SPORT_RACKET %tmp.142 536 36 48 ];
+        %tmp.142 = getv %tmp.141 :SPORT_RACKET;
         symbol [ activity_profile ? 536 8 24 ];
-        putv self :activity_profile %tmp.148;
+        putv self :activity_profile %tmp.142;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 537 8 ]
-        symbol [ Activity %tmp.149 537 31 39 ];
-        %tmp.149 = getm $.Toybox.Activity;
-        symbol [ SUB_SPORT_PADEL %tmp.150 537 40 55 ];
-        %tmp.150 = getv %tmp.149 :SUB_SPORT_PADEL;
+        symbol [ Activity %tmp.143 537 31 39 ];
+        %tmp.143 = getm $.Toybox.Activity;
+        symbol [ SUB_SPORT_BADMINTON %tmp.144 537 40 59 ];
+        %tmp.144 = getv %tmp.143 :SUB_SPORT_BADMINTON;
         symbol [ sub_activity_profile ? 537 8 28 ];
-        putv self :sub_activity_profile %tmp.150;
+        putv self :sub_activity_profile %tmp.144;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 538 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_539_4_542_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 540 8 ]
-        symbol [ Activity %tmp.151 540 27 35 ];
-        %tmp.151 = getm $.Toybox.Activity;
-        symbol [ SPORT_RACKET %tmp.152 540 36 48 ];
-        %tmp.152 = getv %tmp.151 :SPORT_RACKET;
+        symbol [ Activity %tmp.145 540 27 35 ];
+        %tmp.145 = getm $.Toybox.Activity;
+        symbol [ SPORT_RACKET %tmp.146 540 36 48 ];
+        %tmp.146 = getv %tmp.145 :SPORT_RACKET;
         symbol [ activity_profile ? 540 8 24 ];
-        putv self :activity_profile %tmp.152;
+        putv self :activity_profile %tmp.146;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 541 8 ]
-        symbol [ Activity %tmp.153 541 31 39 ];
-        %tmp.153 = getm $.Toybox.Activity;
-        symbol [ SUB_SPORT_PICKLEBALL %tmp.154 541 40 60 ];
-        %tmp.154 = getv %tmp.153 :SUB_SPORT_PICKLEBALL;
+        symbol [ Activity %tmp.147 541 31 39 ];
+        %tmp.147 = getm $.Toybox.Activity;
+        symbol [ SUB_SPORT_PADEL %tmp.148 541 40 55 ];
+        %tmp.148 = getv %tmp.147 :SUB_SPORT_PADEL;
         symbol [ sub_activity_profile ? 541 8 28 ];
-        putv self :sub_activity_profile %tmp.154;
+        putv self :sub_activity_profile %tmp.148;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 542 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_543_4_546_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 544 8 ]
-        symbol [ Activity %tmp.155 544 27 35 ];
-        %tmp.155 = getm $.Toybox.Activity;
-        symbol [ SPORT_RACKET %tmp.156 544 36 48 ];
-        %tmp.156 = getv %tmp.155 :SPORT_RACKET;
+        symbol [ Activity %tmp.149 544 27 35 ];
+        %tmp.149 = getm $.Toybox.Activity;
+        symbol [ SPORT_RACKET %tmp.150 544 36 48 ];
+        %tmp.150 = getv %tmp.149 :SPORT_RACKET;
         symbol [ activity_profile ? 544 8 24 ];
-        putv self :activity_profile %tmp.156;
+        putv self :activity_profile %tmp.150;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 545 8 ]
-        symbol [ Activity %tmp.157 545 31 39 ];
-        %tmp.157 = getm $.Toybox.Activity;
-        symbol [ SUB_SPORT_PLATFORM %tmp.158 545 40 58 ];
-        %tmp.158 = getv %tmp.157 :SUB_SPORT_PLATFORM;
+        symbol [ Activity %tmp.151 545 31 39 ];
+        %tmp.151 = getm $.Toybox.Activity;
+        symbol [ SUB_SPORT_PICKLEBALL %tmp.152 545 40 60 ];
+        %tmp.152 = getv %tmp.151 :SUB_SPORT_PICKLEBALL;
         symbol [ sub_activity_profile ? 545 8 28 ];
-        putv self :sub_activity_profile %tmp.158;
+        putv self :sub_activity_profile %tmp.152;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 546 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_547_4_550_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 548 8 ]
-        symbol [ Activity %tmp.159 548 27 35 ];
-        %tmp.159 = getm $.Toybox.Activity;
-        symbol [ SPORT_RACKET %tmp.160 548 36 48 ];
-        %tmp.160 = getv %tmp.159 :SPORT_RACKET;
+        symbol [ Activity %tmp.153 548 27 35 ];
+        %tmp.153 = getm $.Toybox.Activity;
+        symbol [ SPORT_RACKET %tmp.154 548 36 48 ];
+        %tmp.154 = getv %tmp.153 :SPORT_RACKET;
         symbol [ activity_profile ? 548 8 24 ];
-        putv self :activity_profile %tmp.160;
+        putv self :activity_profile %tmp.154;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 549 8 ]
-        symbol [ Activity %tmp.161 549 31 39 ];
-        %tmp.161 = getm $.Toybox.Activity;
-        symbol [ SUB_SPORT_RACQUETBALL %tmp.162 549 40 61 ];
-        %tmp.162 = getv %tmp.161 :SUB_SPORT_RACQUETBALL;
+        symbol [ Activity %tmp.155 549 31 39 ];
+        %tmp.155 = getm $.Toybox.Activity;
+        symbol [ SUB_SPORT_PLATFORM %tmp.156 549 40 58 ];
+        %tmp.156 = getv %tmp.155 :SUB_SPORT_PLATFORM;
         symbol [ sub_activity_profile ? 549 8 28 ];
-        putv self :sub_activity_profile %tmp.162;
+        putv self :sub_activity_profile %tmp.156;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 550 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_551_4_554_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 552 8 ]
-        symbol [ Activity %tmp.163 552 27 35 ];
-        %tmp.163 = getm $.Toybox.Activity;
-        symbol [ SPORT_RACKET %tmp.164 552 36 48 ];
-        %tmp.164 = getv %tmp.163 :SPORT_RACKET;
+        symbol [ Activity %tmp.157 552 27 35 ];
+        %tmp.157 = getm $.Toybox.Activity;
+        symbol [ SPORT_RACKET %tmp.158 552 36 48 ];
+        %tmp.158 = getv %tmp.157 :SPORT_RACKET;
         symbol [ activity_profile ? 552 8 24 ];
-        putv self :activity_profile %tmp.164;
+        putv self :activity_profile %tmp.158;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 553 8 ]
-        symbol [ Activity %tmp.165 553 31 39 ];
-        %tmp.165 = getm $.Toybox.Activity;
-        symbol [ SUB_SPORT_SQUASH %tmp.166 553 40 56 ];
-        %tmp.166 = getv %tmp.165 :SUB_SPORT_SQUASH;
+        symbol [ Activity %tmp.159 553 31 39 ];
+        %tmp.159 = getm $.Toybox.Activity;
+        symbol [ SUB_SPORT_RACQUETBALL %tmp.160 553 40 61 ];
+        %tmp.160 = getv %tmp.159 :SUB_SPORT_RACQUETBALL;
         symbol [ sub_activity_profile ? 553 8 28 ];
-        putv self :sub_activity_profile %tmp.166;
+        putv self :sub_activity_profile %tmp.160;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 554 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
 _home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_555_4_558_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 556 8 ]
-        symbol [ Activity %tmp.167 556 27 35 ];
-        %tmp.167 = getm $.Toybox.Activity;
-        symbol [ SPORT_RACKET %tmp.168 556 36 48 ];
-        %tmp.168 = getv %tmp.167 :SPORT_RACKET;
+        symbol [ Activity %tmp.161 556 27 35 ];
+        %tmp.161 = getm $.Toybox.Activity;
+        symbol [ SPORT_RACKET %tmp.162 556 36 48 ];
+        %tmp.162 = getv %tmp.161 :SPORT_RACKET;
         symbol [ activity_profile ? 556 8 24 ];
-        putv self :activity_profile %tmp.168;
+        putv self :activity_profile %tmp.162;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 557 8 ]
-        symbol [ Activity %tmp.169 557 31 39 ];
-        %tmp.169 = getm $.Toybox.Activity;
-        symbol [ SUB_SPORT_TABLE_TENNIS %tmp.170 557 40 62 ];
-        %tmp.170 = getv %tmp.169 :SUB_SPORT_TABLE_TENNIS;
+        symbol [ Activity %tmp.163 557 31 39 ];
+        %tmp.163 = getm $.Toybox.Activity;
+        symbol [ SUB_SPORT_SQUASH %tmp.164 557 40 56 ];
+        %tmp.164 = getv %tmp.163 :SUB_SPORT_SQUASH;
         symbol [ sub_activity_profile ? 557 8 28 ];
-        putv self :sub_activity_profile %tmp.170;
+        putv self :sub_activity_profile %tmp.164;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 558 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_559_4_561_13_switchCase:
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_559_4_562_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 560 8 ]
-        symbol [ Activity %tmp.171 560 27 35 ];
-        %tmp.171 = getm $.Toybox.Activity;
-        symbol [ SPORT_TENNIS %tmp.172 560 36 48 ];
-        %tmp.172 = getv %tmp.171 :SPORT_TENNIS;
+        symbol [ Activity %tmp.165 560 27 35 ];
+        %tmp.165 = getm $.Toybox.Activity;
+        symbol [ SPORT_RACKET %tmp.166 560 36 48 ];
+        %tmp.166 = getv %tmp.165 :SPORT_RACKET;
         symbol [ activity_profile ? 560 8 24 ];
-        putv self :activity_profile %tmp.172;
+        putv self :activity_profile %tmp.166;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 561 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_564_4_566_13_switchCase:
+        symbol [ Activity %tmp.167 561 31 39 ];
+        %tmp.167 = getm $.Toybox.Activity;
+        symbol [ SUB_SPORT_TABLE_TENNIS %tmp.168 561 40 62 ];
+        %tmp.168 = getv %tmp.167 :SUB_SPORT_TABLE_TENNIS;
+        symbol [ sub_activity_profile ? 561 8 28 ];
+        putv self :sub_activity_profile %tmp.168;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 562 8 ]
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_563_4_565_13_switchCase:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 564 8 ]
+        symbol [ Activity %tmp.169 564 27 35 ];
+        %tmp.169 = getm $.Toybox.Activity;
+        symbol [ SPORT_TENNIS %tmp.170 564 36 48 ];
+        %tmp.170 = getv %tmp.169 :SPORT_TENNIS;
+        symbol [ activity_profile ? 564 8 24 ];
+        putv self :activity_profile %tmp.170;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 565 8 ]
-        symbol [ Activity %tmp.173 565 27 35 ];
-        %tmp.173 = getm $.Toybox.Activity;
-        symbol [ SPORT_GOLF %tmp.174 565 36 46 ];
-        %tmp.174 = getv %tmp.173 :SPORT_GOLF;
-        symbol [ activity_profile ? 565 8 24 ];
-        putv self :activity_profile %tmp.174;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 566 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_567_4_569_13_switchCase:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 568 8 ]
-        symbol [ Activity %tmp.175 568 27 35 ];
-        %tmp.175 = getm $.Toybox.Activity;
-        symbol [ SPORT_GOLF %tmp.176 568 36 46 ];
-        %tmp.176 = getv %tmp.175 :SPORT_GOLF;
-        symbol [ activity_profile ? 568 8 24 ];
-        putv self :activity_profile %tmp.176;
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_568_4_570_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 569 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_570_4_572_13_switchCase:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 571 8 ]
-        symbol [ Activity %tmp.177 571 27 35 ];
-        %tmp.177 = getm $.Toybox.Activity;
-        symbol [ SPORT_DISC_GOLF %tmp.178 571 36 51 ];
-        %tmp.178 = getv %tmp.177 :SPORT_DISC_GOLF;
-        symbol [ activity_profile ? 571 8 24 ];
-        putv self :activity_profile %tmp.178;
+        symbol [ Activity %tmp.171 569 27 35 ];
+        %tmp.171 = getm $.Toybox.Activity;
+        symbol [ SPORT_GOLF %tmp.172 569 36 46 ];
+        %tmp.172 = getv %tmp.171 :SPORT_GOLF;
+        symbol [ activity_profile ? 569 8 24 ];
+        putv self :activity_profile %tmp.172;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 570 8 ]
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_571_4_573_13_switchCase:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 572 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_574_4_574_21_switchCase:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_575_4_575_23_switchCase:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_576_4_576_23_switchCase:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_577_4_580_13_switchCase:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_defaultCodeBegin:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 578 8 ]
-        symbol [ Activity %tmp.179 578 27 35 ];
+        symbol [ Activity %tmp.173 572 27 35 ];
+        %tmp.173 = getm $.Toybox.Activity;
+        symbol [ SPORT_GOLF %tmp.174 572 36 46 ];
+        %tmp.174 = getv %tmp.173 :SPORT_GOLF;
+        symbol [ activity_profile ? 572 8 24 ];
+        putv self :activity_profile %tmp.174;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 573 8 ]
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_574_4_576_13_switchCase:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 575 8 ]
+        symbol [ Activity %tmp.175 575 27 35 ];
+        %tmp.175 = getm $.Toybox.Activity;
+        symbol [ SPORT_DISC_GOLF %tmp.176 575 36 51 ];
+        %tmp.176 = getv %tmp.175 :SPORT_DISC_GOLF;
+        symbol [ activity_profile ? 575 8 24 ];
+        putv self :activity_profile %tmp.176;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 576 8 ]
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_578_4_578_21_switchCase:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_579_4_579_23_switchCase:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_580_4_580_23_switchCase:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_581_4_584_13_switchCase:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_defaultCodeBegin:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 582 8 ]
+        symbol [ Activity %tmp.177 582 27 35 ];
+        %tmp.177 = getm $.Toybox.Activity;
+        symbol [ SPORT_GENERIC %tmp.178 582 36 49 ];
+        %tmp.178 = getv %tmp.177 :SPORT_GENERIC;
+        symbol [ activity_profile ? 582 8 24 ];
+        putv self :activity_profile %tmp.178;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 583 8 ]
+        symbol [ Activity %tmp.179 583 31 39 ];
         %tmp.179 = getm $.Toybox.Activity;
-        symbol [ SPORT_GENERIC %tmp.180 578 36 49 ];
-        %tmp.180 = getv %tmp.179 :SPORT_GENERIC;
-        symbol [ activity_profile ? 578 8 24 ];
-        putv self :activity_profile %tmp.180;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 579 8 ]
-        symbol [ Activity %tmp.181 579 31 39 ];
-        %tmp.181 = getm $.Toybox.Activity;
-        symbol [ SUB_SPORT_GENERIC %tmp.182 579 40 57 ];
-        %tmp.182 = getv %tmp.181 :SUB_SPORT_GENERIC;
-        symbol [ sub_activity_profile ? 579 8 28 ];
-        putv self :sub_activity_profile %tmp.182;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 580 8 ]
-        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_581_0_switchStmtEnd:
+        symbol [ SUB_SPORT_GENERIC %tmp.180 583 40 57 ];
+        %tmp.180 = getv %tmp.179 :SUB_SPORT_GENERIC;
+        symbol [ sub_activity_profile ? 583 8 28 ];
+        putv self :sub_activity_profile %tmp.180;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 584 8 ]
+        goto break @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_484_0_585_0_switchStmtEnd:
         pop;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 588 4 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_588_4_605_4_if_stmt:
-        symbol [ Toybox %tmp.184 588 8 14 ];
-        %tmp.184 = getv ? :Toybox;
-        %tmp.186 = const :ActivityRecording;
-        symbol [ ActivityRecording %tmp.186 588 20 37 const ];
-        %tmp.187 = canhazplz %tmp.184 %tmp.186;
-        bf %tmp.187 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_588_4_605_4_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_588_4_605_4_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_588_39_605_4_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 589 8 ]
-        %tmp.188 = self;
-        symbol [ startSound %tmp.189 589 8 18 ];
-        %tmp.189 = getv function %tmp.188 :startSound;
-        invoke %tmp.188 %tmp.189();
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 590 8 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_590_8_604_8_if_stmt:
-        symbol [ activitySession %tmp.191 590 12 27 ];
-        %tmp.191 = getv ? :activitySession;
-        %tmp.192 = null;
-        %tmp.193 = eq %tmp.191 %tmp.192;
-        bf %tmp.193 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_590_8_604_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_590_8_604_8_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_590_37_604_8_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 591 12 ]
-        symbol [ ActivityRecording %tmp.194 591 30 47 ];
-        %tmp.194 = getm $.Toybox.ActivityRecording;
-        symbol [ createSession %tmp.195 591 48 61 ];
-        %tmp.195 = getv function %tmp.194 :createSession;
-        %tmp.196 = newd 3;
-        %tmp.198 = const :name;
-        symbol [ name %tmp.198 592 17 21 const ];
-        %tmp.199 = "ScoreTrak";
-        %tmp.200 = dup %tmp.196;
-        %tmp.201 = aputv %tmp.200 %tmp.198 %tmp.199;
-        %tmp.203 = const :sport;
-        symbol [ sport %tmp.203 593 17 22 const ];
-        symbol [ activity_profile %tmp.205 593 26 42 ];
-        %tmp.205 = getv ? :activity_profile;
-        %tmp.206 = dup %tmp.201;
-        %tmp.207 = aputv %tmp.206 %tmp.203 %tmp.205;
-        %tmp.209 = const :subSport;
-        symbol [ subSport %tmp.209 594 17 25 const ];
-        symbol [ sub_activity_profile %tmp.211 594 29 49 ];
-        %tmp.211 = getv ? :sub_activity_profile;
-        %tmp.212 = dup %tmp.207;
-        %tmp.213 = aputv %tmp.212 %tmp.209 %tmp.211;
-        %tmp.214 = invoke %tmp.194 %tmp.195(%tmp.213);
-        symbol [ activitySession ? 591 12 27 ];
-        putv self :activitySession %tmp.214;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 597 12 ]
-        symbol [ activitySession %tmp.216 597 12 27 ];
-        %tmp.216 = getv ? :activitySession;
-        symbol [ start %tmp.217 597 28 33 ];
-        %tmp.217 = getv function %tmp.216 :start;
-        invoke %tmp.216 %tmp.217();
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 598 12 ]
-        %tmp.218 = true;
-        symbol [ isRecording ? 598 12 23 ];
-        putv self :isRecording %tmp.218;
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 599 12 ]
-        %tmp.219 = 2;
-        symbol [ recordingState ? 599 12 26 ];
-        putv self :recordingState %tmp.219;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_590_37_604_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_590_8_604_8_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_590_8_604_8_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_588_39_605_4_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_588_4_605_4_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_588_4_605_4_if_end:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_479_26_606_0_stop:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 592 4 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_592_4_606_4_if_stmt:
+        symbol [ Toybox %tmp.182 592 8 14 ];
+        %tmp.182 = getv ? :Toybox;
+        %tmp.184 = const :ActivityRecording;
+        symbol [ ActivityRecording %tmp.184 592 20 37 const ];
+        %tmp.185 = canhazplz %tmp.182 %tmp.184;
+        bf %tmp.185 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_592_4_606_4_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_592_4_606_4_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_592_39_606_4_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 593 8 ]
+        %tmp.186 = self;
+        symbol [ startSound %tmp.187 593 8 18 ];
+        %tmp.187 = getv function %tmp.186 :startSound;
+        invoke %tmp.186 %tmp.187();
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 594 8 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_594_8_605_8_if_stmt:
+        symbol [ activitySession %tmp.189 594 12 27 ];
+        %tmp.189 = getv ? :activitySession;
+        %tmp.190 = null;
+        %tmp.191 = eq %tmp.189 %tmp.190;
+        bf %tmp.191 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_594_8_605_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_594_8_605_8_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_594_37_605_8_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 595 12 ]
+        symbol [ ActivityRecording %tmp.192 595 30 47 ];
+        %tmp.192 = getm $.Toybox.ActivityRecording;
+        symbol [ createSession %tmp.193 595 48 61 ];
+        %tmp.193 = getv function %tmp.192 :createSession;
+        %tmp.194 = newd 3;
+        %tmp.196 = const :name;
+        symbol [ name %tmp.196 596 17 21 const ];
+        %tmp.197 = "ScoreTrak";
+        %tmp.198 = dup %tmp.194;
+        %tmp.199 = aputv %tmp.198 %tmp.196 %tmp.197;
+        %tmp.201 = const :sport;
+        symbol [ sport %tmp.201 597 17 22 const ];
+        symbol [ activity_profile %tmp.203 597 26 42 ];
+        %tmp.203 = getv ? :activity_profile;
+        %tmp.204 = dup %tmp.199;
+        %tmp.205 = aputv %tmp.204 %tmp.201 %tmp.203;
+        %tmp.207 = const :subSport;
+        symbol [ subSport %tmp.207 598 17 25 const ];
+        symbol [ sub_activity_profile %tmp.209 598 29 49 ];
+        %tmp.209 = getv ? :sub_activity_profile;
+        %tmp.210 = dup %tmp.205;
+        %tmp.211 = aputv %tmp.210 %tmp.207 %tmp.209;
+        %tmp.212 = invoke %tmp.192 %tmp.193(%tmp.211);
+        symbol [ activitySession ? 595 12 27 ];
+        putv self :activitySession %tmp.212;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 600 12 ]
+        symbol [ System %tmp.214 600 12 18 ];
+        %tmp.214 = getv ? :System;
+        symbol [ println %tmp.215 600 19 26 ];
+        %tmp.215 = getv function %tmp.214 :println;
+        symbol [ Lang %tmp.217 600 27 31 ];
+        %tmp.217 = getv ? :Lang;
+        symbol [ format %tmp.218 600 32 38 ];
+        %tmp.218 = getv function %tmp.217 :format;
+        %tmp.219 = "$1$ $2$";
+        %tmp.220 = newa 2;
+        symbol [ activity_profile %tmp.222 600 50 66 ];
+        %tmp.222 = getv ? :activity_profile;
+        %tmp.223 = dup %tmp.220;
+        %tmp.224 = aputv %tmp.223 0 %tmp.222;
+        symbol [ sub_activity_profile %tmp.226 600 68 88 ];
+        %tmp.226 = getv ? :sub_activity_profile;
+        %tmp.227 = dup %tmp.224;
+        %tmp.228 = aputv %tmp.227 1 %tmp.226;
+        %tmp.229 = invoke %tmp.217 %tmp.218(%tmp.219, %tmp.228);
+        invoke %tmp.214 %tmp.215(%tmp.229);
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 601 12 ]
+        symbol [ activitySession %tmp.231 601 12 27 ];
+        %tmp.231 = getv ? :activitySession;
+        symbol [ start %tmp.232 601 28 33 ];
+        %tmp.232 = getv function %tmp.231 :start;
+        invoke %tmp.231 %tmp.232();
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 602 12 ]
+        %tmp.233 = true;
+        symbol [ isRecording ? 602 12 23 ];
+        putv self :isRecording %tmp.233;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 603 12 ]
+        %tmp.234 = 2;
+        symbol [ recordingState ? 603 12 26 ];
+        putv self :recordingState %tmp.234;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_594_37_605_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_594_8_605_8_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_594_8_605_8_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_592_39_606_4_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_592_4_606_4_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_592_4_606_4_if_end:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_479_26_607_0_stop:
     }
-    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc"; @line = 609; @symbol_functiondef = [pauseActivity,609,9,22]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc"; @line = 610; @symbol_functiondef = [pauseActivity,610,9,22]; ]
     function pauseActivity() {
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_609_24_614_0_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 610 4 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_610_24_615_0_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 611 4 ]
         %tmp.1 = self;
-        symbol [ stopSound %tmp.2 610 4 13 ];
+        symbol [ stopSound %tmp.2 611 4 13 ];
         %tmp.2 = getv function %tmp.1 :stopSound;
         invoke %tmp.1 %tmp.2();
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 611 4 ]
-        symbol [ activitySession %tmp.4 611 4 19 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 612 4 ]
+        symbol [ activitySession %tmp.4 612 4 19 ];
         %tmp.4 = getv ? :activitySession;
-        symbol [ stop %tmp.5 611 20 24 ];
+        symbol [ stop %tmp.5 612 20 24 ];
         %tmp.5 = getv function %tmp.4 :stop;
         invoke %tmp.4 %tmp.5();
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 612 4 ]
-        %tmp.6 = true;
-        symbol [ isRecording ? 612 4 15 ];
-        putv self :isRecording %tmp.6;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 613 4 ]
+        %tmp.6 = true;
+        symbol [ isRecording ? 613 4 15 ];
+        putv self :isRecording %tmp.6;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 614 4 ]
         %tmp.7 = 1;
-        symbol [ recordingState ? 613 4 18 ];
+        symbol [ recordingState ? 614 4 18 ];
         putv self :recordingState %tmp.7;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_609_24_614_0_stop:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_610_24_615_0_stop:
     }
-    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc"; @line = 615; @symbol_functiondef = [resumeActivity,615,9,23]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc"; @line = 616; @symbol_functiondef = [resumeActivity,616,9,23]; ]
     function resumeActivity() {
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_615_25_620_0_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 616 4 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_616_25_621_0_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 617 4 ]
         %tmp.1 = self;
-        symbol [ startSound %tmp.2 616 4 14 ];
+        symbol [ startSound %tmp.2 617 4 14 ];
         %tmp.2 = getv function %tmp.1 :startSound;
         invoke %tmp.1 %tmp.2();
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 617 4 ]
-        symbol [ activitySession %tmp.4 617 4 19 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 618 4 ]
+        symbol [ activitySession %tmp.4 618 4 19 ];
         %tmp.4 = getv ? :activitySession;
-        symbol [ start %tmp.5 617 20 25 ];
+        symbol [ start %tmp.5 618 20 25 ];
         %tmp.5 = getv function %tmp.4 :start;
         invoke %tmp.4 %tmp.5();
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 618 4 ]
-        %tmp.6 = true;
-        symbol [ isRecording ? 618 4 15 ];
-        putv self :isRecording %tmp.6;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 619 4 ]
+        %tmp.6 = true;
+        symbol [ isRecording ? 619 4 15 ];
+        putv self :isRecording %tmp.6;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 620 4 ]
         %tmp.7 = 2;
-        symbol [ recordingState ? 619 4 18 ];
+        symbol [ recordingState ? 620 4 18 ];
         putv self :recordingState %tmp.7;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_615_25_620_0_stop:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_616_25_621_0_stop:
     }
-    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc"; @line = 622; @symbol_functiondef = [saveChoice,622,9,19]; @symbol_param<0> = [shouldSave,622,20,30]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc"; @line = 623; @symbol_functiondef = [saveChoice,623,9,19]; @symbol_param<0> = [shouldSave,623,20,30]; ]
     function saveChoice(shouldSave) {
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_622_32_646_0_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 624 4 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_624_4_638_4_if_stmt:
-        %tmp.1 = lgetv %shouldSave;
-        symbol [ shouldSave %tmp.1 624 8 18 ];
-        bf %tmp.1 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_624_4_638_4_if_else_false;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_624_4_638_4_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_624_20_631_4_start:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_623_32_647_0_start:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 625 4 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_4_629_4_if_stmt:
-        symbol [ activitySession %tmp.3 625 8 23 ];
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_4_639_4_if_stmt:
+        %tmp.1 = lgetv %shouldSave;
+        symbol [ shouldSave %tmp.1 625 8 18 ];
+        bf %tmp.1 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_4_639_4_if_else_false;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_4_639_4_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_20_632_4_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 626 4 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_626_4_630_4_if_stmt:
+        symbol [ activitySession %tmp.3 626 8 23 ];
         %tmp.3 = getv ? :activitySession;
         %tmp.4 = null;
         %tmp.5 = ne %tmp.3 %tmp.4;
-        bf %tmp.5 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_4_629_4_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_4_629_4_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_33_629_4_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 626 8 ]
+        bf %tmp.5 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_626_4_630_4_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_626_4_630_4_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_626_33_630_4_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 627 8 ]
         %tmp.6 = self;
-        symbol [ stopSound %tmp.7 626 8 17 ];
+        symbol [ stopSound %tmp.7 627 8 17 ];
         %tmp.7 = getv function %tmp.6 :stopSound;
         invoke %tmp.6 %tmp.7();
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 627 8 ]
-        symbol [ activitySession %tmp.9 627 8 23 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 628 8 ]
+        symbol [ activitySession %tmp.9 628 8 23 ];
         %tmp.9 = getv ? :activitySession;
-        symbol [ stop %tmp.10 627 24 28 ];
+        symbol [ stop %tmp.10 628 24 28 ];
         %tmp.10 = getv function %tmp.9 :stop;
         invoke %tmp.9 %tmp.10();
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_33_629_4_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_4_629_4_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_4_629_4_if_end:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 630 8 ]
-        symbol [ activitySession %tmp.12 630 8 23 ];
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_626_33_630_4_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_626_4_630_4_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_626_4_630_4_if_end:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 631 8 ]
+        symbol [ activitySession %tmp.12 631 8 23 ];
         %tmp.12 = getv ? :activitySession;
-        symbol [ save %tmp.13 630 24 28 ];
+        symbol [ save %tmp.13 631 24 28 ];
         %tmp.13 = getv function %tmp.12 :save;
         invoke %tmp.12 %tmp.13();
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_624_20_631_4_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_624_4_638_4_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_624_4_638_4_if_else_false:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_631_11_638_4_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 632 4 ]
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_632_4_636_4_if_stmt:
-        symbol [ activitySession %tmp.15 632 8 23 ];
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_20_632_4_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_4_639_4_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_4_639_4_if_else_false:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_632_11_639_4_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 633 4 ]
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_633_4_637_4_if_stmt:
+        symbol [ activitySession %tmp.15 633 8 23 ];
         %tmp.15 = getv ? :activitySession;
         %tmp.16 = null;
         %tmp.17 = ne %tmp.15 %tmp.16;
-        bf %tmp.17 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_632_4_636_4_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_632_4_636_4_if_true:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_632_33_636_4_start:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 633 8 ]
+        bf %tmp.17 @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_633_4_637_4_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_633_4_637_4_if_true:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_633_33_637_4_start:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 634 8 ]
         %tmp.18 = self;
-        symbol [ stopSound %tmp.19 633 8 17 ];
+        symbol [ stopSound %tmp.19 634 8 17 ];
         %tmp.19 = getv function %tmp.18 :stopSound;
         invoke %tmp.18 %tmp.19();
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 634 8 ]
-        symbol [ activitySession %tmp.21 634 8 23 ];
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 635 8 ]
+        symbol [ activitySession %tmp.21 635 8 23 ];
         %tmp.21 = getv ? :activitySession;
-        symbol [ stop %tmp.22 634 24 28 ];
+        symbol [ stop %tmp.22 635 24 28 ];
         %tmp.22 = getv function %tmp.21 :stop;
         invoke %tmp.21 %tmp.22();
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_632_33_636_4_stop:
-        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_632_4_636_4_if_end;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_632_4_636_4_if_end:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 637 8 ]
-        symbol [ activitySession %tmp.24 637 8 23 ];
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_633_33_637_4_stop:
+        goto @_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_633_4_637_4_if_end;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_633_4_637_4_if_end:
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 638 8 ]
+        symbol [ activitySession %tmp.24 638 8 23 ];
         %tmp.24 = getv ? :activitySession;
-        symbol [ discard %tmp.25 637 24 31 ];
+        symbol [ discard %tmp.25 638 24 31 ];
         %tmp.25 = getv function %tmp.24 :discard;
         invoke %tmp.24 %tmp.25();
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_631_11_638_4_stop:
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_624_4_638_4_if_end:
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 640 4 ]
-        %tmp.26 = null;
-        symbol [ activitySession ? 640 4 19 ];
-        putv self :activitySession %tmp.26;
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_632_11_639_4_stop:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_625_4_639_4_if_end:
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 641 4 ]
-        %tmp.27 = false;
-        symbol [ isRecording ? 641 4 15 ];
-        putv self :isRecording %tmp.27;
+        %tmp.26 = null;
+        symbol [ activitySession ? 641 4 19 ];
+        putv self :activitySession %tmp.26;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 642 4 ]
-        %tmp.28 = 0;
-        symbol [ recordingState ? 642 4 18 ];
-        putv self :recordingState %tmp.28;
+        %tmp.27 = false;
+        symbol [ isRecording ? 642 4 15 ];
+        putv self :isRecording %tmp.27;
 [ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 643 4 ]
-        symbol [ WatchUi %tmp.29 643 4 11 ];
+        %tmp.28 = 0;
+        symbol [ recordingState ? 643 4 18 ];
+        putv self :recordingState %tmp.28;
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 644 4 ]
+        symbol [ WatchUi %tmp.29 644 4 11 ];
         %tmp.29 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.30 643 12 19 ];
+        symbol [ popView %tmp.30 644 12 19 ];
         %tmp.30 = getv function %tmp.29 :popView;
-        symbol [ WatchUi %tmp.31 643 20 27 ];
+        symbol [ WatchUi %tmp.31 644 20 27 ];
         %tmp.31 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_DOWN %tmp.32 643 28 38 ];
+        symbol [ SLIDE_DOWN %tmp.32 644 28 38 ];
         %tmp.32 = getv %tmp.31 :SLIDE_DOWN;
         invoke %tmp.29 %tmp.30(%tmp.32);
-[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 644 4 ]
+[ "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc" 645 4 ]
         %tmp.33 = true;
         ret %tmp.33;
-_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_622_32_646_0_stop:
+_home_kaden_Code_Garmin_Projects_ScoreTrak_source_ScoreTrakView_mc_623_32_647_0_stop:
     }
 }
 [ @file = "/home/kaden/Code/Garmin Projects/ScoreTrak/source/ScoreTrakView.mc"; @line = 1; ]

@@ -519,8 +519,12 @@ switch(active_sport) {
         break;
     case "Ultimate Disc":
 
-        activity_profile = Activity.SPORT_TEAM_SPORT;
-        sub_activity_profile = Activity.SUB_SPORT_ULTIMATE;
+        // activity_profile = Activity.SPORT_TEAM_SPORT;
+        // sub_activity_profile = Activity.SUB_SPORT_ULTIMATE;
+
+        // Had to reverse-engineer the FIT file from the watch to make sure that it was the correct sport profile
+        activity_profile = 69;
+        sub_activity_profile = 92;
         break;
 
     case "Volleyball":
@@ -590,16 +594,13 @@ switch(active_sport) {
         if (activitySession == null) {
             activitySession = ActivityRecording.createSession({
                 :name => "ScoreTrak",
-                :sport => activity_profile,      // Non-deprecated constant
-                :subSport => sub_activity_profile    // Non-deprecated constant
+                :sport => activity_profile,    
+                :subSport => sub_activity_profile    
             });
-            
+            System.println(Lang.format("$1$ $2$",[activity_profile, sub_activity_profile]));
             activitySession.start();
             isRecording = true;
             recordingState = 2;
-            
-            // Add your feedback here
-            
             
         }
     }
