@@ -228,63 +228,75 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
             if(id == :p1){
                 _view.amount_of_players = 1;
                 Application.Storage.setValue("amount_of_players", 1);
-                WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                
             }
             if(id == :p2){
                 _view.amount_of_players = 2;
                 Application.Storage.setValue("amount_of_players", 2);
-                WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                
             }
             if(id == :p3){
                 _view.amount_of_players = 3;
                 Application.Storage.setValue("amount_of_players", 3);
-                WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                
             }
             if(id == :p4){
                 _view.amount_of_players = 4;
                 Application.Storage.setValue("amount_of_players", 4);
-                WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                
             }
             if(id == :p5){
                 _view.amount_of_players = 5;
                 Application.Storage.setValue("amount_of_players", 5);
-                WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                
             }
             if(id == :p6){
                 _view.amount_of_players = 6;
                 Application.Storage.setValue("amount_of_players", 6);
-                WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                
             }
             if(id == :p7){
                 _view.amount_of_players = 7;
                 Application.Storage.setValue("amount_of_players", 7);
-                WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                
             }
             if(id == :p8){
                 _view.amount_of_players = 8;
                 Application.Storage.setValue("amount_of_players", 8);
-                WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                
             }
             if(id == :p9){
                 _view.amount_of_players = 9;
                 Application.Storage.setValue("amount_of_players", 9);
-                WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                
             }
             if(id == :p10){
                 _view.amount_of_players = 10;
                 Application.Storage.setValue("amount_of_players", 10);
-                WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                
             }
+            _view.active_group_player = 0;
+            _view.changePlayerIndex(0);
 
         }
 
