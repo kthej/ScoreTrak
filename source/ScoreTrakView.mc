@@ -461,8 +461,8 @@ class ScoreTrakView extends WatchUi.View {
                 sport_label.setText(active_sport);
 
                 dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-                dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2-vertical_offset, Graphics.FONT_MEDIUM,player_names[active_group_player],JCENTER);
-                dc.drawText(SCREEN_WIDTH*0.8,SCREEN_HEIGHT/2-vertical_offset, Graphics.FONT_MEDIUM,player_scores[active_group_player].toString(),JCENTER);
+                dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2-vertical_offset, Graphics.FONT_LARGE,player_names[active_group_player],JCENTER);
+                dc.drawText(SCREEN_WIDTH*0.8,SCREEN_HEIGHT/2-vertical_offset, Graphics.FONT_LARGE,player_scores[active_group_player].toString(),JCENTER);
                 if(amount_of_players > 2){
                 dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2 - separation_offset, Graphics.FONT_XTINY,player_names[previous_player],JCENTER);
                 dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2 + separation_offset, Graphics.FONT_XTINY,player_names[next_player],JCENTER);
