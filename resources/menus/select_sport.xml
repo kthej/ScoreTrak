@@ -1,4 +1,4 @@
-<menu2 id="SportMenu" title="SelectSport">
+<menu2 id="SportMenu" title="Select Sport">
     <menu-item id="sport_none" label="Score Keeper" subLabel="Generic" />
      <menu-item id="sport_group" label = "Group Keeper" subLabel="Generic"/> 
     
