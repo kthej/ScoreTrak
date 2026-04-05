@@ -11,8 +11,13 @@
 ~~Define boolean variable to separate 2-player scoring vs group scoring~~
 ~~Use this mode to change InputDelegates to handle group / Versus~~
 
+~~Build group mode for non-instinct watches~~
+
+
 Remove Change Activity from menu when a sport is currently being recorded
 
 Build the Leaderboard for golf and group scores, pulls up a new view that shows all players and their scores and their holes
+
+
 
 

@@ -410,7 +410,7 @@ class ScoreTrakView extends WatchUi.View {
             // GROUP MODE //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         
         } else {
-            score_line_offset = SCREEN_HEIGHT / 6;
+            
             if (instinct) {
                 vertical_offset = -SCREEN_HEIGHT / 10;
                 sport_label.setText(formatSportName(active_sport));
@@ -418,9 +418,10 @@ class ScoreTrakView extends WatchUi.View {
 
                 dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2-vertical_offset, Graphics.FONT_MEDIUM,player_names[active_group_player],JCENTER);
                 dc.drawText(SCREEN_WIDTH*0.8,SCREEN_HEIGHT/2-vertical_offset, Graphics.FONT_MEDIUM,player_scores[active_group_player].toString(),JCENTER);
-
+                if(amount_of_players > 2){
                 dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2+vertical_offset, Graphics.FONT_XTINY,player_names[previous_player],JCENTER);
                 dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2-vertical_offset*3, Graphics.FONT_XTINY,player_names[next_player],JCENTER);
+                }
                 dc.setPenWidth(3);
                 dc.drawLine(
                     0,
@@ -454,11 +455,18 @@ class ScoreTrakView extends WatchUi.View {
 
 // Non Instinct Group Mode
             } else {
+                score_line_offset = SCREEN_HEIGHT / 10;
                 vertical_offset = 0;
+                var separation_offset = SCREEN_HEIGHT/6;
                 sport_label.setText(active_sport);
 
                 dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-                dc.drawText(SCREEN_WIDTH/16,SCREEN_HEIGHT/2, Graphics.FONT_MEDIUM,player_names[0],JLEFT);
+                dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2-vertical_offset, Graphics.FONT_MEDIUM,player_names[active_group_player],JCENTER);
+                dc.drawText(SCREEN_WIDTH*0.8,SCREEN_HEIGHT/2-vertical_offset, Graphics.FONT_MEDIUM,player_scores[active_group_player].toString(),JCENTER);
+                if(amount_of_players > 2){
+                dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2 - separation_offset, Graphics.FONT_XTINY,player_names[previous_player],JCENTER);
+                dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2 + separation_offset, Graphics.FONT_XTINY,player_names[next_player],JCENTER);
+                }
                 dc.setPenWidth(5);
                 dc.drawLine(
                     0,
@@ -756,5 +764,18 @@ function setCustomSportName(text){
         // WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
     }
 
-    // End class //////////////////////////////////////////////////////////////////////////////////////
+    // End main view class //////////////////////////////////////////////////////////////////////////////////////
+}
+
+class LeaderboardView extends WatchUi.View {
+    var _view;
+
+    function initialize(view) {
+        View.initialize();
+        _view = view; // Reference to access player_scores
+    }
+
+    function onUpdate(dc) {
+        // Drawing logic for scores
+    }
 }

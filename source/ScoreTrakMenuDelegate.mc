@@ -21,22 +21,35 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
         // Default
 
         if (_menu_id.equals("MainMenu") or _menu_id.equals("TennisMenu") or _menu_id.equals("GolfMenu")) {
+            
             if (id == :home_minus) {
+                
                 _view.updateHome(-1);
-                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                
+                if(_view.scoring_mode == 1){ WatchUi.popView(WatchUi.SLIDE_DOWN);}
+                item.setSubLabel(_view.home_score.toString());
                 WatchUi.requestUpdate();
                 System.println("Home -1");
 
             } else if (id == :guest_minus) {
                 _view.updateGuest(-1);
-                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                
+                if(_view.scoring_mode == 1){ WatchUi.popView(WatchUi.SLIDE_DOWN);}
+                item.setSubLabel(_view.guest_score.toString());
                 WatchUi.requestUpdate();
                 System.println("Guest -1");
+            } else if(id == :player_decrease){
+                _view.updatePlayerScore(-1);
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                WatchUi.requestUpdate();
+                
+
             } else if (id == :reset_scores) {
                 _view.resetScores();
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
                 System.println("Reset Scores");
+
             } else if (id == :start_activity) {
                 if (!_view.isRecording and _view.recordingState == 0) {
                     _view.isRecording = true;
@@ -63,6 +76,7 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
                 WatchUi.requestUpdate();
                 System.println("Save Menu");
             } else if (id == :change_sport) {
+                if(_view.isRecording == false){
                 var SportMenu = new Rez.Menus.SportMenu();
                 WatchUi.pushView(
                     SportMenu,
@@ -70,6 +84,18 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
                     WatchUi.SLIDE_UP
                 );
                 System.println("Change Sport");
+                }
+
+            } else if(id == :edit_players){
+                var PlayerAmountMenu = new Rez.Menus.PlayerAmountMenu();
+                WatchUi.pushView(
+                    PlayerAmountMenu,
+                    new ScoreTrakMenuDelegate(_view,"PlayerAmountMenu"),
+                    WatchUi.SLIDE_UP
+                );
+            System.println("Change Player Amount");
+
+                
             } else if (id == :advanced_settings) {
                 var AdvancedMenu = new Rez.Menus.AdvancedMenu();
 
@@ -102,55 +128,6 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
                     WatchUi.SLIDE_UP
                 );
             }
-            /*
-    } else if (_menu_id.equals("TennisMenu")){
-
-        if (id == :home_minus) {
-            _view.updateHome(-1);
-            WatchUi.popView(WatchUi.SLIDE_DOWN);
-            WatchUi.requestUpdate();
-            System.println("Home Minus");
-            
-        } else if (id == :guest_minus) {
-
-            _view.updateGuest(-1);
-            WatchUi.popView(WatchUi.SLIDE_DOWN);
-            WatchUi.requestUpdate();
-            System.println("Guest Minus");
-
-        } else if(id == :reset_scores){
-
-            _view.resetScores();
-            WatchUi.popView(WatchUi.SLIDE_DOWN);
-            WatchUi.requestUpdate();
-            System.println("Reset Scores");
-
-        } else if(id ==:start_activity) {
-
-            WatchUi.popView(WatchUi.SLIDE_DOWN);
-            WatchUi.requestUpdate();
-            System.println("Start Activity");
-
-        } else if(id ==:change_sport) {
-
-            var SportMenu = new Rez.Menus.SportMenu();
-            WatchUi.pushView(
-                SportMenu, 
-                new ScoreTrakMenuDelegate(_view, "SportMenu"), 
-                WatchUi.SLIDE_UP
-                );
-            System.println("Change Sport");
-
-        } else if(id ==:advanced_settings) {
-
-            var AdvancedMenu = new Rez.Menus.AdvancedMenu();
-            WatchUi.pushView(
-                AdvancedMenu, 
-                new ScoreTrakMenuDelegate(_view, "AdvancedMenu"), 
-                WatchUi.SLIDE_UP
-                );
-        }
-        */
 
             // Sport Selection Menu
         } else if (_menu_id.equals("SportMenu")) {
@@ -246,6 +223,69 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
                 }
             }
             WatchUi.popView(WatchUi.SLIDE_DOWN);
+// Player Amount Menu
+        } else if(_menu_id.equals("PlayerAmountMenu")){
+            if(id == :p1){
+                _view.amount_of_players = 1;
+                Application.Storage.setValue("amount_of_players", 1);
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                WatchUi.requestUpdate();
+            }
+            if(id == :p2){
+                _view.amount_of_players = 2;
+                Application.Storage.setValue("amount_of_players", 2);
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                WatchUi.requestUpdate();
+            }
+            if(id == :p3){
+                _view.amount_of_players = 3;
+                Application.Storage.setValue("amount_of_players", 3);
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                WatchUi.requestUpdate();
+            }
+            if(id == :p4){
+                _view.amount_of_players = 4;
+                Application.Storage.setValue("amount_of_players", 4);
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                WatchUi.requestUpdate();
+            }
+            if(id == :p5){
+                _view.amount_of_players = 5;
+                Application.Storage.setValue("amount_of_players", 5);
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                WatchUi.requestUpdate();
+            }
+            if(id == :p6){
+                _view.amount_of_players = 6;
+                Application.Storage.setValue("amount_of_players", 6);
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                WatchUi.requestUpdate();
+            }
+            if(id == :p7){
+                _view.amount_of_players = 7;
+                Application.Storage.setValue("amount_of_players", 7);
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                WatchUi.requestUpdate();
+            }
+            if(id == :p8){
+                _view.amount_of_players = 8;
+                Application.Storage.setValue("amount_of_players", 8);
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                WatchUi.requestUpdate();
+            }
+            if(id == :p9){
+                _view.amount_of_players = 9;
+                Application.Storage.setValue("amount_of_players", 9);
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                WatchUi.requestUpdate();
+            }
+            if(id == :p10){
+                _view.amount_of_players = 10;
+                Application.Storage.setValue("amount_of_players", 10);
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
+                WatchUi.requestUpdate();
+            }
+
         }
 
         // End Class ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -11,8 +11,12 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
     function onMenu() as Boolean {
         var CurrentMenu;
 
-        if (Application.Storage.getValue("scoring_mode") != 1 and Application.Storage.getValue("scoring_mode") != 2) {
+        if (_view.scoring_mode != 1 and _view.scoring_mode != 2) {
             CurrentMenu = new Rez.Menus.MainMenu();
+
+            CurrentMenu.getItem(0).setSubLabel(_view.home_score.toString());
+            CurrentMenu.getItem(1).setSubLabel(_view.guest_score.toString());
+
             if (_view.isRecording == true) {
                 CurrentMenu.getItem(3).setLabel("Activity Options");
             } else {
@@ -24,9 +28,12 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
                 new ScoreTrakMenuDelegate(_view, "MainMenu"),
                 WatchUi.SLIDE_UP
             );
-        } else if(Application.Storage.getValue("scoring_mode") == 1){
-            CurrentMenu = new Rez.Menus.TennisMenu();
 
+        } else if(_view.scoring_mode == 1){ // Tennis
+
+            CurrentMenu = new Rez.Menus.TennisMenu();
+            // CurrentMenu.getItem(0).setSubLabel(_view.home_score.toString());
+            // CurrentMenu.getItem(1).setSubLabel(_view.guest_score.toString());
             if (_view.isRecording == true) {
                 CurrentMenu.getItem(3).setLabel("Activity Options");
             } else {
@@ -38,7 +45,7 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
                 WatchUi.SLIDE_UP
             );
             
-        } else if(Application.Storage.getValue("scoring_mode") == 2){
+        } else if(_view.scoring_mode == 2){
             CurrentMenu = new Rez.Menus.GolfMenu();
 
             if (_view.isRecording == true) {
