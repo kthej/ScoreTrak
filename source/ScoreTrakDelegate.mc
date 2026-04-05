@@ -31,30 +31,32 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
 
         } else if(_view.scoring_mode == 1){ // Tennis
 
-            CurrentMenu = new Rez.Menus.TennisMenu();
+            var TennisMenu = new Rez.Menus.TennisMenu();
             // CurrentMenu.getItem(0).setSubLabel(_view.home_score.toString());
             // CurrentMenu.getItem(1).setSubLabel(_view.guest_score.toString());
             if (_view.isRecording == true) {
-                CurrentMenu.getItem(3).setLabel("Activity Options");
+                TennisMenu.getItem(3).setLabel("Activity Options");
             } else {
-                CurrentMenu.getItem(3).setLabel("Start Activity");
+                TennisMenu.getItem(3).setLabel("Start Activity");
             }
             WatchUi.pushView(
-                new Rez.Menus.TennisMenu(),
+                TennisMenu,
                 new ScoreTrakMenuDelegate(_view, "TennisMenu"),
                 WatchUi.SLIDE_UP
             );
             
         } else if(_view.scoring_mode == 2){
-            CurrentMenu = new Rez.Menus.GolfMenu();
+
+            var GolfMenu = new Rez.Menus.GolfMenu();
 
             if (_view.isRecording == true) {
-                CurrentMenu.getItem(3).setLabel("Activity Options");
+
+                GolfMenu.getItem(3).setLabel("Activity Options");
             } else {
-                CurrentMenu.getItem(3).setLabel("Start Activity");
+                GolfMenu.getItem(3).setLabel("Start Activity");
             }
             WatchUi.pushView(
-                new Rez.Menus.GolfMenu(),
+                GolfMenu,
                 new ScoreTrakMenuDelegate(_view, "GolfMenu"),
                 WatchUi.SLIDE_UP
             );
