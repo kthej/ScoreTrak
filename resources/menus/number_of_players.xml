@@ -1,0 +1,12 @@
+<menu2 id="PlayerAmount"  title="Player Count" >
+    <menu-item id="p1" label="1" />
+    <menu-item id="p2" label="2" />
+    <menu-item id="p3" label="3" />
+    <menu-item id="p4" label="4" />
+    <menu-item id="p5" label="5" />
+    <menu-item id="p6" label="6" />
+    <menu-item id="p7" label="7" />
+    <menu-item id="p8" label="8" />
+    <menu-item id="p9" label="9" />
+    <menu-item id="p10" label="10" />
+</menu2>

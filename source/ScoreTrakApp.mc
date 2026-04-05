@@ -13,9 +13,26 @@ private var view;
     }
 
     // onStop() is called when your application is exiting
+    /*
+    public var player_names as Lang.Array = ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8", "Player 9", "Player 10"];
+    public var player_scores as Lang.Array = [0,0,0,0,0,0,0,0,0,0];
+    public var active_group_player = 0; // as index
+    public var previous_player = 9; // as index
+    public var next_player = 1; // as index
+    public var amount_of_players = 3;// Max 10, else remaining values are not used    
+    
+    
+    */
     function onStop(state as Dictionary?) as Void {
         Application.Storage.setValue("home_score",view.home_score);
         Application.Storage.setValue("guest_score",view.guest_score);
+        Application.Storage.setValue("player_names",view.player_names);
+        Application.Storage.setValue("player_scores",view.player_scores);
+        Application.Storage.setValue("active_group_player", view.active_group_player);
+        Application.Storage.setValue("amount_of_players",view.amount_of_players);
+
+
+
     }
 
     // Return the initial view of your application here

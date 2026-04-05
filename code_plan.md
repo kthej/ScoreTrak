@@ -18,14 +18,14 @@
 
 *Release to store!*
 
-3. Add tennis scorekeeping mode
+~~3. Add tennis scorekeeping mode~~
     - LOVE, 15, 30, 45 or whatever the heck they use (need to learn how it works)
     - Serve tracking for ping pong, badminton, all of the racket sports
 
 *Release to store!*
 
-4. Add all sport recording modes, no special recording stuff
-    - Just tracking time and basic metrics while also maintaining activity type in results
+~~4. Add all sport recording modes, no special recording stuff~~
+    ~~- Just tracking time and basic metrics while also maintaining activity type in results~~
 
 5. Get score tracking over time data to write properly
     - Timestamp every score change: 10:23.50 | 1 - 0 (optional, can be disabled)

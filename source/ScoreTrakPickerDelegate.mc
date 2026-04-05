@@ -2,10 +2,10 @@ import Toybox.WatchUi;
 import Toybox.Lang;
 
 class ScoreTrakTextDelegate extends WatchUi.TextPickerDelegate {
-    private var _callback as Method(text as String) as Void;
+    private var _callback as (Method(text as String) as Void);
 
     // We pass the specific function we want to trigger at the end
-    function initialize(callback as Method(text as String) as Void) {
+    function initialize(callback as (Method(text as String) as Void)) {
         TextPickerDelegate.initialize();
         _callback = callback;
     }

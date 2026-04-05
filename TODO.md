@@ -1,4 +1,18 @@
-Fix menu so that:
-- Recording_menu is removed
-- Whatever menu is enabled per sport, have the start activity label be updated to reflect current activity state
-(stop, resume, start)
+~~Fix menu so that:~~
+~~- Recording_menu is removed~~
+~~- Whatever menu is enabled per sport, have the start activity label be updated to reflect current activity state~~
+~~(stop, resume, start)~~
+
+~~Program group players~~
+
+~~Use array for storing player names (up to 10)~~
+~~Use array for storing player scores~~
+
+~~Define boolean variable to separate 2-player scoring vs group scoring~~
+~~Use this mode to change InputDelegates to handle group / Versus~~
+
+Remove Change Activity from menu when a sport is currently being recorded
+
+Build the Leaderboard for golf and group scores, pulls up a new view that shows all players and their scores and their holes
+
+
