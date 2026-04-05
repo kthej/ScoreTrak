@@ -26,7 +26,7 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
                 
                 _view.updateHome(-1);
                 
-                if(_view.scoring_mode == 1){ WatchUi.popView(WatchUi.SLIDE_DOWN);}
+                // if(_view.scoring_mode == 1){ WatchUi.popView(WatchUi.SLIDE_DOWN);}
                 item.setSubLabel(_view.home_score.toString());
                 WatchUi.requestUpdate();
                 System.println("Home -1");
@@ -142,7 +142,8 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
                 id == :sport_mini_golf or
                 id == :sport_golf or
                 id == :sport_disc_golf or
-                id == :sport_board_game
+                id == :sport_board_game or
+                id == :sport_group
             ) {
                 _view.scoring_mode = 2;
                 Application.Storage.setValue("scoring_mode", 2);

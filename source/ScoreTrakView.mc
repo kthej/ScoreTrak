@@ -698,9 +698,6 @@ function setCustomSportName(text){
                 activity_profile = Activity.SPORT_DISC_GOLF;
                 break;
 
-            case "Board Game":
-            case "Custom Sport":
-            case "Score Keeper":
             default:
                 activity_profile = Activity.SPORT_GENERIC;
                 sub_activity_profile = Activity.SUB_SPORT_GENERIC;
