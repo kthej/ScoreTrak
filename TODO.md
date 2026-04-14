@@ -26,6 +26,8 @@ Add game, set and match tracking for tennis
 
 Add timer when activity is being recorded
 
+Add ability to edit group names
+
 Build the Leaderboard for golf and group scores, pulls up a new view that shows all players and their scores and their holes
 
 
