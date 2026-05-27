@@ -1,5 +1,7 @@
 import Toybox.Lang;
 import Toybox.WatchUi;
+import Toybox.Application;
+
 
 class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
     private var _view;
@@ -105,6 +107,15 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
     function onSelect() {
         if (Application.Storage.getValue("scoring_mode") == 2) {
             _view.updatePlayerScore(1);
+        }
+        if(_view.serve_tracking == true){
+            if(_view.serve_switch_toggle == 0 and _view.serve_tracking == true){
+                _view.serve_switch_toggle = 2;
+            }
+            else if(_view.serve_switch_toggle == 2 and _view.serve_tracking == true){
+                _view.serve_switch_toggle = 0;
+            }
+            WatchUi.requestUpdate();
         }
         return true;
     }

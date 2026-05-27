@@ -1,7 +1,7 @@
 <menu2 id="MainMenu"  title="Settings" >
     <menu-item id="home_minus" label="Home -1" />
     <menu-item id="guest_minus" label="Guest -1" />
-    <menu-item id="reset_scores" label="Reset Scores" />
+    <menu-item id="reset_scores" label="New Game" />
     <menu-item id="start_activity" label="Start Activity" />
     <menu-item id="change_sport" label="Change Sport" />
     <menu-item id="advanced_settings" label="Advanced Settings" />

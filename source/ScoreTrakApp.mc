@@ -31,6 +31,8 @@ private var view;
         Application.Storage.setValue("active_group_player", view.active_group_player);
         Application.Storage.setValue("amount_of_players",view.amount_of_players);
         Application.Storage.setValue("scoring_mode",view.scoring_mode);
+        Application.Storage.setValue("active_sport", view.active_sport);
+        
 
 
     }

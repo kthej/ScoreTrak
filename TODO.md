@@ -14,9 +14,17 @@
 ~~Build group mode for non-instinct watches~~
 
 
-Remove Change Activity from menu when a sport is currently being recorded
+~~Remove Change Activity from menu when a sport is currently being recorded~~
 
 Build the Leaderboard for golf and group scores, pulls up a new view that shows all players and their scores and their holes
+
+Fix ping pong score tracking, add toggle via start button
+
+~~Remove all 'golf' scoring menu items (not far along enough to implement, fix up menu for now)~~
+
+Add timer for activity mode
+
+
 
 
 

@@ -133,7 +133,8 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
         } else if (_menu_id.equals("SportMenu")) {
             var sportName = item.getLabel();
             _view.active_sport = sportName;
-            Application.Storage.setValue("active_sport", sportName);
+
+            
 
             if (id == :sport_tennis or id == :sport_platform) {
                 _view.scoring_mode = 1;
@@ -147,9 +148,17 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
             ) {
                 _view.scoring_mode = 2;
                 Application.Storage.setValue("scoring_mode", 2);
+
             } else {
                 _view.scoring_mode = 0;
                 Application.Storage.setValue("scoring_mode", 0);
+            }
+             if(id == :sport_table_tennis){
+                _view.serve_tracking = true;
+            
+            }
+            else{
+                _view.serve_tracking = false;
             }
             WatchUi.popView(WatchUi.SLIDE_DOWN);
             WatchUi.popView(WatchUi.SLIDE_DOWN);
