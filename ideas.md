@@ -1,0 +1,1 @@
+Make a multi-select option for the group names, so you can have a pool of people, and choose who plays

@@ -8,29 +8,23 @@ import Toybox.Attention;
 import Toybox.Lang;
 import Toybox.Math;
 
-
 // Function to take integer seconds and return the proper time string format
 
-function formatIntegerTime(time){
+function formatIntegerTime(time) {
 
-
-    var hours = time/3600;
+    var hours = time / 3600;
     var minutes = (time % 3600) / 60;
     var seconds = time % 60;
-    
-    
-    if(time <= 3600){
-        return Lang.format("$1$:$2$",[minutes.format("%02d"),seconds.format("%02d")]);
-    }
-    else if(time >= 3600){
-        return Lang.format("$1$:$2$:$3$",[hours.format("%02d"),minutes.format("%02d"),seconds.format("%02d")]);
-    }
-    else{
+
+    if (time <= 3600) {
+        return Lang.format("$1$:$2$", [minutes.format("%02d"), seconds.format("%02d")]);
+    } else if (time >= 3600) {
+        return Lang.format("$1$:$2$:$3$", [hours.format("%02d"), minutes.format("%02d"), seconds.format("%02d")]);
+    } else {
         return null;
     }
-    
 }
-//Function that removes space and turns to newline
+// Function that removes space and turns to newline
 
 function formatSportName(name) {
     if (name == null) {
@@ -39,10 +33,7 @@ function formatSportName(name) {
 
     while (name.find(" ") != null) {
         var index = name.find(" ");
-        name =
-            name.substring(0, index) +
-            "\n" +
-            name.substring(index + 1, name.length());
+        name = name.substring(0, index) + "\n" + name.substring(index + 1, name.length());
     }
     return name;
 }
@@ -76,9 +67,6 @@ class ScoreTrakView extends WatchUi.View {
     public var golf_holes;
     public var game_goal;
 
-
-
-
     // public var group_scores = Array[10];
     // public var group_names = Array[10];
 
@@ -99,23 +87,22 @@ class ScoreTrakView extends WatchUi.View {
     public var scoring_mode;
     public var active_player;
 
-
-
-    
     /*
 0 is default
 1 is tennis
 2 is group
 3 is target
 */
-    public var player_names as Lang.Array = ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8", "Player 9", "Player 10"] as Lang.Array;
-    public var player_scores as Lang.Array = [0,0,0,0,0,0,0,0,0,0];
+    public var player_names as Lang.Array = [
+        "Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8", "Player 9",
+        "Player 10"
+    ] as Lang.Array;
+    public var player_scores as Lang.Array = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     public var active_group_player;
     public var previous_player;
     public var next_player;
     public var amount_of_players;
 
-    
     public var is24hour;
     public var flip_score_buttons;
     public var updateTimer;
@@ -151,7 +138,7 @@ class ScoreTrakView extends WatchUi.View {
 
     function onLayout(dc as Dc) as Void {
         // Get layout from xml
-        
+
         setLayout(Rez.Layouts.MainLayout(dc));
 
         // First time startup, check if storage values are null, if null, set values.
@@ -161,8 +148,7 @@ class ScoreTrakView extends WatchUi.View {
         if (Application.Storage.getValue("flip_score_buttons") == null) {
             Application.Storage.setValue("flip_score_buttons", false);
         } else {
-            flip_score_buttons =
-                Application.Storage.getValue("flip_score_buttons");
+            flip_score_buttons = Application.Storage.getValue("flip_score_buttons");
         }
 
         // Active Sport
@@ -204,10 +190,8 @@ class ScoreTrakView extends WatchUi.View {
 
         // Home and Guest Scores
 
-        if (
-            Application.Storage.getValue("home_score") != null and
-            Application.Storage.getValue("guest_score") != null
-        ) {
+        if (Application.Storage.getValue("home_score") != null and Application.Storage.getValue("guest_score") !=
+            null) {
             home_score = Application.Storage.getValue("home_score");
             guest_score = Application.Storage.getValue("guest_score");
         } else {
@@ -215,46 +199,46 @@ class ScoreTrakView extends WatchUi.View {
             guest_score = 0;
         }
 
-
         // group sport memory allocation
-        if(Application.Storage.getValue("player_names") != null){
+        if (Application.Storage.getValue("player_names") != null) {
             player_names = Application.Storage.getValue("player_names") as Lang.Array;
         } else {
-            player_names = ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8", "Player 9", "Player 10"] as Lang.Array;
+            player_names = [
+                "Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8",
+                "Player 9", "Player 10"
+            ] as Lang.Array;
         }
 
-        if(Application.Storage.getValue("player_scores") != null){
+        if (Application.Storage.getValue("player_scores") != null) {
             player_scores = Application.Storage.getValue("player_scores") as Lang.Array;
         } else {
-            player_scores = [0,0,0,0,0,0,0,0,0,0] as Lang.Array;
+            player_scores = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] as Lang.Array;
         }
 
-        if(Application.Storage.getValue("active_group_player") != null){
+        if (Application.Storage.getValue("active_group_player") != null) {
             active_group_player = Application.Storage.getValue("active_group_player");
         } else {
             active_group_player = 0;
         }
 
-        if(Application.Storage.getValue("previous_player") != null){
+        if (Application.Storage.getValue("previous_player") != null) {
             previous_player = Application.Storage.getValue("previous_player");
         } else {
             previous_player = 9;
         }
 
-        if(Application.Storage.getValue("next_player") != null){
+        if (Application.Storage.getValue("next_player") != null) {
             next_player = Application.Storage.getValue("next_player");
         } else {
             next_player = 1;
         }
 
-        if(Application.Storage.getValue("amount_of_players") != null){
+        if (Application.Storage.getValue("amount_of_players") != null) {
             amount_of_players = Application.Storage.getValue("amount_of_players");
         } else {
             amount_of_players = 10;
         }
 
-
-        
         // ensure group sport indexes are correctly set by calling update with 0 as argument
         changePlayerIndex(0);
         // Constants
@@ -265,15 +249,10 @@ class ScoreTrakView extends WatchUi.View {
         SCREEN_WIDTH = dc.getWidth();
         SCREEN_HEIGHT = dc.getHeight();
 
-        if (
-            System.getDeviceSettings().screenShape ==
-            System.SCREEN_SHAPE_SEMI_OCTAGON
-        ) {
+        if (System.getDeviceSettings().screenShape == System.SCREEN_SHAPE_SEMI_OCTAGON) {
             instinct = true;
-            SUB_SCREEN_X =
-                WatchUi.getSubscreen().x + WatchUi.getSubscreen().width / 2;
-            SUB_SCREEN_Y =
-                WatchUi.getSubscreen().y + WatchUi.getSubscreen().height / 2;
+            SUB_SCREEN_X = WatchUi.getSubscreen().x + WatchUi.getSubscreen().width / 2;
+            SUB_SCREEN_Y = WatchUi.getSubscreen().y + WatchUi.getSubscreen().height / 2;
             SUB_SCREEN_R = WatchUi.getSubscreen().width / 2;
         }
 
@@ -286,30 +265,27 @@ class ScoreTrakView extends WatchUi.View {
         time_label = View.findDrawableById("TimeLabel") as WatchUi.Text;
         sport_label = View.findDrawableById("SportLabel") as WatchUi.Text;
         active_sport = Application.Storage.getValue("active_sport");
-    // SETTINGS
-
-
+        // SETTINGS
     }
 
     function onUpdate(dc as Dc) as Void {
         time = System.getClockTime();
-        // System.println(active_sport);
+        // System.print(active_sport);
 
         // Update the labels
-        if(sport_label == "Table Tennis"){
-            if(((home_score + guest_score+serve_switch_toggle)/2)%2 == 0){
-            home_label.setColor(Graphics.COLOR_BLACK);
-            home_label.setBackgroundColor(Graphics.COLOR_WHITE);
-            guest_label.setColor(Graphics.COLOR_WHITE);
-            guest_label.setBackgroundColor(Graphics.COLOR_BLACK);
-            } else{
-            home_label.setColor(Graphics.COLOR_WHITE);
-            home_label.setBackgroundColor(Graphics.COLOR_BLACK);
-            guest_label.setColor(Graphics.COLOR_BLACK);
-            guest_label.setBackgroundColor(Graphics.COLOR_WHITE);
+        if (sport_label == "Table Tennis") {
+            if (((home_score + guest_score + serve_switch_toggle) / 2) % 2 == 0) {
+                home_label.setColor(Graphics.COLOR_BLACK);
+                home_label.setBackgroundColor(Graphics.COLOR_WHITE);
+                guest_label.setColor(Graphics.COLOR_WHITE);
+                guest_label.setBackgroundColor(Graphics.COLOR_BLACK);
+            } else {
+                home_label.setColor(Graphics.COLOR_WHITE);
+                home_label.setBackgroundColor(Graphics.COLOR_BLACK);
+                guest_label.setColor(Graphics.COLOR_BLACK);
+                guest_label.setBackgroundColor(Graphics.COLOR_WHITE);
             }
-
-        } else{
+        } else {
             home_label.setColor(Graphics.COLOR_WHITE);
             home_label.setBackgroundColor(Graphics.COLOR_BLACK);
             guest_label.setColor(Graphics.COLOR_WHITE);
@@ -325,6 +301,8 @@ class ScoreTrakView extends WatchUi.View {
         } else if (scoring_mode == 1) {
 
             // 1. Clamp values for logic stability
+
+
             if (home_score < 0) {
                 home_score = 0;
             }
@@ -388,9 +366,20 @@ class ScoreTrakView extends WatchUi.View {
         }
         time_label.setText(time_string);
 
-        //Dc Element Drawing
+        // Dc Element Drawing
 
         View.onUpdate(dc); // dc elements are drawn after labels from xml
+        // Circle Outline to determine recording mode 
+        if (recordingState == 2 and !instinct){
+        dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(SCREEN_WIDTH/25);
+        dc.drawCircle(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, SCREEN_WIDTH / 2);
+        } else if (recordingState == 1 and !instinct){
+        dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(SCREEN_WIDTH/25);
+        dc.drawCircle(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, SCREEN_WIDTH / 2);
+        }
+
         if (scoring_mode != 2) {
             // Default layout, not group mode
 
@@ -401,44 +390,18 @@ class ScoreTrakView extends WatchUi.View {
                 sport_label.setText(formatSportName(active_sport));
                 dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
                 dc.setPenWidth(3);
-                dc.drawLine(
-                    0,
-                    SCREEN_HEIGHT * 0.58,
-                    SCREEN_WIDTH,
-                    SCREEN_HEIGHT * 0.58
-                );
-                dc.drawLine(
-                    0,
-                    SCREEN_HEIGHT * 0.84,
-                    SCREEN_WIDTH,
-                    SCREEN_HEIGHT * 0.84
-                );
-                dc.drawLine(
-                    SCREEN_WIDTH / 2,
-                    SCREEN_HEIGHT * 0.63,
-                    SCREEN_WIDTH / 2,
-                    SCREEN_HEIGHT * 0.79
-                );
+                dc.drawLine(0, SCREEN_HEIGHT * 0.58, SCREEN_WIDTH, SCREEN_HEIGHT * 0.58);
+                dc.drawLine(0, SCREEN_HEIGHT * 0.84, SCREEN_WIDTH, SCREEN_HEIGHT * 0.84);
+                dc.drawLine(SCREEN_WIDTH / 2, SCREEN_HEIGHT * 0.63, SCREEN_WIDTH / 2, SCREEN_HEIGHT * 0.79);
                 dc.fillCircle(SUB_SCREEN_X, SUB_SCREEN_Y, SUB_SCREEN_R);
                 dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-                dc.drawText(
-                    SUB_SCREEN_X,
-                    SUB_SCREEN_Y,
-                    Graphics.FONT_MEDIUM,
-                    time_string,
-                    JCENTER
-                );
-                //Show timer while recording
-                if(isRecording == true){
-                    
+                dc.drawText(SUB_SCREEN_X, SUB_SCREEN_Y, Graphics.FONT_MEDIUM, time_string, JCENTER);
+                // Show timer while recording
+                if (isRecording == true) {
+
                     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-                    dc.drawText(
-                        SCREEN_WIDTH/2,
-                        SCREEN_HEIGHT * 0.9,
-                        Graphics.FONT_TINY,
-                        formatIntegerTime(Activity.getActivityInfo().timerTime / 1000),
-                        JCENTER
-                    );
+                    dc.drawText(SCREEN_WIDTH / 2, SCREEN_HEIGHT * 0.9, Graphics.FONT_TINY,
+                                formatIntegerTime(Activity.getActivityInfo().timerTime / 1000), JCENTER);
                 }
             } else {
                 sport_label.setText(active_sport);
@@ -447,152 +410,101 @@ class ScoreTrakView extends WatchUi.View {
 
                 dc.setPenWidth(5);
 
-                dc.drawLine(
-                    0,
-                    SCREEN_HEIGHT / 2 - score_line_offset + vertical_offset,
-                    SCREEN_WIDTH,
-                    SCREEN_HEIGHT / 2 - score_line_offset + vertical_offset
-                );
+                dc.drawLine(0, SCREEN_HEIGHT / 2 - score_line_offset + vertical_offset, SCREEN_WIDTH,
+                            SCREEN_HEIGHT / 2 - score_line_offset + vertical_offset);
 
-                dc.drawLine(
-                    0,
-                    SCREEN_HEIGHT / 2 + score_line_offset + vertical_offset,
-                    SCREEN_WIDTH,
-                    SCREEN_HEIGHT / 2 + score_line_offset + vertical_offset
-                );
+                dc.drawLine(0, SCREEN_HEIGHT / 2 + score_line_offset + vertical_offset, SCREEN_WIDTH,
+                            SCREEN_HEIGHT / 2 + score_line_offset + vertical_offset);
 
-                dc.drawLine(
-                    SCREEN_WIDTH / 2,
-                    SCREEN_HEIGHT / 2 -
-                        score_line_offset * 0.75 +
-                        vertical_offset,
-                    SCREEN_WIDTH / 2,
-                    SCREEN_HEIGHT / 2 +
-                        score_line_offset * 0.75 +
-                        vertical_offset
-                );
-                                //Show timer while recording
-                if(isRecording == true){
-                    
+                dc.drawLine(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 - score_line_offset * 0.75 + vertical_offset,
+                            SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2 + score_line_offset * 0.75 + vertical_offset);
+                // Show timer while recording
+                if (isRecording == true) {
+
                     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-                    dc.drawText(
-                        SCREEN_WIDTH/2,
-                        SCREEN_HEIGHT * 0.225,
-                        Graphics.FONT_TINY,
-                        formatIntegerTime(Activity.getActivityInfo().timerTime / 1000),
-                        JCENTER
-                    );
+                    dc.drawText(SCREEN_WIDTH / 2, SCREEN_HEIGHT * 0.7, Graphics.FONT_TINY,
+                                formatIntegerTime(Activity.getActivityInfo().timerTime / 1000), JCENTER);
                 }
+
+
             }
             // Tennis Mode Games
-            if (scoring_mode == 1 and !instinct) {
+            if (scoring_mode == 1 and!instinct) {
             }
 
-            // GROUP MODE //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        
+            // GROUP MODE
+            // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         } else {
-            
+
             if (instinct) {
                 vertical_offset = -SCREEN_HEIGHT / 10;
                 sport_label.setText(formatSportName(active_sport));
                 dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 
-                dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2-vertical_offset, Graphics.FONT_MEDIUM,player_names[active_group_player],JCENTER);
-                dc.drawText(SCREEN_WIDTH*0.8,SCREEN_HEIGHT/2-vertical_offset, Graphics.FONT_MEDIUM,player_scores[active_group_player].toString(),JCENTER);
-                if(amount_of_players > 2){
-                dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2+vertical_offset, Graphics.FONT_XTINY,player_names[previous_player],JCENTER);
-                dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2-vertical_offset*3, Graphics.FONT_XTINY,player_names[next_player],JCENTER);
-                }
-                dc.setPenWidth(3);
-                dc.drawLine(
-                    0,
-                    SCREEN_HEIGHT * 0.58 + vertical_offset,
-                    SCREEN_WIDTH,
-                    SCREEN_HEIGHT * 0.58 + vertical_offset
-                );
-                dc.drawLine(
-                    0,
-                    SCREEN_HEIGHT * 0.84 + vertical_offset,
-                    SCREEN_WIDTH,
-                    SCREEN_HEIGHT * 0.84 + vertical_offset
-                );
-                dc.drawLine(
-                    SCREEN_WIDTH*0.6,
-                    SCREEN_HEIGHT * 0.58 + vertical_offset,
-                    SCREEN_WIDTH*0.6,
-                    SCREEN_HEIGHT * 0.84 + vertical_offset
-                );
+                dc.drawText(SCREEN_WIDTH * 0.3, SCREEN_HEIGHT / 2 - vertical_offset, Graphics.FONT_MEDIUM,
+                            player_names[active_group_player], JCENTER);
+                dc.drawText(SCREEN_WIDTH * 0.8, SCREEN_HEIGHT / 2 - vertical_offset, Graphics.FONT_MEDIUM,
+                            player_scores[active_group_player].toString(), JCENTER);
 
-                // dc.drawLine(SCREEN_WIDTH/2, SCREEN_HEIGHT*.63 + vertical_offset, SCREEN_WIDTH/2, SCREEN_HEIGHT*.79 + vertical_offset);
+                dc.drawText(SCREEN_WIDTH * 0.3, SCREEN_HEIGHT / 2 + vertical_offset, Graphics.FONT_XTINY,
+                            Lang.format("$1$ / $2$", [(active_group_player + 1), (amount_of_players)]), JCENTER);
+
+                dc.setPenWidth(3);
+                dc.drawLine(0, SCREEN_HEIGHT * 0.58 + vertical_offset, SCREEN_WIDTH,
+                            SCREEN_HEIGHT * 0.58 + vertical_offset);
+                dc.drawLine(0, SCREEN_HEIGHT * 0.84 + vertical_offset, SCREEN_WIDTH,
+                            SCREEN_HEIGHT * 0.84 + vertical_offset);
+                dc.drawLine(SCREEN_WIDTH * 0.6, SCREEN_HEIGHT * 0.58 + vertical_offset, SCREEN_WIDTH * 0.6,
+                            SCREEN_HEIGHT * 0.84 + vertical_offset);
+
+                // dc.drawLine(SCREEN_WIDTH/2, SCREEN_HEIGHT*.63 + vertical_offset, SCREEN_WIDTH/2, SCREEN_HEIGHT*.79 +
+                // vertical_offset);
                 dc.fillCircle(SUB_SCREEN_X, SUB_SCREEN_Y, SUB_SCREEN_R);
                 dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-                dc.drawText(
-                    SUB_SCREEN_X,
-                    SUB_SCREEN_Y,
-                    Graphics.FONT_MEDIUM,
-                    time_string,
-                    JCENTER
-                );
+                dc.drawText(SUB_SCREEN_X, SUB_SCREEN_Y, Graphics.FONT_MEDIUM, time_string, JCENTER);
                 // Draw Timer on Screen if activity is recording
-                if(isRecording == true){
+                if (isRecording == true) {
                     System.print("Showing Timer");
                     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-                    dc.drawText(
-                        SCREEN_WIDTH/2,
-                        SCREEN_HEIGHT * 0.9,
-                        Graphics.FONT_TINY,
-                        formatIntegerTime(Activity.getActivityInfo().timerTime / 1000),
-                        JCENTER
-                    );
+                    dc.drawText(SCREEN_WIDTH / 2, SCREEN_HEIGHT * 0.9, Graphics.FONT_TINY,
+                                formatIntegerTime(Activity.getActivityInfo().timerTime / 1000), JCENTER);
                 }
 
-// Non Instinct Group Mode
+                // Non Instinct Group Mode
             } else {
                 score_line_offset = SCREEN_HEIGHT / 10;
                 vertical_offset = 0;
-                var separation_offset = SCREEN_HEIGHT/6;
+                // var separation_offset = SCREEN_HEIGHT/6;
                 sport_label.setText(active_sport);
 
                 dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-                dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2-vertical_offset, Graphics.FONT_LARGE,player_names[active_group_player],JCENTER);
-                dc.drawText(SCREEN_WIDTH*0.8,SCREEN_HEIGHT/2-vertical_offset, Graphics.FONT_LARGE,player_scores[active_group_player].toString(),JCENTER);
-                if(amount_of_players > 2){
-                dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2 - separation_offset, Graphics.FONT_XTINY,player_names[previous_player],JCENTER);
-                dc.drawText(SCREEN_WIDTH*0.3,SCREEN_HEIGHT/2 + separation_offset, Graphics.FONT_XTINY,player_names[next_player],JCENTER);
-                }
+                dc.drawText(SCREEN_WIDTH * 0.3, SCREEN_HEIGHT / 2 - vertical_offset, Graphics.FONT_LARGE,
+                            player_names[active_group_player], JCENTER);
+                dc.drawText(SCREEN_WIDTH * 0.8, SCREEN_HEIGHT / 2 - vertical_offset, Graphics.FONT_LARGE,
+                            player_scores[active_group_player].toString(), JCENTER);
+
+                dc.drawText(SCREEN_WIDTH * 0.3, SCREEN_HEIGHT * 0.3 - vertical_offset, Graphics.FONT_XTINY,
+                            Lang.format("$1$ / $2$", [(active_group_player + 1), (amount_of_players)]), JCENTER);
+
                 dc.setPenWidth(5);
-                dc.drawLine(
-                    0,
-                    SCREEN_HEIGHT / 2 - score_line_offset + vertical_offset,
-                    SCREEN_WIDTH,
-                    SCREEN_HEIGHT / 2 - score_line_offset + vertical_offset
-                );
-                dc.drawLine(
-                    0,
-                    SCREEN_HEIGHT / 2 + score_line_offset + vertical_offset,
-                    SCREEN_WIDTH,
-                    SCREEN_HEIGHT / 2 + score_line_offset + vertical_offset
-                );
-                //Show timer while recording
-                if(isRecording == true){
-                    
+                dc.drawLine(0, SCREEN_HEIGHT / 2 - score_line_offset + vertical_offset, SCREEN_WIDTH,
+                            SCREEN_HEIGHT / 2 - score_line_offset + vertical_offset);
+                dc.drawLine(0, SCREEN_HEIGHT / 2 + score_line_offset + vertical_offset, SCREEN_WIDTH,
+                            SCREEN_HEIGHT / 2 + score_line_offset + vertical_offset);
+                // Show timer while recording
+                if (isRecording == true) {
+
                     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-                    dc.drawText(
-                        SCREEN_WIDTH/2,
-                        SCREEN_HEIGHT * 0.225,
-                        Graphics.FONT_TINY,
-                        formatIntegerTime(Activity.getActivityInfo().timerTime / 1000),
-                        JCENTER
-                    );
+                    dc.drawText(SCREEN_WIDTH / 2, SCREEN_HEIGHT * 0.7, Graphics.FONT_TINY,
+                                formatIntegerTime(Activity.getActivityInfo().timerTime / 1000), JCENTER);
                 }
-                // dc.drawLine(SCREEN_WIDTH/2, SCREEN_HEIGHT/2 - score_line_offset*0.75 + vertical_offset, SCREEN_WIDTH/2, SCREEN_HEIGHT/2 + score_line_offset*0.75 + vertical_offset);
+                // dc.drawLine(SCREEN_WIDTH/2, SCREEN_HEIGHT/2 - score_line_offset*0.75 + vertical_offset,
+                // SCREEN_WIDTH/2, SCREEN_HEIGHT/2 + score_line_offset*0.75 + vertical_offset);
             }
         }
     }
 
-    function onTimer() as Void {
-        WatchUi.requestUpdate();
-    }
+    function onTimer() as Void { WatchUi.requestUpdate(); }
 
     // Input handled functions, called from Delegate
 
@@ -611,24 +523,24 @@ class ScoreTrakView extends WatchUi.View {
     function resetScores() {
         home_score = 0;
         guest_score = 0;
-        player_scores = [0,0,0,0,0,0,0,0,0,0];
-        Application.Storage.setValue("home_score",0);
-        Application.Storage.setValue("guest_score",0);
-        Application.Storage.setValue("player_scores",[0,0,0,0,0,0,0,0,0,0]);
+        player_scores = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        Application.Storage.setValue("home_score", 0);
+        Application.Storage.setValue("guest_score", 0);
+        Application.Storage.setValue("player_scores", [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
     }
 
     function setHomeName(text) {
         home_name = text;
         Application.Storage.setValue("home_name", text);
         WatchUi.requestUpdate();
-        System.println(home_name);
+        System.print(home_name);
     }
 
     function setGuestName(text) {
         guest_name = text;
         Application.Storage.setValue("guest_name", text);
         WatchUi.requestUpdate();
-        System.println(guest_name);
+        System.print(guest_name);
     }
     function resetNames() {
         home_name = "HOME";
@@ -639,51 +551,44 @@ class ScoreTrakView extends WatchUi.View {
         WatchUi.popView(WatchUi.SLIDE_DOWN);
     }
 
-    function changePlayerIndex(amount){
+    function changePlayerIndex(amount) {
 
         active_group_player += amount;
         previous_player = active_group_player - 1;
         next_player = active_group_player + 1;
 
-        if(active_group_player == 0){
+        if (active_group_player == 0) {
             previous_player = amount_of_players - 1;
             next_player = 1;
-        }
-        else if(active_group_player == amount_of_players - 1){
+        } else if (active_group_player == amount_of_players - 1) {
             previous_player = amount_of_players - 2;
             next_player = 0;
-        }
-        else if(active_group_player < 0){
+        } else if (active_group_player < 0) {
             active_group_player = amount_of_players - 1;
             previous_player = amount_of_players - 2;
             next_player = 0;
-        }
-        else if(active_group_player >= amount_of_players){
+        } else if (active_group_player >= amount_of_players) {
             active_group_player = 0;
             previous_player = amount_of_players - 1;
             next_player = 1;
         }
 
-
-
         WatchUi.requestUpdate();
     }
-    function updatePlayerScore(value){
+    function updatePlayerScore(value) {
         player_scores[active_group_player] += value;
         WatchUi.requestUpdate();
     }
 
-    function changeAmountOfPlayers(value){ // use a menu to ensure it won't be more than 10
-        
+    function changeAmountOfPlayers(value) { // use a menu to ensure it won't be more than 10
     }
     /*
 function setCustomSportName(text){
-    
 }
 */
     function startSound() {
         if (Attention has :vibrate) {
-            
+
             var vibeProfile = [new Attention.VibeProfile(100, 1000)];
             Attention.vibrate(vibeProfile);
         }
@@ -695,7 +600,7 @@ function setCustomSportName(text){
 
     function stopSound() {
         if (Attention has :vibrate) {
-            
+
             var vibeProfile = [new Attention.VibeProfile(100, 1000)];
             Attention.vibrate(vibeProfile);
         }
@@ -749,7 +654,8 @@ function setCustomSportName(text){
                 // activity_profile = Activity.SPORT_TEAM_SPORT;
                 // sub_activity_profile = Activity.SUB_SPORT_ULTIMATE;
 
-                // Had to reverse-engineer the FIT file from the watch to make sure that it was the correct sport profile
+                // Had to reverse-engineer the FIT file from the watch to make sure that it was the correct sport
+                // profile
                 activity_profile = 69;
                 sub_activity_profile = 92;
                 break;
@@ -811,17 +717,14 @@ function setCustomSportName(text){
         if (Toybox has :ActivityRecording) {
             startSound();
             if (activitySession == null) {
-                activitySession = ActivityRecording.createSession({
-                    :name => "ScoreTrak",
+                activitySession = ActivityRecording.createSession({ :name => "ScoreTrak",
                     :sport => activity_profile,
                     :subSport => sub_activity_profile,
                 });
-                System.println(
-                    Lang.format("$1$ $2$", [
-                        activity_profile,
-                        sub_activity_profile,
-                    ])
-                );
+                System.print(Lang.format("$1$ $2$", [
+                    activity_profile,
+                    sub_activity_profile,
+                ]));
                 activitySession.start();
                 isRecording = true;
                 recordingState = 2;
@@ -842,7 +745,6 @@ function setCustomSportName(text){
         recordingState = 2;
     }
 
-    
     function saveChoice(shouldSave) {
         if (shouldSave) {
             if (activitySession != null) {
@@ -879,5 +781,15 @@ class LeaderboardView extends WatchUi.View {
 
     function onUpdate(dc) {
         // Drawing logic for scores
+        dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(0,0,dc.getWidth(),dc.getHeight());
+        dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+        dc.drawText(
+            (dc.getWidth()/2),
+            (dc.getHeight()*0.125),
+            Graphics.FONT_SMALL,
+            "Leaderboard",
+            Graphics.TEXT_JUSTIFY_CENTER
+            );
     }
 }

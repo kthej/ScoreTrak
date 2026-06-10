@@ -1,10 +1,11 @@
 <menu2 id="GolfMenu"  title="Group Settings" >
     <menu-item id="player_decrease" label="Player Decrease" />
-    <menu-item id="new_hole" label="New Hole" />
+    <menu-item id="new_hole" label="New Round" />
     <menu-item id="reset_scores" label="New Game" />
     <menu-item id="start_activity" label="Start Activity" />
     <menu-item id="change_sport" label="Change Sport" />
     <menu-item id="edit_players" label="Edit Player Count" />
+    <menu-item id="view_leaderboard" label="Leaderboard" />
     <menu-item id="advanced_settings" label="Advanced Settings" />
     
 

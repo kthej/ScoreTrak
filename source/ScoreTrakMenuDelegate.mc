@@ -94,7 +94,11 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
                     WatchUi.SLIDE_UP
                 );
             System.println("Change Player Amount");
-
+            } else if(id == :view_leaderboard){
+                var leaderboard =  new LeaderboardView(null);
+                var leaderboardDelegate = new ScoreTrakLeaderboardDelegate(leaderboard);
+                WatchUi.pushView(leaderboard,leaderboardDelegate,WatchUi.SLIDE_UP);
+            
                 
             } else if (id == :advanced_settings) {
                 var AdvancedMenu = new Rez.Menus.AdvancedMenu();
@@ -107,17 +111,17 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
                     Application.Storage.getValue("guest_name")
                 );
                 if (Application.Storage.getValue("is24Hour") == true) {
-                    AdvancedMenu.getItem(2).setSubLabel("24-Hour");
+                    AdvancedMenu.getItem(3).setSubLabel("24-Hour");
                 } else {
-                    AdvancedMenu.getItem(2).setSubLabel("12-Hour");
+                    AdvancedMenu.getItem(3).setSubLabel("12-Hour");
                 }
 
                 if (
                     Application.Storage.getValue("flip_score_buttons") == true
                 ) {
-                    AdvancedMenu.getItem(3).setSubLabel("True");
+                    AdvancedMenu.getItem(4).setSubLabel("True");
                 } else {
-                    AdvancedMenu.getItem(3).setSubLabel("False");
+                    AdvancedMenu.getItem(4).setSubLabel("False");
                 }
 
                 // Push View
@@ -263,6 +267,7 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
                 
             }
+
             if(id == :p5){
                 _view.amount_of_players = 5;
                 Application.Storage.setValue("amount_of_players", 5);
@@ -308,7 +313,7 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
             _view.active_group_player = 0;
             _view.changePlayerIndex(0);
 
-        }
+        } 
 
         // End Class ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     }

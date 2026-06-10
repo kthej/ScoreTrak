@@ -78,9 +78,9 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
         }
         else{
             if (Application.Storage.getValue("flip_score_buttons") == true) {
-                _view.changePlayerIndex(1);
-            } else {
                 _view.changePlayerIndex(-1);
+            } else {
+                _view.changePlayerIndex(1);
             }
             
         }
@@ -95,9 +95,9 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
             }
         } else{
             if (Application.Storage.getValue("flip_score_buttons") == true) {
-                _view.changePlayerIndex(-1);
-            } else {
                 _view.changePlayerIndex(1);
+            } else {
+                _view.changePlayerIndex(-1);
             }
             
         }
