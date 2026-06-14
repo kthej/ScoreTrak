@@ -16,6 +16,18 @@
 
 ~~Remove Change Activity from menu when a sport is currently being recorded~~
 
+Fix home/guest decrease for tennis mode and remove score showing in menu
+
+Change 'reset scores' to 'new game'
+
+Add serve tracking for table tennis and other sport modes
+
+Add game, set and match tracking for tennis
+
+Add timer when activity is being recorded
+
+Add ability to edit group names
+
 Build the Leaderboard for golf and group scores, pulls up a new view that shows all players and their scores and their holes
 
 ~~Fix ping pong score tracking, add toggle via start button~~
