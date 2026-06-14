@@ -110,9 +110,9 @@ class ScoreTrakDelegate extends WatchUi.BehaviorDelegate {
         }
         if(_view.serve_tracking == true){
             if(_view.serve_switch_toggle == 0 and _view.serve_tracking == true){
-                _view.serve_switch_toggle = 2;
+                _view.serve_switch_toggle = 1;
             }
-            else if(_view.serve_switch_toggle == 2 and _view.serve_tracking == true){
+            else if(_view.serve_switch_toggle == 1 and _view.serve_tracking == true){
                 _view.serve_switch_toggle = 0;
             }
             WatchUi.requestUpdate();

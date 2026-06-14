@@ -37,98 +37,98 @@ function formatSportName(name) {
     }
     return name;
 }
+// Main App Variables
 
-class ScoreTrakView extends WatchUi.View {
-    // Begin Class ////////////////////////////////////////////////////////////////////////////////////
+public var home_score = 0;
+public var home_name;
+public var guest_score = 0;
+public var guest_name;
+public var active_sport;
 
-    // Main App Variables
+// Labels
 
-    public var home_score = 0;
-    public var home_name;
-    public var guest_score = 0;
-    public var guest_name;
-    public var active_sport;
+public var sport_label;
+public var home_score_label;
+public var home_label;
+public var guest_score_label;
+public var guest_label;
+public var time_label;
+public var time_string;
+public var time;
 
-    // Labels
+// Special Mode Variables
 
-    public var sport_label;
-    public var home_score_label;
-    public var home_label;
-    public var guest_score_label;
-    public var guest_label;
-    public var time_label;
-    public var time_string;
-    public var time;
+public var tennis_games;
+public var tennis_matches;
+public var golf_holes;
+public var game_goal;
 
-    // Special Mode Variables
+// public var group_scores = Array[10];
+// public var group_names = Array[10];
 
-    public var tennis_games;
-    public var tennis_matches;
-    public var golf_holes;
-    public var game_goal;
+// Constants
 
-    // public var group_scores = Array[10];
-    // public var group_names = Array[10];
+public var JCENTER;
+public var JLEFT;
+public var SCREEN_WIDTH;
+public var SCREEN_HEIGHT;
+public var SUB_SCREEN_X;
+public var SUB_SCREEN_Y;
+public var SUB_SCREEN_R;
 
-    // Constants
+// Watch Setup
+public var instinct = false;
 
-    public var JCENTER;
-    public var JLEFT;
-    public var SCREEN_WIDTH;
-    public var SCREEN_HEIGHT;
-    public var SUB_SCREEN_X;
-    public var SUB_SCREEN_Y;
-    public var SUB_SCREEN_R;
+// Scoring modes
+public var scoring_mode;
+public var active_player;
 
-    // Watch Setup
-    public var instinct = false;
-
-    // Scoring modes
-    public var scoring_mode;
-    public var active_player;
-
-    /*
+/*
 0 is default
 1 is tennis
 2 is group
 3 is target
 */
-    public var player_names as Lang.Array = [
-        "Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8", "Player 9",
-        "Player 10"
-    ] as Lang.Array;
-    public var player_scores as Lang.Array = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-    public var active_group_player;
-    public var previous_player;
-    public var next_player;
-    public var amount_of_players;
+public var player_names as Lang.Array = [
+    "Player 1", "Player 2", "Player 3", "Player 4", "Player 5", "Player 6", "Player 7", "Player 8", "Player 9",
+    "Player 10"
+] as Lang.Array;
+public var player_scores as Lang.Array = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-    public var is24hour;
-    public var flip_score_buttons;
-    public var updateTimer;
+public var active_group_player;
+public var previous_player;
+public var next_player;
+public var amount_of_players;
 
-    // Drawing Element Variables
+public var is24hour;
+public var flip_score_buttons;
+public var updateTimer;
 
-    public var score_line_offset;
-    public var vertical_offset;
+// Drawing Element Variables
 
-    // Activity Recording
+public var score_line_offset;
+public var vertical_offset;
 
-    public var isRecording = false;
-    public var recordingState = 0;
-    /*
+// Activity Recording
+
+public var isRecording = false;
+public var recordingState = 0;
+/*
 0 is null
 1 is paused
 2 is recording
 */
-    public var activitySession;
-    public var activity_profile;
-    public var sub_activity_profile;
+public var activitySession;
+public var activity_profile;
+public var sub_activity_profile;
 
-    // Serve Tracking
+// Serve Tracking
 
-    public var serve_tracking = true;
-    public var serve_switch_toggle = 0;
+public var serve_tracking = true;
+public var serve_switch_toggle = 0;
+
+class ScoreTrakView extends WatchUi.View {
+    // Begin Class ////////////////////////////////////////////////////////////////////////////////////
 
     function initialize() {
         View.initialize();
@@ -239,6 +239,11 @@ class ScoreTrakView extends WatchUi.View {
             amount_of_players = 10;
         }
 
+        if (Application.Storage.getValue("serve_tracking") != null) {
+            serve_tracking = Application.Storage.getValue("serve_tracking");
+        } else {
+            serve_tracking = false;
+        }
         // ensure group sport indexes are correctly set by calling update with 0 as argument
         changePlayerIndex(0);
         // Constants
@@ -273,8 +278,8 @@ class ScoreTrakView extends WatchUi.View {
         // System.print(active_sport);
 
         // Update the labels
-        if (sport_label == "Table Tennis") {
-            if (((home_score + guest_score + serve_switch_toggle) / 2) % 2 == 0) {
+        if (serve_tracking == true) {
+            if (((home_score + guest_score + (serve_switch_toggle * 2)) / 2) % 2 == 0) {
                 home_label.setColor(Graphics.COLOR_BLACK);
                 home_label.setBackgroundColor(Graphics.COLOR_WHITE);
                 guest_label.setColor(Graphics.COLOR_WHITE);
@@ -301,7 +306,6 @@ class ScoreTrakView extends WatchUi.View {
         } else if (scoring_mode == 1) {
 
             // 1. Clamp values for logic stability
-
 
             if (home_score < 0) {
                 home_score = 0;
@@ -369,15 +373,15 @@ class ScoreTrakView extends WatchUi.View {
         // Dc Element Drawing
 
         View.onUpdate(dc); // dc elements are drawn after labels from xml
-        // Circle Outline to determine recording mode 
-        if (recordingState == 2 and !instinct){
-        dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(SCREEN_WIDTH/25);
-        dc.drawCircle(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, SCREEN_WIDTH / 2);
-        } else if (recordingState == 1 and !instinct){
-        dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
-        dc.setPenWidth(SCREEN_WIDTH/25);
-        dc.drawCircle(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, SCREEN_WIDTH / 2);
+        // Circle Outline to determine recording mode
+        if (recordingState == 2 and!instinct) {
+            dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_TRANSPARENT);
+            dc.setPenWidth(SCREEN_WIDTH / 25);
+            dc.drawCircle(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, SCREEN_WIDTH / 2);
+        } else if (recordingState == 1 and!instinct) {
+            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+            dc.setPenWidth(SCREEN_WIDTH / 25);
+            dc.drawCircle(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, SCREEN_WIDTH / 2);
         }
 
         if (scoring_mode != 2) {
@@ -425,8 +429,6 @@ class ScoreTrakView extends WatchUi.View {
                     dc.drawText(SCREEN_WIDTH / 2, SCREEN_HEIGHT * 0.7, Graphics.FONT_TINY,
                                 formatIntegerTime(Activity.getActivityInfo().timerTime / 1000), JCENTER);
                 }
-
-
             }
             // Tennis Mode Games
             if (scoring_mode == 1 and!instinct) {
@@ -464,7 +466,7 @@ class ScoreTrakView extends WatchUi.View {
                 dc.drawText(SUB_SCREEN_X, SUB_SCREEN_Y, Graphics.FONT_MEDIUM, time_string, JCENTER);
                 // Draw Timer on Screen if activity is recording
                 if (isRecording == true) {
-                    System.print("Showing Timer");
+                    // System.print("Showing Timer");
                     dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
                     dc.drawText(SCREEN_WIDTH / 2, SCREEN_HEIGHT * 0.9, Graphics.FONT_TINY,
                                 formatIntegerTime(Activity.getActivityInfo().timerTime / 1000), JCENTER);
@@ -780,16 +782,20 @@ class LeaderboardView extends WatchUi.View {
     }
 
     function onUpdate(dc) {
-        // Drawing logic for scores
-        dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(0,0,dc.getWidth(),dc.getHeight());
-        dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
-        dc.drawText(
-            (dc.getWidth()/2),
-            (dc.getHeight()*0.125),
-            Graphics.FONT_SMALL,
-            "Leaderboard",
-            Graphics.TEXT_JUSTIFY_CENTER
-            );
+        // Background and title
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(0, 0, dc.getWidth(), dc.getHeight());
+        
+        
+        if (instinct) {
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            dc.fillRectangle(0,0,dc.getWidth(),SUB_SCREEN_Y+SUB_SCREEN_R);
+            dc.fillCircle(SUB_SCREEN_X,SUB_SCREEN_Y,SUB_SCREEN_R);
+            dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+            dc.drawText((SCREEN_WIDTH*0.4), (SCREEN_HEIGHT * 0.175), Graphics.FONT_XTINY, "Leader\nBoard", JCENTER);
+        } else {
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            dc.drawText((SCREEN_WIDTH / 2), (SCREEN_HEIGHT * 0.125), Graphics.FONT_SMALL, "Leaderboard", JCENTER);
+        }
     }
 }

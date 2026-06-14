@@ -18,11 +18,25 @@
 
 Build the Leaderboard for golf and group scores, pulls up a new view that shows all players and their scores and their holes
 
-Fix ping pong score tracking, add toggle via start button
+~~Fix ping pong score tracking, add toggle via start button~~
 
 ~~Remove all 'golf' scoring menu items (not far along enough to implement, fix up menu for now)~~
 
-Add timer for activity mode
+~~Add timer for activity mode~~
+
+Table Tennis
+    Add amount of serves
+    
+Add hole tracking
+    hole array (40 holes max)
+    leaderboard show when done
+    Show hole # on screen
+
+
+Fix issue where home decrease still shows number in tennis menu (shouldn't be like that)
+
+Add option to set new game with start (menu option)
+
 
 
 

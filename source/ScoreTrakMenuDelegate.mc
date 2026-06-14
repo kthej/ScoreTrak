@@ -21,35 +21,33 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
         // Default
 
         if (_menu_id.equals("MainMenu") or _menu_id.equals("TennisMenu") or _menu_id.equals("GolfMenu")) {
-            
+
             if (id == :home_minus) {
-                
+
                 _view.updateHome(-1);
-                
+
                 // if(_view.scoring_mode == 1){ WatchUi.popView(WatchUi.SLIDE_DOWN);}
                 item.setSubLabel(_view.home_score.toString());
                 WatchUi.requestUpdate();
                 System.println("Home -1");
-
             } else if (id == :guest_minus) {
                 _view.updateGuest(-1);
-                
-                if(_view.scoring_mode == 1){ WatchUi.popView(WatchUi.SLIDE_DOWN);}
+
+                if (_view.scoring_mode == 1) {
+                    WatchUi.popView(WatchUi.SLIDE_DOWN);
+                }
                 item.setSubLabel(_view.guest_score.toString());
                 WatchUi.requestUpdate();
                 System.println("Guest -1");
-            } else if(id == :player_decrease){
+            } else if (id == :player_decrease) {
                 _view.updatePlayerScore(-1);
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
-                
-
             } else if (id == :reset_scores) {
                 _view.resetScores();
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
                 System.println("Reset Scores");
-
             } else if (id == :start_activity) {
                 if (!_view.isRecording and _view.recordingState == 0) {
                     _view.isRecording = true;
@@ -65,60 +63,42 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
                         SaveMenu.getItem(0).setLabel("Pause");
                     }
 
-                    WatchUi.pushView(
-                        SaveMenu,
-                        new ScoreTrakMenuDelegate(_view, "SaveMenu"),
-                        WatchUi.SLIDE_UP
-                    );
+                    WatchUi.pushView(SaveMenu, new ScoreTrakMenuDelegate(_view, "SaveMenu"), WatchUi.SLIDE_UP);
                 }
 
                 // WatchUi.popView(WatchUi.SLIDE_DOWN);
                 WatchUi.requestUpdate();
                 System.println("Save Menu");
             } else if (id == :change_sport) {
-                if(_view.isRecording == false){
-                var SportMenu = new Rez.Menus.SportMenu();
-                WatchUi.pushView(
-                    SportMenu,
-                    new ScoreTrakMenuDelegate(_view, "SportMenu"),
-                    WatchUi.SLIDE_UP
-                );
-                System.println("Change Sport");
+                if (_view.isRecording == false) {
+                    var SportMenu = new Rez.Menus.SportMenu();
+                    WatchUi.pushView(SportMenu, new ScoreTrakMenuDelegate(_view, "SportMenu"), WatchUi.SLIDE_UP);
+                    System.println("Change Sport");
                 }
-
-            } else if(id == :edit_players){
+            } else if (id == :edit_players) {
                 var PlayerAmountMenu = new Rez.Menus.PlayerAmountMenu();
-                WatchUi.pushView(
-                    PlayerAmountMenu,
-                    new ScoreTrakMenuDelegate(_view,"PlayerAmountMenu"),
-                    WatchUi.SLIDE_UP
-                );
-            System.println("Change Player Amount");
-            } else if(id == :view_leaderboard){
-                var leaderboard =  new LeaderboardView(null);
+                WatchUi.pushView(PlayerAmountMenu, new ScoreTrakMenuDelegate(_view, "PlayerAmountMenu"),
+                                 WatchUi.SLIDE_UP);
+                System.println("Change Player Amount");
+            } else if (id == :view_leaderboard) {
+
+                var leaderboard = new LeaderboardView(null);
                 var leaderboardDelegate = new ScoreTrakLeaderboardDelegate(leaderboard);
-                WatchUi.pushView(leaderboard,leaderboardDelegate,WatchUi.SLIDE_UP);
-            
-                
+                WatchUi.pushView(leaderboard, leaderboardDelegate, WatchUi.SLIDE_UP);
+
             } else if (id == :advanced_settings) {
                 var AdvancedMenu = new Rez.Menus.AdvancedMenu();
 
                 // Update labels for advanced menu
-                AdvancedMenu.getItem(0).setSubLabel(
-                    Application.Storage.getValue("home_name")
-                );
-                AdvancedMenu.getItem(1).setSubLabel(
-                    Application.Storage.getValue("guest_name")
-                );
+                AdvancedMenu.getItem(0).setSubLabel(Application.Storage.getValue("home_name"));
+                AdvancedMenu.getItem(1).setSubLabel(Application.Storage.getValue("guest_name"));
                 if (Application.Storage.getValue("is24Hour") == true) {
                     AdvancedMenu.getItem(3).setSubLabel("24-Hour");
                 } else {
                     AdvancedMenu.getItem(3).setSubLabel("12-Hour");
                 }
 
-                if (
-                    Application.Storage.getValue("flip_score_buttons") == true
-                ) {
+                if (Application.Storage.getValue("flip_score_buttons") == true) {
                     AdvancedMenu.getItem(4).setSubLabel("True");
                 } else {
                     AdvancedMenu.getItem(4).setSubLabel("False");
@@ -126,11 +106,7 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
 
                 // Push View
 
-                WatchUi.pushView(
-                    AdvancedMenu,
-                    new ScoreTrakMenuDelegate(_view, "AdvancedMenu"),
-                    WatchUi.SLIDE_UP
-                );
+                WatchUi.pushView(AdvancedMenu, new ScoreTrakMenuDelegate(_view, "AdvancedMenu"), WatchUi.SLIDE_UP);
             }
 
             // Sport Selection Menu
@@ -138,30 +114,20 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
             var sportName = item.getLabel();
             _view.active_sport = sportName;
 
-            
-
             if (id == :sport_tennis or id == :sport_platform) {
                 _view.scoring_mode = 1;
                 Application.Storage.setValue("scoring_mode", 1);
-            } else if (
-                id == :sport_mini_golf or
-                id == :sport_golf or
-                id == :sport_disc_golf or
-                id == :sport_board_game or
-                id == :sport_group
-            ) {
+            } else if (id == :sport_mini_golf or id == :sport_golf or id == :sport_disc_golf or id ==
+                       :sport_board_game or id == :sport_group) {
                 _view.scoring_mode = 2;
                 Application.Storage.setValue("scoring_mode", 2);
-
             } else {
                 _view.scoring_mode = 0;
                 Application.Storage.setValue("scoring_mode", 0);
             }
-             if(id == :sport_table_tennis){
+            if (id == :sport_table_tennis) {
                 _view.serve_tracking = true;
-            
-            }
-            else{
+            } else {
                 _view.serve_tracking = false;
             }
             WatchUi.popView(WatchUi.SLIDE_DOWN);
@@ -170,30 +136,28 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
             WatchUi.requestUpdate();
             System.println("Changed Sport");
 
-// Advanced Menu ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            // Advanced Menu
+            // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         } else if (_menu_id.equals("AdvancedMenu")) {
             if (id == :rename_home) {
                 var picker = new WatchUi.TextPicker("");
-                var delegate = new ScoreTrakTextDelegate(
-                    _view.method(:setHomeName)
-                );
+                var delegate = new ScoreTrakTextDelegate(_view.method(:setHomeName));
                 WatchUi.pushView(picker, delegate, WatchUi.SLIDE_UP);
 
                 item.setSubLabel(Application.Storage.getValue("home_name"));
             } else if (id == :rename_guest) {
                 var picker = new WatchUi.TextPicker("");
-                var delegate = new ScoreTrakTextDelegate(
-                    _view.method(:setGuestName)
-                );
+                var delegate = new ScoreTrakTextDelegate(_view.method(:setGuestName));
                 WatchUi.pushView(picker, delegate, WatchUi.SLIDE_UP);
 
                 item.setSubLabel(Application.Storage.getValue("guest_name"));
             } else if (id == :rename_custom_sport) {
                 var picker = new WatchUi.TextPicker("");
-                var delegate = new ScoreTrakTextDelegate(
-                    _view.method(:setCustomSportName)
-                );
+                var delegate = new ScoreTrakTextDelegate(_view.method(:setCustomSportName));
                 WatchUi.pushView(picker, delegate, WatchUi.SLIDE_UP);
+            } else if (id == :rename_group) {
+                var EditPlayerMenu = new Rez.Menus.EditPlayerMenu();
+                WatchUi.pushView(EditPlayerMenu, new ScoreTrakMenuDelegate(_view, "EditPlayerMenu"), WatchUi.SLIDE_UP);
             } else if (id == :reset_names) {
                 _view.resetNames();
             } else if (id == :time_format) {
@@ -206,9 +170,7 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
                 }
                 WatchUi.requestUpdate();
             } else if (id == :flip_score_buttons) {
-                if (
-                    Application.Storage.getValue("flip_score_buttons") == false
-                ) {
+                if (Application.Storage.getValue("flip_score_buttons") == false) {
                     Application.Storage.setValue("flip_score_buttons", true);
                     item.setSubLabel("True");
                 } else {
@@ -219,11 +181,8 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
                 WatchUi.requestUpdate();
             }
 
-
-
-
-
-            // Save Menu ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            // Save Menu
+            // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         } else if (_menu_id.equals("SaveMenu")) {
             if (id == :save) {
                 _view.saveChoice(true);
@@ -237,84 +196,85 @@ class ScoreTrakMenuDelegate extends WatchUi.Menu2InputDelegate {
                 }
             }
             WatchUi.popView(WatchUi.SLIDE_DOWN);
-// Player Amount Menu
-        } else if(_menu_id.equals("PlayerAmountMenu")){
-            if(id == :p1){
+            // Player Amount Menu
+        } else if (_menu_id.equals("PlayerAmountMenu")) {
+            if (id == :p1) {
                 _view.amount_of_players = 1;
                 Application.Storage.setValue("amount_of_players", 1);
                 WatchUi.requestUpdate();
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
-                
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
             }
-            if(id == :p2){
+            if (id == :p2) {
                 _view.amount_of_players = 2;
                 Application.Storage.setValue("amount_of_players", 2);
                 WatchUi.requestUpdate();
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
-                
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
             }
-            if(id == :p3){
+            if (id == :p3) {
                 _view.amount_of_players = 3;
                 Application.Storage.setValue("amount_of_players", 3);
                 WatchUi.requestUpdate();
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
-                
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
             }
-            if(id == :p4){
+            if (id == :p4) {
                 _view.amount_of_players = 4;
                 Application.Storage.setValue("amount_of_players", 4);
                 WatchUi.requestUpdate();
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
-                
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
             }
 
-            if(id == :p5){
+            if (id == :p5) {
                 _view.amount_of_players = 5;
                 Application.Storage.setValue("amount_of_players", 5);
                 WatchUi.requestUpdate();
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
-                
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
             }
-            if(id == :p6){
+            if (id == :p6) {
                 _view.amount_of_players = 6;
                 Application.Storage.setValue("amount_of_players", 6);
                 WatchUi.requestUpdate();
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
-                
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
             }
-            if(id == :p7){
+            if (id == :p7) {
                 _view.amount_of_players = 7;
                 Application.Storage.setValue("amount_of_players", 7);
                 WatchUi.requestUpdate();
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
-                
             }
-            if(id == :p8){
+            if (id == :p8) {
                 _view.amount_of_players = 8;
                 Application.Storage.setValue("amount_of_players", 8);
                 WatchUi.requestUpdate();
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
-                
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
             }
-            if(id == :p9){
+            if (id == :p9) {
                 _view.amount_of_players = 9;
                 Application.Storage.setValue("amount_of_players", 9);
                 WatchUi.requestUpdate();
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
-                
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
             }
-            if(id == :p10){
+            if (id == :p10) {
                 _view.amount_of_players = 10;
                 Application.Storage.setValue("amount_of_players", 10);
                 WatchUi.requestUpdate();
                 WatchUi.popView(WatchUi.SLIDE_DOWN);
-                
+                WatchUi.popView(WatchUi.SLIDE_DOWN);
             }
             _view.active_group_player = 0;
             _view.changePlayerIndex(0);
+        } else if (_menu_id.equals("EditPlayerMenu")) {
 
-        } 
+        }
 
-        // End Class ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // End Class
+        // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     }
 }
